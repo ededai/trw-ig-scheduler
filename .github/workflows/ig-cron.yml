@@ -1,0 +1,47 @@
+name: TRW Instagram Queue Runner
+
+on:
+  schedule:
+    # Every 15 min UTC. The runner compares against SGT (Asia/Singapore)
+    # internally, so cron timezone doesn't matter here.
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ig-queue
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Run queue
+        env:
+          IG_USER_ID:     ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IMGBB_API_KEY:  ${{ secrets.IMGBB_API_KEY }}
+        run: python ig_queue.py run
+
+      - name: Commit queue state changes
+        run: |
+          if [[ -n "$(git status --porcelain ig_queue.json ig_post_log.md logs/ 2>/dev/null)" ]]; then
+            git config user.name  "trw-ig-scheduler-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add ig_queue.json ig_post_log.md logs/ 2>/dev/null || true
+            git commit -m "chore: queue state update [$(date -u +%FT%TZ)]"
+            git push
+          else
+            echo "No queue state changes."
+          fi

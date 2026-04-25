@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+*.pyc
+__pycache__/
+.ig_queue.lock
+*.json.tmp
+.DS_Store
