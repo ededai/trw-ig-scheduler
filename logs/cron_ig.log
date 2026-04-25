@@ -2,3 +2,6 @@
 [2026-04-25 17:47:15 +08] run: no due posts
 [2026-04-25 18:36:27 +08] run: no due posts
 [2026-04-25 19:25:02 +08] run: no due posts
+[2026-04-25 19:58:55 +08] Posting timing-belt-2026-04-25 (carousel) — notes: Timing Belt repost (was DXd9Z4-HP4s)
+[2026-04-25 19:58:55 +08] ERR timing-belt-2026-04-25: post_instagram_carousel.py failed: ERROR: .env not found at /home/runner/work/trw-ig-scheduler/trw-ig-scheduler/.env
+

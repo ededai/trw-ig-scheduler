@@ -17,21 +17,6 @@
       "attempts": 0
     },
     {
-      "id": "timing-belt-2026-04-25",
-      "slot_time_sgt": "2026-04-25T19:30",
-      "type": "carousel",
-      "caption_file": "assets/timing-belt-2026-04-25/caption.txt",
-      "image_paths": [
-        "assets/timing-belt-2026-04-25/slide1.png",
-        "assets/timing-belt-2026-04-25/slide2.png",
-        "assets/timing-belt-2026-04-25/slide3.png",
-        "assets/timing-belt-2026-04-25/slide4.png"
-      ],
-      "notes": "Timing Belt repost (was DXd9Z4-HP4s)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "doreen-review-2026-04-25",
       "slot_time_sgt": "2026-04-26T12:30",
       "type": "single",
@@ -45,5 +30,22 @@
     }
   ],
   "posted": [],
-  "failed": []
+  "failed": [
+    {
+      "id": "timing-belt-2026-04-25",
+      "slot_time_sgt": "2026-04-25T19:30",
+      "type": "carousel",
+      "caption_file": "assets/timing-belt-2026-04-25/caption.txt",
+      "image_paths": [
+        "assets/timing-belt-2026-04-25/slide1.png",
+        "assets/timing-belt-2026-04-25/slide2.png",
+        "assets/timing-belt-2026-04-25/slide3.png",
+        "assets/timing-belt-2026-04-25/slide4.png"
+      ],
+      "notes": "Timing Belt repost (was DXd9Z4-HP4s)",
+      "status": "failed",
+      "attempts": 1,
+      "error": "post_instagram_carousel.py failed: ERROR: .env not found at /home/runner/work/trw-ig-scheduler/trw-ig-scheduler/.env\n"
+    }
+  ]
 }
