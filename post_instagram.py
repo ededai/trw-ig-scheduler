@@ -22,17 +22,20 @@ from pathlib import Path
 ENV_FILE = Path(__file__).parent / ".env"
 
 def load_env():
-    """Load credentials from .env file."""
-    if not ENV_FILE.exists():
-        print("ERROR: .env file not found.")
-        print("Copy tools/.env.example to tools/.env and fill in your credentials.")
-        sys.exit(1)
+    """Load credentials. .env file when present (local dev), os.environ otherwise (GH Actions)."""
     env = {}
-    for line in ENV_FILE.read_text().splitlines():
-        line = line.strip()
-        if line and not line.startswith("#") and "=" in line:
-            key, _, val = line.partition("=")
-            env[key.strip()] = val.strip().strip('"')
+    if ENV_FILE.exists():
+        for line in ENV_FILE.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, val = line.partition("=")
+                env[key.strip()] = val.strip().strip('"')
+    for key in ("IG_USER_ID", "IG_ACCESS_TOKEN", "IMGBB_API_KEY"):
+        if not env.get(key) and os.environ.get(key):
+            env[key] = os.environ[key]
+    if not env.get("IG_USER_ID") or not env.get("IG_ACCESS_TOKEN"):
+        print("ERROR: IG_USER_ID and IG_ACCESS_TOKEN must be set (.env file or environment).")
+        sys.exit(1)
     return env
 
 # ── Image hosting (imgbb — free, no account needed for small files) ───────────

@@ -23,15 +23,22 @@ ENV_FILE = Path(__file__).parent / ".env"
 
 
 def load_env():
-    if not ENV_FILE.exists():
-        print(f"ERROR: .env not found at {ENV_FILE}")
-        sys.exit(1)
+    """Load credentials. .env file when present (local dev), os.environ otherwise (GH Actions)."""
+    import os
     env = {}
-    for line in ENV_FILE.read_text().splitlines():
-        line = line.strip()
-        if line and not line.startswith("#") and "=" in line:
-            k, _, v = line.partition("=")
-            env[k.strip()] = v.strip().strip('"')
+    if ENV_FILE.exists():
+        for line in ENV_FILE.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                k, _, v = line.partition("=")
+                env[k.strip()] = v.strip().strip('"')
+    # Always fall back to / overlay environ — works on GH Actions where secrets are env vars.
+    for key in ("IG_USER_ID", "IG_ACCESS_TOKEN", "IMGBB_API_KEY"):
+        if not env.get(key) and os.environ.get(key):
+            env[key] = os.environ[key]
+    if not env.get("IG_USER_ID") or not env.get("IG_ACCESS_TOKEN"):
+        print("ERROR: IG_USER_ID and IG_ACCESS_TOKEN must be set (.env file or environment).")
+        sys.exit(1)
     return env
 
 
