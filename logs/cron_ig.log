@@ -8,3 +8,4 @@
 [2026-04-25 21:09:24 +08] Posting engine-lights-2026-04-25 (carousel) — notes: Warning Light Decoded Post 1 — Engine Lights (rescheduled from 2026-04-25 after TCC miss)
 [2026-04-25 21:09:24 +08] ERR engine-lights-2026-04-25: post_instagram_carousel.py failed: ERROR: .env not found at /home/runner/work/trw-ig-scheduler/trw-ig-scheduler/.env
 
+[2026-04-25 22:07:41 +08] run: no due posts
