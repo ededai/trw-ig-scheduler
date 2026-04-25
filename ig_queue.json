@@ -2,7 +2,7 @@
   "pending": [
     {
       "id": "engine-lights-2026-04-25",
-      "slot_time_sgt": "2026-04-26T12:30",
+      "slot_time_sgt": "2026-04-25T21:00",
       "type": "carousel",
       "caption_file": "assets/engine-lights-2026-04-25/caption.txt",
       "image_paths": [
@@ -33,7 +33,7 @@
     },
     {
       "id": "doreen-review-2026-04-25",
-      "slot_time_sgt": "2026-04-25T21:00",
+      "slot_time_sgt": "2026-04-26T12:30",
       "type": "single",
       "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
       "image_paths": [
