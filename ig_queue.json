@@ -1,6 +1,21 @@
 {
   "pending": [
     {
+      "id": "doreen-review-2026-04-25",
+      "slot_time_sgt": "2026-04-26T12:30",
+      "type": "single",
+      "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
+      "image_paths": [
+        "assets/doreen-review-2026-04-25/slide.png"
+      ],
+      "notes": "Real Reviews — Doreen",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
+  "posted": [],
+  "failed": [
+    {
       "id": "timing-belt-2026-04-25",
       "slot_time_sgt": "2026-04-25T19:30",
       "type": "carousel",
@@ -12,8 +27,9 @@
         "assets/timing-belt-2026-04-25/slide4.png"
       ],
       "notes": "Timing Belt repost (was DXd9Z4-HP4s)",
-      "status": "pending",
-      "attempts": 0
+      "status": "failed",
+      "attempts": 0,
+      "error": "missed_grace_window"
     },
     {
       "id": "engine-lights-2026-04-25",
@@ -28,22 +44,9 @@
         "assets/engine-lights-2026-04-25/slide5.png"
       ],
       "notes": "Warning Light Decoded Post 1 — Engine Lights (rescheduled from 2026-04-25 after TCC miss)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "doreen-review-2026-04-25",
-      "slot_time_sgt": "2026-04-26T12:30",
-      "type": "single",
-      "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
-      "image_paths": [
-        "assets/doreen-review-2026-04-25/slide.png"
-      ],
-      "notes": "Real Reviews — Doreen",
-      "status": "pending",
-      "attempts": 0
+      "status": "failed",
+      "attempts": 0,
+      "error": "missed_grace_window"
     }
-  ],
-  "posted": [],
-  "failed": []
+  ]
 }
