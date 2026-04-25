@@ -1,34 +1,6 @@
 {
   "pending": [
     {
-      "id": "engine-lights-2026-04-25",
-      "slot_time_sgt": "2026-04-25T19:30",
-      "type": "carousel",
-      "caption_file": "assets/engine-lights-2026-04-25/caption.txt",
-      "image_paths": [
-        "assets/engine-lights-2026-04-25/slide1.png",
-        "assets/engine-lights-2026-04-25/slide2.png",
-        "assets/engine-lights-2026-04-25/slide3.png",
-        "assets/engine-lights-2026-04-25/slide4.png",
-        "assets/engine-lights-2026-04-25/slide5.png"
-      ],
-      "notes": "Warning Light Decoded Post 1 — Engine Lights (rescheduled from 2026-04-25 after TCC miss)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "doreen-review-2026-04-25",
-      "slot_time_sgt": "2026-04-25T21:00",
-      "type": "single",
-      "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
-      "image_paths": [
-        "assets/doreen-review-2026-04-25/slide.png"
-      ],
-      "notes": "Real Reviews — Doreen",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "timing-belt-2026-04-25",
       "slot_time_sgt": "2026-04-26T12:30",
       "type": "carousel",
@@ -45,5 +17,36 @@
     }
   ],
   "posted": [],
-  "failed": []
+  "failed": [
+    {
+      "id": "engine-lights-2026-04-25",
+      "slot_time_sgt": "2026-04-25T19:30",
+      "type": "carousel",
+      "caption_file": "assets/engine-lights-2026-04-25/caption.txt",
+      "image_paths": [
+        "assets/engine-lights-2026-04-25/slide1.png",
+        "assets/engine-lights-2026-04-25/slide2.png",
+        "assets/engine-lights-2026-04-25/slide3.png",
+        "assets/engine-lights-2026-04-25/slide4.png",
+        "assets/engine-lights-2026-04-25/slide5.png"
+      ],
+      "notes": "Warning Light Decoded Post 1 — Engine Lights (rescheduled from 2026-04-25 after TCC miss)",
+      "status": "failed",
+      "attempts": 0,
+      "error": "missed_grace_window"
+    },
+    {
+      "id": "doreen-review-2026-04-25",
+      "slot_time_sgt": "2026-04-25T21:00",
+      "type": "single",
+      "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
+      "image_paths": [
+        "assets/doreen-review-2026-04-25/slide.png"
+      ],
+      "notes": "Real Reviews — Doreen",
+      "status": "failed",
+      "attempts": 0,
+      "error": "missed_grace_window"
+    }
+  ]
 }
