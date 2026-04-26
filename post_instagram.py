@@ -38,22 +38,74 @@ def load_env():
         sys.exit(1)
     return env
 
-# ── Image hosting (imgbb — free, no account needed for small files) ───────────
-def upload_image_to_host(image_path: str, imgbb_api_key: str) -> str:
-    """Upload a local image to imgbb and return the public URL."""
-    print(f"Uploading image: {image_path}")
+# ── Image hosting (catbox / 0x0 / uguu — multi-host fallback for IG) ──────────
+UA = "Mozilla/5.0 (compatible; trw-ig-scheduler/1.0; +https://therightworkshop.com)"
+
+
+def _upload_catbox(image_path):
     with open(image_path, "rb") as f:
-        response = requests.post(
-            "https://api.imgbb.com/1/upload",
-            params={"key": imgbb_api_key},
-            files={"image": f},
-            timeout=60,
+        r = requests.post(
+            "https://catbox.moe/user/api.php",
+            data={"reqtype": "fileupload"},
+            files={"fileToUpload": f},
+            headers={"User-Agent": UA},
+            timeout=120,
         )
-    response.raise_for_status()
-    data = response.json()
-    url = data["data"]["url"]
-    print(f"Image hosted at: {url}")
+    r.raise_for_status()
+    url = r.text.strip()
+    if not url.startswith("http"):
+        raise RuntimeError(f"catbox bad response: {url[:200]}")
     return url
+
+
+def _upload_0x0(image_path):
+    with open(image_path, "rb") as f:
+        r = requests.post(
+            "https://0x0.st",
+            files={"file": f},
+            headers={"User-Agent": UA},
+            timeout=120,
+        )
+    r.raise_for_status()
+    url = r.text.strip()
+    if not url.startswith("http"):
+        raise RuntimeError(f"0x0 bad response: {url[:200]}")
+    return url
+
+
+def _upload_uguu(image_path):
+    with open(image_path, "rb") as f:
+        r = requests.post(
+            "https://uguu.se/upload?output=text",
+            files={"files[]": f},
+            headers={"User-Agent": UA},
+            timeout=120,
+        )
+    r.raise_for_status()
+    url = r.text.strip().split()[0]
+    if not url.startswith("http"):
+        raise RuntimeError(f"uguu bad response: {url[:200]}")
+    return url
+
+
+def upload_image_to_host(image_path: str, imgbb_api_key: str = None) -> str:
+    """Upload to a public host that IG's media-fetcher can read.
+    Tries catbox.moe → 0x0.st → uguu.se, 3 attempts each. imgbb's CDN
+    blocks the IG fetcher so it's not in the rotation.
+    """
+    print(f"Uploading image: {image_path}")
+    hosts = [("catbox.moe", _upload_catbox), ("0x0.st", _upload_0x0), ("uguu.se", _upload_uguu)]
+    errors = []
+    for host_name, fn in hosts:
+        for attempt in range(3):
+            try:
+                url = fn(image_path)
+                print(f"Image hosted at: {url} (via {host_name}, attempt {attempt + 1})")
+                return url
+            except Exception as e:
+                errors.append(f"{host_name} attempt {attempt + 1}: {type(e).__name__}: {e}")
+                time.sleep(3 * (attempt + 1))
+    raise RuntimeError("All image hosts failed:\n  " + "\n  ".join(errors[-9:]))
 
 # ── Instagram Graph API ───────────────────────────────────────────────────────
 def create_media_container(ig_user_id: str, access_token: str, image_url: str,

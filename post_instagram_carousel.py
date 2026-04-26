@@ -59,37 +59,83 @@ def http_get(url, params):
     return r.json()
 
 
-def upload_to_imgbb(image_path, api_key=None):
-    """Upload to catbox.moe (Instagram can fetch from it; imgbb blocks IG's crawler).
+UA = "Mozilla/5.0 (compatible; trw-ig-scheduler/1.0; +https://therightworkshop.com)"
 
-    catbox.moe occasionally returns 412 Precondition Failed for requests with
-    a missing/default User-Agent (their CF rules). Retry with a real UA + 1
-    backoff before failing.
+
+def _upload_catbox(image_path):
+    import requests
+    with open(image_path, "rb") as f:
+        r = requests.post(
+            "https://catbox.moe/user/api.php",
+            data={"reqtype": "fileupload"},
+            files={"fileToUpload": f},
+            headers={"User-Agent": UA},
+            timeout=120,
+        )
+    r.raise_for_status()
+    url = r.text.strip()
+    if not url.startswith("http"):
+        raise RuntimeError(f"catbox bad response: {url[:200]}")
+    return url
+
+
+def _upload_0x0(image_path):
+    import requests
+    with open(image_path, "rb") as f:
+        r = requests.post(
+            "https://0x0.st",
+            files={"file": f},
+            headers={"User-Agent": UA},
+            timeout=120,
+        )
+    r.raise_for_status()
+    url = r.text.strip()
+    if not url.startswith("http"):
+        raise RuntimeError(f"0x0 bad response: {url[:200]}")
+    return url
+
+
+def _upload_uguu(image_path):
+    import requests
+    with open(image_path, "rb") as f:
+        r = requests.post(
+            "https://uguu.se/upload?output=text",
+            files={"files[]": f},
+            headers={"User-Agent": UA},
+            timeout=120,
+        )
+    r.raise_for_status()
+    url = r.text.strip().split()[0]
+    if not url.startswith("http"):
+        raise RuntimeError(f"uguu bad response: {url[:200]}")
+    return url
+
+
+def upload_to_imgbb(image_path, api_key=None):
+    """Upload an image to a public host that IG's media-fetcher can read.
+
+    Tries catbox.moe first (historic primary), then 0x0.st, then uguu.se.
+    Each host gets up to 3 attempts with exponential backoff. We log every
+    failure so a flaky host shows up clearly in cron_ig.log instead of
+    silently masking a deeper problem.
+
+    Why not imgbb: imgbb's CDN blocks Instagram's media-fetcher User-Agent,
+    so IG container creation 404s on imgbb URLs.
     """
-    import requests, time
-    headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; trw-ig-scheduler/1.0; +https://therightworkshop.com)"
-    }
-    last_err = None
-    for attempt in range(3):
-        try:
-            with open(image_path, "rb") as f:
-                r = requests.post(
-                    "https://catbox.moe/user/api.php",
-                    data={"reqtype": "fileupload"},
-                    files={"fileToUpload": f},
-                    headers=headers,
-                    timeout=120,
-                )
-            r.raise_for_status()
-            url = r.text.strip()
-            if not url.startswith("http"):
-                raise RuntimeError(f"catbox upload failed: {url}")
-            return url
-        except Exception as e:
-            last_err = e
-            time.sleep(5 * (attempt + 1))
-    raise RuntimeError(f"catbox upload failed after 3 attempts: {last_err}")
+    import time
+    hosts = [("catbox.moe", _upload_catbox), ("0x0.st", _upload_0x0), ("uguu.se", _upload_uguu)]
+    errors = []
+    for host_name, fn in hosts:
+        for attempt in range(3):
+            try:
+                url = fn(image_path)
+                if attempt > 0 or host_name != "catbox.moe":
+                    print(f"[upload] {host_name} succeeded on attempt {attempt + 1}")
+                return url
+            except Exception as e:
+                errors.append(f"{host_name} attempt {attempt + 1}: {type(e).__name__}: {e}")
+                time.sleep(3 * (attempt + 1))
+    raise RuntimeError("All image hosts failed:\n  " + "\n  ".join(errors[-9:]))
 
 
 def create_child_container(ig_user_id, token, image_url):
