@@ -6,3 +6,4 @@ __pycache__/
 .ig_queue.lock
 *.json.tmp
 .DS_Store
+.gstack/

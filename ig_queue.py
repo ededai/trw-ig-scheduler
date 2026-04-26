@@ -187,6 +187,23 @@ def run_story(entry: dict) -> str:
     raise RuntimeError("post_instagram.py --story succeeded but no story ID found in output")
 
 
+def telegram_alert(text: str) -> None:
+    """Best-effort Telegram alert. Silently skips if TG_BOT_TOKEN/TG_CHAT_ID unset."""
+    import urllib.parse
+    import urllib.request
+    env = env_or_dotenv()
+    token = env.get("TG_BOT_TOKEN") or os.environ.get("TG_BOT_TOKEN")
+    chat = env.get("TG_CHAT_ID") or os.environ.get("TG_CHAT_ID")
+    if not token or not chat:
+        return
+    try:
+        data = urllib.parse.urlencode({"chat_id": chat, "text": text[:3500]}).encode()
+        req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=data)
+        urllib.request.urlopen(req, timeout=10).read()
+    except Exception as e:
+        log(f"WARN: telegram alert failed: {e}")
+
+
 def process_entry(entry: dict) -> dict:
     log(f"Posting {entry['id']} ({entry['type']}) — notes: {entry.get('notes','')}")
     try:
@@ -206,6 +223,7 @@ def process_entry(entry: dict) -> dict:
         entry["post_id"] = post_id
         append_post_log(entry, permalink or post_id)
         log(f"OK  {entry['id']} -> {permalink or post_id}")
+        telegram_alert(f"✅ TRW IG posted: {entry['id']} ({entry['type']})\n{permalink or post_id}")
         # Auto-queue companion IGS for feed posts (10 min after publish)
         if entry["type"] in ("single", "carousel") and not entry.get("is_companion"):
             try:
@@ -218,6 +236,12 @@ def process_entry(entry: dict) -> dict:
         entry["error"] = str(e)[:500]
         entry["attempts"] = entry.get("attempts", 0) + 1
         log(f"ERR {entry['id']}: {e}")
+        telegram_alert(
+            f"❌ TRW IG FAILED: {entry['id']} ({entry['type']})\n"
+            f"slot: {entry.get('slot_time_sgt','?')} SGT\n"
+            f"attempts: {entry['attempts']}\n"
+            f"error: {str(e)[:400]}"
+        )
         return entry
 
 
@@ -270,6 +294,10 @@ def cmd_run() -> int:
                 e["error"] = "missed_grace_window"
                 q["failed"].append(e)
                 log(f"SKIP {e['id']} — past {GRACE_MINUTES}-min grace window")
+                telegram_alert(
+                    f"⏰ TRW IG MISSED: {e['id']} ({e['type']})\n"
+                    f"slot: {e['slot_time_sgt']} SGT (past {GRACE_MINUTES}-min grace window)"
+                )
                 continue
             due.append(e)
         q["pending"] = keep

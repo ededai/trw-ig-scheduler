@@ -10,13 +10,16 @@ Usage:
 """
 
 import argparse
-import os
-import sys
 import json
-import time
+import os
 import subprocess
-import requests
+import sys
+import time
+import urllib.parse
+import urllib.request
 from pathlib import Path
+
+import requests
 
 # ── Config ────────────────────────────────────────────────────────────────────
 ENV_FILE = Path(__file__).parent / ".env"
@@ -38,8 +41,47 @@ def load_env():
         sys.exit(1)
     return env
 
-# ── Image hosting (catbox / 0x0 / uguu — multi-host fallback for IG) ──────────
+# ── Image hosting ─────────────────────────────────────────────────────────────
+# Primary: serve directly from this repo via raw.githubusercontent.com
+#   (works only when the repo is PUBLIC — no upload needed, the asset is already
+#    committed by the watcher/scheduler before publish time).
+# Fallbacks: catbox.moe / 0x0.st / uguu.se (work from local Mac, blocked from
+#   GH Actions IPs as of 2026-04-26).
 UA = "Mozilla/5.0 (compatible; trw-ig-scheduler/1.0; +https://therightworkshop.com)"
+GH_REPO_OWNER = os.environ.get("GH_REPO_OWNER", "ededai")
+GH_REPO_NAME = os.environ.get("GH_REPO_NAME", "trw-ig-scheduler")
+GH_REPO_REF = os.environ.get("GH_REPO_REF", "main")
+
+
+def _repo_root():
+    return Path(__file__).parent.resolve()
+
+
+def _raw_github_url(image_path: str) -> str:
+    """Map a path inside the repo to its raw.githubusercontent.com URL.
+    Caller must ensure the file is committed and pushed before publish.
+    """
+    p = Path(image_path).resolve()
+    rel = p.relative_to(_repo_root())
+    return f"https://raw.githubusercontent.com/{GH_REPO_OWNER}/{GH_REPO_NAME}/{GH_REPO_REF}/{rel.as_posix()}"
+
+
+def _verify_url_fetchable(url: str, timeout: int = 15) -> bool:
+    """HEAD probe to confirm the URL serves an image (200 OK + image/* content-type)."""
+    try:
+        r = requests.head(url, timeout=timeout, allow_redirects=True, headers={"User-Agent": UA})
+        ct = r.headers.get("content-type", "")
+        return r.status_code == 200 and ct.startswith("image/")
+    except Exception:
+        return False
+
+
+def _upload_raw_github(image_path):
+    """Return the raw.githubusercontent.com URL for the file (no upload)."""
+    url = _raw_github_url(image_path)
+    if not _verify_url_fetchable(url):
+        raise RuntimeError(f"raw.githubusercontent.com not reachable for {url} — repo may be private or asset not pushed yet")
+    return url
 
 
 def _upload_catbox(image_path):
@@ -89,22 +131,31 @@ def _upload_uguu(image_path):
 
 
 def upload_image_to_host(image_path: str, imgbb_api_key: str = None) -> str:
-    """Upload to a public host that IG's media-fetcher can read.
-    Tries catbox.moe → 0x0.st → uguu.se, 3 attempts each. imgbb's CDN
-    blocks the IG fetcher so it's not in the rotation.
+    """Resolve a publicly-fetchable URL for the image that IG's media-fetcher accepts.
+    Order:
+      1. raw.githubusercontent.com (no upload — works only when repo is PUBLIC)
+      2. catbox.moe / 0x0.st / uguu.se (fallback uploaders, work from local Mac)
+    imgbb is excluded — its CDN rejects IG's fetcher (verified 2026-04-26).
     """
-    print(f"Uploading image: {image_path}")
-    hosts = [("catbox.moe", _upload_catbox), ("0x0.st", _upload_0x0), ("uguu.se", _upload_uguu)]
+    print(f"Resolving image URL: {image_path}")
+    hosts = [
+        ("raw.githubusercontent.com", _upload_raw_github),
+        ("catbox.moe", _upload_catbox),
+        ("0x0.st", _upload_0x0),
+        ("uguu.se", _upload_uguu),
+    ]
     errors = []
     for host_name, fn in hosts:
-        for attempt in range(3):
+        attempts = 1 if host_name == "raw.githubusercontent.com" else 3
+        for attempt in range(attempts):
             try:
                 url = fn(image_path)
                 print(f"Image hosted at: {url} (via {host_name}, attempt {attempt + 1})")
                 return url
             except Exception as e:
                 errors.append(f"{host_name} attempt {attempt + 1}: {type(e).__name__}: {e}")
-                time.sleep(3 * (attempt + 1))
+                if attempts > 1:
+                    time.sleep(3 * (attempt + 1))
     raise RuntimeError("All image hosts failed:\n  " + "\n  ".join(errors[-9:]))
 
 # ── Instagram Graph API ───────────────────────────────────────────────────────

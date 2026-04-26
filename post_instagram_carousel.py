@@ -111,30 +111,62 @@ def _upload_uguu(image_path):
     return url
 
 
+import os as _os
+
+GH_REPO_OWNER = _os.environ.get("GH_REPO_OWNER", "ededai")
+GH_REPO_NAME = _os.environ.get("GH_REPO_NAME", "trw-ig-scheduler")
+GH_REPO_REF = _os.environ.get("GH_REPO_REF", "main")
+
+
+def _raw_github_url(image_path):
+    p = Path(image_path).resolve()
+    rel = p.relative_to(Path(__file__).parent.resolve())
+    return f"https://raw.githubusercontent.com/{GH_REPO_OWNER}/{GH_REPO_NAME}/{GH_REPO_REF}/{rel.as_posix()}"
+
+
+def _upload_raw_github(image_path):
+    import requests
+    url = _raw_github_url(image_path)
+    try:
+        r = requests.head(url, timeout=15, allow_redirects=True,
+                          headers={"User-Agent": "trw-ig-scheduler/1.0"})
+    except Exception as e:
+        raise RuntimeError(f"raw.github HEAD failed: {e}")
+    if r.status_code != 200 or not r.headers.get("content-type", "").startswith("image/"):
+        raise RuntimeError(
+            f"raw.github not serving image (status={r.status_code}, ct={r.headers.get('content-type','?')}); "
+            "is the repo public and the asset committed/pushed?"
+        )
+    return url
+
+
 def upload_to_imgbb(image_path, api_key=None):
-    """Upload an image to a public host that IG's media-fetcher can read.
-
-    Tries catbox.moe first (historic primary), then 0x0.st, then uguu.se.
-    Each host gets up to 3 attempts with exponential backoff. We log every
-    failure so a flaky host shows up clearly in cron_ig.log instead of
-    silently masking a deeper problem.
-
-    Why not imgbb: imgbb's CDN blocks Instagram's media-fetcher User-Agent,
-    so IG container creation 404s on imgbb URLs.
+    """Resolve a publicly-fetchable URL for the image.
+    Order:
+      1. raw.githubusercontent.com (no upload — works only when repo is PUBLIC)
+      2. catbox.moe / 0x0.st / uguu.se (fallback uploaders, work from local Mac)
+    Function name kept for back-compat; imgbb itself is not used (its CDN
+    rejects IG's fetcher per 2026-04-26 verification).
     """
     import time
-    hosts = [("catbox.moe", _upload_catbox), ("0x0.st", _upload_0x0), ("uguu.se", _upload_uguu)]
+    hosts = [
+        ("raw.githubusercontent.com", _upload_raw_github),
+        ("catbox.moe", _upload_catbox),
+        ("0x0.st", _upload_0x0),
+        ("uguu.se", _upload_uguu),
+    ]
     errors = []
     for host_name, fn in hosts:
-        for attempt in range(3):
+        attempts = 1 if host_name == "raw.githubusercontent.com" else 3
+        for attempt in range(attempts):
             try:
                 url = fn(image_path)
-                if attempt > 0 or host_name != "catbox.moe":
-                    print(f"[upload] {host_name} succeeded on attempt {attempt + 1}")
+                print(f"[upload] {host_name} succeeded on attempt {attempt + 1}")
                 return url
             except Exception as e:
                 errors.append(f"{host_name} attempt {attempt + 1}: {type(e).__name__}: {e}")
-                time.sleep(3 * (attempt + 1))
+                if attempts > 1:
+                    time.sleep(3 * (attempt + 1))
     raise RuntimeError("All image hosts failed:\n  " + "\n  ".join(errors[-9:]))
 
 

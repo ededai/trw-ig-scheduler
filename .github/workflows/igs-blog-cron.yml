@@ -36,6 +36,12 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Run blog watcher
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID:   ${{ secrets.TG_CHAT_ID }}
+          GH_REPO_OWNER: ${{ github.repository_owner }}
+          GH_REPO_NAME:  ${{ github.event.repository.name }}
+          GH_REPO_REF:   main
         run: python igs_blog_watcher.py
 
       - name: Commit queue + assets
