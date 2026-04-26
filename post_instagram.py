@@ -114,13 +114,18 @@ def create_media_container(ig_user_id: str, access_token: str, image_url: str,
     print("Creating media container...")
     params = {
         "access_token": access_token,
-        "caption": caption,
     }
+    # Stories don't accept caption (caption is feed-only)
+    if media_type != "STORIES":
+        params["caption"] = caption
     if media_type == "IMAGE":
         params["image_url"] = image_url
     elif media_type == "REELS":
         params["video_url"] = image_url
         params["media_type"] = "REELS"
+    elif media_type == "STORIES":
+        params["image_url"] = image_url
+        params["media_type"] = "STORIES"
 
     response = requests.post(
         f"https://graph.facebook.com/v19.0/{ig_user_id}/media",
@@ -179,7 +184,8 @@ def main():
     group.add_argument("--image", help="Path to a local image file")
     group.add_argument("--video", help="Path to a local video file (posted as Reel)")
     group.add_argument("--url", help="Publicly accessible image URL")
-    parser.add_argument("--caption", required=True, help="Caption text (include hashtags)")
+    parser.add_argument("--caption", default="", help="Caption text (include hashtags). Ignored for stories.")
+    parser.add_argument("--story", action="store_true", help="Publish as Instagram Story (9:16, no caption)")
     parser.add_argument("--dry-run", action="store_true", help="Print caption without posting")
     args = parser.parse_args()
 
@@ -201,13 +207,13 @@ def main():
     # Determine media URL and type
     if args.url:
         media_url = args.url
-        media_type = "IMAGE"
+        media_type = "STORIES" if args.story else "IMAGE"
     elif args.image:
         if not imgbb_api_key:
             print("ERROR: IMGBB_API_KEY required to upload local images. Add it to tools/.env")
             sys.exit(1)
         media_url = upload_image_to_host(args.image, imgbb_api_key)
-        media_type = "IMAGE"
+        media_type = "STORIES" if args.story else "IMAGE"
     else:
         # Video
         if not imgbb_api_key:
@@ -218,11 +224,14 @@ def main():
 
     container_id = create_media_container(ig_user_id, access_token, media_url, args.caption, media_type)
 
-    if media_type == "REELS":
+    if media_type in ("REELS", "STORIES"):
         wait_for_container(container_id, access_token)
 
     post_id = publish_container(ig_user_id, access_token, container_id)
-    print(f"\nView post: https://www.instagram.com/p/{post_id}/")
+    if media_type == "STORIES":
+        print(f"\nStory published. ID: {post_id}")
+    else:
+        print(f"\nView post: https://www.instagram.com/p/{post_id}/")
 
 if __name__ == "__main__":
     main()

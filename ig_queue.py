@@ -169,6 +169,24 @@ def run_carousel(entry: dict) -> str:
     raise RuntimeError(f"post_instagram_carousel.py succeeded but no post ID found. tail:\n{tail}")
 
 
+def run_story(entry: dict) -> str:
+    """Publish an IGS (Instagram Story). Caption is ignored by the API for stories."""
+    image = str(resolve(entry["image_paths"][0]))
+    cmd = [
+        sys.executable, str(POST_SINGLE),
+        "--image", image,
+        "--story",
+        "--caption", "",
+    ]
+    res = subprocess.run(cmd, capture_output=True, text=True, timeout=300, cwd=str(ROOT))
+    if res.returncode != 0:
+        raise RuntimeError(f"post_instagram.py --story failed: {res.stderr or res.stdout}")
+    for line in res.stdout.splitlines():
+        if line.startswith("Story published. ID: "):
+            return line.split("ID: ", 1)[1].strip()
+    raise RuntimeError("post_instagram.py --story succeeded but no story ID found in output")
+
+
 def process_entry(entry: dict) -> dict:
     log(f"Posting {entry['id']} ({entry['type']}) — notes: {entry.get('notes','')}")
     try:
@@ -176,15 +194,24 @@ def process_entry(entry: dict) -> dict:
             post_id = run_single(entry)
         elif entry["type"] == "carousel":
             post_id = run_carousel(entry)
+        elif entry["type"] == "story":
+            post_id = run_story(entry)
         else:
             raise ValueError(f"unknown type: {entry['type']}")
-        permalink = fetch_permalink(post_id)
+        # Stories don't have a public permalink via Graph API; skip fetch
+        permalink = "" if entry["type"] == "story" else fetch_permalink(post_id)
         entry["status"] = "posted"
         entry["posted_url"] = permalink or post_id
         entry["posted_at"] = now_sgt().strftime("%Y-%m-%d %H:%M SGT")
         entry["post_id"] = post_id
         append_post_log(entry, permalink or post_id)
         log(f"OK  {entry['id']} -> {permalink or post_id}")
+        # Auto-queue companion IGS for feed posts (10 min after publish)
+        if entry["type"] in ("single", "carousel") and not entry.get("is_companion"):
+            try:
+                _queue_feed_companion_igs(entry)
+            except Exception as ce:
+                log(f"WARN: companion IGS queue failed for {entry['id']}: {ce}")
         return entry
     except Exception as e:
         entry["status"] = "failed"
@@ -192,6 +219,39 @@ def process_entry(entry: dict) -> dict:
         entry["attempts"] = entry.get("attempts", 0) + 1
         log(f"ERR {entry['id']}: {e}")
         return entry
+
+
+def _queue_feed_companion_igs(parent_entry: dict) -> None:
+    """Queue an IGS that promotes the feed post that was just published.
+
+    The companion uses the parent's first image as-is (Story-style 9:16 reframing
+    happens in a future renderer pass; for v1 we re-use the cover image at native
+    aspect, which Meta will letterbox into 9:16). Posts 10 minutes after parent.
+    """
+    parent_id = parent_entry["id"]
+    companion_id = f"{parent_id}-igs"
+    slot = (now_sgt() + timedelta(minutes=10)).strftime("%Y-%m-%dT%H:%M")
+    image = parent_entry["image_paths"][0]  # use cover image for now
+    entry = {
+        "id": companion_id,
+        "slot_time_sgt": slot,
+        "type": "story",
+        "caption_file": parent_entry["caption_file"],  # ignored by API for stories
+        "image_paths": [image],
+        "notes": f"Companion IGS for feed post {parent_id}",
+        "status": "pending",
+        "attempts": 0,
+        "is_companion": True,
+        "parent_post_id": parent_entry.get("post_id", ""),
+    }
+    q = load_queue()
+    # Avoid duplicate companion if one already exists
+    if any(e["id"] == companion_id for e in q["pending"] + q.get("posted", []) + q.get("failed", [])):
+        log(f"skip companion: {companion_id} already exists")
+        return
+    q["pending"].append(entry)
+    save_queue(q)
+    log(f"queued companion IGS: {companion_id} for {slot} SGT")
 
 
 def cmd_run() -> int:
@@ -257,10 +317,16 @@ def cmd_add(args) -> int:
             print(f"ERROR: image not found: {resolve(p)}")
             return 1
     datetime.strptime(args.slot, "%Y-%m-%dT%H:%M")
+    if args.type == "story":
+        entry_type = "story"
+    elif len(image_paths) > 1:
+        entry_type = "carousel"
+    else:
+        entry_type = args.type or "single"
     entry = {
         "id": args.id,
         "slot_time_sgt": args.slot,
-        "type": "carousel" if len(image_paths) > 1 else (args.type or "single"),
+        "type": entry_type,
         "caption_file": args.caption_file,
         "image_paths": image_paths,
         "notes": args.notes or "",
@@ -299,7 +365,7 @@ def main():
     a.add_argument("--slot", required=True)
     a.add_argument("--caption-file", required=True)
     a.add_argument("--images", nargs="+", required=True)
-    a.add_argument("--type", choices=["single", "carousel"], default=None)
+    a.add_argument("--type", choices=["single", "carousel", "story"], default=None)
     a.add_argument("--notes", default="")
     r = sub.add_parser("remove")
     r.add_argument("--id", required=True)
