@@ -64,18 +64,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-first-service-A-2026-04-26",
-      "slot_time_sgt": "2026-04-26T22:15",
-      "type": "story",
-      "caption_file": "assets/igs-first-service-A-2026-04-26/caption.txt",
-      "image_paths": [
-        "assets/igs-first-service-A-2026-04-26/story.png"
-      ],
-      "notes": "First Car Service blog - Variant A (Editorial Teaser)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-first-service-B-2026-04-27",
       "slot_time_sgt": "2026-04-27T08:15",
       "type": "story",
@@ -137,6 +125,21 @@
       "post_id": "18101245102985193",
       "posted_url": "https://www.instagram.com/p/18101245102985193/",
       "posted_at": "2026-04-26 21:01 SGT"
+    },
+    {
+      "id": "igs-first-service-A-2026-04-26",
+      "slot_time_sgt": "2026-04-26T22:15",
+      "type": "story",
+      "caption_file": "assets/igs-first-service-A-2026-04-26/caption.txt",
+      "image_paths": [
+        "assets/igs-first-service-A-2026-04-26/story.png"
+      ],
+      "notes": "First Car Service blog - Variant A (Editorial Teaser)",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18139268947509335",
+      "posted_at": "2026-04-26 22:23 SGT",
+      "post_id": "18139268947509335"
     }
   ],
   "failed": []
