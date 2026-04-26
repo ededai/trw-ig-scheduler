@@ -1,0 +1,47 @@
+name: TRW Blog Daily Refresh
+
+on:
+  schedule:
+    # 16:30 UTC = 00:30 SGT daily.
+    # 5-day featured rotation + og:image drift fix + schema.org image fix.
+    - cron: "30 16 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blog-refresh
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests beautifulsoup4
+
+      - name: Run blog refresh
+        env:
+          WORDPRESS_API_URL:  ${{ secrets.WORDPRESS_API_URL }}
+          WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
+          WORDPRESS_PASSWORD: ${{ secrets.WORDPRESS_PASSWORD }}
+        run: bash blog/daily_blog_refresh.sh
+
+      - name: Commit log changes
+        run: |
+          if [[ -n "$(git status --porcelain blog/logs/ 2>/dev/null)" ]]; then
+            git config user.name  "trw-ig-scheduler-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add blog/logs/
+            git commit -m "chore: blog refresh log [$(date -u +%FT%TZ)]"
+            git push
+          else
+            echo "No log changes to commit."
+          fi
