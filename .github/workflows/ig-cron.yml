@@ -2,9 +2,11 @@ name: TRW Instagram Queue Runner
 
 on:
   schedule:
-    # Every 15 min UTC. The runner compares against SGT (Asia/Singapore)
+    # Every 30 min UTC. The runner compares against SGT (Asia/Singapore)
     # internally, so cron timezone doesn't matter here.
-    - cron: "*/15 * * * *"
+    # Tightened from */15 -> */30 on 2026-04-26 to fit GitHub Actions free
+    # tier (2,000 min/month). 30-min still inside the 90-min grace window.
+    - cron: "*/30 * * * *"
   workflow_dispatch: {}
 
 permissions:
