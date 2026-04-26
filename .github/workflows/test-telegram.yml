@@ -1,8 +1,7 @@
 name: Test Telegram Alert (manual)
 
 # Manual trigger only. Fires one Telegram message from the GH Actions cloud
-# to verify that TG_BOT_TOKEN + TG_CHAT_ID secrets are correctly set.
-# Safe to keep around — does nothing on a schedule.
+# to verify TG_BOT_TOKEN + TG_CHAT_ID secrets are correctly set.
 
 on:
   workflow_dispatch: {}
@@ -11,17 +10,36 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Send test Telegram
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Send test Telegram (Python)
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID:   ${{ secrets.TG_CHAT_ID }}
         run: |
-          if [ -z "$TG_BOT_TOKEN" ] || [ -z "$TG_CHAT_ID" ]; then
-            echo "ERROR: TG_BOT_TOKEN or TG_CHAT_ID secret missing in repo settings"
-            exit 1
-          fi
-          curl -sf -X POST "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${TG_CHAT_ID}" \
-            --data-urlencode "text=☁️ Test from GH Actions cloud at $(date -u +%FT%TZ). Secrets work. Alerts will fire on every IG post success/failure." \
-            -o /dev/null
-          echo "Telegram test sent."
+          python - <<'PY'
+          import os, sys, urllib.request, urllib.parse, json
+          token = (os.environ.get("TG_BOT_TOKEN") or "").strip()
+          chat  = (os.environ.get("TG_CHAT_ID")  or "").strip()
+          print(f"TG_BOT_TOKEN length: {len(token)}")
+          print(f"TG_CHAT_ID  length: {len(chat)}, value: {chat!r}")
+          if not token or not chat:
+              print("ERROR: secret missing"); sys.exit(1)
+          url = f"https://api.telegram.org/bot{token}/sendMessage"
+          import datetime
+          text = f"Test from GH Actions cloud at {datetime.datetime.utcnow().isoformat()}Z. Secrets work."
+          data = urllib.parse.urlencode({"chat_id": chat, "text": text}).encode()
+          req = urllib.request.Request(url, data=data)
+          try:
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  resp = json.load(r)
+              print("response:", resp)
+              if not resp.get("ok"):
+                  sys.exit(2)
+          except Exception as e:
+              print(f"FAILED: {type(e).__name__}: {e}")
+              sys.exit(3)
+          print("Telegram test sent OK.")
+          PY
