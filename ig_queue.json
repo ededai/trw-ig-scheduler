@@ -1,22 +1,6 @@
 {
   "pending": [
     {
-      "id": "engine-lights-2026-04-25",
-      "slot_time_sgt": "2026-04-26T19:30",
-      "type": "carousel",
-      "caption_file": "assets/engine-lights-2026-04-25/caption.txt",
-      "image_paths": [
-        "assets/engine-lights-2026-04-25/slide1.png",
-        "assets/engine-lights-2026-04-25/slide2.png",
-        "assets/engine-lights-2026-04-25/slide3.png",
-        "assets/engine-lights-2026-04-25/slide4.png",
-        "assets/engine-lights-2026-04-25/slide5.png"
-      ],
-      "notes": "Warning Light Decoded Post 1 — Engine Lights (rescheduled from 2026-04-25 after TCC miss) [rescheduled 2026-04-26 19:30]",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "doreen-review-2026-04-25",
       "slot_time_sgt": "2026-04-26T21:00",
       "type": "single",
@@ -85,5 +69,23 @@
       "posted_via": "manual local run after catbox UA + multi-host fix"
     }
   ],
-  "failed": []
+  "failed": [
+    {
+      "id": "engine-lights-2026-04-25",
+      "slot_time_sgt": "2026-04-26T19:30",
+      "type": "carousel",
+      "caption_file": "assets/engine-lights-2026-04-25/caption.txt",
+      "image_paths": [
+        "assets/engine-lights-2026-04-25/slide1.png",
+        "assets/engine-lights-2026-04-25/slide2.png",
+        "assets/engine-lights-2026-04-25/slide3.png",
+        "assets/engine-lights-2026-04-25/slide4.png",
+        "assets/engine-lights-2026-04-25/slide5.png"
+      ],
+      "notes": "Warning Light Decoded Post 1 — Engine Lights (rescheduled from 2026-04-25 after TCC miss) [rescheduled 2026-04-26 19:30]",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Command '['/opt/hostedtoolcache/Python/3.11.15/x64/bin/python', '/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/post_instagram_carousel.py', '--images', '/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/engine-lights-2026-04-25/slide1.png', '/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/engine-lights-2026-04-25/slide2.png', '/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/engine-lights-2026-04-25/slide3.png', '/home/runner/work/trw-ig-scheduler/trw-ig-sched"
+    }
+  ]
 }
