@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "doreen-review-2026-04-25",
-      "slot_time_sgt": "2026-04-26T21:00",
-      "type": "single",
-      "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
-      "image_paths": [
-        "assets/doreen-review-2026-04-25/slide.png"
-      ],
-      "notes": "Real Reviews — Doreen [rescheduled 2026-04-26 21:00]",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-10-signs-trustworthy-mechanic-singapore-a-d1",
       "slot_time_sgt": "2026-04-27T15:30",
       "type": "story",
@@ -86,6 +74,19 @@
       "status": "failed",
       "attempts": 1,
       "error": "Command '['/opt/hostedtoolcache/Python/3.11.15/x64/bin/python', '/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/post_instagram_carousel.py', '--images', '/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/engine-lights-2026-04-25/slide1.png', '/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/engine-lights-2026-04-25/slide2.png', '/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/engine-lights-2026-04-25/slide3.png', '/home/runner/work/trw-ig-scheduler/trw-ig-sched"
+    },
+    {
+      "id": "doreen-review-2026-04-25",
+      "slot_time_sgt": "2026-04-26T21:00",
+      "type": "single",
+      "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
+      "image_paths": [
+        "assets/doreen-review-2026-04-25/slide.png"
+      ],
+      "notes": "Real Reviews — Doreen [rescheduled 2026-04-26 21:00]",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Command '['/opt/hostedtoolcache/Python/3.11.15/x64/bin/python', '/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/post_instagram.py', '--image', '/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/doreen-review-2026-04-25/slide.png', '--caption', '\"These guys are really fast and responsible — I would trust them with my car anytime.\"\\n\\nDoreen came in with an aircon issue her friends warned her about. Turned out to be a cooling coil problem. Ah Bao walked her through exactly what neede"
     }
   ]
 }
