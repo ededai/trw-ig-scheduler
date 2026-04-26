@@ -1,0 +1,15 @@
+{
+  "blog_page_id": 475,
+  "site_origin": "https://therightworkshop.com",
+  "rotation": {
+    "epoch": "2026-04-24",
+    "days_per_bucket": 5
+  },
+  "featured_exclusions": {
+    "slugs": [],
+    "tags": ["coe-results"],
+    "note": "Ed: lock out recurring structured-data posts like COE results from the featured rotation. Populate 'slugs' when monthly COE posts ship."
+  },
+  "byline_default": "By The Right Workshop service team",
+  "wpm_for_read_time": 220
+}
