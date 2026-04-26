@@ -1,0 +1,27 @@
+name: Test Telegram Alert (manual)
+
+# Manual trigger only. Fires one Telegram message from the GH Actions cloud
+# to verify that TG_BOT_TOKEN + TG_CHAT_ID secrets are correctly set.
+# Safe to keep around — does nothing on a schedule.
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test Telegram
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID:   ${{ secrets.TG_CHAT_ID }}
+        run: |
+          if [ -z "$TG_BOT_TOKEN" ] || [ -z "$TG_CHAT_ID" ]; then
+            echo "ERROR: TG_BOT_TOKEN or TG_CHAT_ID secret missing in repo settings"
+            exit 1
+          fi
+          curl -sf -X POST "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TG_CHAT_ID}" \
+            --data-urlencode "text=☁️ Test from GH Actions cloud at $(date -u +%FT%TZ). Secrets work. Alerts will fire on every IG post success/failure." \
+            -o /dev/null
+          echo "Telegram test sent."
