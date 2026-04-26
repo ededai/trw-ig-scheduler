@@ -1,21 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "timing-belt-2026-04-25",
-      "slot_time_sgt": "2026-04-26T12:30",
-      "type": "carousel",
-      "caption_file": "assets/timing-belt-2026-04-25/caption.txt",
-      "image_paths": [
-        "assets/timing-belt-2026-04-25/slide1.png",
-        "assets/timing-belt-2026-04-25/slide2.png",
-        "assets/timing-belt-2026-04-25/slide3.png",
-        "assets/timing-belt-2026-04-25/slide4.png"
-      ],
-      "notes": "Timing Belt repost (was DXd9Z4-HP4s)",
-      "status": "pending",
-      "attempts": 0
-    }
-  ],
+  "pending": [],
   "posted": [],
   "failed": [
     {
@@ -47,6 +31,22 @@
       "status": "failed",
       "attempts": 0,
       "error": "missed_grace_window"
+    },
+    {
+      "id": "timing-belt-2026-04-25",
+      "slot_time_sgt": "2026-04-26T12:30",
+      "type": "carousel",
+      "caption_file": "assets/timing-belt-2026-04-25/caption.txt",
+      "image_paths": [
+        "assets/timing-belt-2026-04-25/slide1.png",
+        "assets/timing-belt-2026-04-25/slide2.png",
+        "assets/timing-belt-2026-04-25/slide3.png",
+        "assets/timing-belt-2026-04-25/slide4.png"
+      ],
+      "notes": "Timing Belt repost (was DXd9Z4-HP4s)",
+      "status": "failed",
+      "attempts": 1,
+      "error": "post_instagram_carousel.py failed: Traceback (most recent call last):\n  File \"/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/post_instagram_carousel.py\", line 197, in <module>\n    main()\n  File \"/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/post_instagram_carousel.py\", line 172, in main\n    u = upload_to_imgbb(str(p))\n        ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/post_instagram_carousel.py\", line 72, in upload_to_imgbb\n    r.raise_for_stat"
     }
   ]
 }

@@ -27,3 +27,16 @@
 [2026-04-26 07:04:44 +08] run: no due posts
 [2026-04-26 07:53:48 +08] run: no due posts
 [2026-04-26 09:56:05 +08] run: no due posts
+[2026-04-26 13:25:44 +08] Posting timing-belt-2026-04-25 (carousel) — notes: Timing Belt repost (was DXd9Z4-HP4s)
+[2026-04-26 13:25:45 +08] ERR timing-belt-2026-04-25: post_instagram_carousel.py failed: Traceback (most recent call last):
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/post_instagram_carousel.py", line 197, in <module>
+    main()
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/post_instagram_carousel.py", line 172, in main
+    u = upload_to_imgbb(str(p))
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/post_instagram_carousel.py", line 72, in upload_to_imgbb
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 412 Client Error: Precondition Failed for url: https://catbox.moe/user/api.php
+
