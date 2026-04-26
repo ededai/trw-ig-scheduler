@@ -60,20 +60,36 @@ def http_get(url, params):
 
 
 def upload_to_imgbb(image_path, api_key=None):
-    """Upload to catbox.moe (Instagram can fetch from it; imgbb blocks IG's crawler)."""
-    import requests
-    with open(image_path, "rb") as f:
-        r = requests.post(
-            "https://catbox.moe/user/api.php",
-            data={"reqtype": "fileupload"},
-            files={"fileToUpload": f},
-            timeout=90,
-        )
-    r.raise_for_status()
-    url = r.text.strip()
-    if not url.startswith("http"):
-        raise RuntimeError(f"catbox upload failed: {url}")
-    return url
+    """Upload to catbox.moe (Instagram can fetch from it; imgbb blocks IG's crawler).
+
+    catbox.moe occasionally returns 412 Precondition Failed for requests with
+    a missing/default User-Agent (their CF rules). Retry with a real UA + 1
+    backoff before failing.
+    """
+    import requests, time
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; trw-ig-scheduler/1.0; +https://therightworkshop.com)"
+    }
+    last_err = None
+    for attempt in range(3):
+        try:
+            with open(image_path, "rb") as f:
+                r = requests.post(
+                    "https://catbox.moe/user/api.php",
+                    data={"reqtype": "fileupload"},
+                    files={"fileToUpload": f},
+                    headers=headers,
+                    timeout=120,
+                )
+            r.raise_for_status()
+            url = r.text.strip()
+            if not url.startswith("http"):
+                raise RuntimeError(f"catbox upload failed: {url}")
+            return url
+        except Exception as e:
+            last_err = e
+            time.sleep(5 * (attempt + 1))
+    raise RuntimeError(f"catbox upload failed after 3 attempts: {last_err}")
 
 
 def create_child_container(ig_user_id, token, image_url):
