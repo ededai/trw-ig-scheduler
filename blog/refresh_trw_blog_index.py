@@ -58,6 +58,18 @@ def log(msg: str) -> None:
         f.write(line + "\n")
 
 
+def _scrub(v):
+    """Strip every kind of whitespace control char that GH secret paste sneaks in.
+    Includes \\n \\r \\t and any zero-width / NBSP unicode."""
+    if not isinstance(v, str):
+        return v
+    # Standard strip + remove any internal \r\n that snuck in mid-value
+    v = v.strip().strip("\r\n\t ")
+    # Remove any remaining control characters except spaces (WP App Passwords
+    # legitimately contain internal single spaces).
+    return "".join(ch for ch in v if ch == " " or (ord(ch) >= 0x20 and ord(ch) != 0x7f))
+
+
 def load_env() -> dict:
     """Credentials. .env when present (local), os.environ otherwise (GH Actions)."""
     import os
@@ -74,16 +86,20 @@ def load_env() -> dict:
     for key in ("WORDPRESS_API_URL", "WORDPRESS_USERNAME", "WORDPRESS_PASSWORD"):
         if not env.get(key) and os.environ.get(key):
             env[key] = os.environ[key]
-    # Strip whitespace/newlines that sneak in via GH secret copy-paste.
-    # WORDPRESS_PASSWORD legitimately contains spaces (WP App Passwords are
-    # space-separated) so only strip leading/trailing whitespace, not internal.
     for key in list(env.keys()):
-        if isinstance(env[key], str):
-            env[key] = env[key].strip()
+        env[key] = _scrub(env[key])
     missing = [k for k in ("WORDPRESS_API_URL", "WORDPRESS_USERNAME", "WORDPRESS_PASSWORD") if not env.get(k)]
     if missing:
         sys.stderr.write(f"ERROR: missing WP creds: {missing}. Set in .env or environment.\n")
         sys.exit(1)
+    # Diagnostic: print exact post-scrub repr (lengths only for password) so any
+    # remaining hidden char shows up in the log.
+    print(
+        f"[load_env] WP_API_URL={env['WORDPRESS_API_URL']!r} "
+        f"WP_USER={env['WORDPRESS_USERNAME']!r} "
+        f"WP_PASSWORD len={len(env['WORDPRESS_PASSWORD'])}",
+        file=sys.stderr,
+    )
     return env
 
 
@@ -92,16 +108,16 @@ def load_config() -> dict:
 
 
 def wp_base(env: dict) -> str:
-    site = env.get("WORDPRESS_API_URL", "").rstrip("/")
+    site = _scrub(env.get("WORDPRESS_API_URL", "")).rstrip("/")
     if site.endswith("/wp-json"):
         site = site[: -len("/wp-json")]
     return site
 
 
 def auth_header(env: dict) -> str:
-    token = base64.b64encode(
-        f"{env['WORDPRESS_USERNAME']}:{env['WORDPRESS_PASSWORD']}".encode()
-    ).decode()
+    user = _scrub(env["WORDPRESS_USERNAME"])
+    pw = _scrub(env["WORDPRESS_PASSWORD"])
+    token = base64.b64encode(f"{user}:{pw}".encode()).decode()
     return f"Basic {token}"
 
 
