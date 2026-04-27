@@ -74,6 +74,96 @@
       "notes": "First Car Service blog - Variant C (Quote Pull) +20h",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "bbtb-toyota-altis-2026-04-27",
+      "slot_time_sgt": "2026-04-27T21:00",
+      "type": "carousel",
+      "caption_file": "assets/bbtb-toyota-altis-2026-04-27/caption.txt",
+      "image_paths": [
+        "assets/bbtb-toyota-altis-2026-04-27/slide1.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide2.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide3.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide4.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide5.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide6.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide7.png"
+      ],
+      "notes": "Behind the Badge - Toyota Altis 2013-2018",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "bbtb-honda-vezel-2026-04-28",
+      "slot_time_sgt": "2026-04-28T19:30",
+      "type": "carousel",
+      "caption_file": "assets/bbtb-honda-vezel-2026-04-27/caption.txt",
+      "image_paths": [
+        "assets/bbtb-honda-vezel-2026-04-27/slide1.png",
+        "assets/bbtb-honda-vezel-2026-04-27/slide2.png",
+        "assets/bbtb-honda-vezel-2026-04-27/slide3.png",
+        "assets/bbtb-honda-vezel-2026-04-27/slide4.png",
+        "assets/bbtb-honda-vezel-2026-04-27/slide5.png",
+        "assets/bbtb-honda-vezel-2026-04-27/slide6.png",
+        "assets/bbtb-honda-vezel-2026-04-27/slide7.png"
+      ],
+      "notes": "Behind the Badge - Honda Vezel 2014-2021",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "bbtb-mercedes-c-w205-2026-04-29",
+      "slot_time_sgt": "2026-04-29T19:30",
+      "type": "carousel",
+      "caption_file": "assets/bbtb-mercedes-c-w205-2026-04-27/caption.txt",
+      "image_paths": [
+        "assets/bbtb-mercedes-c-w205-2026-04-27/slide1.png",
+        "assets/bbtb-mercedes-c-w205-2026-04-27/slide2.png",
+        "assets/bbtb-mercedes-c-w205-2026-04-27/slide3.png",
+        "assets/bbtb-mercedes-c-w205-2026-04-27/slide4.png",
+        "assets/bbtb-mercedes-c-w205-2026-04-27/slide5.png",
+        "assets/bbtb-mercedes-c-w205-2026-04-27/slide6.png",
+        "assets/bbtb-mercedes-c-w205-2026-04-27/slide7.png"
+      ],
+      "notes": "Behind the Badge - Mercedes C-Class W205 2014-2021",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "bbtb-bmw-3-f30-2026-04-30",
+      "slot_time_sgt": "2026-04-30T19:30",
+      "type": "carousel",
+      "caption_file": "assets/bbtb-bmw-3-f30-2026-04-27/caption.txt",
+      "image_paths": [
+        "assets/bbtb-bmw-3-f30-2026-04-27/slide1.png",
+        "assets/bbtb-bmw-3-f30-2026-04-27/slide2.png",
+        "assets/bbtb-bmw-3-f30-2026-04-27/slide3.png",
+        "assets/bbtb-bmw-3-f30-2026-04-27/slide4.png",
+        "assets/bbtb-bmw-3-f30-2026-04-27/slide5.png",
+        "assets/bbtb-bmw-3-f30-2026-04-27/slide6.png",
+        "assets/bbtb-bmw-3-f30-2026-04-27/slide7.png"
+      ],
+      "notes": "Behind the Badge - BMW 3-Series F30 2012-2019",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "bbtb-toyota-camry-2018-2026-05-01",
+      "slot_time_sgt": "2026-05-01T19:30",
+      "type": "carousel",
+      "caption_file": "assets/bbtb-toyota-camry-2018-2026-04-27/caption.txt",
+      "image_paths": [
+        "assets/bbtb-toyota-camry-2018-2026-04-27/slide1.png",
+        "assets/bbtb-toyota-camry-2018-2026-04-27/slide2.png",
+        "assets/bbtb-toyota-camry-2018-2026-04-27/slide3.png",
+        "assets/bbtb-toyota-camry-2018-2026-04-27/slide4.png",
+        "assets/bbtb-toyota-camry-2018-2026-04-27/slide5.png",
+        "assets/bbtb-toyota-camry-2018-2026-04-27/slide6.png",
+        "assets/bbtb-toyota-camry-2018-2026-04-27/slide7.png"
+      ],
+      "notes": "Behind the Badge - Toyota Camry 2018-2023",
+      "status": "pending",
+      "attempts": 0
     }
   ],
   "posted": [
