@@ -8,6 +8,7 @@
 #   3. fix_article_schema_images   — JSON-LD Article.image inside wp:html
 
 set -u
+set -o pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 LOG_DIR="$HERE/logs"
 mkdir -p "$LOG_DIR"

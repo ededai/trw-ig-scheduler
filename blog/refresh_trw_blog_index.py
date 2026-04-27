@@ -74,6 +74,12 @@ def load_env() -> dict:
     for key in ("WORDPRESS_API_URL", "WORDPRESS_USERNAME", "WORDPRESS_PASSWORD"):
         if not env.get(key) and os.environ.get(key):
             env[key] = os.environ[key]
+    # Strip whitespace/newlines that sneak in via GH secret copy-paste.
+    # WORDPRESS_PASSWORD legitimately contains spaces (WP App Passwords are
+    # space-separated) so only strip leading/trailing whitespace, not internal.
+    for key in list(env.keys()):
+        if isinstance(env[key], str):
+            env[key] = env[key].strip()
     missing = [k for k in ("WORDPRESS_API_URL", "WORDPRESS_USERNAME", "WORDPRESS_PASSWORD") if not env.get(k)]
     if missing:
         sys.stderr.write(f"ERROR: missing WP creds: {missing}. Set in .env or environment.\n")
