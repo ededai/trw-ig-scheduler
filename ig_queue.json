@@ -13,14 +13,14 @@
       "attempts": 0
     },
     {
-      "id": "igs-10-signs-trustworthy-mechanic-singapore-c-d3",
-      "slot_time_sgt": "2026-04-29T20:00",
+      "id": "igs-10-signs-trustworthy-mechanic-singapore-a-d1",
+      "slot_time_sgt": "2026-04-28T15:30",
       "type": "story",
       "caption_file": "assets/igs-10-signs-trustworthy-mechanic-singapore/caption.txt",
       "image_paths": [
-        "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_C.png"
+        "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_A.png"
       ],
-      "notes": "IGS C for blog: 10-signs-trustworthy-mechanic-singapore",
+      "notes": "IGS A for blog: 10-signs-trustworthy-mechanic-singapore — re-queued after 4-27 cron lag",
       "status": "pending",
       "attempts": 0
     },
@@ -57,6 +57,18 @@
         "assets/bbtb-mercedes-c-w205-2026-04-27/slide7.png"
       ],
       "notes": "Behind the Badge - Mercedes C-Class W205 2014-2021",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-10-signs-trustworthy-mechanic-singapore-c-d3",
+      "slot_time_sgt": "2026-04-29T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-10-signs-trustworthy-mechanic-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: 10-signs-trustworthy-mechanic-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -202,19 +214,6 @@
     }
   ],
   "failed": [
-    {
-      "id": "igs-10-signs-trustworthy-mechanic-singapore-a-d1",
-      "slot_time_sgt": "2026-04-27T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-10-signs-trustworthy-mechanic-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: 10-signs-trustworthy-mechanic-singapore",
-      "status": "failed",
-      "attempts": 0,
-      "error": "missed_grace_window"
-    },
     {
       "id": "doreen-review-2026-04-27",
       "slot_time_sgt": "2026-04-27T19:30",
