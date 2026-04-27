@@ -1,21 +1,6 @@
 {
   "pending": [
     {
-      "id": "timing-belt-2026-04-27",
-      "slot_time_sgt": "2026-04-27T12:30",
-      "type": "carousel",
-      "caption_file": "assets/timing-belt-2026-04-25/caption.txt",
-      "image_paths": [
-        "assets/timing-belt-2026-04-25/slide1.png",
-        "assets/timing-belt-2026-04-25/slide2.png",
-        "assets/timing-belt-2026-04-25/slide3.png",
-        "assets/timing-belt-2026-04-25/slide4.png"
-      ],
-      "notes": "Timing Belt repost (was DXd9Z4-HP4s) — rescheduled 4-27 12:30",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-10-signs-trustworthy-mechanic-singapore-a-d1",
       "slot_time_sgt": "2026-04-27T15:30",
       "type": "story",
@@ -253,5 +238,22 @@
       "post_id": "18088699187255760"
     }
   ],
-  "failed": []
+  "failed": [
+    {
+      "id": "timing-belt-2026-04-27",
+      "slot_time_sgt": "2026-04-27T12:30",
+      "type": "carousel",
+      "caption_file": "assets/timing-belt-2026-04-25/caption.txt",
+      "image_paths": [
+        "assets/timing-belt-2026-04-25/slide1.png",
+        "assets/timing-belt-2026-04-25/slide2.png",
+        "assets/timing-belt-2026-04-25/slide3.png",
+        "assets/timing-belt-2026-04-25/slide4.png"
+      ],
+      "notes": "Timing Belt repost (was DXd9Z4-HP4s) — rescheduled 4-27 12:30",
+      "status": "failed",
+      "attempts": 1,
+      "error": "post_instagram_carousel.py succeeded but no post ID found. tail:\nWaiting for carousel container to be ready...\nPublishing carousel...\n\nSUCCESS. Post id: 18169744174413302\nView: https://www.instagram.com/p/18169744174413302/"
+    }
+  ]
 }

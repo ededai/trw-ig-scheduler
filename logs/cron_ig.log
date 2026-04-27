@@ -63,3 +63,10 @@ requests.exceptions.HTTPError: 412 Client Error: Precondition Failed for url: ht
 [2026-04-27 08:05:38 +08] run: no due posts
 [2026-04-27 08:54:27 +08] Posting igs-first-service-B-2026-04-27 (story) — notes: First Car Service blog - Variant B (Question Hook) +10h
 [2026-04-27 08:54:37 +08] OK  igs-first-service-B-2026-04-27 -> 18088699187255760
+[2026-04-27 12:34:55 +08] Posting timing-belt-2026-04-27 (carousel) — notes: Timing Belt repost (was DXd9Z4-HP4s) — rescheduled 4-27 12:30
+[2026-04-27 12:35:26 +08] ERR timing-belt-2026-04-27: post_instagram_carousel.py succeeded but no post ID found. tail:
+Waiting for carousel container to be ready...
+Publishing carousel...
+
+SUCCESS. Post id: 18169744174413302
+View: https://www.instagram.com/p/18169744174413302/
