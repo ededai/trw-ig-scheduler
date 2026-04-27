@@ -188,12 +188,15 @@ def run_story(entry: dict) -> str:
 
 
 def telegram_alert(text: str) -> None:
-    """Best-effort Telegram alert. Silently skips if TG_BOT_TOKEN/TG_CHAT_ID unset."""
+    """Best-effort Telegram alert. Silently skips if TG_BOT_TOKEN/TG_CHAT_ID unset.
+    Always .strip() env values — GH Actions secrets often carry trailing newlines
+    when pasted from a clipboard, which makes urllib reject the URL.
+    """
     import urllib.parse
     import urllib.request
     env = env_or_dotenv()
-    token = env.get("TG_BOT_TOKEN") or os.environ.get("TG_BOT_TOKEN")
-    chat = env.get("TG_CHAT_ID") or os.environ.get("TG_CHAT_ID")
+    token = (env.get("TG_BOT_TOKEN") or os.environ.get("TG_BOT_TOKEN") or "").strip()
+    chat = (env.get("TG_CHAT_ID") or os.environ.get("TG_CHAT_ID") or "").strip()
     if not token or not chat:
         return
     try:
