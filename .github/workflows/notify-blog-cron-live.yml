@@ -1,0 +1,53 @@
+name: Notify - Blog Cron Live
+
+# One-shot Telegram notification: fires on push of this file. Safe to delete
+# after Ed confirms receipt.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/notify-blog-cron-live.yml"
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Send Ed the good news
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID:   ${{ secrets.TG_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os, sys, urllib.request, urllib.parse, json
+          token = (os.environ.get("TG_BOT_TOKEN") or "").strip()
+          chat  = (os.environ.get("TG_CHAT_ID")  or "").strip()
+          if not token or not chat:
+              print("ERROR: TG secret missing"); sys.exit(1)
+          text = (
+              "✅ TRW Blog cloud cron is LIVE.\n\n"
+              "• Run #8 just went green from GH Actions.\n"
+              "• 5-day featured rotation + og:image + schema fix all run daily 00:30 SGT in the cloud.\n"
+              "• Mac can be off — no manual clicks needed.\n\n"
+              "Bugs fixed today:\n"
+              "1. Tee wrapper false-greens → set -o pipefail\n"
+              "2. \\n trailing newline in WP secrets → triple-scrub defense\n"
+              "3. Missing lxml parser → added to pip install\n\n"
+              "Notion ✅ ticked. Codi Daily Brief 08:00 SGT now reads your TRW hub via Notion API."
+          )
+          url = f"https://api.telegram.org/bot{token}/sendMessage"
+          data = urllib.parse.urlencode({"chat_id": chat, "text": text}).encode()
+          req = urllib.request.Request(url, data=data)
+          try:
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  resp = json.load(r)
+              if not resp.get("ok"):
+                  print("Telegram error:", resp); sys.exit(2)
+          except Exception as e:
+              print(f"FAILED: {type(e).__name__}: {e}"); sys.exit(3)
+          print("Notification sent.")
+          PY
