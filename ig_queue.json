@@ -64,18 +64,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-first-service-B-2026-04-27",
-      "slot_time_sgt": "2026-04-27T08:15",
-      "type": "story",
-      "caption_file": "assets/igs-first-service-B-2026-04-26/caption.txt",
-      "image_paths": [
-        "assets/igs-first-service-B-2026-04-26/story.png"
-      ],
-      "notes": "First Car Service blog - Variant B (Question Hook) +10h",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-first-service-C-2026-04-27",
       "slot_time_sgt": "2026-04-27T18:15",
       "type": "story",
@@ -140,6 +128,21 @@
       "posted_url": "18139268947509335",
       "posted_at": "2026-04-26 22:23 SGT",
       "post_id": "18139268947509335"
+    },
+    {
+      "id": "igs-first-service-B-2026-04-27",
+      "slot_time_sgt": "2026-04-27T08:15",
+      "type": "story",
+      "caption_file": "assets/igs-first-service-B-2026-04-26/caption.txt",
+      "image_paths": [
+        "assets/igs-first-service-B-2026-04-26/story.png"
+      ],
+      "notes": "First Car Service blog - Variant B (Question Hook) +10h",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18088699187255760",
+      "posted_at": "2026-04-27 08:54 SGT",
+      "post_id": "18088699187255760"
     }
   ],
   "failed": []
