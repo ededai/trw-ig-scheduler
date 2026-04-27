@@ -14,3 +14,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-04-24 19:30 | **SCHEDULED** Single | MYTH: Check engine = big trouble. | pending | Myth Buster — loose fuel cap |
 | 2026-04-24 21:00 | **SCHEDULED** Single | These guys are really fast and responsible | pending | Real Reviews — Doreen |
 | 2026-04-26 22:15 | Single | First car service IGS - variant A (editorial teaser). | 18139268947509335 | First Car Service blog - Variant A (Editorial Teaser) |
+| 2026-04-27 18:15 | Single | First car service IGS - variant C (quote pull). | 18050376695741530 | First Car Service blog - Variant C (Quote Pull) +20h |
