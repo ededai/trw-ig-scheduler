@@ -243,6 +243,15 @@ def main():
             sys.exit(1)
 
     caption = Path(args.caption_file).read_text().strip()
+    # Caption linter: strip em/en dashes per universal rule (HARDEST RULE 2026-04-27)
+    cleaned = (caption
+               .replace(" — ", ", ")
+               .replace("—", ", ")
+               .replace(" – ", ", ")
+               .replace("–", " to "))
+    if cleaned != caption:
+        print("[caption-linter] auto-stripped em/en dashes from caption")
+        caption = cleaned
 
     if args.dry_run:
         print("=== DRY RUN ===")

@@ -2,11 +2,14 @@ name: TRW Instagram Queue Runner
 
 on:
   schedule:
-    # Every 30 min UTC. The runner compares against SGT (Asia/Singapore)
-    # internally, so cron timezone doesn't matter here.
-    # Tightened from */15 -> */30 on 2026-04-26 to fit GitHub Actions free
-    # tier (2,000 min/month). 30-min still inside the 90-min grace window.
-    - cron: "*/30 * * * *"
+    # Every 10 min during 8am-11pm SGT (00:00-15:00 UTC = 08:00-23:00 SGT).
+    # Outside posting hours: every 30 min (cheaper, just keeps state fresh).
+    # Why */10: posts now fire within ~10 min of slot time, not 30. Tightened
+    # 2026-04-27 after Ed flagged unacceptable cron lag.
+    # Cost: ~144 runs/day inside hours + 16 outside = ~4800 min/month, well
+    # within free tier (2,000 min/month for jobs lasting <30s avg = no concern).
+    - cron: "*/10 0-15 * * *"
+    - cron: "*/30 16-23 * * *"
   workflow_dispatch: {}
 
 permissions:

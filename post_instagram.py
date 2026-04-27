@@ -240,6 +240,18 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Print caption without posting")
     args = parser.parse_args()
 
+    # Caption linter: strip em/en dashes per universal rule (no em-dashes anywhere)
+    if args.caption:
+        original = args.caption
+        cleaned = (args.caption
+                   .replace(" — ", ", ")
+                   .replace("—", ", ")
+                   .replace(" – ", ", ")
+                   .replace("–", " to "))
+        if cleaned != original:
+            print(f"[caption-linter] auto-stripped em/en dashes from caption")
+            args.caption = cleaned
+
     if args.dry_run:
         print("=== DRY RUN ===")
         print("Caption:")

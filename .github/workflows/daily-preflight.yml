@@ -1,0 +1,36 @@
+name: TRW IG Daily Pre-flight + Telegram Heartbeat
+
+# Runs every morning at 06:00 SGT (22:00 UTC the previous day).
+# Verifies the entire publishing chain is healthy and pings Ed on Telegram with:
+#   - today's queued posts (so he knows what to expect)
+#   - yesterday's results (success / failed / skipped)
+#   - any pre-flight failures (repo visibility, asset URL, IG token, TG creds)
+# If any check fails, an explicit FAILURE alert is sent.
+
+on:
+  schedule:
+    - cron: "0 22 * * *"   # 22:00 UTC = 06:00 SGT
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run pre-flight checks
+        env:
+          IG_USER_ID:      ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          TG_BOT_TOKEN:    ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID:      ${{ secrets.TG_CHAT_ID }}
+          GH_REPO_OWNER:   ${{ github.repository_owner }}
+          GH_REPO_NAME:    ${{ github.event.repository.name }}
+        run: python preflight.py
