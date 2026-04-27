@@ -26,6 +26,17 @@ from zoneinfo import ZoneInfo
 SGT = ZoneInfo("Asia/Singapore")
 ROOT = Path(__file__).parent.resolve()
 QUEUE_FILE = ROOT / "ig_queue.json"
+
+# Load .env if present (local Mac dev). On GH Actions, env vars come from secrets.
+ENV_FILE = ROOT / ".env"
+if ENV_FILE.exists():
+    for line in ENV_FILE.read_text().splitlines():
+        line = line.strip()
+        if "=" in line and not line.startswith("#"):
+            k, _, v = line.partition("=")
+            v = v.strip().strip('"').strip("'")
+            os.environ.setdefault(k.strip(), v)
+
 GH_REPO_OWNER = (os.environ.get("GH_REPO_OWNER") or "ededai").strip()
 GH_REPO_NAME = (os.environ.get("GH_REPO_NAME") or "trw-ig-scheduler").strip()
 
