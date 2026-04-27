@@ -20,7 +20,7 @@
       "image_paths": [
         "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_A.png"
       ],
-      "notes": "IGS A for blog: 10-signs-trustworthy-mechanic-singapore — re-queued after 4-27 cron lag",
+      "notes": "IGS A for blog: 10-signs-trustworthy-mechanic-singapore \u2014 re-queued after 4-27 cron lag",
       "status": "pending",
       "attempts": 0
     },
@@ -39,6 +39,18 @@
         "assets/bbtb-honda-vezel-2026-04-27/slide7.png"
       ],
       "notes": "Behind the Badge - Honda Vezel 2014-2021",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "doreen-review-2026-04-29",
+      "slot_time_sgt": "2026-04-29T12:30",
+      "type": "single",
+      "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
+      "image_paths": [
+        "assets/doreen-review-2026-04-25/slide.png"
+      ],
+      "notes": "Real Reviews \u2014 Doreen [reslot from 4-27 19:30 miss]",
       "status": "pending",
       "attempts": 0
     },
@@ -160,7 +172,7 @@
         "assets/engine-lights-2026-04-25/slide4.png",
         "assets/engine-lights-2026-04-25/slide5.png"
       ],
-      "notes": "Warning Light Decoded Post 1 — Engine Lights (rescheduled from 2026-04-25 after TCC miss) [rescheduled 2026-04-26 19:30]",
+      "notes": "Warning Light Decoded Post 1 \u2014 Engine Lights (rescheduled from 2026-04-25 after TCC miss) [rescheduled 2026-04-26 19:30]",
       "status": "posted",
       "attempts": 1,
       "post_id": "18101245102985193",
@@ -214,19 +226,6 @@
     }
   ],
   "failed": [
-    {
-      "id": "doreen-review-2026-04-27",
-      "slot_time_sgt": "2026-04-27T19:30",
-      "type": "single",
-      "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
-      "image_paths": [
-        "assets/doreen-review-2026-04-25/slide.png"
-      ],
-      "notes": "Real Reviews — Doreen — rescheduled 4-27 19:30",
-      "status": "failed",
-      "attempts": 0,
-      "error": "missed_grace_window"
-    },
     {
       "id": "bbtb-toyota-altis-2026-04-27",
       "slot_time_sgt": "2026-04-27T21:00",
