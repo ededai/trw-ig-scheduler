@@ -38,7 +38,10 @@ RUN_LOG = LOG_DIR / "cron_ig.log"
 POST_LOG_MD = ROOT / "ig_post_log.md"
 POST_SINGLE = ROOT / "post_instagram.py"
 POST_CAROUSEL = ROOT / "post_instagram_carousel.py"
-GRACE_MINUTES = 90
+GRACE_MINUTES = 90  # legacy — kept for back-compat in tooling/refs
+MAX_LAG_HOURS = 12  # catch-up window: publish a missed slot up to 12h late
+HEARTBEAT_GAP_MIN = 30  # alert if cron silently dropped runs for this long
+HEARTBEAT_FILE = "logs/last_run.txt"
 
 
 def now_sgt() -> datetime:
@@ -319,7 +322,40 @@ def _queue_feed_companion_igs(parent_entry: dict) -> None:
     log(f"queued companion IGS: {companion_id} for {slot} SGT")
 
 
+def _heartbeat_check_and_stamp() -> None:
+    """Detect when GH Actions cron silently drops scheduled runs.
+    If the gap since the last run exceeds HEARTBEAT_GAP_MIN, alert via Telegram.
+    Stamps current run timestamp on every invocation.
+    """
+    hb = ROOT / HEARTBEAT_FILE
+    now = now_sgt()
+    try:
+        if hb.exists():
+            prev_iso = hb.read_text().strip()
+            if prev_iso:
+                prev = datetime.fromisoformat(prev_iso)
+                gap_min = (now - prev).total_seconds() / 60
+                if gap_min > HEARTBEAT_GAP_MIN:
+                    telegram_alert(
+                        f"⚠️ TRW IG cron LAG: {gap_min:.0f} min since last run\n"
+                        f"prev: {prev.strftime('%Y-%m-%d %H:%M SGT')}\n"
+                        f"now:  {now.strftime('%Y-%m-%d %H:%M SGT')}\n"
+                        f"GH Actions dropped scheduled ticks. Backup cron should "
+                        f"have caught this — check workflow runs."
+                    )
+                    log(f"HEARTBEAT lag {gap_min:.0f} min (prev={prev_iso})")
+    except Exception as e:
+        log(f"WARN heartbeat read failed: {e}")
+    try:
+        hb.parent.mkdir(parents=True, exist_ok=True)
+        hb.write_text(now.isoformat())
+    except Exception as e:
+        log(f"WARN heartbeat write failed: {e}")
+
+
 def cmd_run() -> int:
+    _heartbeat_check_and_stamp()
+
     def work():
         q = load_queue()
         now = now_sgt()
@@ -330,16 +366,25 @@ def cmd_run() -> int:
             if slot > now:
                 keep.append(e)
                 continue
-            if now - slot > timedelta(minutes=GRACE_MINUTES):
+            # New: catch up missed slots up to MAX_LAG_HOURS late instead of
+            # the old 90-min window. GH Actions cron can lag 2-3h during peak
+            # load (observed 2026-04-27: 2h 15min gap dropped igs-10-signs-a).
+            # Better to publish a slot 4h late than skip and have nothing live.
+            lag_hours = (now - slot).total_seconds() / 3600
+            if lag_hours > MAX_LAG_HOURS:
                 e["status"] = "failed"
-                e["error"] = "missed_grace_window"
+                e["error"] = f"missed_max_lag_window ({lag_hours:.1f}h late, max {MAX_LAG_HOURS}h)"
                 q["failed"].append(e)
-                log(f"SKIP {e['id']} — past {GRACE_MINUTES}-min grace window")
+                log(f"SKIP {e['id']} — {lag_hours:.1f}h past slot (max lag {MAX_LAG_HOURS}h)")
                 telegram_alert(
                     f"⏰ TRW IG MISSED: {e['id']} ({e['type']})\n"
-                    f"slot: {e['slot_time_sgt']} SGT (past {GRACE_MINUTES}-min grace window)"
+                    f"slot: {e['slot_time_sgt']} SGT — {lag_hours:.1f}h late "
+                    f"(max lag {MAX_LAG_HOURS}h)"
                 )
                 continue
+            if lag_hours > 0.5:
+                # publishing late but within max-lag window
+                log(f"CATCH-UP {e['id']} — {lag_hours:.1f}h late, publishing")
             due.append(e)
         q["pending"] = keep
         save_queue(q)

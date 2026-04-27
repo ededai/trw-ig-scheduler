@@ -1,20 +1,24 @@
-name: TRW Instagram Queue Runner
+name: TRW Instagram Queue Runner (BACKUP)
+
+# Defense-in-depth: GH Actions cron is best-effort and can drop ticks for
+# 30 min to 3+ hours during peak load (observed 2026-04-27: 2h 15min gap
+# dropped igs-10-signs-trustworthy-mechanic-singapore-a-d1). This workflow
+# fires at offset minutes (5,15,25,35,45,55) so if the primary schedule
+# (0,10,20,30,40,50) is dropped, this one catches it.
 
 on:
   schedule:
-    # Every 10 min during 8am-11pm SGT (00:00-15:00 UTC = 08:00-23:00 SGT).
-    # Outside posting hours: every 30 min (cheaper, just keeps state fresh).
-    # Why */10: posts now fire within ~10 min of slot time, not 30. Tightened
-    # 2026-04-27 after Ed flagged unacceptable cron lag.
-    # Cost: ~144 runs/day inside hours + 16 outside = ~4800 min/month, well
-    # within free tier (2,000 min/month for jobs lasting <30s avg = no concern).
-    - cron: "*/10 0-15 * * *"
-    - cron: "*/30 16-23 * * *"
+    # Posting hours (08:00-23:00 SGT = 00:00-15:00 UTC), offset by 5 min
+    - cron: "5-55/10 0-15 * * *"
+    # Outside posting hours, offset
+    - cron: "15,45 16-23 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
+# Same concurrency group as the primary — prevents both runners from
+# racing on the queue file simultaneously.
 concurrency:
   group: ig-queue
   cancel-in-progress: false
@@ -50,8 +54,8 @@ jobs:
             git config user.name  "trw-ig-scheduler-bot"
             git config user.email "actions@users.noreply.github.com"
             git add ig_queue.json ig_post_log.md logs/ 2>/dev/null || true
-            git commit -m "chore: queue state update [$(date -u +%FT%TZ)]"
-            # Retry push up to 3 times — backup cron may push concurrently
+            git commit -m "chore: queue state update (backup) [$(date -u +%FT%TZ)]"
+            # Retry push up to 3 times — primary cron may push concurrently
             for i in 1 2 3; do
               git pull --rebase && git push && break
               sleep 2
