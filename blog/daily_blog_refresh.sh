@@ -19,13 +19,21 @@ echo "===== $(date -u +'%Y-%m-%dT%H:%M:%SZ') daily_blog_refresh start =====" >> 
 
 cd "$HERE"
 
-echo "--- step 1: refresh_trw_blog_index --apply ---" >> "$LOG"
-"$PY" refresh_trw_blog_index.py --apply >> "$LOG" 2>&1 || echo "step 1 exit=$?" >> "$LOG"
+overall_exit=0
 
-echo "--- step 2: fix_article_featured_images --apply ---" >> "$LOG"
-"$PY" fix_article_featured_images.py --apply >> "$LOG" 2>&1 || echo "step 2 exit=$?" >> "$LOG"
+run_step () {
+    local label="$1"; shift
+    echo "--- $label ---" >> "$LOG"
+    if ! "$@" >> "$LOG" 2>&1; then
+        local rc=$?
+        echo "$label FAILED rc=$rc" >> "$LOG"
+        overall_exit=1
+    fi
+}
 
-echo "--- step 3: fix_article_schema_images --apply ---" >> "$LOG"
-"$PY" fix_article_schema_images.py --apply >> "$LOG" 2>&1 || echo "step 3 exit=$?" >> "$LOG"
+run_step "step 1: refresh_trw_blog_index --apply" "$PY" refresh_trw_blog_index.py --apply
+run_step "step 2: fix_article_featured_images --apply" "$PY" fix_article_featured_images.py --apply
+run_step "step 3: fix_article_schema_images --apply" "$PY" fix_article_schema_images.py --apply
 
-echo "===== $(date -u +'%Y-%m-%dT%H:%M:%SZ') daily_blog_refresh done =====" >> "$LOG"
+echo "===== $(date -u +'%Y-%m-%dT%H:%M:%SZ') daily_blog_refresh done (exit=$overall_exit) =====" >> "$LOG"
+exit $overall_exit
