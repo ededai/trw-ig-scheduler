@@ -6,6 +6,13 @@ on:
     # 5-day featured rotation + og:image drift fix + schema.org image fix.
     - cron: "30 16 * * *"
   workflow_dispatch: {}
+  # Auto-fire on any change to the blog cron itself, so we self-verify on each
+  # workflow/script edit instead of waiting for the next scheduled tick.
+  push:
+    branches: [main]
+    paths:
+      - "blog/**"
+      - ".github/workflows/blog-cron.yml"
 
 permissions:
   contents: write
