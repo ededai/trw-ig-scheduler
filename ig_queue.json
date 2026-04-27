@@ -223,9 +223,7 @@
       "posted_url": "18050376695741530",
       "posted_at": "2026-04-27 19:25 SGT",
       "post_id": "18050376695741530"
-    }
-  ],
-  "failed": [
+    },
     {
       "id": "bbtb-toyota-altis-2026-04-27",
       "slot_time_sgt": "2026-04-27T21:00",
@@ -241,9 +239,13 @@
         "assets/bbtb-toyota-altis-2026-04-27/slide7.png"
       ],
       "notes": "Behind the Badge - Toyota Altis 2013-2018",
-      "status": "failed",
+      "status": "posted",
       "attempts": 1,
-      "error": "post_instagram_carousel.py succeeded but no post ID found. tail:\nWaiting for carousel container to be ready...\nPublishing carousel...\n\nSUCCESS. Post id: 18000056522750625\nView: https://www.instagram.com/p/18000056522750625/"
+      "posted_url": "https://www.instagram.com/p/DXotum5jffC/",
+      "posted_id": "18000056522750625",
+      "posted_at": "2026-04-27 21:06 SGT",
+      "reconcile_note": "verified live via Graph API; verify_post_live() raced the publish"
     }
-  ]
+  ],
+  "failed": []
 }
