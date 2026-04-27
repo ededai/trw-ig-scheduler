@@ -132,7 +132,9 @@
       "attempts": 1,
       "posted_at_sgt": "2026-04-26T17:01:12.644304+08:00",
       "ig_post_id": "18313093261287432",
-      "posted_via": "manual local run after catbox UA + multi-host fix"
+      "posted_via": "manual local run after catbox UA + multi-host fix",
+      "posted_url": "https://www.instagram.com/p/DXls3T9GLIl/",
+      "post_id": "18313093261287432"
     },
     {
       "id": "engine-lights-2026-04-25",
@@ -214,7 +216,8 @@
       "notes": "Timing Belt repost (was DXd9Z4-HP4s) — rescheduled 4-27 12:30",
       "status": "failed",
       "attempts": 1,
-      "error": "post_instagram_carousel.py succeeded but no post ID found. tail:\nWaiting for carousel container to be ready...\nPublishing carousel...\n\nSUCCESS. Post id: 18169744174413302\nView: https://www.instagram.com/p/18169744174413302/"
+      "error": "Carousel script reported SUCCESS with id 18169744174413302, but Graph API confirms this ID does not exist on the IG account (last live media is 18101245102985193 from 2026-04-26 21:00 SGT). Publish silently failed.",
+      "verified_missing_at": "2026-04-27T20:30+08:00"
     },
     {
       "id": "igs-10-signs-trustworthy-mechanic-singapore-a-d1",

@@ -23,6 +23,8 @@ import json
 import os
 import subprocess
 import sys
+import urllib.error
+import urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -115,6 +117,30 @@ def append_post_log(entry: dict, permalink: str) -> None:
         f.write(row + "\n")
 
 
+def verify_post_live(post_id: str) -> bool:
+    """Confirm a published media_id actually exists on the IG account.
+    Guards against the silent-fail mode where /media_publish returns an
+    id but the post never goes live (observed 2026-04-27 timing-belt).
+    Returns True if Graph API confirms the post; False otherwise.
+    """
+    try:
+        env = env_or_dotenv()
+        token = (env.get("IG_ACCESS_TOKEN") or os.environ.get("IG_ACCESS_TOKEN") or "").strip()
+        if not token:
+            return True  # can't verify without token; don't block
+        url = f"https://graph.facebook.com/v21.0/{post_id}?fields=id&access_token={token}"
+        urllib.request.urlopen(url, timeout=15).read()
+        return True
+    except urllib.error.HTTPError as e:
+        if e.code == 400:
+            return False
+        log(f"WARN: verify_post_live HTTP {e.code} for {post_id}: {e}")
+        return True  # non-400 errors are likely transient; don't fail-loud
+    except Exception as e:
+        log(f"WARN: verify_post_live error for {post_id}: {e}")
+        return True
+
+
 def fetch_permalink(post_id: str) -> str:
     try:
         import urllib.parse
@@ -161,10 +187,13 @@ def run_carousel(entry: dict) -> str:
     if res.returncode != 0:
         raise RuntimeError(f"post_instagram_carousel.py failed: {res.stderr or res.stdout}")
     for line in res.stdout.splitlines():
-        if "published" in line.lower() and "ID:" in line:
-            return line.split("ID:", 1)[1].strip()
-        if line.startswith("SUCCESS! Carousel published. ID: "):
-            return line.split("ID: ", 1)[1].strip()
+        stripped = line.strip()
+        if stripped.startswith("SUCCESS. Post id: "):
+            return stripped.split("Post id: ", 1)[1].strip()
+        if stripped.startswith("SUCCESS! Carousel published. ID: "):
+            return stripped.split("ID: ", 1)[1].strip()
+        if "published" in stripped.lower() and "ID:" in stripped:
+            return stripped.split("ID:", 1)[1].strip()
     tail = "\n".join(res.stdout.splitlines()[-5:])
     raise RuntimeError(f"post_instagram_carousel.py succeeded but no post ID found. tail:\n{tail}")
 
@@ -218,6 +247,15 @@ def process_entry(entry: dict) -> dict:
             post_id = run_story(entry)
         else:
             raise ValueError(f"unknown type: {entry['type']}")
+        # Verify the media_id actually exists on the account.
+        # /media_publish has been observed to return an id for a post that never
+        # went live (silent-fail mode, 2026-04-27). Stories are excluded — Graph
+        # API can't fetch their permalink with the standard scope.
+        if entry["type"] != "story" and not verify_post_live(post_id):
+            raise RuntimeError(
+                f"Publish reported id={post_id} but Graph API says it does not exist. "
+                f"Post is NOT live. Likely silent fail — re-queue and investigate."
+            )
         # Stories don't have a public permalink via Graph API; skip fetch
         permalink = "" if entry["type"] == "story" else fetch_permalink(post_id)
         entry["status"] = "posted"
