@@ -75,3 +75,11 @@ View: https://www.instagram.com/p/18169744174413302/
 [2026-04-27 17:34:19 +08] run: no due posts
 [2026-04-27 19:25:29 +08] Posting igs-first-service-C-2026-04-27 (story) — notes: First Car Service blog - Variant C (Quote Pull) +20h
 [2026-04-27 19:25:44 +08] OK  igs-first-service-C-2026-04-27 -> 18050376695741530
+[2026-04-27 21:05:31 +08] SKIP doreen-review-2026-04-27 — past 90-min grace window
+[2026-04-27 21:05:31 +08] Posting bbtb-toyota-altis-2026-04-27 (carousel) — notes: Behind the Badge - Toyota Altis 2013-2018
+[2026-04-27 21:06:04 +08] ERR bbtb-toyota-altis-2026-04-27: post_instagram_carousel.py succeeded but no post ID found. tail:
+Waiting for carousel container to be ready...
+Publishing carousel...
+
+SUCCESS. Post id: 18000056522750625
+View: https://www.instagram.com/p/18000056522750625/

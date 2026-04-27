@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "doreen-review-2026-04-27",
-      "slot_time_sgt": "2026-04-27T19:30",
-      "type": "single",
-      "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
-      "image_paths": [
-        "assets/doreen-review-2026-04-25/slide.png"
-      ],
-      "notes": "Real Reviews — Doreen — rescheduled 4-27 19:30",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-10-signs-trustworthy-mechanic-singapore-b-d2",
       "slot_time_sgt": "2026-04-28T11:00",
       "type": "story",
@@ -33,24 +21,6 @@
         "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: 10-signs-trustworthy-mechanic-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "bbtb-toyota-altis-2026-04-27",
-      "slot_time_sgt": "2026-04-27T21:00",
-      "type": "carousel",
-      "caption_file": "assets/bbtb-toyota-altis-2026-04-27/caption.txt",
-      "image_paths": [
-        "assets/bbtb-toyota-altis-2026-04-27/slide1.png",
-        "assets/bbtb-toyota-altis-2026-04-27/slide2.png",
-        "assets/bbtb-toyota-altis-2026-04-27/slide3.png",
-        "assets/bbtb-toyota-altis-2026-04-27/slide4.png",
-        "assets/bbtb-toyota-altis-2026-04-27/slide5.png",
-        "assets/bbtb-toyota-altis-2026-04-27/slide6.png",
-        "assets/bbtb-toyota-altis-2026-04-27/slide7.png"
-      ],
-      "notes": "Behind the Badge - Toyota Altis 2013-2018",
       "status": "pending",
       "attempts": 0
     },
@@ -258,6 +228,38 @@
       "status": "failed",
       "attempts": 0,
       "error": "missed_grace_window"
+    },
+    {
+      "id": "doreen-review-2026-04-27",
+      "slot_time_sgt": "2026-04-27T19:30",
+      "type": "single",
+      "caption_file": "assets/doreen-review-2026-04-25/caption.txt",
+      "image_paths": [
+        "assets/doreen-review-2026-04-25/slide.png"
+      ],
+      "notes": "Real Reviews — Doreen — rescheduled 4-27 19:30",
+      "status": "failed",
+      "attempts": 0,
+      "error": "missed_grace_window"
+    },
+    {
+      "id": "bbtb-toyota-altis-2026-04-27",
+      "slot_time_sgt": "2026-04-27T21:00",
+      "type": "carousel",
+      "caption_file": "assets/bbtb-toyota-altis-2026-04-27/caption.txt",
+      "image_paths": [
+        "assets/bbtb-toyota-altis-2026-04-27/slide1.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide2.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide3.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide4.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide5.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide6.png",
+        "assets/bbtb-toyota-altis-2026-04-27/slide7.png"
+      ],
+      "notes": "Behind the Badge - Toyota Altis 2013-2018",
+      "status": "failed",
+      "attempts": 1,
+      "error": "post_instagram_carousel.py succeeded but no post ID found. tail:\nWaiting for carousel container to be ready...\nPublishing carousel...\n\nSUCCESS. Post id: 18000056522750625\nView: https://www.instagram.com/p/18000056522750625/"
     }
   ]
 }
