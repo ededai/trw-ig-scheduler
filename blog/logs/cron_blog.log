@@ -10,3 +10,120 @@ step 2 exit=1
 ERROR: missing WP creds: ['WORDPRESS_API_URL', 'WORDPRESS_USERNAME', 'WORDPRESS_PASSWORD']. Set in .env or environment.
 step 3 exit=1
 ===== 2026-04-26T17:08:50Z daily_blog_refresh done =====
+
+===== 2026-04-27T03:55:54Z daily_blog_refresh start =====
+--- step 1: refresh_trw_blog_index --apply ---
+Traceback (most recent call last):
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 598, in <module>
+    main()
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 592, in main
+    sys.exit(run("apply"))
+             ^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 481, in run
+    page = fetch_blog_page_raw(env, page_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 122, in fetch_blog_page_raw
+    with request.urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 1317, in do_open
+    h = http_class(host, timeout=req.timeout, **http_conn_args)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 1450, in __init__
+    super(HTTPSConnection, self).__init__(host, port, timeout,
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 885, in __init__
+    self._validate_host(self.host)
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 1276, in _validate_host
+    raise InvalidURL(f"URL can't contain control characters. {host!r} "
+http.client.InvalidURL: URL can't contain control characters. 'therightworkshop.com\n' (found at least '\n')
+--- step 2: fix_article_featured_images --apply ---
+Traceback (most recent call last):
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_featured_images.py", line 226, in <module>
+    main()
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_featured_images.py", line 222, in main
+    sys.exit(run("check" if args.check else "apply"))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_featured_images.py", line 112, in run
+    page = fetch_blog_page_raw(env, page_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 122, in fetch_blog_page_raw
+    with request.urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 1317, in do_open
+    h = http_class(host, timeout=req.timeout, **http_conn_args)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 1450, in __init__
+    super(HTTPSConnection, self).__init__(host, port, timeout,
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 885, in __init__
+    self._validate_host(self.host)
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 1276, in _validate_host
+    raise InvalidURL(f"URL can't contain control characters. {host!r} "
+http.client.InvalidURL: URL can't contain control characters. 'therightworkshop.com\n' (found at least '\n')
+--- step 3: fix_article_schema_images --apply ---
+Traceback (most recent call last):
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_schema_images.py", line 241, in <module>
+    main()
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_schema_images.py", line 237, in main
+    sys.exit(run("check" if args.check else "apply"))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_schema_images.py", line 145, in run
+    page = fetch_blog_page_raw(env, page_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 122, in fetch_blog_page_raw
+    with request.urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/urllib/request.py", line 1317, in do_open
+    h = http_class(host, timeout=req.timeout, **http_conn_args)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 1450, in __init__
+    super(HTTPSConnection, self).__init__(host, port, timeout,
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 885, in __init__
+    self._validate_host(self.host)
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/http/client.py", line 1276, in _validate_host
+    raise InvalidURL(f"URL can't contain control characters. {host!r} "
+http.client.InvalidURL: URL can't contain control characters. 'therightworkshop.com\n' (found at least '\n')
+===== 2026-04-27T03:55:55Z daily_blog_refresh done (exit=0) =====
