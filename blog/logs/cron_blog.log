@@ -172,3 +172,51 @@ Traceback (most recent call last):
 bs4.exceptions.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
 step 3: fix_article_schema_images --apply FAILED rc=1
 ===== 2026-04-27T04:15:35Z daily_blog_refresh done (exit=1) =====
+
+===== 2026-04-27T05:41:27Z daily_blog_refresh start =====
+--- step 1: refresh_trw_blog_index --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+Traceback (most recent call last):
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 620, in <module>
+    main()
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 614, in main
+    sys.exit(run("apply"))
+             ^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 510, in run
+    soup = BeautifulSoup(inner, "lxml")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/bs4/__init__.py", line 366, in __init__
+    raise FeatureNotFound(
+bs4.exceptions.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
+step 1: refresh_trw_blog_index --apply FAILED rc=1
+--- step 2: fix_article_featured_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+Traceback (most recent call last):
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_featured_images.py", line 226, in <module>
+    main()
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_featured_images.py", line 222, in main
+    sys.exit(run("check" if args.check else "apply"))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_featured_images.py", line 115, in run
+    soup = BeautifulSoup(inner, "lxml")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/bs4/__init__.py", line 366, in __init__
+    raise FeatureNotFound(
+bs4.exceptions.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
+step 2: fix_article_featured_images --apply FAILED rc=1
+--- step 3: fix_article_schema_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+Traceback (most recent call last):
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_schema_images.py", line 241, in <module>
+    main()
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_schema_images.py", line 237, in main
+    sys.exit(run("check" if args.check else "apply"))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/fix_article_schema_images.py", line 147, in run
+    soup = BeautifulSoup(inner, "lxml")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/bs4/__init__.py", line 366, in __init__
+    raise FeatureNotFound(
+bs4.exceptions.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
+step 3: fix_article_schema_images --apply FAILED rc=1
+===== 2026-04-27T05:41:30Z daily_blog_refresh done (exit=1) =====
