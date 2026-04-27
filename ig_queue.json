@@ -20,7 +20,7 @@
       "image_paths": [
         "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_A.png"
       ],
-      "notes": "IGS A for blog: 10-signs-trustworthy-mechanic-singapore \u2014 re-queued after 4-27 cron lag",
+      "notes": "IGS A for blog: 10-signs-trustworthy-mechanic-singapore — re-queued after 4-27 cron lag",
       "status": "pending",
       "attempts": 0
     },
@@ -50,7 +50,7 @@
       "image_paths": [
         "assets/doreen-review-2026-04-25/slide.png"
       ],
-      "notes": "Real Reviews \u2014 Doreen [reslot from 4-27 19:30 miss]",
+      "notes": "Real Reviews — Doreen [reslot from 4-27 19:30 miss]",
       "status": "pending",
       "attempts": 0
     },
@@ -172,7 +172,7 @@
         "assets/engine-lights-2026-04-25/slide4.png",
         "assets/engine-lights-2026-04-25/slide5.png"
       ],
-      "notes": "Warning Light Decoded Post 1 \u2014 Engine Lights (rescheduled from 2026-04-25 after TCC miss) [rescheduled 2026-04-26 19:30]",
+      "notes": "Warning Light Decoded Post 1 — Engine Lights (rescheduled from 2026-04-25 after TCC miss) [rescheduled 2026-04-26 19:30]",
       "status": "posted",
       "attempts": 1,
       "post_id": "18101245102985193",
