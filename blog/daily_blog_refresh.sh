@@ -23,10 +23,10 @@ overall_exit=0
 
 run_step () {
     local label="$1"; shift
-    echo "--- $label ---" >> "$LOG"
-    if ! "$@" >> "$LOG" 2>&1; then
-        local rc=$?
-        echo "$label FAILED rc=$rc" >> "$LOG"
+    echo "--- $label ---" | tee -a "$LOG"
+    if ! "$@" 2>&1 | tee -a "$LOG"; then
+        local rc=${PIPESTATUS[0]}
+        echo "$label FAILED rc=$rc" | tee -a "$LOG"
         overall_exit=1
     fi
 }
