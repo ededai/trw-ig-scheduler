@@ -143,6 +143,72 @@
       "notes": "Driver's Manual — Tyre wear patterns",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "brake-fluid-2026-04-28",
+      "slot_time_sgt": "2026-04-28T21:00",
+      "type": "carousel",
+      "caption_file": "assets/brake-fluid-2026-04-28/caption.txt",
+      "image_paths": [
+        "assets/brake-fluid-2026-04-28/slide1.png",
+        "assets/brake-fluid-2026-04-28/slide2.png",
+        "assets/brake-fluid-2026-04-28/slide3.png",
+        "assets/brake-fluid-2026-04-28/slide4.png",
+        "assets/brake-fluid-2026-04-28/slide5.png",
+        "assets/brake-fluid-2026-04-28/slide6.png",
+        "assets/brake-fluid-2026-04-28/slide7.png"
+      ],
+      "notes": "Cost of Waiting — Brake fluid moisture",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "warning-light-battery-2026-04-29",
+      "slot_time_sgt": "2026-04-29T21:00",
+      "type": "carousel",
+      "caption_file": "assets/warning-light-battery-2026-04-29/caption.txt",
+      "image_paths": [
+        "assets/warning-light-battery-2026-04-29/slide1.png",
+        "assets/warning-light-battery-2026-04-29/slide2.png",
+        "assets/warning-light-battery-2026-04-29/slide3.png",
+        "assets/warning-light-battery-2026-04-29/slide4.png",
+        "assets/warning-light-battery-2026-04-29/slide5.png",
+        "assets/warning-light-battery-2026-04-29/slide6.png",
+        "assets/warning-light-battery-2026-04-29/slide7.png"
+      ],
+      "notes": "Warning Light Decoded — Battery + charging",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "pre-purchase-checks-2026-04-30",
+      "slot_time_sgt": "2026-04-30T12:30",
+      "type": "carousel",
+      "caption_file": "assets/pre-purchase-checks-2026-04-30/caption.txt",
+      "image_paths": [
+        "assets/pre-purchase-checks-2026-04-30/slide1.png",
+        "assets/pre-purchase-checks-2026-04-30/slide2.png",
+        "assets/pre-purchase-checks-2026-04-30/slide3.png",
+        "assets/pre-purchase-checks-2026-04-30/slide4.png",
+        "assets/pre-purchase-checks-2026-04-30/slide5.png",
+        "assets/pre-purchase-checks-2026-04-30/slide6.png",
+        "assets/pre-purchase-checks-2026-04-30/slide7.png"
+      ],
+      "notes": "Driver's Manual — Pre-purchase checks",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "leon-yeong-review-2026-04-30",
+      "slot_time_sgt": "2026-04-30T21:00",
+      "type": "single",
+      "caption_file": "assets/leon-yeong-review-2026-04-30/caption.txt",
+      "image_paths": [
+        "assets/leon-yeong-review-2026-04-30/slide.png"
+      ],
+      "notes": "Real Reviews — Leon Yeong (BMW 116i)",
+      "status": "pending",
+      "attempts": 0
     }
   ],
   "posted": [
