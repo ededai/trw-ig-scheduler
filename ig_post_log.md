@@ -19,3 +19,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-04-28 12:30 | Carousel | Your tyres are talking. Most drivers never listen. | https://www.instagram.com/p/DXqj_N9FSJo/ | Driver's Manual — Tyre wear patterns |
 | 2026-04-28 14:29 | Single | Your tyres are talking. Most drivers never listen. | 18102584647777908 | Companion IGS for feed post tyre-wear-2026-04-28 |
 | 2026-04-28 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18572482984055197 | IGS A for blog: 10-signs-trustworthy-mechanic-singapore — re-queued after 4-27 cron lag |
+| 2026-04-28 19:30 | Carousel | 2014-2021 Honda Vezel / HR-V. The everywhere SUV. | https://www.instagram.com/p/DXrMytDiaTA/ | Behind the Badge - Honda Vezel 2014-2021 |
