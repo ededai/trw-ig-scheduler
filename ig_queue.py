@@ -267,7 +267,13 @@ def process_entry(entry: dict) -> dict:
         entry["post_id"] = post_id
         append_post_log(entry, permalink or post_id)
         log(f"OK  {entry['id']} -> {permalink or post_id}")
-        telegram_alert(f"✅ TRW IG posted: {entry['id']} ({entry['type']})\n{permalink or post_id}")
+        type_word = {"single":"photo post","carousel":"carousel post","story":"story"}.get(entry["type"], entry["type"])
+        nice_link = permalink or f"https://www.instagram.com/p/{post_id}"
+        telegram_alert(
+            f"✅ Posted live on Instagram\n"
+            f"{type_word}: {entry['id']}\n"
+            f"{nice_link}"
+        )
         # Auto-queue companion IGS for feed posts (10 min after publish)
         if entry["type"] in ("single", "carousel") and not entry.get("is_companion"):
             try:
@@ -280,11 +286,14 @@ def process_entry(entry: dict) -> dict:
         entry["error"] = str(e)[:500]
         entry["attempts"] = entry.get("attempts", 0) + 1
         log(f"ERR {entry['id']}: {e}")
+        type_word = {"single":"photo post","carousel":"carousel post","story":"story"}.get(entry["type"], entry["type"])
         telegram_alert(
-            f"❌ TRW IG FAILED: {entry['id']} ({entry['type']})\n"
-            f"slot: {entry.get('slot_time_sgt','?')} SGT\n"
-            f"attempts: {entry['attempts']}\n"
-            f"error: {str(e)[:400]}"
+            f"🛑 Post failed to publish\n"
+            f"{type_word}: {entry['id']}\n"
+            f"scheduled: {entry.get('slot_time_sgt','?')} SGT\n"
+            f"attempts so far: {entry['attempts']}\n\n"
+            f"What happened: {str(e)[:300]}\n\n"
+            f"Action: I'll re-queue and try again, or it'll need a manual reslot."
         )
         return entry
 
@@ -336,14 +345,10 @@ def _heartbeat_check_and_stamp() -> None:
                 prev = datetime.fromisoformat(prev_iso)
                 gap_min = (now - prev).total_seconds() / 60
                 if gap_min > HEARTBEAT_GAP_MIN:
-                    telegram_alert(
-                        f"⚠️ TRW IG cron LAG: {gap_min:.0f} min since last run\n"
-                        f"prev: {prev.strftime('%Y-%m-%d %H:%M SGT')}\n"
-                        f"now:  {now.strftime('%Y-%m-%d %H:%M SGT')}\n"
-                        f"GH Actions dropped scheduled ticks. Backup cron should "
-                        f"have caught this — check workflow runs."
-                    )
-                    log(f"HEARTBEAT lag {gap_min:.0f} min (prev={prev_iso})")
+                    # File-log only. No Telegram alert when no posts are due —
+                    # cron lag without a missed slot is not actionable for Ed.
+                    # The MAX_LAG_HOURS catch-up handles real misses.
+                    log(f"HEARTBEAT lag {gap_min:.0f} min (prev={prev_iso}) — file-log only, no telegram")
     except Exception as e:
         log(f"WARN heartbeat read failed: {e}")
     try:
@@ -376,10 +381,13 @@ def cmd_run() -> int:
                 e["error"] = f"missed_max_lag_window ({lag_hours:.1f}h late, max {MAX_LAG_HOURS}h)"
                 q["failed"].append(e)
                 log(f"SKIP {e['id']} — {lag_hours:.1f}h past slot (max lag {MAX_LAG_HOURS}h)")
+                type_word = {"single":"photo post","carousel":"carousel post","story":"story"}.get(e["type"], e["type"])
                 telegram_alert(
-                    f"⏰ TRW IG MISSED: {e['id']} ({e['type']})\n"
-                    f"slot: {e['slot_time_sgt']} SGT — {lag_hours:.1f}h late "
-                    f"(max lag {MAX_LAG_HOURS}h)"
+                    f"❌ Post window missed\n"
+                    f"{type_word}: {e['id']}\n"
+                    f"scheduled: {e['slot_time_sgt']} SGT\n"
+                    f"now: {lag_hours:.1f} hours past the slot\n\n"
+                    f"This post will not auto-publish anymore. It needs a new time slot."
                 )
                 continue
             if lag_hours > 0.5:
