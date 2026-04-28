@@ -209,6 +209,234 @@
       "notes": "Real Reviews — Leon Yeong (BMW 116i)",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "engine-oil-dipstick-2026-05-01",
+      "slot_time_sgt": "2026-05-01T12:30",
+      "type": "carousel",
+      "caption_file": "assets/engine-oil-dipstick-2026-05-01/caption.txt",
+      "image_paths": [
+        "assets/engine-oil-dipstick-2026-05-01/slide1.png",
+        "assets/engine-oil-dipstick-2026-05-01/slide2.png",
+        "assets/engine-oil-dipstick-2026-05-01/slide3.png",
+        "assets/engine-oil-dipstick-2026-05-01/slide4.png",
+        "assets/engine-oil-dipstick-2026-05-01/slide5.png",
+        "assets/engine-oil-dipstick-2026-05-01/slide6.png",
+        "assets/engine-oil-dipstick-2026-05-01/slide7.png"
+      ],
+      "notes": "Driver's Manual — Engine oil dipstick",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "oil-change-2026-05-01",
+      "slot_time_sgt": "2026-05-01T21:00",
+      "type": "carousel",
+      "caption_file": "assets/oil-change-2026-05-01/caption.txt",
+      "image_paths": [
+        "assets/oil-change-2026-05-01/slide1.png",
+        "assets/oil-change-2026-05-01/slide2.png",
+        "assets/oil-change-2026-05-01/slide3.png",
+        "assets/oil-change-2026-05-01/slide4.png",
+        "assets/oil-change-2026-05-01/slide5.png",
+        "assets/oil-change-2026-05-01/slide6.png",
+        "assets/oil-change-2026-05-01/slide7.png"
+      ],
+      "notes": "Cost of Waiting — Engine oil change",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "johnathon-low-review-2026-05-02",
+      "slot_time_sgt": "2026-05-02T12:30",
+      "type": "single",
+      "caption_file": "assets/johnathon-low-review-2026-05-02/caption.txt",
+      "image_paths": [
+        "assets/johnathon-low-review-2026-05-02/slide.png"
+      ],
+      "notes": "Real Reviews — Johnathon Low (BMW + Merc)",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "warning-light-coolant-2026-05-02",
+      "slot_time_sgt": "2026-05-02T21:00",
+      "type": "carousel",
+      "caption_file": "assets/warning-light-coolant-2026-05-02/caption.txt",
+      "image_paths": [
+        "assets/warning-light-coolant-2026-05-02/slide1.png",
+        "assets/warning-light-coolant-2026-05-02/slide2.png",
+        "assets/warning-light-coolant-2026-05-02/slide3.png",
+        "assets/warning-light-coolant-2026-05-02/slide4.png",
+        "assets/warning-light-coolant-2026-05-02/slide5.png",
+        "assets/warning-light-coolant-2026-05-02/slide6.png",
+        "assets/warning-light-coolant-2026-05-02/slide7.png"
+      ],
+      "notes": "Warning Light Decoded — Coolant + temperature",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "straight-talk-upsells-2026-05-03",
+      "slot_time_sgt": "2026-05-03T12:30",
+      "type": "carousel",
+      "caption_file": "assets/straight-talk-upsells-2026-05-03/caption.txt",
+      "image_paths": [
+        "assets/straight-talk-upsells-2026-05-03/slide1.png",
+        "assets/straight-talk-upsells-2026-05-03/slide2.png",
+        "assets/straight-talk-upsells-2026-05-03/slide3.png",
+        "assets/straight-talk-upsells-2026-05-03/slide4.png",
+        "assets/straight-talk-upsells-2026-05-03/slide5.png",
+        "assets/straight-talk-upsells-2026-05-03/slide6.png",
+        "assets/straight-talk-upsells-2026-05-03/slide7.png"
+      ],
+      "notes": "Straight Talk — 4 service upsells",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-how-often-service-car-singapor-2026-04-29-1100",
+      "slot_time_sgt": "2026-04-29T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-how-often-service-car-singapor-2026-04-29-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-how-often-service-car-singapor-2026-04-29-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:how-often-service-car-singapore variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-driving-singapore-rain-wet-wea-2026-04-29-1530",
+      "slot_time_sgt": "2026-04-29T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-04-29-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-04-29-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-how-often-service-car-singapor-2026-04-29-1530",
+      "slot_time_sgt": "2026-04-29T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-how-often-service-car-singapor-2026-04-29-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-how-often-service-car-singapor-2026-04-29-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:how-often-service-car-singapore variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1100",
+      "slot_time_sgt": "2026-04-30T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:questions-to-ask-before-new-car-workshop-singapore variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-driving-singapore-rain-wet-wea-2026-04-30-1100",
+      "slot_time_sgt": "2026-04-30T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-04-30-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-04-30-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1530",
+      "slot_time_sgt": "2026-04-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:questions-to-ask-before-new-car-workshop-singapore variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-1530",
+      "slot_time_sgt": "2026-04-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:how-to-read-workshop-quote-singapore variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000",
+      "slot_time_sgt": "2026-04-30T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:how-to-read-workshop-quote-singapore variant:C",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-tyres-battery-singapore-checks-2026-04-30-2000",
+      "slot_time_sgt": "2026-04-30T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-tyres-battery-singapore-checks-2026-04-30-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-tyres-battery-singapore-checks-2026-04-30-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:C",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100",
+      "slot_time_sgt": "2026-05-01T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-what-to-look-for-car-workshop--2026-05-01-1100",
+      "slot_time_sgt": "2026-05-01T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-01-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-01-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530",
+      "slot_time_sgt": "2026-05-01T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A",
+      "status": "pending",
+      "attempts": 0
     }
   ],
   "posted": [
