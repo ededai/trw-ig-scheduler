@@ -16,3 +16,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-04-26 22:15 | Single | First car service IGS - variant A (editorial teaser). | 18139268947509335 | First Car Service blog - Variant A (Editorial Teaser) |
 | 2026-04-27 08:15 | Single | First car service IGS - variant B (question hook). | 18088699187255760 | First Car Service blog - Variant B (Question Hook) +10h |
 | 2026-04-28 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18098545973033519 | IGS B for blog: 10-signs-trustworthy-mechanic-singapore |
+| 2026-04-28 12:30 | Carousel | Your tyres are talking. Most drivers never listen. | https://www.instagram.com/p/DXqj_N9FSJo/ | Driver's Manual — Tyre wear patterns |

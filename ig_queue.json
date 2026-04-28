@@ -541,6 +541,20 @@
       "notes": "Auto-fill IGS \u2014 blog:block-exemption-order-singapore-car-servicing variant:C",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "tyre-wear-2026-04-28-igs",
+      "slot_time_sgt": "2026-04-28T14:29",
+      "type": "story",
+      "caption_file": "assets/tyre-wear-2026-04-28/caption.txt",
+      "image_paths": [
+        "assets/tyre-wear-2026-04-28/slide1.png"
+      ],
+      "notes": "Companion IGS for feed post tyre-wear-2026-04-28",
+      "status": "pending",
+      "attempts": 0,
+      "is_companion": true,
+      "parent_post_id": "18102966595961970"
     }
   ],
   "posted": [
