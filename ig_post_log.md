@@ -20,3 +20,5 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-04-28 14:29 | Single | Your tyres are talking. Most drivers never listen. | 18102584647777908 | Companion IGS for feed post tyre-wear-2026-04-28 |
 | 2026-04-28 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18572482984055197 | IGS A for blog: 10-signs-trustworthy-mechanic-singapore — re-queued after 4-27 cron lag |
 | 2026-04-28 19:30 | Carousel | 2014-2021 Honda Vezel / HR-V. The everywhere SUV. | https://www.instagram.com/p/DXrMytDiaTA/ | Behind the Badge - Honda Vezel 2014-2021 |
+| 2026-04-28 21:00 | Carousel | $80 today. $1,500 tomorrow. Same fluid. Same car. Different timing. | https://www.instagram.com/p/DXrgKkRkoNA/ | Cost of Waiting — Brake fluid moisture |
+| 2026-04-28 20:26 | Single | 2014-2021 Honda Vezel / HR-V. The everywhere SUV. | 18128369773604501 | Companion IGS for feed post bbtb-honda-vezel-2026-04-28 |
