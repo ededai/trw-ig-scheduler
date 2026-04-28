@@ -1,32 +1,6 @@
 {
   "pending": [
     {
-      "id": "tyre-wear-2026-04-28-igs",
-      "slot_time_sgt": "2026-04-28T14:29",
-      "type": "story",
-      "caption_file": "assets/tyre-wear-2026-04-28/caption.txt",
-      "image_paths": [
-        "assets/tyre-wear-2026-04-28/slide1.png"
-      ],
-      "notes": "Companion IGS for feed post tyre-wear-2026-04-28",
-      "status": "pending",
-      "attempts": 0,
-      "is_companion": true,
-      "parent_post_id": "18102966595961970"
-    },
-    {
-      "id": "igs-10-signs-trustworthy-mechanic-singapore-a-d1",
-      "slot_time_sgt": "2026-04-28T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-10-signs-trustworthy-mechanic-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: 10-signs-trustworthy-mechanic-singapore \u2014 re-queued after 4-27 cron lag",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "bbtb-honda-vezel-2026-04-28",
       "slot_time_sgt": "2026-04-28T19:30",
       "type": "carousel",
@@ -58,7 +32,7 @@
         "assets/brake-fluid-2026-04-28/slide6.png",
         "assets/brake-fluid-2026-04-28/slide7.png"
       ],
-      "notes": "Cost of Waiting \u2014 Brake fluid moisture",
+      "notes": "Cost of Waiting — Brake fluid moisture",
       "status": "pending",
       "attempts": 0
     },
@@ -70,7 +44,7 @@
       "image_paths": [
         "assets/igs-autofill-how-often-service-car-singapor-2026-04-29-1100/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:how-often-service-car-singapore variant:B",
+      "notes": "Auto-fill IGS — blog:how-often-service-car-singapore variant:B",
       "status": "pending",
       "attempts": 0
     },
@@ -82,7 +56,7 @@
       "image_paths": [
         "assets/doreen-review-2026-04-25/slide.png"
       ],
-      "notes": "Real Reviews \u2014 Doreen [reslot from 4-27 19:30 miss]",
+      "notes": "Real Reviews — Doreen [reslot from 4-27 19:30 miss]",
       "status": "pending",
       "attempts": 0
     },
@@ -94,7 +68,7 @@
       "image_paths": [
         "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-04-29-1530/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:driving-singapore-rain-wet-weather variant:A",
+      "notes": "Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:A",
       "status": "pending",
       "attempts": 0
     },
@@ -142,7 +116,7 @@
         "assets/warning-light-battery-2026-04-29/slide6.png",
         "assets/warning-light-battery-2026-04-29/slide7.png"
       ],
-      "notes": "Warning Light Decoded \u2014 Battery + charging",
+      "notes": "Warning Light Decoded — Battery + charging",
       "status": "pending",
       "attempts": 0
     },
@@ -154,7 +128,7 @@
       "image_paths": [
         "assets/igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1100/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:questions-to-ask-before-new-car-workshop-singapore variant:B",
+      "notes": "Auto-fill IGS — blog:questions-to-ask-before-new-car-workshop-singapore variant:B",
       "status": "pending",
       "attempts": 0
     },
@@ -172,7 +146,7 @@
         "assets/pre-purchase-checks-2026-04-30/slide6.png",
         "assets/pre-purchase-checks-2026-04-30/slide7.png"
       ],
-      "notes": "Driver's Manual \u2014 Pre-purchase checks",
+      "notes": "Driver's Manual — Pre-purchase checks",
       "status": "pending",
       "attempts": 0
     },
@@ -184,7 +158,7 @@
       "image_paths": [
         "assets/igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1530/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:questions-to-ask-before-new-car-workshop-singapore variant:A",
+      "notes": "Auto-fill IGS — blog:questions-to-ask-before-new-car-workshop-singapore variant:A",
       "status": "pending",
       "attempts": 0
     },
@@ -214,7 +188,7 @@
       "image_paths": [
         "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:how-to-read-workshop-quote-singapore variant:C",
+      "notes": "Auto-fill IGS — blog:how-to-read-workshop-quote-singapore variant:C",
       "status": "pending",
       "attempts": 0
     },
@@ -226,7 +200,7 @@
       "image_paths": [
         "assets/leon-yeong-review-2026-04-30/slide.png"
       ],
-      "notes": "Real Reviews \u2014 Leon Yeong (BMW 116i)",
+      "notes": "Real Reviews — Leon Yeong (BMW 116i)",
       "status": "pending",
       "attempts": 0
     },
@@ -238,7 +212,7 @@
       "image_paths": [
         "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:tyres-battery-singapore-checks-guide variant:B",
+      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:B",
       "status": "pending",
       "attempts": 0
     },
@@ -256,7 +230,7 @@
         "assets/engine-oil-dipstick-2026-05-01/slide6.png",
         "assets/engine-oil-dipstick-2026-05-01/slide7.png"
       ],
-      "notes": "Driver's Manual \u2014 Engine oil dipstick",
+      "notes": "Driver's Manual — Engine oil dipstick",
       "status": "pending",
       "attempts": 0
     },
@@ -268,7 +242,7 @@
       "image_paths": [
         "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:what-to-look-for-car-workshop-singapore variant:A",
+      "notes": "Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A",
       "status": "pending",
       "attempts": 0
     },
@@ -304,7 +278,7 @@
         "assets/oil-change-2026-05-01/slide6.png",
         "assets/oil-change-2026-05-01/slide7.png"
       ],
-      "notes": "Cost of Waiting \u2014 Engine oil change",
+      "notes": "Cost of Waiting — Engine oil change",
       "status": "pending",
       "attempts": 0
     },
@@ -316,7 +290,7 @@
       "image_paths": [
         "assets/johnathon-low-review-2026-05-02/slide.png"
       ],
-      "notes": "Real Reviews \u2014 Johnathon Low (BMW + Merc)",
+      "notes": "Real Reviews — Johnathon Low (BMW + Merc)",
       "status": "pending",
       "attempts": 0
     },
@@ -334,7 +308,7 @@
         "assets/warning-light-coolant-2026-05-02/slide6.png",
         "assets/warning-light-coolant-2026-05-02/slide7.png"
       ],
-      "notes": "Warning Light Decoded \u2014 Coolant + temperature",
+      "notes": "Warning Light Decoded — Coolant + temperature",
       "status": "pending",
       "attempts": 0
     },
@@ -352,7 +326,7 @@
         "assets/straight-talk-upsells-2026-05-03/slide6.png",
         "assets/straight-talk-upsells-2026-05-03/slide7.png"
       ],
-      "notes": "Straight Talk \u2014 4 service upsells",
+      "notes": "Straight Talk — 4 service upsells",
       "status": "pending",
       "attempts": 0
     },
@@ -382,7 +356,7 @@
       "image_paths": [
         "assets/igs-autofill-dealer-vs-independent-workshop-2026-05-08-1530/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:dealer-vs-independent-workshop-singapore variant:A",
+      "notes": "Auto-fill IGS — blog:dealer-vs-independent-workshop-singapore variant:A",
       "status": "pending",
       "attempts": 0
     },
@@ -394,7 +368,7 @@
       "image_paths": [
         "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-08-2000/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:brake-pads-rotors-singapore-when-to-change variant:C",
+      "notes": "Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:C",
       "status": "pending",
       "attempts": 0
     },
@@ -406,7 +380,7 @@
       "image_paths": [
         "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-09-1100/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:brake-pads-rotors-singapore-when-to-change variant:B",
+      "notes": "Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:B",
       "status": "pending",
       "attempts": 0
     },
@@ -418,7 +392,7 @@
       "image_paths": [
         "assets/igs-autofill-how-often-service-car-singapor-2026-05-09-1530/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:how-often-service-car-singapore variant:A",
+      "notes": "Auto-fill IGS — blog:how-often-service-car-singapore variant:A",
       "status": "pending",
       "attempts": 0
     },
@@ -430,7 +404,7 @@
       "image_paths": [
         "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-09-2000/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:what-to-look-for-car-workshop-singapore variant:C",
+      "notes": "Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:C",
       "status": "pending",
       "attempts": 0
     },
@@ -442,7 +416,7 @@
       "image_paths": [
         "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-05-10-1100/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:driving-singapore-rain-wet-weather variant:B",
+      "notes": "Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:B",
       "status": "pending",
       "attempts": 0
     },
@@ -454,7 +428,7 @@
       "image_paths": [
         "assets/igs-autofill-first-car-service-singapore-wh-2026-05-10-1530/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:first-car-service-singapore-what-happens variant:A",
+      "notes": "Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:A",
       "status": "pending",
       "attempts": 0
     },
@@ -466,7 +440,7 @@
       "image_paths": [
         "assets/igs-autofill-first-car-service-singapore-wh-2026-05-10-2000/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:first-car-service-singapore-what-happens variant:C",
+      "notes": "Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:C",
       "status": "pending",
       "attempts": 0
     },
@@ -478,7 +452,7 @@
       "image_paths": [
         "assets/igs-autofill-dealer-vs-independent-workshop-2026-05-11-1100/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:dealer-vs-independent-workshop-singapore variant:B",
+      "notes": "Auto-fill IGS — blog:dealer-vs-independent-workshop-singapore variant:B",
       "status": "pending",
       "attempts": 0
     },
@@ -490,7 +464,7 @@
       "image_paths": [
         "assets/igs-autofill-coolant-radiator-care-singapor-2026-05-11-1530/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:coolant-radiator-care-singapore variant:A",
+      "notes": "Auto-fill IGS — blog:coolant-radiator-care-singapore variant:A",
       "status": "pending",
       "attempts": 0
     },
@@ -502,7 +476,7 @@
       "image_paths": [
         "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-11-2000/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:tyres-battery-singapore-checks-guide variant:C",
+      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:C",
       "status": "pending",
       "attempts": 0
     },
@@ -514,7 +488,7 @@
       "image_paths": [
         "assets/igs-autofill-independent-workshop-vs-author-2026-05-12-1100/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:independent-workshop-vs-authorised-service-centre-singapore variant:B",
+      "notes": "Auto-fill IGS — blog:independent-workshop-vs-authorised-service-centre-singapore variant:B",
       "status": "pending",
       "attempts": 0
     },
@@ -526,7 +500,7 @@
       "image_paths": [
         "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:what-to-look-for-car-workshop-singapore variant:A",
+      "notes": "Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A",
       "status": "pending",
       "attempts": 0
     },
@@ -538,7 +512,7 @@
       "image_paths": [
         "assets/igs-autofill-block-exemption-order-singapor-2026-05-12-2000/story.png"
       ],
-      "notes": "Auto-fill IGS \u2014 blog:block-exemption-order-singapore-car-servicing variant:C",
+      "notes": "Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:C",
       "status": "pending",
       "attempts": 0
     }
@@ -576,7 +550,7 @@
         "assets/engine-lights-2026-04-25/slide4.png",
         "assets/engine-lights-2026-04-25/slide5.png"
       ],
-      "notes": "Warning Light Decoded Post 1 \u2014 Engine Lights (rescheduled from 2026-04-25 after TCC miss) [rescheduled 2026-04-26 19:30]",
+      "notes": "Warning Light Decoded Post 1 — Engine Lights (rescheduled from 2026-04-25 after TCC miss) [rescheduled 2026-04-26 19:30]",
       "status": "posted",
       "attempts": 1,
       "post_id": "18101245102985193",
@@ -679,12 +653,44 @@
         "assets/tyre-wear-2026-04-28/slide6.png",
         "assets/tyre-wear-2026-04-28/slide7.png"
       ],
-      "notes": "Driver's Manual \u2014 Tyre wear patterns",
+      "notes": "Driver's Manual — Tyre wear patterns",
       "status": "posted",
       "attempts": 0,
       "posted_url": "https://www.instagram.com/p/DXqj_N9FSJo/",
       "posted_at": "2026-04-28 14:19 SGT",
       "post_id": "18102966595961970"
+    },
+    {
+      "id": "tyre-wear-2026-04-28-igs",
+      "slot_time_sgt": "2026-04-28T14:29",
+      "type": "story",
+      "caption_file": "assets/tyre-wear-2026-04-28/caption.txt",
+      "image_paths": [
+        "assets/tyre-wear-2026-04-28/slide1.png"
+      ],
+      "notes": "Companion IGS for feed post tyre-wear-2026-04-28",
+      "status": "posted",
+      "attempts": 0,
+      "is_companion": true,
+      "parent_post_id": "18102966595961970",
+      "posted_url": "18102584647777908",
+      "posted_at": "2026-04-28 16:41 SGT",
+      "post_id": "18102584647777908"
+    },
+    {
+      "id": "igs-10-signs-trustworthy-mechanic-singapore-a-d1",
+      "slot_time_sgt": "2026-04-28T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-10-signs-trustworthy-mechanic-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: 10-signs-trustworthy-mechanic-singapore — re-queued after 4-27 cron lag",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18572482984055197",
+      "posted_at": "2026-04-28 16:41 SGT",
+      "post_id": "18572482984055197"
     }
   ],
   "failed": []

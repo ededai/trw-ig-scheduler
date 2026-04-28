@@ -117,3 +117,10 @@ View: https://www.instagram.com/p/18000056522750625/
 [2026-04-28 14:19:26 +08] OK  tyre-wear-2026-04-28 -> https://www.instagram.com/p/DXqj_N9FSJo/
 [2026-04-28 14:19:27 +08] queued companion IGS: tyre-wear-2026-04-28-igs for 2026-04-28T14:29 SGT
 [2026-04-28 14:19:56 +08] run: no due posts
+[2026-04-28 16:41:17 +08] HEARTBEAT lag 141 min (prev=2026-04-28T14:19:56.749704+08:00) — file-log only, no telegram
+[2026-04-28 16:41:17 +08] CATCH-UP tyre-wear-2026-04-28-igs — 2.2h late, publishing
+[2026-04-28 16:41:17 +08] CATCH-UP igs-10-signs-trustworthy-mechanic-singapore-a-d1 — 1.2h late, publishing
+[2026-04-28 16:41:17 +08] Posting tyre-wear-2026-04-28-igs (story) — notes: Companion IGS for feed post tyre-wear-2026-04-28
+[2026-04-28 16:41:25 +08] OK  tyre-wear-2026-04-28-igs -> 18102584647777908
+[2026-04-28 16:41:25 +08] Posting igs-10-signs-trustworthy-mechanic-singapore-a-d1 (story) — notes: IGS A for blog: 10-signs-trustworthy-mechanic-singapore — re-queued after 4-27 cron lag
+[2026-04-28 16:41:37 +08] OK  igs-10-signs-trustworthy-mechanic-singapore-a-d1 -> 18572482984055197
