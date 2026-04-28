@@ -137,6 +137,24 @@
       "notes": "Behind the Badge - Honda Civic FC 2016-2021",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "tyre-wear-2026-04-28",
+      "slot_time_sgt": "2026-04-28T12:30",
+      "type": "carousel",
+      "caption_file": "assets/tyre-wear-2026-04-28/caption.txt",
+      "image_paths": [
+        "assets/tyre-wear-2026-04-28/slide1.png",
+        "assets/tyre-wear-2026-04-28/slide2.png",
+        "assets/tyre-wear-2026-04-28/slide3.png",
+        "assets/tyre-wear-2026-04-28/slide4.png",
+        "assets/tyre-wear-2026-04-28/slide5.png",
+        "assets/tyre-wear-2026-04-28/slide6.png",
+        "assets/tyre-wear-2026-04-28/slide7.png"
+      ],
+      "notes": "Driver's Manual — Tyre wear patterns",
+      "status": "pending",
+      "attempts": 0
     }
   ],
   "posted": [
