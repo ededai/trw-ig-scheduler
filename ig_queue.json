@@ -479,20 +479,6 @@
       "notes": "Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:C",
       "status": "pending",
       "attempts": 0
-    },
-    {
-      "id": "brake-fluid-2026-04-28-igs",
-      "slot_time_sgt": "2026-04-28T23:15",
-      "type": "story",
-      "caption_file": "assets/brake-fluid-2026-04-28/caption.txt",
-      "image_paths": [
-        "assets/brake-fluid-2026-04-28/slide1.png"
-      ],
-      "notes": "Companion IGS for feed post brake-fluid-2026-04-28",
-      "status": "pending",
-      "attempts": 0,
-      "is_companion": true,
-      "parent_post_id": "17884876959517119"
     }
   ],
   "posted": [
@@ -728,6 +714,23 @@
       "posted_url": "18128369773604501",
       "posted_at": "2026-04-28 23:05 SGT",
       "post_id": "18128369773604501"
+    },
+    {
+      "id": "brake-fluid-2026-04-28-igs",
+      "slot_time_sgt": "2026-04-28T23:15",
+      "type": "story",
+      "caption_file": "assets/brake-fluid-2026-04-28/caption.txt",
+      "image_paths": [
+        "assets/brake-fluid-2026-04-28/slide1.png"
+      ],
+      "notes": "Companion IGS for feed post brake-fluid-2026-04-28",
+      "status": "posted",
+      "attempts": 0,
+      "is_companion": true,
+      "parent_post_id": "17884876959517119",
+      "posted_url": "17903287683420208",
+      "posted_at": "2026-04-29 00:30 SGT",
+      "post_id": "17903287683420208"
     }
   ],
   "failed": []
