@@ -127,24 +127,6 @@
       "attempts": 0
     },
     {
-      "id": "tyre-wear-2026-04-28",
-      "slot_time_sgt": "2026-04-28T12:30",
-      "type": "carousel",
-      "caption_file": "assets/tyre-wear-2026-04-28/caption.txt",
-      "image_paths": [
-        "assets/tyre-wear-2026-04-28/slide1.png",
-        "assets/tyre-wear-2026-04-28/slide2.png",
-        "assets/tyre-wear-2026-04-28/slide3.png",
-        "assets/tyre-wear-2026-04-28/slide4.png",
-        "assets/tyre-wear-2026-04-28/slide5.png",
-        "assets/tyre-wear-2026-04-28/slide6.png",
-        "assets/tyre-wear-2026-04-28/slide7.png"
-      ],
-      "notes": "Driver's Manual — Tyre wear patterns",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "brake-fluid-2026-04-28",
       "slot_time_sgt": "2026-04-28T21:00",
       "type": "carousel",
@@ -209,6 +191,20 @@
       "notes": "Real Reviews — Leon Yeong (BMW 116i)",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "tyre-wear-2026-04-28-igs",
+      "slot_time_sgt": "2026-04-28T14:29",
+      "type": "story",
+      "caption_file": "assets/tyre-wear-2026-04-28/caption.txt",
+      "image_paths": [
+        "assets/tyre-wear-2026-04-28/slide1.png"
+      ],
+      "notes": "Companion IGS for feed post tyre-wear-2026-04-28",
+      "status": "pending",
+      "attempts": 0,
+      "is_companion": true,
+      "parent_post_id": "18102966595961970"
     }
   ],
   "posted": [
@@ -332,6 +328,27 @@
       "posted_url": "18098545973033519",
       "posted_at": "2026-04-28 11:26 SGT",
       "post_id": "18098545973033519"
+    },
+    {
+      "id": "tyre-wear-2026-04-28",
+      "slot_time_sgt": "2026-04-28T12:30",
+      "type": "carousel",
+      "caption_file": "assets/tyre-wear-2026-04-28/caption.txt",
+      "image_paths": [
+        "assets/tyre-wear-2026-04-28/slide1.png",
+        "assets/tyre-wear-2026-04-28/slide2.png",
+        "assets/tyre-wear-2026-04-28/slide3.png",
+        "assets/tyre-wear-2026-04-28/slide4.png",
+        "assets/tyre-wear-2026-04-28/slide5.png",
+        "assets/tyre-wear-2026-04-28/slide6.png",
+        "assets/tyre-wear-2026-04-28/slide7.png"
+      ],
+      "notes": "Driver's Manual — Tyre wear patterns",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DXqj_N9FSJo/",
+      "posted_at": "2026-04-28 14:19 SGT",
+      "post_id": "18102966595961970"
     }
   ],
   "failed": []
