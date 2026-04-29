@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-10-signs-trustworthy-mechanic-singapore-c-d3",
-      "slot_time_sgt": "2026-04-29T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-10-signs-trustworthy-mechanic-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_C.png"
-      ],
-      "notes": "IGS C for blog: 10-signs-trustworthy-mechanic-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1100",
       "slot_time_sgt": "2026-04-30T11:00",
       "type": "story",
@@ -821,6 +809,21 @@
       "posted_url": "18030846812804943",
       "posted_at": "2026-04-29 16:34 SGT",
       "post_id": "18030846812804943"
+    },
+    {
+      "id": "igs-10-signs-trustworthy-mechanic-singapore-c-d3",
+      "slot_time_sgt": "2026-04-29T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-10-signs-trustworthy-mechanic-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-10-signs-trustworthy-mechanic-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: 10-signs-trustworthy-mechanic-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17886846117373711",
+      "posted_at": "2026-04-29 20:04 SGT",
+      "post_id": "17886846117373711"
     }
   ],
   "failed": [],

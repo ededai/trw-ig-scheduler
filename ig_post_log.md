@@ -25,3 +25,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-04-28 23:15 | Single | $80 today. $1,500 tomorrow. Same fluid. Same car. Different timing. | 17903287683420208 | Companion IGS for feed post brake-fluid-2026-04-28 |
 | 2026-04-29 11:00 | Single | Auto-filled IGS for blog: how-often-service-car-singapore (variant B) | 17947663017137572 | Auto-fill IGS — blog:how-often-service-car-singapore variant:B |
 | 2026-04-29 15:30 | Single | Auto-filled IGS for blog: driving-singapore-rain-wet-weather (variant A) | 18030846812804943 | Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:A |
+| 2026-04-29 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17886846117373711 | IGS C for blog: 10-signs-trustworthy-mechanic-singapore |
