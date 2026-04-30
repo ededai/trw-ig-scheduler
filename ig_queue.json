@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000",
-      "slot_time_sgt": "2026-04-30T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:how-to-read-workshop-quote-singapore variant:C",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100",
       "slot_time_sgt": "2026-05-01T11:00",
       "type": "story",
@@ -918,6 +906,21 @@
       "posted_url": "17923472799316338",
       "posted_at": "2026-04-30 16:37 SGT",
       "post_id": "17923472799316338"
+    },
+    {
+      "id": "igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000",
+      "slot_time_sgt": "2026-04-30T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:how-to-read-workshop-quote-singapore variant:C",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17891643549466394",
+      "posted_at": "2026-04-30 20:00 SGT",
+      "post_id": "17891643549466394"
     }
   ],
   "failed": [],
