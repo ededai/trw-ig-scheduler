@@ -232,3 +232,5 @@ View: https://www.instagram.com/p/18000056522750625/
 [2026-05-01 01:26:32 +08] HEARTBEAT lag 86 min (prev=2026-05-01T00:01:01.745186+08:00) — file-log only, no telegram
 [2026-05-01 01:26:32 +08] run: no due posts
 [2026-05-01 01:46:34 +08] run: no due posts
+[2026-05-01 02:54:23 +08] HEARTBEAT lag 68 min (prev=2026-05-01T01:46:34.349657+08:00) — file-log only, no telegram
+[2026-05-01 02:54:23 +08] run: no due posts
