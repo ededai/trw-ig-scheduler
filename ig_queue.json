@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1530",
-      "slot_time_sgt": "2026-04-30T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1530/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1530/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:questions-to-ask-before-new-car-workshop-singapore variant:A",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-how-to-read-workshop-quote-sin-2026-04-30-2000",
       "slot_time_sgt": "2026-04-30T20:00",
       "type": "story",
@@ -915,6 +903,21 @@
       "posted_url": "17885129334535552",
       "posted_at": "2026-04-30 11:25 SGT",
       "post_id": "17885129334535552"
+    },
+    {
+      "id": "igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1530",
+      "slot_time_sgt": "2026-04-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-questions-to-ask-before-new-ca-2026-04-30-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:questions-to-ask-before-new-car-workshop-singapore variant:A",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17923472799316338",
+      "posted_at": "2026-04-30 16:37 SGT",
+      "post_id": "17923472799316338"
     }
   ],
   "failed": [],
