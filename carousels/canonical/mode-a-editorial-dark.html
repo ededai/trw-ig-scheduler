@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@500;700&family=Fraunces:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:#f5f1ea;
+  --muted:rgba(245,241,234,0.78);
+  --orange:#EF5927;
+  --red:#D32F2F;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { width:1080px; height:1350px; margin:0; padding:0; background:#07070a; font-family:'Inter',system-ui,sans-serif; color:var(--cream); overflow:hidden; }
+.slide { width:1080px; height:1350px; position:relative; overflow:hidden; }
+
+/* PHOTO BG — clean Vezel shot. Lighter overlay (35-40%) at top, fading to 78% at bottom */
+.photo {
+  position:absolute; inset:0;
+  background-image:url('vezel-clean.png');
+  background-size:cover; background-position:center 40%;
+  filter: saturate(1.05) contrast(1.05);
+}
+.overlay {
+  position:absolute; inset:0;
+  background: linear-gradient(180deg,
+    rgba(7,7,10,0.35) 0%,
+    rgba(7,7,10,0.42) 38%,
+    rgba(7,7,10,0.72) 65%,
+    rgba(7,7,10,0.92) 100%);
+}
+.orange-glow { position:absolute; inset:0; background: radial-gradient(circle at 12% 8%, rgba(239,89,39,0.18), transparent 38%); mix-blend-mode:screen; }
+
+/* TOP CHROME */
+.top-row { position:absolute; top:56px; left:56px; right:56px; display:flex; justify-content:space-between; align-items:center; z-index:5; }
+.brand img { display:block; height:56px; width:auto; opacity:0.95; }
+.series-meta {
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:22px; letter-spacing:0.28em; text-transform:uppercase;
+  color:var(--cream);
+}
+
+/* CONTENT — bottom-aligned magazine-feel */
+.content { position:absolute; left:56px; right:56px; bottom:120px; z-index:5; }
+/* FOOTER — text-only, transparent, sits over photo+overlay */
+.footer-bar {
+  position:absolute; left:56px; right:56px; bottom:36px; z-index:5;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.footer-bar .meta {
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:17px; letter-spacing:0.24em; text-transform:uppercase;
+  color:rgba(245,241,234,0.80);
+}
+.footer-bar .swipe {
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:18px; letter-spacing:0.3em; text-transform:uppercase;
+  color:#f5f1ea; display:inline-flex; align-items:center; gap:8px;
+}
+.footer-bar .swipe .arr { color:var(--orange); font-size:24px; }
+
+.eyebrow-strip {
+  display:inline-flex; align-items:center; gap:14px;
+  margin-bottom:28px;
+}
+.eyebrow-pill {
+  background:var(--orange); color:#fff;
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:18px; letter-spacing:0.22em; text-transform:uppercase;
+  padding:9px 16px; border-radius:4px;
+}
+.eyebrow-text {
+  font-family:'Space Grotesk',sans-serif; font-weight:500;
+  font-size:20px; letter-spacing:0.24em; text-transform:uppercase;
+  color:var(--muted);
+}
+
+h1 {
+  font-family:'Inter',sans-serif; font-weight:800;
+  font-size:96px; line-height:0.95; letter-spacing:-0.03em;
+  color:var(--cream); margin-bottom:26px;
+}
+h1 em { color:var(--orange); font-style:normal; font-weight:800; }
+
+.sub {
+  font-family:'Inter',sans-serif; font-weight:400;
+  font-size:26px; line-height:1.45; color:var(--muted);
+  max-width:90%; margin-bottom:30px;
+}
+.sub strong { color:var(--cream); font-weight:700; }
+
+.bottom-row {
+  border-top:1px solid rgba(245,241,234,0.22);
+  padding-top:22px;
+  height:60px;
+  position:relative;
+}
+.tags {
+  position:absolute; left:0; top:22px;
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:17px; letter-spacing:0.22em; text-transform:uppercase;
+  color:#dad5c9;
+}
+.swipe {
+  position:absolute; right:0; top:22px;
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:18px; letter-spacing:0.3em; text-transform:uppercase;
+  color:#f5f1ea;
+}
+.swipe .arr { color:var(--orange); font-size:22px; }
+</style></head>
+<body>
+  <div class="slide">
+    <div class="photo"></div>
+    <div class="overlay"></div>
+    <div class="orange-glow"></div>
+
+    <div class="top-row">
+      <div class="brand"><img src="trw-logo-white.png"></div>
+      <div class="series-meta">Behind the Badge</div>
+    </div>
+
+    <div class="content">
+      <div class="eyebrow-strip">
+        <span class="eyebrow-pill">2014 to 2021</span>
+        <span class="eyebrow-text">Honda Vezel · HR-V</span>
+      </div>
+      <h1>The <em>everywhere</em><br>SUV.</h1>
+      <p class="sub">SG's go-to compact crossover. Roomy, efficient, easy on the wallet. But every owner should know <strong>four</strong> things.</p>
+    </div>
+
+    <div class="footer-bar">
+      <div class="meta">Gearbox · Fuel pump · Aircon · Rattle</div>
+      <div class="swipe">SWIPE <span class="arr">→</span></div>
+    </div>
+  </div>
+</body></html>

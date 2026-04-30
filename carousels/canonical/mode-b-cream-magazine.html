@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@500;700&family=Fraunces:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper:#efe9dd;
+  --paper-2:#e3dccc;
+  --ink:#1a1714;
+  --ink-soft:#3a342c;
+  --orange:#EF5927;
+  --rule:#1a1714;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { width:1080px; height:1350px; margin:0; padding:0; background:var(--paper); font-family:'Inter',system-ui,sans-serif; color:var(--ink); overflow:hidden; }
+.slide { width:1080px; height:1350px; position:relative; overflow:hidden;
+  background:
+    radial-gradient(circle at 20% 100%, rgba(0,0,0,0.05), transparent 60%),
+    linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
+}
+
+/* paper grain texture */
+.grain {
+  position:absolute; inset:0;
+  background-image:
+    radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 4px 4px;
+  opacity:0.5;
+  pointer-events:none;
+}
+
+/* TOP CHROME */
+.top-row {
+  position:absolute; top:56px; left:56px; right:56px;
+  display:flex; justify-content:space-between; align-items:center; z-index:5;
+}
+.brand img {
+  display:block; height:52px; width:auto;
+  filter: invert(0.9) brightness(0.15) saturate(0);
+}
+.series-meta {
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:20px; letter-spacing:0.32em; text-transform:uppercase;
+  color:var(--ink);
+}
+
+/* PHOTO CARD — framed magazine-style */
+.photo-card {
+  position:absolute; top:160px; left:56px; right:56px;
+  height:560px;
+  border:1px solid rgba(26,23,20,0.28);
+  background:#0e0e10;
+  overflow:hidden;
+  box-shadow: 0 24px 60px -28px rgba(0,0,0,0.45);
+}
+.photo-card::after {
+  content:''; position:absolute; inset:0;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 70%, rgba(0,0,0,0.55));
+}
+.photo-card .photo-img {
+  position:absolute; inset:0;
+  background-image:url('vezel-b.png');
+  background-size:cover;
+  background-position:center 50%;
+  filter: saturate(1.05);
+}
+
+/* photo caption inside card */
+.photo-caption {
+  position:absolute; left:24px; bottom:20px;
+  font-family:'Space Grotesk',sans-serif; font-weight:500;
+  font-size:16px; letter-spacing:0.24em; text-transform:uppercase;
+  color:rgba(255,255,255,0.85); z-index:2;
+}
+
+/* ARTICLE BODY */
+.article {
+  position:absolute; left:56px; right:56px; top:760px; z-index:5;
+}
+
+.kicker {
+  display:flex; align-items:center; gap:16px; margin-bottom:22px;
+}
+.kicker .num {
+  font-family:'Fraunces',serif; font-weight:900;
+  font-size:38px; color:var(--orange); line-height:1;
+}
+.kicker .label {
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:18px; letter-spacing:0.28em; text-transform:uppercase;
+  color:var(--ink);
+}
+.kicker-rule {
+  flex:1; height:1px; background:var(--rule); opacity:0.45;
+}
+
+h1 {
+  font-family:'Fraunces',serif; font-weight:900;
+  font-size:108px; line-height:0.96; letter-spacing:-0.025em;
+  color:var(--ink); margin-bottom:28px;
+}
+h1 em {
+  font-style:italic; font-weight:900; color:var(--orange);
+}
+
+.dropcap {
+  font-family:'Inter',sans-serif; font-weight:400;
+  font-size:28px; line-height:1.55; color:var(--ink-soft);
+  max-width:90%;
+}
+.dropcap strong { color:var(--ink); font-weight:700; }
+
+.bottom-rule {
+  position:absolute; bottom:120px; left:56px; right:56px;
+  border-top:1px solid var(--rule); opacity:0.35;
+}
+.byline {
+  position:absolute; bottom:60px; left:56px; right:56px;
+  display:flex; justify-content:space-between; align-items:center;
+}
+.byline-left {
+  font-family:'Space Grotesk',sans-serif; font-weight:500;
+  font-size:18px; letter-spacing:0.24em; text-transform:uppercase;
+  color:var(--ink-soft);
+}
+.byline-right {
+  font-family:'Fraunces',serif; font-style:italic; font-weight:700;
+  font-size:22px; color:var(--ink); display:inline-flex; align-items:center; gap:10px;
+}
+.byline-right .arr { color:var(--orange); font-style:normal; font-weight:900; }
+</style></head>
+<body>
+  <div class="slide">
+    <div class="grain"></div>
+
+    <div class="top-row">
+      <div class="brand"><img src="trw-logo-white.png"></div>
+      <div class="series-meta">Behind the Badge</div>
+    </div>
+
+    <div class="photo-card">
+      <div class="photo-img"></div>
+      <div class="photo-caption">RU-gen hybrid · Honda's quietest hit</div>
+    </div>
+
+    <div class="article">
+      <div class="kicker">
+        <span class="label">Honda Vezel · A brand history</span>
+        <span class="kicker-rule"></span>
+      </div>
+      <h1>Honda's <em>quiet</em> bestseller.</h1>
+      <p class="dropcap"><strong>No marketing splash. No clever name.</strong> Yet the Vezel quietly became the most popular Japanese compact crossover in Southeast Asia. How a footnote SUV outsold the entire Honda lineup.</p>
+    </div>
+
+    <div class="bottom-rule"></div>
+    <div class="byline">
+      <div class="byline-left">Reviewed by The Right Workshop team</div>
+      <div class="byline-right">Read on <span class="arr">→</span></div>
+    </div>
+  </div>
+</body></html>

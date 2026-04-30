@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:#f5f1ea;
+  --ink:#0a0a0c;
+  --orange:#EF5927;
+  --muted:rgba(245,241,234,0.78);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { width:1080px; height:1350px; margin:0; padding:0; background:var(--ink); font-family:'Inter',system-ui,sans-serif; color:var(--cream); overflow:hidden; }
+.slide { width:1080px; height:1350px; position:relative; overflow:hidden; }
+
+/* TOP HALF — full bleed photo */
+.photo-zone {
+  position:absolute; top:0; left:0; right:0; height:780px;
+  overflow:hidden;
+}
+.photo-zone .photo {
+  position:absolute; inset:0;
+  background-image:url('vezel-c.png');
+  background-size:cover;
+  background-position:center 45%;
+  filter: contrast(1.05) saturate(1.05);
+}
+/* light grain in photo */
+.photo-zone .grain {
+  position:absolute; inset:0;
+  background-image:radial-gradient(rgba(0,0,0,0.06) 1px, transparent 1px);
+  background-size:3px 3px; opacity:0.5; mix-blend-mode:multiply;
+}
+/* slight bottom-shadow into the black zone */
+.photo-zone::after {
+  content:''; position:absolute; left:0; right:0; bottom:0; height:200px;
+  background:linear-gradient(180deg, transparent 0%, rgba(10,10,12,0.7) 70%, var(--ink) 100%);
+}
+
+/* DIAGONAL BLACK CUT */
+.cut {
+  position:absolute; top:740px; left:0; right:0; height:80px;
+  background:var(--ink);
+  clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0 100%);
+}
+
+/* TOP CHROME — sits over photo */
+.top-row {
+  position:absolute; top:48px; left:56px; right:56px;
+  display:flex; justify-content:space-between; align-items:center; z-index:5;
+}
+.brand img { display:block; height:52px; width:auto; opacity:0.95; }
+.top-meta {
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:18px; letter-spacing:0.32em; text-transform:uppercase;
+  color:var(--cream);
+  background:var(--orange);
+  padding:9px 16px; border-radius:2px;
+}
+
+/* MODEL BADGE — overlaps photo + black */
+.badge-strip {
+  position:absolute; top:660px; left:56px; right:56px; z-index:6;
+  display:flex; align-items:center; gap:18px;
+}
+.badge-year {
+  font-family:'Bebas Neue',sans-serif; font-weight:400;
+  font-size:64px; line-height:1; color:var(--orange);
+  letter-spacing:0.04em;
+}
+.badge-rule {
+  flex:1; height:2px; background:var(--cream); opacity:0.6;
+}
+.badge-tag {
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:18px; letter-spacing:0.32em; text-transform:uppercase;
+  color:var(--cream);
+}
+
+/* HEADLINE ZONE — bottom black */
+.poster-headline {
+  position:absolute; left:56px; right:56px; top:790px; z-index:5;
+}
+h1 {
+  font-family:'Bebas Neue',sans-serif; font-weight:400;
+  font-size:130px; line-height:0.86; letter-spacing:0.005em;
+  color:var(--cream); text-transform:uppercase;
+  margin-bottom:0;
+}
+h1 .accent { color:var(--orange); }
+
+.tagline {
+  font-family:'Inter',sans-serif; font-weight:500;
+  font-size:22px; line-height:1.4; color:var(--muted);
+  margin-top:18px; max-width:90%;
+}
+.tagline strong { color:var(--cream); font-weight:800; }
+
+/* BOTTOM STRIP — sits over slide bg, transparent */
+.bottom-strip {
+  position:absolute; bottom:36px; left:56px; right:56px;
+  display:flex; align-items:center; justify-content:space-between; z-index:5;
+}
+.bottom-strip .stat {
+  font-family:'Bebas Neue',sans-serif; font-weight:400;
+  font-size:34px; letter-spacing:0.06em; color:var(--cream);
+}
+.bottom-strip .stat .num { font-size:46px; vertical-align:-2px; margin-right:10px; color:var(--orange); }
+.bottom-strip .swipe {
+  font-family:'Space Grotesk',sans-serif; font-weight:700;
+  font-size:20px; letter-spacing:0.3em; text-transform:uppercase;
+  color:var(--cream); display:inline-flex; align-items:center; gap:10px;
+}
+.bottom-strip .swipe .arr { color:var(--orange); font-size:26px; }
+</style></head>
+<body>
+  <div class="slide">
+    <div class="photo-zone">
+      <div class="photo"></div>
+      <div class="grain"></div>
+    </div>
+    <div class="cut"></div>
+
+    <div class="top-row">
+      <div class="brand"><img src="trw-logo-white.png"></div>
+      <div class="top-meta">Behind the Badge</div>
+    </div>
+
+    <div class="badge-strip">
+      <div class="badge-year">RECALL · 2016</div>
+      <div class="badge-rule"></div>
+      <div class="badge-tag">DCT Hybrid Drama</div>
+    </div>
+
+    <div class="poster-headline">
+      <h1>THE HYBRID<br>THAT ALMOST<br>WASN'T.</h1>
+      <p class="tagline">A <strong>jerky DCT</strong>, a global recall, the software fix that saved Vezel hybrid.</p>
+    </div>
+
+    <div class="bottom-strip">
+      <div class="stat"><span class="num">'16</span>RECALL DECODED</div>
+      <div class="swipe">SWIPE <span class="arr">&rarr;</span></div>
+    </div>
+  </div>
+</body></html>
