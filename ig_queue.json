@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100",
-      "slot_time_sgt": "2026-05-01T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:B",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530",
       "slot_time_sgt": "2026-05-01T15:30",
       "type": "story",
@@ -921,6 +909,21 @@
       "posted_url": "17891643549466394",
       "posted_at": "2026-04-30 20:00 SGT",
       "post_id": "17891643549466394"
+    },
+    {
+      "id": "igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100",
+      "slot_time_sgt": "2026-05-01T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:B",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17946102483175458",
+      "posted_at": "2026-05-01 11:35 SGT",
+      "post_id": "17946102483175458"
     }
   ],
   "failed": [],

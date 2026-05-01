@@ -248,3 +248,7 @@ View: https://www.instagram.com/p/18000056522750625/
 [2026-05-01 07:58:59 +08] run: no due posts
 [2026-05-01 09:27:58 +08] HEARTBEAT lag 89 min (prev=2026-05-01T07:58:59.901392+08:00) — file-log only, no telegram
 [2026-05-01 09:27:58 +08] run: no due posts
+[2026-05-01 11:35:42 +08] HEARTBEAT lag 128 min (prev=2026-05-01T09:27:58.836430+08:00) — file-log only, no telegram
+[2026-05-01 11:35:42 +08] CATCH-UP igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100 — 0.6h late, publishing
+[2026-05-01 11:35:42 +08] Posting igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100 (story) — notes: Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:B
+[2026-05-01 11:35:48 +08] OK  igs-autofill-tyres-battery-singapore-checks-2026-05-01-1100 -> 17946102483175458

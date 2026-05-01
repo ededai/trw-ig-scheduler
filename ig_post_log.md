@@ -29,3 +29,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-04-30 11:00 | Single | Auto-filled IGS for blog: questions-to-ask-before-new-car-workshop-singapore (variant B) | 17885129334535552 | Auto-fill IGS — blog:questions-to-ask-before-new-car-workshop-singapore variant:B |
 | 2026-04-30 15:30 | Single | Auto-filled IGS for blog: questions-to-ask-before-new-car-workshop-singapore (variant A) | 17923472799316338 | Auto-fill IGS — blog:questions-to-ask-before-new-car-workshop-singapore variant:A |
 | 2026-04-30 20:00 | Single | Auto-filled IGS for blog: how-to-read-workshop-quote-singapore (variant C) | 17891643549466394 | Auto-fill IGS — blog:how-to-read-workshop-quote-singapore variant:C |
+| 2026-05-01 11:00 | Single | Auto-filled IGS for blog: tyres-battery-singapore-checks-guide (variant B) | 17946102483175458 | Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:B |
