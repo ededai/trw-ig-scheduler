@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530",
-      "slot_time_sgt": "2026-05-01T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "newseries-wl-mode-b-2026-05-02-11",
       "slot_time_sgt": "2026-05-02T11:00",
       "type": "carousel",
@@ -924,6 +912,21 @@
       "posted_url": "17946102483175458",
       "posted_at": "2026-05-01 11:35 SGT",
       "post_id": "17946102483175458"
+    },
+    {
+      "id": "igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530",
+      "slot_time_sgt": "2026-05-01T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-01-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18107405296724568",
+      "posted_at": "2026-05-01 16:30 SGT",
+      "post_id": "18107405296724568"
     }
   ],
   "failed": [],
