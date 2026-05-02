@@ -539,20 +539,6 @@
       "notes": "Series: Behind the Badge · Mode E (Spec Sheet) · Honda Vezel",
       "status": "pending",
       "attempts": 0
-    },
-    {
-      "id": "newseries-wl-mode-b-2026-05-02-11-igs",
-      "slot_time_sgt": "2026-05-02T11:37",
-      "type": "story",
-      "caption_file": "assets/newseries-wl-mode-b-2026-05-02-11/caption.txt",
-      "image_paths": [
-        "assets/newseries-wl-mode-b-2026-05-02-11/slide.png"
-      ],
-      "notes": "Companion IGS for feed post newseries-wl-mode-b-2026-05-02-11",
-      "status": "pending",
-      "attempts": 0,
-      "is_companion": true,
-      "parent_post_id": "18095218847136693"
     }
   ],
   "posted": [
@@ -944,6 +930,23 @@
       "posted_url": "https://www.instagram.com/p/DX0jbreltZt/",
       "posted_at": "2026-05-02 11:27 SGT",
       "post_id": "18095218847136693"
+    },
+    {
+      "id": "newseries-wl-mode-b-2026-05-02-11-igs",
+      "slot_time_sgt": "2026-05-02T11:37",
+      "type": "story",
+      "caption_file": "assets/newseries-wl-mode-b-2026-05-02-11/caption.txt",
+      "image_paths": [
+        "assets/newseries-wl-mode-b-2026-05-02-11/slide.png"
+      ],
+      "notes": "Companion IGS for feed post newseries-wl-mode-b-2026-05-02-11",
+      "status": "posted",
+      "attempts": 0,
+      "is_companion": true,
+      "parent_post_id": "18095218847136693",
+      "posted_url": "18067644992669229",
+      "posted_at": "2026-05-02 13:39 SGT",
+      "post_id": "18067644992669229"
     }
   ],
   "failed": [],

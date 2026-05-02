@@ -308,3 +308,7 @@ View: https://www.instagram.com/p/18000056522750625/
 [2026-05-02 11:26:32 +08] Posting newseries-wl-mode-b-2026-05-02-11 (carousel) — notes: Series: Warning Light Decoded · Mode B (Cream Magazine)
 [2026-05-02 11:27:03 +08] OK  newseries-wl-mode-b-2026-05-02-11 -> https://www.instagram.com/p/DX0jbreltZt/
 [2026-05-02 11:27:04 +08] queued companion IGS: newseries-wl-mode-b-2026-05-02-11-igs for 2026-05-02T11:37 SGT
+[2026-05-02 13:39:12 +08] HEARTBEAT lag 133 min (prev=2026-05-02T11:26:32.723030+08:00) — file-log only, no telegram
+[2026-05-02 13:39:12 +08] CATCH-UP newseries-wl-mode-b-2026-05-02-11-igs — 2.0h late, publishing
+[2026-05-02 13:39:12 +08] Posting newseries-wl-mode-b-2026-05-02-11-igs (story) — notes: Companion IGS for feed post newseries-wl-mode-b-2026-05-02-11
+[2026-05-02 13:39:24 +08] OK  newseries-wl-mode-b-2026-05-02-11-igs -> 18067644992669229
