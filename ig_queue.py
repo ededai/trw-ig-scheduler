@@ -274,12 +274,6 @@ def process_entry(entry: dict) -> dict:
             f"{type_word}: {entry['id']}\n"
             f"{nice_link}"
         )
-        # Auto-queue companion IGS for feed posts (10 min after publish)
-        if entry["type"] in ("single", "carousel") and not entry.get("is_companion"):
-            try:
-                _queue_feed_companion_igs(entry)
-            except Exception as ce:
-                log(f"WARN: companion IGS queue failed for {entry['id']}: {ce}")
         return entry
     except Exception as e:
         entry["status"] = "failed"
@@ -296,39 +290,6 @@ def process_entry(entry: dict) -> dict:
             f"Action: I'll re-queue and try again, or it'll need a manual reslot."
         )
         return entry
-
-
-def _queue_feed_companion_igs(parent_entry: dict) -> None:
-    """Queue an IGS that promotes the feed post that was just published.
-
-    The companion uses the parent's first image as-is (Story-style 9:16 reframing
-    happens in a future renderer pass; for v1 we re-use the cover image at native
-    aspect, which Meta will letterbox into 9:16). Posts 10 minutes after parent.
-    """
-    parent_id = parent_entry["id"]
-    companion_id = f"{parent_id}-igs"
-    slot = (now_sgt() + timedelta(minutes=10)).strftime("%Y-%m-%dT%H:%M")
-    image = parent_entry["image_paths"][0]  # use cover image for now
-    entry = {
-        "id": companion_id,
-        "slot_time_sgt": slot,
-        "type": "story",
-        "caption_file": parent_entry["caption_file"],  # ignored by API for stories
-        "image_paths": [image],
-        "notes": f"Companion IGS for feed post {parent_id}",
-        "status": "pending",
-        "attempts": 0,
-        "is_companion": True,
-        "parent_post_id": parent_entry.get("post_id", ""),
-    }
-    q = load_queue()
-    # Avoid duplicate companion if one already exists
-    if any(e["id"] == companion_id for e in q["pending"] + q.get("posted", []) + q.get("failed", [])):
-        log(f"skip companion: {companion_id} already exists")
-        return
-    q["pending"].append(entry)
-    save_queue(q)
-    log(f"queued companion IGS: {companion_id} for {slot} SGT")
 
 
 def _heartbeat_check_and_stamp() -> None:
