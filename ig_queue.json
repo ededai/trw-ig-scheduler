@@ -1,23 +1,6 @@
 {
   "pending": [
     {
-      "id": "newseries-cow-mode-b-2026-05-02-20",
-      "slot_time_sgt": "2026-05-02T20:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-cow-mode-b-2026-05-02-20/caption.txt",
-      "image_paths": [
-        "assets/newseries-cow-mode-b-2026-05-02-20/slide.png",
-        "assets/newseries-cow-mode-b-2026-05-02-20/slides/slide_2.png",
-        "assets/newseries-cow-mode-b-2026-05-02-20/slides/slide_3.png",
-        "assets/newseries-cow-mode-b-2026-05-02-20/slides/slide_4.png",
-        "assets/newseries-cow-mode-b-2026-05-02-20/slides/slide_5.png",
-        "assets/newseries-cow-mode-b-2026-05-02-20/slides/slide_6.png"
-      ],
-      "notes": "Series: Cost of Waiting · Mode B (Cream Magazine)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "newseries-dm-mode-a-2026-05-03-11",
       "slot_time_sgt": "2026-05-03T11:00",
       "type": "carousel",
@@ -950,6 +933,26 @@
       "posted_url": "https://www.instagram.com/p/DX1H-70mcRX/",
       "posted_at": "2026-05-02 16:46 SGT",
       "post_id": "17892001548462924"
+    },
+    {
+      "id": "newseries-cow-mode-b-2026-05-02-20",
+      "slot_time_sgt": "2026-05-02T20:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-cow-mode-b-2026-05-02-20/caption.txt",
+      "image_paths": [
+        "assets/newseries-cow-mode-b-2026-05-02-20/slide.png",
+        "assets/newseries-cow-mode-b-2026-05-02-20/slides/slide_2.png",
+        "assets/newseries-cow-mode-b-2026-05-02-20/slides/slide_3.png",
+        "assets/newseries-cow-mode-b-2026-05-02-20/slides/slide_4.png",
+        "assets/newseries-cow-mode-b-2026-05-02-20/slides/slide_5.png",
+        "assets/newseries-cow-mode-b-2026-05-02-20/slides/slide_6.png"
+      ],
+      "notes": "Series: Cost of Waiting · Mode B (Cream Magazine)",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DX1fRO6kucM/",
+      "posted_at": "2026-05-02 20:09 SGT",
+      "post_id": "17942943042018065"
     }
   ],
   "failed": [],
