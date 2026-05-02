@@ -31,3 +31,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-04-30 20:00 | Single | Auto-filled IGS for blog: how-to-read-workshop-quote-singapore (variant C) | 17891643549466394 | Auto-fill IGS — blog:how-to-read-workshop-quote-singapore variant:C |
 | 2026-05-01 11:00 | Single | Auto-filled IGS for blog: tyres-battery-singapore-checks-guide (variant B) | 17946102483175458 | Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:B |
 | 2026-05-01 15:30 | Single | Auto-filled IGS for blog: what-to-look-for-car-workshop-singapore (variant A) | 18107405296724568 | Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A |
+| 2026-05-02 11:00 | Carousel | Battery light on. Heart sinks. | https://www.instagram.com/p/DX0jbreltZt/ | Series: Warning Light Decoded · Mode B (Cream Magazine) |
