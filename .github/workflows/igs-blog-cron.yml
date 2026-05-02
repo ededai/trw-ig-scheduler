@@ -33,7 +33,7 @@ jobs:
       - name: Install deps
         run: |
           pip install playwright==1.58.0
-          python -m playwright install --with-deps chromium
+          python -m playwright install chromium
 
       - name: Run blog watcher
         env:
