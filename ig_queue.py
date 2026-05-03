@@ -306,10 +306,12 @@ def _heartbeat_check_and_stamp() -> None:
                 prev = datetime.fromisoformat(prev_iso)
                 gap_min = (now - prev).total_seconds() / 60
                 if gap_min > HEARTBEAT_GAP_MIN:
-                    # File-log only. No Telegram alert when no posts are due —
-                    # cron lag without a missed slot is not actionable for Ed.
-                    # The MAX_LAG_HOURS catch-up handles real misses.
-                    log(f"HEARTBEAT lag {gap_min:.0f} min (prev={prev_iso}) — file-log only, no telegram")
+                    log(f"HEARTBEAT lag {gap_min:.0f} min (prev={prev_iso})")
+                    telegram_alert(
+                        f"⚠️ Cron gap: {gap_min:.0f} min without a run\n"
+                        f"Last run: {prev_iso}\n"
+                        f"Posts scheduled in that window may have been delayed."
+                    )
     except Exception as e:
         log(f"WARN heartbeat read failed: {e}")
     try:
