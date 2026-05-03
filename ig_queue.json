@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "newseries-rr-mode-a-2026-05-03-15",
-      "slot_time_sgt": "2026-05-03T11:00",
-      "type": "single",
-      "caption_file": "assets/newseries-rr-mode-a-2026-05-03-15/caption.txt",
-      "image_paths": [
-        "assets/newseries-rr-mode-a-2026-05-03-15/slide.png"
-      ],
-      "notes": "Series: Real Reviews · Mode A (Editorial Dark)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "newseries-dm-mode-b-2026-05-05-11",
       "slot_time_sgt": "2026-05-03T15:30",
       "type": "carousel",
@@ -955,7 +943,21 @@
       "post_id": "17942943042018065"
     }
   ],
-  "failed": [],
+  "failed": [
+    {
+      "id": "newseries-rr-mode-a-2026-05-03-15",
+      "slot_time_sgt": "2026-05-03T11:00",
+      "type": "single",
+      "caption_file": "assets/newseries-rr-mode-a-2026-05-03-15/caption.txt",
+      "image_paths": [
+        "assets/newseries-rr-mode-a-2026-05-03-15/slide.png"
+      ],
+      "notes": "Series: Real Reviews · Mode A (Editorial Dark)",
+      "status": "failed",
+      "attempts": 1,
+      "error": "post_instagram.py failed: Resolving image URL: /home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/newseries-rr-mode-a-2026-05-03-15/slide.png\nImage hosted at: https://raw.githubusercontent.com/ededai/trw-ig-scheduler/main/assets/newseries-rr-mode-a-2026-05-03-15/slide.png (via raw.githubusercontent.com, attempt 1)\nCreating media container...\nContainer created: 17877739539592927\nPublishing post...\nERROR publishing: Media ID is not available\n"
+    }
+  ],
   "cancelled": [
     {
       "id": "doreen-review-2026-04-29",
