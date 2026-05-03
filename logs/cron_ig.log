@@ -389,3 +389,5 @@ ERROR publishing: Media ID is not available
 [2026-05-03 16:18:00 +08] OK  newseries-dm-mode-b-2026-05-05-11 -> https://www.instagram.com/p/DX3phL7Glzc/
 [2026-05-03 17:42:05 +08] HEARTBEAT lag 85 min (prev=2026-05-03T16:17:23.356005+08:00)
 [2026-05-03 17:42:06 +08] run: no due posts
+[2026-05-03 18:36:50 +08] HEARTBEAT lag 55 min (prev=2026-05-03T17:42:05.910603+08:00)
+[2026-05-03 18:36:51 +08] run: no due posts
