@@ -399,3 +399,5 @@ ERROR publishing: Media ID is not available
 [2026-05-03 20:06:59 +08] Posting newseries-bbtb-vezel-mode-d-2026-05-14-15 (carousel) — notes: Series: Behind the Badge · Mode D (Polaroid Zine) · Honda Vezel
 [2026-05-03 20:07:27 +08] OK  newseries-bbtb-vezel-mode-d-2026-05-14-15 -> https://www.instagram.com/p/DX4DySUFrDz/
 [2026-05-03 20:08:10 +08] run: no due posts
+[2026-05-03 21:47:30 +08] HEARTBEAT lag 99 min (prev=2026-05-03T20:08:10.890849+08:00)
+[2026-05-03 21:47:30 +08] run: no due posts
