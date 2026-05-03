@@ -1,25 +1,8 @@
 {
   "pending": [
     {
-      "id": "newseries-dm-mode-a-2026-05-03-11",
-      "slot_time_sgt": "2026-05-03T11:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-dm-mode-a-2026-05-03-11/caption.txt",
-      "image_paths": [
-        "assets/newseries-dm-mode-a-2026-05-03-11/slide.png",
-        "assets/newseries-dm-mode-a-2026-05-03-11/slides/slide_2.png",
-        "assets/newseries-dm-mode-a-2026-05-03-11/slides/slide_3.png",
-        "assets/newseries-dm-mode-a-2026-05-03-11/slides/slide_4.png",
-        "assets/newseries-dm-mode-a-2026-05-03-11/slides/slide_5.png",
-        "assets/newseries-dm-mode-a-2026-05-03-11/slides/slide_6.png"
-      ],
-      "notes": "Series: Driver's Manual · Mode A (Editorial Dark)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "newseries-rr-mode-a-2026-05-03-15",
-      "slot_time_sgt": "2026-05-03T15:30",
+      "slot_time_sgt": "2026-05-03T11:00",
       "type": "single",
       "caption_file": "assets/newseries-rr-mode-a-2026-05-03-15/caption.txt",
       "image_paths": [
@@ -30,8 +13,84 @@
       "attempts": 0
     },
     {
-      "id": "newseries-bbtb-vezel-mode-a-2026-05-03-20",
+      "id": "newseries-dm-mode-b-2026-05-05-11",
+      "slot_time_sgt": "2026-05-03T15:30",
+      "type": "carousel",
+      "caption_file": "assets/newseries-dm-mode-b-2026-05-05-11/caption.txt",
+      "image_paths": [
+        "assets/newseries-dm-mode-b-2026-05-05-11/slide.png",
+        "assets/newseries-dm-mode-b-2026-05-05-11/slides/slide_2.png",
+        "assets/newseries-dm-mode-b-2026-05-05-11/slides/slide_3.png",
+        "assets/newseries-dm-mode-b-2026-05-05-11/slides/slide_4.png",
+        "assets/newseries-dm-mode-b-2026-05-05-11/slides/slide_5.png"
+      ],
+      "notes": "Series: Driver's Manual · Mode B (Cream Magazine)",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "newseries-bbtb-vezel-mode-d-2026-05-14-15",
       "slot_time_sgt": "2026-05-03T20:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/caption.txt",
+      "image_paths": [
+        "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/slide.png",
+        "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/slides/slide_2.png",
+        "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/slides/slide_3.png",
+        "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/slides/slide_4.png",
+        "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/slides/slide_5.png"
+      ],
+      "notes": "Series: Behind the Badge · Mode D (Polaroid Zine) · Honda Vezel",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "newseries-rr-mode-c-2026-05-05-15",
+      "slot_time_sgt": "2026-05-04T11:00",
+      "type": "single",
+      "caption_file": "assets/newseries-rr-mode-c-2026-05-05-15/caption.txt",
+      "image_paths": [
+        "assets/newseries-rr-mode-c-2026-05-05-15/slide.png"
+      ],
+      "notes": "Series: Real Reviews · Mode C (Poster Bold) · Wen Hing Chow",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "newseries-wl-mode-d-2026-05-06-11",
+      "slot_time_sgt": "2026-05-04T15:30",
+      "type": "carousel",
+      "caption_file": "assets/newseries-wl-mode-d-2026-05-06-11/caption.txt",
+      "image_paths": [
+        "assets/newseries-wl-mode-d-2026-05-06-11/slide.png",
+        "assets/newseries-wl-mode-d-2026-05-06-11/slides/slide_2.png",
+        "assets/newseries-wl-mode-d-2026-05-06-11/slides/slide_3.png",
+        "assets/newseries-wl-mode-d-2026-05-06-11/slides/slide_4.png",
+        "assets/newseries-wl-mode-d-2026-05-06-11/slides/slide_5.png"
+      ],
+      "notes": "Series: Warning Light Decoded · Mode D (Polaroid Zine)",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "newseries-bbtb-vezel-mode-e-2026-05-14-20",
+      "slot_time_sgt": "2026-05-04T20:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/caption.txt",
+      "image_paths": [
+        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slide.png",
+        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_2.png",
+        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_3.png",
+        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_4.png",
+        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_5.png"
+      ],
+      "notes": "Series: Behind the Badge · Mode E (Spec Sheet) · Honda Vezel",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "newseries-bbtb-vezel-mode-a-2026-05-03-20",
+      "slot_time_sgt": "2026-05-05T11:00",
       "type": "carousel",
       "caption_file": "assets/newseries-bbtb-vezel-mode-a-2026-05-03-20/caption.txt",
       "image_paths": [
@@ -47,40 +106,8 @@
       "attempts": 0
     },
     {
-      "id": "newseries-wl-mode-c-2026-05-04-11",
-      "slot_time_sgt": "2026-05-04T11:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-wl-mode-c-2026-05-04-11/caption.txt",
-      "image_paths": [
-        "assets/newseries-wl-mode-c-2026-05-04-11/slide.png",
-        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_2.png",
-        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_3.png",
-        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_4.png",
-        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_5.png"
-      ],
-      "notes": "Series: Warning Light Decoded · Mode C (Poster Bold)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "newseries-st-mode-c-2026-05-04-15",
-      "slot_time_sgt": "2026-05-04T15:30",
-      "type": "carousel",
-      "caption_file": "assets/newseries-st-mode-c-2026-05-04-15/caption.txt",
-      "image_paths": [
-        "assets/newseries-st-mode-c-2026-05-04-15/slide.png",
-        "assets/newseries-st-mode-c-2026-05-04-15/slides/slide_2.png",
-        "assets/newseries-st-mode-c-2026-05-04-15/slides/slide_3.png",
-        "assets/newseries-st-mode-c-2026-05-04-15/slides/slide_4.png",
-        "assets/newseries-st-mode-c-2026-05-04-15/slides/slide_5.png"
-      ],
-      "notes": "Series: Straight Talk · Mode C (Poster Bold)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "newseries-cow-mode-c-2026-05-04-20",
-      "slot_time_sgt": "2026-05-04T20:00",
+      "slot_time_sgt": "2026-05-05T15:30",
       "type": "carousel",
       "caption_file": "assets/newseries-cow-mode-c-2026-05-04-20/caption.txt",
       "image_paths": [
@@ -95,68 +122,20 @@
       "attempts": 0
     },
     {
-      "id": "newseries-dm-mode-b-2026-05-05-11",
-      "slot_time_sgt": "2026-05-05T11:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-dm-mode-b-2026-05-05-11/caption.txt",
-      "image_paths": [
-        "assets/newseries-dm-mode-b-2026-05-05-11/slide.png",
-        "assets/newseries-dm-mode-b-2026-05-05-11/slides/slide_2.png",
-        "assets/newseries-dm-mode-b-2026-05-05-11/slides/slide_3.png",
-        "assets/newseries-dm-mode-b-2026-05-05-11/slides/slide_4.png",
-        "assets/newseries-dm-mode-b-2026-05-05-11/slides/slide_5.png"
-      ],
-      "notes": "Series: Driver's Manual · Mode B (Cream Magazine)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "newseries-rr-mode-c-2026-05-05-15",
-      "slot_time_sgt": "2026-05-05T15:30",
-      "type": "single",
-      "caption_file": "assets/newseries-rr-mode-c-2026-05-05-15/caption.txt",
-      "image_paths": [
-        "assets/newseries-rr-mode-c-2026-05-05-15/slide.png"
-      ],
-      "notes": "Series: Real Reviews · Mode C (Poster Bold) · Wen Hing Chow",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "newseries-bbtb-vezel-mode-b-2026-05-05-20",
+      "id": "newseries-rr-mode-e-2026-05-14-11",
       "slot_time_sgt": "2026-05-05T20:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/caption.txt",
+      "type": "single",
+      "caption_file": "assets/newseries-rr-mode-e-2026-05-14-11/caption.txt",
       "image_paths": [
-        "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/slide.png",
-        "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/slides/slide_2.png",
-        "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/slides/slide_3.png",
-        "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/slides/slide_4.png",
-        "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/slides/slide_5.png"
+        "assets/newseries-rr-mode-e-2026-05-14-11/slide.png"
       ],
-      "notes": "Series: Behind the Badge · Mode B (Cream Magazine) · Honda Vezel",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "newseries-wl-mode-d-2026-05-06-11",
-      "slot_time_sgt": "2026-05-06T11:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-wl-mode-d-2026-05-06-11/caption.txt",
-      "image_paths": [
-        "assets/newseries-wl-mode-d-2026-05-06-11/slide.png",
-        "assets/newseries-wl-mode-d-2026-05-06-11/slides/slide_2.png",
-        "assets/newseries-wl-mode-d-2026-05-06-11/slides/slide_3.png",
-        "assets/newseries-wl-mode-d-2026-05-06-11/slides/slide_4.png",
-        "assets/newseries-wl-mode-d-2026-05-06-11/slides/slide_5.png"
-      ],
-      "notes": "Series: Warning Light Decoded · Mode D (Polaroid Zine)",
+      "notes": "Series: Real Reviews · Mode E (Spec Sheet) · Ash Ariffin",
       "status": "pending",
       "attempts": 0
     },
     {
       "id": "newseries-st-mode-d-2026-05-06-15",
-      "slot_time_sgt": "2026-05-06T15:30",
+      "slot_time_sgt": "2026-05-06T11:00",
       "type": "carousel",
       "caption_file": "assets/newseries-st-mode-d-2026-05-06-15/caption.txt",
       "image_paths": [
@@ -171,24 +150,24 @@
       "attempts": 0
     },
     {
-      "id": "newseries-cow-mode-d-2026-05-06-20",
-      "slot_time_sgt": "2026-05-06T20:00",
+      "id": "newseries-wl-mode-e-2026-05-08-11",
+      "slot_time_sgt": "2026-05-06T15:30",
       "type": "carousel",
-      "caption_file": "assets/newseries-cow-mode-d-2026-05-06-20/caption.txt",
+      "caption_file": "assets/newseries-wl-mode-e-2026-05-08-11/caption.txt",
       "image_paths": [
-        "assets/newseries-cow-mode-d-2026-05-06-20/slide.png",
-        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_2.png",
-        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_3.png",
-        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_4.png",
-        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_5.png"
+        "assets/newseries-wl-mode-e-2026-05-08-11/slide.png",
+        "assets/newseries-wl-mode-e-2026-05-08-11/slides/slide_2.png",
+        "assets/newseries-wl-mode-e-2026-05-08-11/slides/slide_3.png",
+        "assets/newseries-wl-mode-e-2026-05-08-11/slides/slide_4.png",
+        "assets/newseries-wl-mode-e-2026-05-08-11/slides/slide_5.png"
       ],
-      "notes": "Series: Cost of Waiting · Mode D (Polaroid Zine)",
+      "notes": "Series: Warning Light Decoded · Mode E (Spec Sheet)",
       "status": "pending",
       "attempts": 0
     },
     {
       "id": "newseries-dm-mode-c-2026-05-07-11",
-      "slot_time_sgt": "2026-05-07T11:00",
+      "slot_time_sgt": "2026-05-06T20:00",
       "type": "carousel",
       "caption_file": "assets/newseries-dm-mode-c-2026-05-07-11/caption.txt",
       "image_paths": [
@@ -203,8 +182,40 @@
       "attempts": 0
     },
     {
-      "id": "newseries-rr-mode-d-2026-05-07-15",
+      "id": "newseries-wl-mode-c-2026-05-04-11",
+      "slot_time_sgt": "2026-05-07T11:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-wl-mode-c-2026-05-04-11/caption.txt",
+      "image_paths": [
+        "assets/newseries-wl-mode-c-2026-05-04-11/slide.png",
+        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_2.png",
+        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_3.png",
+        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_4.png",
+        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_5.png"
+      ],
+      "notes": "Series: Warning Light Decoded · Mode C (Poster Bold)",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "newseries-cow-mode-e-2026-05-13-15",
       "slot_time_sgt": "2026-05-07T15:30",
+      "type": "carousel",
+      "caption_file": "assets/newseries-cow-mode-e-2026-05-13-15/caption.txt",
+      "image_paths": [
+        "assets/newseries-cow-mode-e-2026-05-13-15/slide.png",
+        "assets/newseries-cow-mode-e-2026-05-13-15/slides/slide_2.png",
+        "assets/newseries-cow-mode-e-2026-05-13-15/slides/slide_3.png",
+        "assets/newseries-cow-mode-e-2026-05-13-15/slides/slide_4.png",
+        "assets/newseries-cow-mode-e-2026-05-13-15/slides/slide_5.png"
+      ],
+      "notes": "Series: Cost of Waiting · Mode E (Spec Sheet)",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "newseries-rr-mode-d-2026-05-07-15",
+      "slot_time_sgt": "2026-05-07T20:00",
       "type": "single",
       "caption_file": "assets/newseries-rr-mode-d-2026-05-07-15/caption.txt",
       "image_paths": [
@@ -215,34 +226,19 @@
       "attempts": 0
     },
     {
-      "id": "newseries-bbtb-vezel-mode-c-2026-05-07-20",
-      "slot_time_sgt": "2026-05-07T20:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/caption.txt",
-      "image_paths": [
-        "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/slide.png",
-        "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/slides/slide_2.png",
-        "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/slides/slide_3.png",
-        "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/slides/slide_4.png",
-        "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/slides/slide_5.png"
-      ],
-      "notes": "Series: Behind the Badge · Mode C (Poster Bold) · Honda Vezel",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "newseries-wl-mode-e-2026-05-08-11",
+      "id": "newseries-dm-mode-a-2026-05-03-11",
       "slot_time_sgt": "2026-05-08T11:00",
       "type": "carousel",
-      "caption_file": "assets/newseries-wl-mode-e-2026-05-08-11/caption.txt",
+      "caption_file": "assets/newseries-dm-mode-a-2026-05-03-11/caption.txt",
       "image_paths": [
-        "assets/newseries-wl-mode-e-2026-05-08-11/slide.png",
-        "assets/newseries-wl-mode-e-2026-05-08-11/slides/slide_2.png",
-        "assets/newseries-wl-mode-e-2026-05-08-11/slides/slide_3.png",
-        "assets/newseries-wl-mode-e-2026-05-08-11/slides/slide_4.png",
-        "assets/newseries-wl-mode-e-2026-05-08-11/slides/slide_5.png"
+        "assets/newseries-dm-mode-a-2026-05-03-11/slide.png",
+        "assets/newseries-dm-mode-a-2026-05-03-11/slides/slide_2.png",
+        "assets/newseries-dm-mode-a-2026-05-03-11/slides/slide_3.png",
+        "assets/newseries-dm-mode-a-2026-05-03-11/slides/slide_4.png",
+        "assets/newseries-dm-mode-a-2026-05-03-11/slides/slide_5.png",
+        "assets/newseries-dm-mode-a-2026-05-03-11/slides/slide_6.png"
       ],
-      "notes": "Series: Warning Light Decoded · Mode E (Spec Sheet)",
+      "notes": "Series: Driver's Manual · Mode A (Editorial Dark)",
       "status": "pending",
       "attempts": 0
     },
@@ -415,40 +411,8 @@
       "attempts": 0
     },
     {
-      "id": "newseries-st-mode-e-2026-05-13-11",
-      "slot_time_sgt": "2026-05-13T11:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-st-mode-e-2026-05-13-11/caption.txt",
-      "image_paths": [
-        "assets/newseries-st-mode-e-2026-05-13-11/slide.png",
-        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_2.png",
-        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_3.png",
-        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_4.png",
-        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_5.png"
-      ],
-      "notes": "Series: Straight Talk · Mode E (Spec Sheet)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "newseries-cow-mode-e-2026-05-13-15",
-      "slot_time_sgt": "2026-05-13T15:30",
-      "type": "carousel",
-      "caption_file": "assets/newseries-cow-mode-e-2026-05-13-15/caption.txt",
-      "image_paths": [
-        "assets/newseries-cow-mode-e-2026-05-13-15/slide.png",
-        "assets/newseries-cow-mode-e-2026-05-13-15/slides/slide_2.png",
-        "assets/newseries-cow-mode-e-2026-05-13-15/slides/slide_3.png",
-        "assets/newseries-cow-mode-e-2026-05-13-15/slides/slide_4.png",
-        "assets/newseries-cow-mode-e-2026-05-13-15/slides/slide_5.png"
-      ],
-      "notes": "Series: Cost of Waiting · Mode E (Spec Sheet)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "newseries-dm-mode-d-2026-05-13-20",
-      "slot_time_sgt": "2026-05-13T20:00",
+      "slot_time_sgt": "2026-05-13T11:00",
       "type": "carousel",
       "caption_file": "assets/newseries-dm-mode-d-2026-05-13-20/caption.txt",
       "image_paths": [
@@ -463,46 +427,82 @@
       "attempts": 0
     },
     {
-      "id": "newseries-rr-mode-e-2026-05-14-11",
-      "slot_time_sgt": "2026-05-14T11:00",
-      "type": "single",
-      "caption_file": "assets/newseries-rr-mode-e-2026-05-14-11/caption.txt",
+      "id": "newseries-bbtb-vezel-mode-b-2026-05-05-20",
+      "slot_time_sgt": "2026-05-13T15:30",
+      "type": "carousel",
+      "caption_file": "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/caption.txt",
       "image_paths": [
-        "assets/newseries-rr-mode-e-2026-05-14-11/slide.png"
+        "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/slide.png",
+        "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/slides/slide_2.png",
+        "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/slides/slide_3.png",
+        "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/slides/slide_4.png",
+        "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/slides/slide_5.png"
       ],
-      "notes": "Series: Real Reviews · Mode E (Spec Sheet) · Ash Ariffin",
+      "notes": "Series: Behind the Badge · Mode B (Cream Magazine) · Honda Vezel",
       "status": "pending",
       "attempts": 0
     },
     {
-      "id": "newseries-bbtb-vezel-mode-d-2026-05-14-15",
+      "id": "newseries-st-mode-c-2026-05-04-15",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-st-mode-c-2026-05-04-15/caption.txt",
+      "image_paths": [
+        "assets/newseries-st-mode-c-2026-05-04-15/slide.png",
+        "assets/newseries-st-mode-c-2026-05-04-15/slides/slide_2.png",
+        "assets/newseries-st-mode-c-2026-05-04-15/slides/slide_3.png",
+        "assets/newseries-st-mode-c-2026-05-04-15/slides/slide_4.png",
+        "assets/newseries-st-mode-c-2026-05-04-15/slides/slide_5.png"
+      ],
+      "notes": "Series: Straight Talk · Mode C (Poster Bold)",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "newseries-cow-mode-d-2026-05-06-20",
+      "slot_time_sgt": "2026-05-14T11:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-cow-mode-d-2026-05-06-20/caption.txt",
+      "image_paths": [
+        "assets/newseries-cow-mode-d-2026-05-06-20/slide.png",
+        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_2.png",
+        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_3.png",
+        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_4.png",
+        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_5.png"
+      ],
+      "notes": "Series: Cost of Waiting · Mode D (Polaroid Zine)",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "newseries-bbtb-vezel-mode-c-2026-05-07-20",
       "slot_time_sgt": "2026-05-14T15:30",
       "type": "carousel",
-      "caption_file": "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/caption.txt",
+      "caption_file": "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/caption.txt",
       "image_paths": [
-        "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/slide.png",
-        "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/slides/slide_2.png",
-        "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/slides/slide_3.png",
-        "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/slides/slide_4.png",
-        "assets/newseries-bbtb-vezel-mode-d-2026-05-14-15/slides/slide_5.png"
+        "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/slide.png",
+        "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/slides/slide_2.png",
+        "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/slides/slide_3.png",
+        "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/slides/slide_4.png",
+        "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/slides/slide_5.png"
       ],
-      "notes": "Series: Behind the Badge · Mode D (Polaroid Zine) · Honda Vezel",
+      "notes": "Series: Behind the Badge · Mode C (Poster Bold) · Honda Vezel",
       "status": "pending",
       "attempts": 0
     },
     {
-      "id": "newseries-bbtb-vezel-mode-e-2026-05-14-20",
+      "id": "newseries-st-mode-e-2026-05-13-11",
       "slot_time_sgt": "2026-05-14T20:00",
       "type": "carousel",
-      "caption_file": "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/caption.txt",
+      "caption_file": "assets/newseries-st-mode-e-2026-05-13-11/caption.txt",
       "image_paths": [
-        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slide.png",
-        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_2.png",
-        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_3.png",
-        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_4.png",
-        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_5.png"
+        "assets/newseries-st-mode-e-2026-05-13-11/slide.png",
+        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_2.png",
+        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_3.png",
+        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_4.png",
+        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_5.png"
       ],
-      "notes": "Series: Behind the Badge · Mode E (Spec Sheet) · Honda Vezel",
+      "notes": "Series: Straight Talk · Mode E (Spec Sheet)",
       "status": "pending",
       "attempts": 0
     }
