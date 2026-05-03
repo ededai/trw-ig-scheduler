@@ -383,3 +383,7 @@ ERROR publishing: Media ID is not available
 [2026-05-03 14:16:44 +08] HEARTBEAT lag 150 min (prev=2026-05-03T11:46:14.836654+08:00)
 [2026-05-03 14:16:44 +08] run: no due posts
 [2026-05-03 14:18:30 +08] run: no due posts
+[2026-05-03 16:17:23 +08] HEARTBEAT lag 119 min (prev=2026-05-03T14:18:30.873941+08:00)
+[2026-05-03 16:17:24 +08] CATCH-UP newseries-dm-mode-b-2026-05-05-11 — 0.8h late, publishing
+[2026-05-03 16:17:24 +08] Posting newseries-dm-mode-b-2026-05-05-11 (carousel) — notes: Series: Driver's Manual · Mode B (Cream Magazine)
+[2026-05-03 16:18:00 +08] OK  newseries-dm-mode-b-2026-05-05-11 -> https://www.instagram.com/p/DX3phL7Glzc/
