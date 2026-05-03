@@ -287,8 +287,7 @@ def main():
 
     container_id = create_media_container(ig_user_id, access_token, media_url, args.caption, media_type)
 
-    if media_type in ("REELS", "STORIES"):
-        wait_for_container(container_id, access_token)
+    wait_for_container(container_id, access_token)
 
     post_id = publish_container(ig_user_id, access_token, container_id)
     if media_type == "STORIES":
