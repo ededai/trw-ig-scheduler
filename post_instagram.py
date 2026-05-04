@@ -20,6 +20,7 @@ import urllib.request
 from pathlib import Path
 
 import requests
+from ig_post_guard import check_duplicate
 
 # ── Config ────────────────────────────────────────────────────────────────────
 ENV_FILE = Path(__file__).parent / ".env"
@@ -238,6 +239,7 @@ def main():
     parser.add_argument("--caption", default="", help="Caption text (include hashtags). Ignored for stories.")
     parser.add_argument("--story", action="store_true", help="Publish as Instagram Story (9:16, no caption)")
     parser.add_argument("--dry-run", action="store_true", help="Print caption without posting")
+    parser.add_argument("--force", action="store_true", help="Skip duplicate guard (emergency override)")
     args = parser.parse_args()
 
     # Caption linter: strip em/en dashes per universal rule (no em-dashes anywhere)
@@ -266,6 +268,10 @@ def main():
     if not ig_user_id or not access_token:
         print("ERROR: IG_USER_ID and IG_ACCESS_TOKEN must be set in tools/.env")
         sys.exit(1)
+
+    # Stories have no caption — skip duplicate check
+    if not args.story:
+        check_duplicate(args.caption, env=env, force=args.force)
 
     # Determine media URL and type
     if args.url:

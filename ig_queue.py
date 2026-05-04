@@ -28,6 +28,7 @@ import urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
+from ig_post_guard import check_duplicate
 
 SGT = ZoneInfo("Asia/Singapore")
 ROOT = Path(__file__).parent.resolve()
@@ -242,6 +243,12 @@ def telegram_alert(text: str) -> None:
 def process_entry(entry: dict) -> dict:
     log(f"Posting {entry['id']} ({entry['type']}) — notes: {entry.get('notes','')}")
     try:
+        # Duplicate guard for feed posts (stories have no caption worth checking)
+        if entry["type"] in ("single", "carousel"):
+            caption_file = resolve(entry.get("caption_file", ""))
+            if caption_file.exists():
+                check_duplicate(caption_file.read_text().strip(), env=env_or_dotenv(), force=False)
+
         if entry["type"] == "single":
             post_id = run_single(entry)
         elif entry["type"] == "carousel":

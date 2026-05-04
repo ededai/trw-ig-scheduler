@@ -18,6 +18,7 @@ import urllib.parse
 import urllib.request
 import json
 from pathlib import Path
+from ig_post_guard import check_duplicate
 
 ENV_FILE = Path(__file__).parent / ".env"
 
@@ -231,6 +232,7 @@ def main():
     ap.add_argument("--images", nargs="+", required=True, help="2-10 image paths in order")
     ap.add_argument("--caption-file", required=True)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--force", action="store_true", help="Skip duplicate guard (emergency override)")
     args = ap.parse_args()
 
     images = [Path(p).expanduser().resolve() for p in args.images]
@@ -268,6 +270,8 @@ def main():
     if not ig_user_id or not token:
         print("ERROR: IG_USER_ID and IG_ACCESS_TOKEN required in .env")
         sys.exit(1)
+
+    check_duplicate(caption, env=env, force=args.force)
 
     print(f"Uploading {len(images)} images to catbox.moe...")
     urls = []
