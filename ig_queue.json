@@ -340,7 +340,7 @@
     },
     {
       "id": "newseries-dm-mode-d-2026-05-13-20",
-      "slot_time_sgt": "2026-05-13T11:00",
+      "slot_time_sgt": "2026-05-09T11:00",
       "type": "carousel",
       "caption_file": "assets/newseries-dm-mode-d-2026-05-13-20/caption.txt",
       "image_paths": [
@@ -356,7 +356,7 @@
     },
     {
       "id": "newseries-bbtb-vezel-mode-b-2026-05-05-20",
-      "slot_time_sgt": "2026-05-13T15:30",
+      "slot_time_sgt": "2026-05-09T20:00",
       "type": "carousel",
       "caption_file": "assets/newseries-bbtb-vezel-mode-b-2026-05-05-20/caption.txt",
       "image_paths": [
@@ -372,7 +372,7 @@
     },
     {
       "id": "newseries-st-mode-c-2026-05-04-15",
-      "slot_time_sgt": "2026-05-13T20:00",
+      "slot_time_sgt": "2026-05-10T11:00",
       "type": "carousel",
       "caption_file": "assets/newseries-st-mode-c-2026-05-04-15/caption.txt",
       "image_paths": [
@@ -388,7 +388,7 @@
     },
     {
       "id": "newseries-cow-mode-d-2026-05-06-20",
-      "slot_time_sgt": "2026-05-14T11:00",
+      "slot_time_sgt": "2026-05-10T20:00",
       "type": "carousel",
       "caption_file": "assets/newseries-cow-mode-d-2026-05-06-20/caption.txt",
       "image_paths": [
@@ -404,7 +404,7 @@
     },
     {
       "id": "newseries-bbtb-vezel-mode-c-2026-05-07-20",
-      "slot_time_sgt": "2026-05-14T15:30",
+      "slot_time_sgt": "2026-05-11T11:00",
       "type": "carousel",
       "caption_file": "assets/newseries-bbtb-vezel-mode-c-2026-05-07-20/caption.txt",
       "image_paths": [
@@ -420,7 +420,7 @@
     },
     {
       "id": "newseries-st-mode-e-2026-05-13-11",
-      "slot_time_sgt": "2026-05-14T20:00",
+      "slot_time_sgt": "2026-05-12T20:00",
       "type": "carousel",
       "caption_file": "assets/newseries-st-mode-e-2026-05-13-11/caption.txt",
       "image_paths": [
