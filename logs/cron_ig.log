@@ -450,3 +450,7 @@ ERROR publishing: Media ID is not available
 [2026-05-04 19:11:44 +08] HEARTBEAT lag 127 min (prev=2026-05-04T17:04:16.487618+08:00)
 [2026-05-04 19:11:44 +08] run: no due posts
 [2026-05-04 19:15:46 +08] run: no due posts
+[2026-05-04 20:55:05 +08] HEARTBEAT lag 99 min (prev=2026-05-04T19:15:46.889986+08:00)
+[2026-05-04 20:55:05 +08] CATCH-UP newseries-bbtb-vezel-mode-e-2026-05-14-20 — 0.9h late, publishing
+[2026-05-04 20:55:05 +08] Posting newseries-bbtb-vezel-mode-e-2026-05-14-20 (carousel) — notes: Series: Behind the Badge · Mode E (Spec Sheet) · Honda Vezel
+[2026-05-04 20:55:40 +08] OK  newseries-bbtb-vezel-mode-e-2026-05-14-20 -> https://www.instagram.com/p/DX6uFwtDh3y/

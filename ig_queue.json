@@ -1,22 +1,6 @@
 {
   "pending": [
     {
-      "id": "newseries-bbtb-vezel-mode-e-2026-05-14-20",
-      "slot_time_sgt": "2026-05-04T20:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/caption.txt",
-      "image_paths": [
-        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slide.png",
-        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_2.png",
-        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_3.png",
-        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_4.png",
-        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_5.png"
-      ],
-      "notes": "Series: Behind the Badge · Mode E (Spec Sheet) · Honda Vezel",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "newseries-bbtb-vezel-mode-a-2026-05-03-20",
       "slot_time_sgt": "2026-05-05T11:00",
       "type": "carousel",
@@ -968,6 +952,25 @@
       "posted_url": "https://www.instagram.com/p/DX6TrZADhyR/",
       "posted_at": "2026-05-04 17:04 SGT",
       "post_id": "18064094444700869"
+    },
+    {
+      "id": "newseries-bbtb-vezel-mode-e-2026-05-14-20",
+      "slot_time_sgt": "2026-05-04T20:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/caption.txt",
+      "image_paths": [
+        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slide.png",
+        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_2.png",
+        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_3.png",
+        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_4.png",
+        "assets/newseries-bbtb-vezel-mode-e-2026-05-14-20/slides/slide_5.png"
+      ],
+      "notes": "Series: Behind the Badge · Mode E (Spec Sheet) · Honda Vezel",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DX6uFwtDh3y/",
+      "posted_at": "2026-05-04 20:55 SGT",
+      "post_id": "18123376474621923"
     }
   ],
   "failed": [],
