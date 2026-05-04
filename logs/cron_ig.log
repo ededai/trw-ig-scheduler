@@ -440,3 +440,5 @@ ERROR publishing: Media ID is not available
 [2026-05-04 11:25:49 +08] Posting newseries-rr-mode-c-2026-05-05-15 (single) — notes: Series: Real Reviews · Mode C (Poster Bold) · Wen Hing Chow
 [2026-05-04 11:26:04 +08] OK  newseries-rr-mode-c-2026-05-05-15 -> https://www.instagram.com/p/DX5s58SgLZw/
 [2026-05-04 11:42:35 +08] run: no due posts
+[2026-05-04 14:26:41 +08] HEARTBEAT lag 164 min (prev=2026-05-04T11:42:35.218554+08:00)
+[2026-05-04 14:26:41 +08] run: no due posts
