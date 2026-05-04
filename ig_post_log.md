@@ -38,3 +38,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-03 11:00 | Single | Real review · Doreen, cooling coil replacement. | https://www.instagram.com/p/DX3GpVpjQxh/ | Series: Real Reviews · Mode A (Editorial Dark) |
 | 2026-05-03 15:30 | Carousel | Read the dipstick. Read the future. | https://www.instagram.com/p/DX3phL7Glzc/ | Series: Driver's Manual · Mode B (Cream Magazine) |
 | 2026-05-03 20:00 | Carousel | Vezel notes. From the workshop floor. | https://www.instagram.com/p/DX4DySUFrDz/ | Series: Behind the Badge · Mode D (Polaroid Zine) · Honda Vezel |
+| 2026-05-04 11:00 | Single | Real review · Wen Hing Chow, brake job. | https://www.instagram.com/p/DX5s58SgLZw/ | Series: Real Reviews · Mode C (Poster Bold) · Wen Hing Chow |
