@@ -41,3 +41,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-04 11:00 | Single | Real review · Wen Hing Chow, brake job. | https://www.instagram.com/p/DX5s58SgLZw/ | Series: Real Reviews · Mode C (Poster Bold) · Wen Hing Chow |
 | 2026-05-04 15:30 | Carousel | I drove on the red light. | https://www.instagram.com/p/DX6TrZADhyR/ | Series: Warning Light Decoded · Mode D (Polaroid Zine) |
 | 2026-05-04 20:00 | Carousel | Honda Vezel · the spec card. | https://www.instagram.com/p/DX6uFwtDh3y/ | Series: Behind the Badge · Mode E (Spec Sheet) · Honda Vezel |
+| 2026-05-05 11:00 | Carousel | Honda Vezel. Honest take. | https://www.instagram.com/p/DX8SHt8lTbg/ | Series: Behind the Badge · Mode A (Editorial Dark) · Honda Vezel |
