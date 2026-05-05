@@ -501,3 +501,5 @@ ERROR publishing: Media ID is not available
 [2026-05-05 20:11:43 +08] HEARTBEAT lag 33 min (prev=2026-05-05T19:39:05.908385+08:00)
 [2026-05-05 20:11:43 +08] Posting newseries-rr-mode-e-2026-05-14-11 (single) — notes: Series: Real Reviews · Mode E (Spec Sheet) · Ash Ariffin
 [2026-05-05 20:11:55 +08] OK  newseries-rr-mode-e-2026-05-14-11 -> https://www.instagram.com/p/DX9N4xylqoE/
+[2026-05-05 20:51:53 +08] HEARTBEAT lag 40 min (prev=2026-05-05T20:11:43.646417+08:00)
+[2026-05-05 20:51:53 +08] run: no due posts
