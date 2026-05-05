@@ -1125,3 +1125,110 @@ ARTICLE SCHEMA IMAGE FIX  |  mode=apply  |  17 articles
 0 of 12 articles need schema fix.
 No-op.
 ===== 2026-05-04T18:00:41Z daily_blog_refresh done (exit=0) =====
+
+===== 2026-05-05T17:58:28Z daily_blog_refresh start =====
+--- step 1: refresh_trw_blog_index --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+TRW BLOG INDEX REFRESH  |  mode=apply  |  2026-05-05
+Bucket #2  (epoch=2026-04-24, days=5)
+========================================================================
+Cards on /blog/: 17
+Currently featured: Brake Pads and Rotors: How to Tell When It Is Time to Change in Singapore
+Proposed featured (bucket 2): Brake Pads and Rotors: How to Tell When It Is Time to Change in Singapore
+  href     : /brake-pads-rotors-singapore-when-to-change/
+  category : Guides
+  img      : https://therightworkshop.com/wp-content/uploads/2026/04/nb_post5_brake_pads_v1-1.jpg
+
+--- DRIFT REPORT ---
+Hero drift (auto-fix): 0
+OG:image drift (flag only): 17
+  • first-car-service-singapore-what-happens og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post_first-service_v2.webp
+  • questions-to-ask-before-new-car-workshop-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post_12-questions_v1.webp
+  • block-exemption-order-singapore-car-servicing og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post_block-exemption_v1.webp
+  • how-to-read-workshop-quote-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post_read-quote_v1.webp
+  • dealer-vs-independent-workshop-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post_dealer-vs-indep_v1.webp
+  • 10-signs-trustworthy-mechanic-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post_10-signs-mechanic_v1.webp
+  • what-to-look-for-car-workshop-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post_what-to-look-for_v1.webp
+  • driving-singapore-rain-wet-weather og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post10_rain_driving_v1-1.webp
+  • used-car-inspection-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post9_used_car_inspection_v1-1.webp
+  • independent-workshop-vs-authorised-service-centre-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/logo-white-on-transparent-padded.webp
+  • coe-renewal-vs-scrap-singapore-guide og=https://therightworkshop.com/wp-content/uploads/2026/04/trw_export_scrap.webp
+  • coolant-radiator-care-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post6_coolant_radiator_v1-1.webp
+  • brake-pads-rotors-singapore-when-to-change og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post5_brake_pads_v1-1.webp
+  • dashboard-warning-lights-explained og=https://therightworkshop.com/wp-content/uploads/2026/04/logo-white-on-transparent-padded.webp
+  • tyres-battery-singapore-checks-guide og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_tyre_treadgauge_battery_v1.webp
+  • car-aircon-not-cold-singapore-fix og=https://therightworkshop.com/wp-content/uploads/2026/04/logo-white-on-transparent-padded.webp
+  • how-often-service-car-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/logo-white-on-transparent-padded.webp
+Schema Article.image drift (flag only): 0
+[2026-05-05T17:58:49] No drift, featured unchanged — no push.
+
+No-op (nothing to push).
+--- step 2: fix_article_featured_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+ARTICLE FEATURED IMAGE FIX  |  mode=apply  |  17 articles
+========================================================================
+  [ok    ] first-car-service-singapore-what-happens
+           page_id=1354  featured_media: 1595 -> 1595  (nb_post_first-service_v2.jpg)
+  [ok    ] questions-to-ask-before-new-car-workshop-singapore
+           page_id=1353  featured_media: 1480 -> 1480  (nb_post_12-questions_v1.jpg)
+  [ok    ] block-exemption-order-singapore-car-servicing
+           page_id=1352  featured_media: 1478 -> 1478  (nb_post_block-exemption_v1.jpg)
+  [ok    ] how-to-read-workshop-quote-singapore
+           page_id=1351  featured_media: 1476 -> 1476  (nb_post_read-quote_v1.jpg)
+  [ok    ] dealer-vs-independent-workshop-singapore
+           page_id=1350  featured_media: 1474 -> 1474  (nb_post_dealer-vs-indep_v1.jpg)
+  [ok    ] 10-signs-trustworthy-mechanic-singapore
+           page_id=1349  featured_media: 1472 -> 1472  (nb_post_10-signs-mechanic_v1.jpg)
+  [ok    ] what-to-look-for-car-workshop-singapore
+           page_id=1348  featured_media: 1469 -> 1469  (nb_post_what-to-look-for_v1.jpg)
+  [ok    ] driving-singapore-rain-wet-weather
+           page_id=1226  featured_media: 1219 -> 1219  (nb_post10_rain_driving_v1-1.jpg)
+  [ok    ] used-car-inspection-singapore
+           page_id=1225  featured_media: 1218 -> 1218  (nb_post9_used_car_inspection_v1-1.jpg)
+  [ok    ] independent-workshop-vs-authorised-service-centre-singapore
+           page_id=1224  featured_media: 641 -> 641  (logo-white-on-transparent.png)
+  [ok    ] coe-renewal-vs-scrap-singapore-guide
+           page_id=1223  featured_media: 760 -> 760  (trw_export_scrap.jpg)
+  [ok    ] coolant-radiator-care-singapore
+           page_id=1222  featured_media: 1215 -> 1215  (nb_post6_coolant_radiator_v1-1.jpg)
+  [ok    ] brake-pads-rotors-singapore-when-to-change
+           page_id=1221  featured_media: 1214 -> 1214  (nb_post5_brake_pads_v1-1.jpg)
+  [ok    ] dashboard-warning-lights-explained
+           page_id=1220  featured_media: 641 -> 641  (logo-white-on-transparent.png)
+  [ok    ] tyres-battery-singapore-checks-guide
+           page_id=967  featured_media: 960 -> 960  (nb_tyre_treadgauge_battery_v1.jpg)
+  [ok    ] car-aircon-not-cold-singapore-fix
+           page_id=966  featured_media: 641 -> 641  (logo-white-on-transparent.png)
+  [ok    ] how-often-service-car-singapore
+           page_id=965  featured_media: 641 -> 641  (logo-white-on-transparent.png)
+
+0 of 17 articles need featured_media update. Errors: 0
+No-op.
+--- step 3: fix_article_schema_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+ARTICLE SCHEMA IMAGE FIX  |  mode=apply  |  17 articles
+========================================================================
+  ok     first-car-service-singapore-what-happens
+  ok     questions-to-ask-before-new-car-workshop-singapore
+  ok     block-exemption-order-singapore-car-servicing
+  ok     how-to-read-workshop-quote-singapore
+  ok     dealer-vs-independent-workshop-singapore
+  ok     10-signs-trustworthy-mechanic-singapore
+  ok     what-to-look-for-car-workshop-singapore
+  ok     driving-singapore-rain-wet-weather
+  ok     used-car-inspection-singapore
+  ok     independent-workshop-vs-authorised-service-centre-singapore
+  ok     coe-renewal-vs-scrap-singapore-guide
+  ok     coolant-radiator-care-singapore
+  ok     brake-pads-rotors-singapore-when-to-change
+  ok     dashboard-warning-lights-explained
+  ok     tyres-battery-singapore-checks-guide
+  ok     car-aircon-not-cold-singapore-fix
+  ok     how-often-service-car-singapore
+
+0 of 17 articles need schema fix.
+No-op.
+===== 2026-05-05T17:59:49Z daily_blog_refresh done (exit=0) =====
