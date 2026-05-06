@@ -532,3 +532,7 @@ ERROR publishing: Media ID is not available
 [2026-05-06 14:17:16 +08] HEARTBEAT lag 157 min (prev=2026-05-06T11:39:59.127633+08:00)
 [2026-05-06 14:17:16 +08] run: no due posts
 [2026-05-06 14:19:43 +08] run: no due posts
+[2026-05-06 16:57:27 +08] HEARTBEAT lag 158 min (prev=2026-05-06T14:19:43.516162+08:00)
+[2026-05-06 16:57:27 +08] CATCH-UP newseries-wl-mode-e-2026-05-08-11 — 1.5h late, publishing
+[2026-05-06 16:57:27 +08] Posting newseries-wl-mode-e-2026-05-08-11 (carousel) — notes: Series: Warning Light Decoded · Mode E (Spec Sheet)
+[2026-05-06 16:57:59 +08] OK  newseries-wl-mode-e-2026-05-08-11 -> https://www.instagram.com/p/DX_cfPGGld9/
