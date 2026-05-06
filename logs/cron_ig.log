@@ -543,3 +543,5 @@ ERROR publishing: Media ID is not available
 [2026-05-06 20:20:24 +08] Posting newseries-dm-mode-c-2026-05-07-11 (carousel) — notes: Series: Driver's Manual · Mode C (Poster Bold)
 [2026-05-06 20:21:00 +08] OK  newseries-dm-mode-c-2026-05-07-11 -> https://www.instagram.com/p/DX_ztmeHL44/
 [2026-05-06 20:28:21 +08] run: no due posts
+[2026-05-06 23:05:43 +08] HEARTBEAT lag 157 min (prev=2026-05-06T20:28:21.840069+08:00)
+[2026-05-06 23:05:43 +08] run: no due posts
