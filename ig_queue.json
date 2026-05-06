@@ -1,22 +1,6 @@
 {
   "pending": [
     {
-      "id": "newseries-dm-mode-c-2026-05-07-11",
-      "slot_time_sgt": "2026-05-06T20:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-dm-mode-c-2026-05-07-11/caption.txt",
-      "image_paths": [
-        "assets/newseries-dm-mode-c-2026-05-07-11/slide.png",
-        "assets/newseries-dm-mode-c-2026-05-07-11/slides/slide_2.png",
-        "assets/newseries-dm-mode-c-2026-05-07-11/slides/slide_3.png",
-        "assets/newseries-dm-mode-c-2026-05-07-11/slides/slide_4.png",
-        "assets/newseries-dm-mode-c-2026-05-07-11/slides/slide_5.png"
-      ],
-      "notes": "Series: Driver's Manual · Mode C (Poster Bold)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "newseries-wl-mode-c-2026-05-04-11",
       "slot_time_sgt": "2026-05-07T11:00",
       "type": "carousel",
@@ -986,6 +970,25 @@
       "posted_url": "https://www.instagram.com/p/DX_cfPGGld9/",
       "posted_at": "2026-05-06 16:57 SGT",
       "post_id": "18151634125464107"
+    },
+    {
+      "id": "newseries-dm-mode-c-2026-05-07-11",
+      "slot_time_sgt": "2026-05-06T20:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-dm-mode-c-2026-05-07-11/caption.txt",
+      "image_paths": [
+        "assets/newseries-dm-mode-c-2026-05-07-11/slide.png",
+        "assets/newseries-dm-mode-c-2026-05-07-11/slides/slide_2.png",
+        "assets/newseries-dm-mode-c-2026-05-07-11/slides/slide_3.png",
+        "assets/newseries-dm-mode-c-2026-05-07-11/slides/slide_4.png",
+        "assets/newseries-dm-mode-c-2026-05-07-11/slides/slide_5.png"
+      ],
+      "notes": "Series: Driver's Manual · Mode C (Poster Bold)",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DX_ztmeHL44/",
+      "posted_at": "2026-05-06 20:21 SGT",
+      "post_id": "17857818252650798"
     }
   ],
   "failed": [],
