@@ -44,3 +44,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-05 11:00 | Carousel | Honda Vezel. Honest take. | https://www.instagram.com/p/DX8SHt8lTbg/ | Series: Behind the Badge · Mode A (Editorial Dark) · Honda Vezel |
 | 2026-05-05 15:30 | Carousel | Skip the oil. Pay for the engine. | https://www.instagram.com/p/DX8v3yrDrLl/ | Series: Cost of Waiting · Mode C (Poster Bold) |
 | 2026-05-05 20:00 | Single | Real review · Chloe Lim, paint and bodywork. | https://www.instagram.com/p/DX9N4xylqoE/ | Series: Real Reviews · Mode E (Spec Sheet) · Ash Ariffin |
+| 2026-05-06 11:00 | Carousel | The 4-line honest test. | https://www.instagram.com/p/DX-2NqzICc7/ | Series: Straight Talk · Mode D (Polaroid Zine) |
