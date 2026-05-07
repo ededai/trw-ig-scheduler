@@ -1,22 +1,6 @@
 {
   "pending": [
     {
-      "id": "newseries-wl-mode-c-2026-05-04-11",
-      "slot_time_sgt": "2026-05-07T11:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-wl-mode-c-2026-05-04-11/caption.txt",
-      "image_paths": [
-        "assets/newseries-wl-mode-c-2026-05-04-11/slide.png",
-        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_2.png",
-        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_3.png",
-        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_4.png",
-        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_5.png"
-      ],
-      "notes": "Series: Warning Light Decoded · Mode C (Poster Bold)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "newseries-cow-mode-e-2026-05-13-15",
       "slot_time_sgt": "2026-05-07T15:30",
       "type": "carousel",
@@ -989,6 +973,25 @@
       "posted_url": "https://www.instagram.com/p/DX_ztmeHL44/",
       "posted_at": "2026-05-06 20:21 SGT",
       "post_id": "17857818252650798"
+    },
+    {
+      "id": "newseries-wl-mode-c-2026-05-04-11",
+      "slot_time_sgt": "2026-05-07T11:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-wl-mode-c-2026-05-04-11/caption.txt",
+      "image_paths": [
+        "assets/newseries-wl-mode-c-2026-05-04-11/slide.png",
+        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_2.png",
+        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_3.png",
+        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_4.png",
+        "assets/newseries-wl-mode-c-2026-05-04-11/slides/slide_5.png"
+      ],
+      "notes": "Series: Warning Light Decoded · Mode C (Poster Bold)",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DYBbHW7klkx/",
+      "posted_at": "2026-05-07 11:24 SGT",
+      "post_id": "18074344892648536"
     }
   ],
   "failed": [],
