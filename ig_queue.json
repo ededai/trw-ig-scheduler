@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "newseries-rr-mode-d-2026-05-07-15",
-      "slot_time_sgt": "2026-05-07T20:00",
-      "type": "single",
-      "caption_file": "assets/newseries-rr-mode-d-2026-05-07-15/caption.txt",
-      "image_paths": [
-        "assets/newseries-rr-mode-d-2026-05-07-15/slide.png"
-      ],
-      "notes": "Series: Real Reviews · Mode D (Polaroid Zine) · Civic to Lexus",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "newseries-dm-mode-a-2026-05-03-11",
       "slot_time_sgt": "2026-05-08T11:00",
       "type": "carousel",
@@ -995,6 +983,21 @@
       "posted_url": "https://www.instagram.com/p/DYCC3Rbmqm3/",
       "posted_at": "2026-05-07 17:11 SGT",
       "post_id": "17928695562092104"
+    },
+    {
+      "id": "newseries-rr-mode-d-2026-05-07-15",
+      "slot_time_sgt": "2026-05-07T20:00",
+      "type": "single",
+      "caption_file": "assets/newseries-rr-mode-d-2026-05-07-15/caption.txt",
+      "image_paths": [
+        "assets/newseries-rr-mode-d-2026-05-07-15/slide.png"
+      ],
+      "notes": "Series: Real Reviews · Mode D (Polaroid Zine) · Civic to Lexus",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DYCeT0XIGQB/",
+      "posted_at": "2026-05-07 21:11 SGT",
+      "post_id": "17946958469998773"
     }
   ],
   "failed": [],
