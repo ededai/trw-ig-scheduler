@@ -586,3 +586,5 @@ ERROR publishing: Media ID is not available
 [2026-05-07 21:11:26 +08] Posting newseries-rr-mode-d-2026-05-07-15 (single) — notes: Series: Real Reviews · Mode D (Polaroid Zine) · Civic to Lexus
 [2026-05-07 21:11:41 +08] OK  newseries-rr-mode-d-2026-05-07-15 -> https://www.instagram.com/p/DYCeT0XIGQB/
 [2026-05-07 21:16:13 +08] run: no due posts
+[2026-05-07 23:36:43 +08] HEARTBEAT lag 140 min (prev=2026-05-07T21:16:13.961401+08:00)
+[2026-05-07 23:36:43 +08] run: no due posts
