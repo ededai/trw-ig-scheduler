@@ -574,3 +574,7 @@ ERROR publishing: Media ID is not available
 [2026-05-07 14:22:52 +08] HEARTBEAT lag 163 min (prev=2026-05-07T11:39:43.223397+08:00)
 [2026-05-07 14:22:53 +08] run: no due posts
 [2026-05-07 14:25:36 +08] run: no due posts
+[2026-05-07 17:11:18 +08] HEARTBEAT lag 166 min (prev=2026-05-07T14:25:36.251300+08:00)
+[2026-05-07 17:11:18 +08] CATCH-UP newseries-cow-mode-e-2026-05-13-15 — 1.7h late, publishing
+[2026-05-07 17:11:18 +08] Posting newseries-cow-mode-e-2026-05-13-15 (carousel) — notes: Series: Cost of Waiting · Mode E (Spec Sheet)
+[2026-05-07 17:11:53 +08] OK  newseries-cow-mode-e-2026-05-13-15 -> https://www.instagram.com/p/DYCC3Rbmqm3/
