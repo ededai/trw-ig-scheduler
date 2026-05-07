@@ -1,0 +1,200 @@
+name: Post COE Now (Cole handoff)
+
+# Triggered by Cole via repository_dispatch (cross-repo, automated) OR by Ed manually via workflow_dispatch.
+# Cole owns the content; Bryan owns the actual Meta Graph API publish.
+# ig_post_guard.py runs before publish to block duplicates (3-layer check: local log + queue + live IG).
+
+on:
+  workflow_dispatch:
+    inputs:
+      payload_json:
+        description: 'JSON: {slug, permalink, caption, slide_urls[]}'
+        required: true
+        type: string
+  repository_dispatch:
+    types: [post-coe-now]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: post-coe-now
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements.txt 2>/dev/null || pip install requests
+
+      - name: Resolve payload (manual or cross-repo)
+        id: payload
+        env:
+          MANUAL_PAYLOAD: ${{ inputs.payload_json }}
+          DISPATCH_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+        run: |
+          python <<'PYEOF'
+          import json, os, sys
+          manual = (os.environ.get("MANUAL_PAYLOAD") or "").strip()
+          dispatch = (os.environ.get("DISPATCH_PAYLOAD") or "").strip()
+          if manual:
+              payload = json.loads(manual)
+          elif dispatch and dispatch != "null":
+              payload = json.loads(dispatch)
+          else:
+              print("::error::No payload provided.")
+              sys.exit(1)
+          required = ["slide_urls", "caption"]
+          missing = [k for k in required if not payload.get(k)]
+          if missing:
+              print(f"::error::Payload missing required fields: {missing}")
+              sys.exit(1)
+          # Emit to GITHUB_OUTPUT for downstream step
+          out_path = os.environ["GITHUB_OUTPUT"]
+          with open(out_path, "a") as fh:
+              fh.write(f"payload_json<<EOF\n{json.dumps(payload)}\nEOF\n")
+          print(f"::notice::Payload resolved: slug={payload.get('slug', '?')} slide_count={len(payload['slide_urls'])}")
+          PYEOF
+
+      - name: Duplicate guard (ig_post_guard.py)
+        env:
+          PAYLOAD: ${{ steps.payload.outputs.payload_json }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+        run: |
+          python <<'PYEOF'
+          import json, os, sys
+          sys.path.insert(0, ".")
+          from ig_post_guard import check_duplicate
+          payload = json.loads(os.environ["PAYLOAD"])
+          caption = payload["caption"]
+          env = {
+              "IG_USER_ID": os.environ.get("IG_USER_ID", ""),
+              "IG_ACCESS_TOKEN": os.environ.get("IG_ACCESS_TOKEN", "") or os.environ.get("META_ACCESS_TOKEN", ""),
+          }
+          try:
+              check_duplicate(caption, env=env)
+          except SystemExit as exc:
+              print(f"::error::Duplicate guard blocked publish: {exc}")
+              raise
+          except Exception as exc:
+              print(f"::warning::Duplicate guard error (non-fatal): {exc}")
+          print("::notice::Duplicate guard passed.")
+          PYEOF
+
+      - name: Publish carousel to Instagram
+        env:
+          PAYLOAD: ${{ steps.payload.outputs.payload_json }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+        run: |
+          python <<'PYEOF'
+          import json, os, time, sys
+          import requests
+
+          payload = json.loads(os.environ["PAYLOAD"])
+          slide_urls = payload["slide_urls"]
+          caption = payload["caption"]
+          permalink = payload.get("permalink", "")
+
+          ig_user = os.environ["IG_USER_ID"]
+          token = os.environ["META_ACCESS_TOKEN"]
+          base = f"https://graph.facebook.com/v20.0/{ig_user}"
+
+          # Step 1 — create child item containers (image media)
+          child_ids = []
+          for url in slide_urls:
+              resp = requests.post(
+                  f"{base}/media",
+                  data={
+                      "image_url": url,
+                      "is_carousel_item": "true",
+                      "access_token": token,
+                  },
+                  timeout=60,
+              )
+              resp.raise_for_status()
+              child_ids.append(resp.json()["id"])
+
+          # Step 2 — create carousel container
+          resp = requests.post(
+              f"{base}/media",
+              data={
+                  "media_type": "CAROUSEL",
+                  "children": ",".join(child_ids),
+                  "caption": caption,
+                  "access_token": token,
+              },
+              timeout=60,
+          )
+          resp.raise_for_status()
+          carousel_id = resp.json()["id"]
+
+          # Step 3 — wait for it to finish processing then publish
+          for _ in range(30):
+              status = requests.get(
+                  f"https://graph.facebook.com/v20.0/{carousel_id}",
+                  params={"fields": "status_code", "access_token": token},
+                  timeout=30,
+              ).json()
+              if status.get("status_code") == "FINISHED":
+                  break
+              time.sleep(2)
+
+          publish = requests.post(
+              f"{base}/media_publish",
+              data={"creation_id": carousel_id, "access_token": token},
+              timeout=60,
+          )
+          publish.raise_for_status()
+          ig_post_id = publish.json()["id"]
+          print(f"::notice::Published IG carousel id={ig_post_id} permalink={permalink}")
+          PYEOF
+
+      - name: Notify Cole (Telegram)
+        if: always()
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          STATUS: ${{ job.status }}
+          PAYLOAD: ${{ steps.payload.outputs.payload_json }}
+        run: |
+          python <<'PYEOF'
+          import json, os, urllib.request, urllib.parse
+          token = os.environ.get("TG_BOT_TOKEN", "")
+          chat = os.environ.get("TG_CHAT_ID", "")
+          if not token or not chat:
+              print("::warning::No Telegram creds, skipping notify.")
+              raise SystemExit(0)
+          status = os.environ.get("STATUS", "unknown")
+          try:
+              payload = json.loads(os.environ.get("PAYLOAD") or "{}")
+              slug = payload.get("slug", "?")
+              permalink = payload.get("permalink", "")
+          except Exception:
+              slug, permalink = "?", ""
+          icon = "✅" if status == "success" else "❌"
+          msg = f"{icon} <b>Bryan IG post-coe-now</b>\nSlug: <code>{slug}</code>\nStatus: {status}\n{permalink}"
+          data = urllib.parse.urlencode({
+              "chat_id": chat,
+              "text": msg,
+              "parse_mode": "HTML",
+              "disable_web_page_preview": "true",
+          }).encode()
+          req = urllib.request.Request(
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              data=data,
+              method="POST",
+          )
+          urllib.request.urlopen(req, timeout=10)
+          print("::notice::Telegram notified.")
+          PYEOF
