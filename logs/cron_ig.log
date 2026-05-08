@@ -621,3 +621,5 @@ ERROR publishing: Media ID is not available
 [2026-05-08 16:47:49 +08] Posting igs-autofill-dealer-vs-independent-workshop-2026-05-08-1530 (story) — notes: Auto-fill IGS — blog:dealer-vs-independent-workshop-singapore variant:A
 [2026-05-08 16:48:03 +08] OK  igs-autofill-dealer-vs-independent-workshop-2026-05-08-1530 -> 18151718659467903
 [2026-05-08 16:48:49 +08] run: no due posts
+[2026-05-08 18:10:47 +08] HEARTBEAT lag 82 min (prev=2026-05-08T16:48:49.036742+08:00)
+[2026-05-08 18:10:47 +08] run: no due posts
