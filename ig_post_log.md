@@ -50,3 +50,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-07 11:00 | Carousel | Check engine light. Don't panic. | https://www.instagram.com/p/DYBbHW7klkx/ | Series: Warning Light Decoded · Mode C (Poster Bold) |
 | 2026-05-07 15:30 | Carousel | Forget these numbers. Big problem. | https://www.instagram.com/p/DYCC3Rbmqm3/ | Series: Cost of Waiting · Mode E (Spec Sheet) |
 | 2026-05-07 20:00 | Single | Real review · Darren Kee, Civic to Lexus. | https://www.instagram.com/p/DYCeT0XIGQB/ | Series: Real Reviews · Mode D (Polaroid Zine) · Civic to Lexus |
+| 2026-05-08 11:00 | Carousel | What I wish I knew at 23. | https://www.instagram.com/p/DYD_nbImvhv/ | Series: Driver's Manual · Mode A (Editorial Dark) |
