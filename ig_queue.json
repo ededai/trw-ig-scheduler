@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-brake-pads-rotors-singapore-wh-2026-05-08-2000",
-      "slot_time_sgt": "2026-05-08T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-08-2000/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-08-2000/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:C",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-brake-pads-rotors-singapore-wh-2026-05-09-1100",
       "slot_time_sgt": "2026-05-09T11:00",
       "type": "story",
@@ -1004,6 +992,21 @@
       "posted_url": "18151718659467903",
       "posted_at": "2026-05-08 16:48 SGT",
       "post_id": "18151718659467903"
+    },
+    {
+      "id": "igs-autofill-brake-pads-rotors-singapore-wh-2026-05-08-2000",
+      "slot_time_sgt": "2026-05-08T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-08-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-08-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:C",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17936693172237474",
+      "posted_at": "2026-05-08 20:59 SGT",
+      "post_id": "17936693172237474"
     }
   ],
   "failed": [],

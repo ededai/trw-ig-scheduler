@@ -52,3 +52,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-07 20:00 | Single | Real review · Darren Kee, Civic to Lexus. | https://www.instagram.com/p/DYCeT0XIGQB/ | Series: Real Reviews · Mode D (Polaroid Zine) · Civic to Lexus |
 | 2026-05-08 11:00 | Carousel | What I wish I knew at 23. | https://www.instagram.com/p/DYD_nbImvhv/ | Series: Driver's Manual · Mode A (Editorial Dark) |
 | 2026-05-08 15:30 | Single | Auto-filled IGS for blog: dealer-vs-independent-workshop-singapore (variant A) | 18151718659467903 | Auto-fill IGS — blog:dealer-vs-independent-workshop-singapore variant:A |
+| 2026-05-08 20:00 | Single | Auto-filled IGS for blog: brake-pads-rotors-singapore-when-to-change (variant C) | 17936693172237474 | Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:C |
