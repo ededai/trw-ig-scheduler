@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-dealer-vs-independent-workshop-2026-05-08-1530",
-      "slot_time_sgt": "2026-05-08T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-dealer-vs-independent-workshop-2026-05-08-1530/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-dealer-vs-independent-workshop-2026-05-08-1530/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:dealer-vs-independent-workshop-singapore variant:A",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-brake-pads-rotors-singapore-wh-2026-05-08-2000",
       "slot_time_sgt": "2026-05-08T20:00",
       "type": "story",
@@ -1001,6 +989,21 @@
       "posted_url": "https://www.instagram.com/p/DYD_nbImvhv/",
       "posted_at": "2026-05-08 11:21 SGT",
       "post_id": "18161983177440048"
+    },
+    {
+      "id": "igs-autofill-dealer-vs-independent-workshop-2026-05-08-1530",
+      "slot_time_sgt": "2026-05-08T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-dealer-vs-independent-workshop-2026-05-08-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-dealer-vs-independent-workshop-2026-05-08-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:dealer-vs-independent-workshop-singapore variant:A",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18151718659467903",
+      "posted_at": "2026-05-08 16:48 SGT",
+      "post_id": "18151718659467903"
     }
   ],
   "failed": [],
