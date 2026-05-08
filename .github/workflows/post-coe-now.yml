@@ -30,10 +30,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: pip
       - name: Install
-        run: |
-          pip install -r requirements.txt 2>/dev/null || pip install requests
+        run: pip install requests
 
       - name: Resolve payload (manual or cross-repo)
         id: payload
@@ -69,7 +67,6 @@ jobs:
           PAYLOAD: ${{ steps.payload.outputs.payload_json }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
         run: |
           python <<'PYEOF'
           import json, os, sys
@@ -79,7 +76,7 @@ jobs:
           caption = payload["caption"]
           env = {
               "IG_USER_ID": os.environ.get("IG_USER_ID", ""),
-              "IG_ACCESS_TOKEN": os.environ.get("IG_ACCESS_TOKEN", "") or os.environ.get("META_ACCESS_TOKEN", ""),
+              "IG_ACCESS_TOKEN": (os.environ.get("IG_ACCESS_TOKEN") or "").strip(),
           }
           try:
               check_duplicate(caption, env=env)
@@ -95,7 +92,7 @@ jobs:
         env:
           PAYLOAD: ${{ steps.payload.outputs.payload_json }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: |
           python <<'PYEOF'
           import json, os, time, sys
@@ -107,7 +104,7 @@ jobs:
           permalink = payload.get("permalink", "")
 
           ig_user = os.environ["IG_USER_ID"]
-          token = os.environ["META_ACCESS_TOKEN"]
+          token = os.environ["IG_ACCESS_TOKEN"]
           base = f"https://graph.facebook.com/v20.0/{ig_user}"
 
           # Step 1 — create child item containers (image media)
@@ -170,8 +167,8 @@ jobs:
         run: |
           python <<'PYEOF'
           import json, os, urllib.request, urllib.parse
-          token = os.environ.get("TG_BOT_TOKEN", "")
-          chat = os.environ.get("TG_CHAT_ID", "")
+          token = (os.environ.get("TG_BOT_TOKEN") or "").strip()
+          chat = (os.environ.get("TG_CHAT_ID") or "").strip()
           if not token or not chat:
               print("::warning::No Telegram creds, skipping notify.")
               raise SystemExit(0)
