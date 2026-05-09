@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-how-often-service-car-singapor-2026-05-09-1530",
-      "slot_time_sgt": "2026-05-09T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-how-often-service-car-singapor-2026-05-09-1530/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-how-often-service-car-singapor-2026-05-09-1530/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:how-often-service-car-singapore variant:A",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-what-to-look-for-car-workshop--2026-05-09-2000",
       "slot_time_sgt": "2026-05-09T20:00",
       "type": "story",
@@ -1013,6 +1001,21 @@
       "posted_url": "https://www.instagram.com/p/DYGl4Ghjt3C/",
       "posted_at": "2026-05-09 11:34 SGT",
       "post_id": "18093046712190863"
+    },
+    {
+      "id": "igs-autofill-how-often-service-car-singapor-2026-05-09-1530",
+      "slot_time_sgt": "2026-05-09T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-how-often-service-car-singapor-2026-05-09-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-how-often-service-car-singapor-2026-05-09-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:how-often-service-car-singapore variant:A",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17965378989112583",
+      "posted_at": "2026-05-09 15:59 SGT",
+      "post_id": "17965378989112583"
     }
   ],
   "failed": [],

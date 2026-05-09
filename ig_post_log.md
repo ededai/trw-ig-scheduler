@@ -55,3 +55,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-08 20:00 | Single | Auto-filled IGS for blog: brake-pads-rotors-singapore-when-to-change (variant C) | 17936693172237474 | Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:C |
 | 2026-05-09 11:00 | Single | Auto-filled IGS for blog: brake-pads-rotors-singapore-when-to-change (variant B) | 18446463115113937 | Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:B |
 | 2026-05-09 11:00 | Carousel | My first car. 230,000km. Many lessons. | https://www.instagram.com/p/DYGl4Ghjt3C/ | Series: Driver's Manual · Mode D (Polaroid Zine) |
+| 2026-05-09 15:30 | Single | Auto-filled IGS for blog: how-often-service-car-singapore (variant A) | 17965378989112583 | Auto-fill IGS — blog:how-often-service-car-singapore variant:A |
