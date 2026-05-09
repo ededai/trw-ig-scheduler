@@ -690,3 +690,5 @@ ERROR publishing: Media ID is not available
 [2026-05-09 20:12:32 +08] OK  newseries-bbtb-vezel-mode-b-2026-05-05-20 -> https://www.instagram.com/p/DYHhIVBnPQG/
 [2026-05-09 20:41:55 +08] HEARTBEAT lag 30 min (prev=2026-05-09T20:11:47.503075+08:00)
 [2026-05-09 20:41:55 +08] run: no due posts
+[2026-05-09 21:51:45 +08] HEARTBEAT lag 70 min (prev=2026-05-09T20:41:55.006295+08:00)
+[2026-05-09 21:51:45 +08] run: no due posts
