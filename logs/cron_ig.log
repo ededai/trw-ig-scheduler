@@ -667,3 +667,5 @@ ERROR publishing: Media ID is not available
 [2026-05-09 11:34:11 +08] OK  igs-autofill-brake-pads-rotors-singapore-wh-2026-05-09-1100 -> 18446463115113937
 [2026-05-09 11:34:12 +08] Posting newseries-dm-mode-d-2026-05-13-20 (carousel) — notes: Series: Driver's Manual · Mode D (Polaroid Zine)
 [2026-05-09 11:34:46 +08] OK  newseries-dm-mode-d-2026-05-13-20 -> https://www.instagram.com/p/DYGl4Ghjt3C/
+[2026-05-09 13:52:59 +08] HEARTBEAT lag 139 min (prev=2026-05-09T11:33:59.259181+08:00)
+[2026-05-09 13:52:59 +08] run: no due posts
