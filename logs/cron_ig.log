@@ -688,3 +688,5 @@ ERROR publishing: Media ID is not available
 [2026-05-09 20:11:55 +08] OK  igs-autofill-what-to-look-for-car-workshop--2026-05-09-2000 -> 18123438967615806
 [2026-05-09 20:11:56 +08] Posting newseries-bbtb-vezel-mode-b-2026-05-05-20 (carousel) — notes: Series: Behind the Badge · Mode B (Cream Magazine) · Honda Vezel
 [2026-05-09 20:12:32 +08] OK  newseries-bbtb-vezel-mode-b-2026-05-05-20 -> https://www.instagram.com/p/DYHhIVBnPQG/
+[2026-05-09 20:41:55 +08] HEARTBEAT lag 30 min (prev=2026-05-09T20:11:47.503075+08:00)
+[2026-05-09 20:41:55 +08] run: no due posts
