@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-brake-pads-rotors-singapore-wh-2026-05-09-1100",
-      "slot_time_sgt": "2026-05-09T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-09-1100/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-09-1100/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:B",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-how-often-service-car-singapor-2026-05-09-1530",
       "slot_time_sgt": "2026-05-09T15:30",
       "type": "story",
@@ -141,22 +129,6 @@
         "assets/igs-autofill-block-exemption-order-singapor-2026-05-12-2000/story.png"
       ],
       "notes": "Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:C",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "newseries-dm-mode-d-2026-05-13-20",
-      "slot_time_sgt": "2026-05-09T11:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-dm-mode-d-2026-05-13-20/caption.txt",
-      "image_paths": [
-        "assets/newseries-dm-mode-d-2026-05-13-20/slide.png",
-        "assets/newseries-dm-mode-d-2026-05-13-20/slides/slide_2.png",
-        "assets/newseries-dm-mode-d-2026-05-13-20/slides/slide_3.png",
-        "assets/newseries-dm-mode-d-2026-05-13-20/slides/slide_4.png",
-        "assets/newseries-dm-mode-d-2026-05-13-20/slides/slide_5.png"
-      ],
-      "notes": "Series: Driver's Manual · Mode D (Polaroid Zine)",
       "status": "pending",
       "attempts": 0
     },
@@ -1007,6 +979,40 @@
       "posted_url": "17936693172237474",
       "posted_at": "2026-05-08 20:59 SGT",
       "post_id": "17936693172237474"
+    },
+    {
+      "id": "igs-autofill-brake-pads-rotors-singapore-wh-2026-05-09-1100",
+      "slot_time_sgt": "2026-05-09T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-09-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-09-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:B",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18446463115113937",
+      "posted_at": "2026-05-09 11:34 SGT",
+      "post_id": "18446463115113937"
+    },
+    {
+      "id": "newseries-dm-mode-d-2026-05-13-20",
+      "slot_time_sgt": "2026-05-09T11:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-dm-mode-d-2026-05-13-20/caption.txt",
+      "image_paths": [
+        "assets/newseries-dm-mode-d-2026-05-13-20/slide.png",
+        "assets/newseries-dm-mode-d-2026-05-13-20/slides/slide_2.png",
+        "assets/newseries-dm-mode-d-2026-05-13-20/slides/slide_3.png",
+        "assets/newseries-dm-mode-d-2026-05-13-20/slides/slide_4.png",
+        "assets/newseries-dm-mode-d-2026-05-13-20/slides/slide_5.png"
+      ],
+      "notes": "Series: Driver's Manual · Mode D (Polaroid Zine)",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DYGl4Ghjt3C/",
+      "posted_at": "2026-05-09 11:34 SGT",
+      "post_id": "18093046712190863"
     }
   ],
   "failed": [],
