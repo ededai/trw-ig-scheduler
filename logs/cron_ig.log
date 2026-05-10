@@ -723,3 +723,10 @@ ERROR publishing: Media ID is not available
 [2026-05-10 07:56:34 +08] run: no due posts
 [2026-05-10 09:26:11 +08] HEARTBEAT lag 90 min (prev=2026-05-10T07:56:34.915838+08:00)
 [2026-05-10 09:26:11 +08] run: no due posts
+[2026-05-10 11:30:26 +08] HEARTBEAT lag 124 min (prev=2026-05-10T09:26:11.582585+08:00)
+[2026-05-10 11:30:26 +08] CATCH-UP igs-autofill-driving-singapore-rain-wet-wea-2026-05-10-1100 — 0.5h late, publishing
+[2026-05-10 11:30:26 +08] CATCH-UP newseries-st-mode-c-2026-05-04-15 — 0.5h late, publishing
+[2026-05-10 11:30:26 +08] Posting igs-autofill-driving-singapore-rain-wet-wea-2026-05-10-1100 (story) — notes: Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:B
+[2026-05-10 11:30:38 +08] OK  igs-autofill-driving-singapore-rain-wet-wea-2026-05-10-1100 -> 18323266516264696
+[2026-05-10 11:30:39 +08] Posting newseries-st-mode-c-2026-05-04-15 (carousel) — notes: Series: Straight Talk · Mode C (Poster Bold)
+[2026-05-10 11:31:21 +08] OK  newseries-st-mode-c-2026-05-04-15 -> https://www.instagram.com/p/DYJKR2MDUOO/

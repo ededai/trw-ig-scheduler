@@ -58,3 +58,5 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-09 15:30 | Single | Auto-filled IGS for blog: how-often-service-car-singapore (variant A) | 17965378989112583 | Auto-fill IGS — blog:how-often-service-car-singapore variant:A |
 | 2026-05-09 20:00 | Single | Auto-filled IGS for blog: what-to-look-for-car-workshop-singapore (variant C) | 18123438967615806 | Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:C |
 | 2026-05-09 20:00 | Carousel | Vezel hybrid. The honest list. | https://www.instagram.com/p/DYHhIVBnPQG/ | Series: Behind the Badge · Mode B (Cream Magazine) · Honda Vezel |
+| 2026-05-10 11:00 | Single | Auto-filled IGS for blog: driving-singapore-rain-wet-weather (variant B) | 18323266516264696 | Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:B |
+| 2026-05-10 11:00 | Carousel | Bring receipts. Walk away clean. | https://www.instagram.com/p/DYJKR2MDUOO/ | Series: Straight Talk · Mode C (Poster Bold) |
