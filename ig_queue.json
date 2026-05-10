@@ -103,6 +103,258 @@
       "notes": "Series: Straight Talk · Mode E (Spec Sheet)",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "igs-cheapest-car-workshop-singapore-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-cheapest-car-workshop-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-cheapest-car-workshop-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: cheapest-car-workshop-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-cheapest-car-workshop-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-cheapest-car-workshop-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-cheapest-car-workshop-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: cheapest-car-workshop-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-cheapest-car-workshop-singapore-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-cheapest-car-workshop-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-cheapest-car-workshop-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: cheapest-car-workshop-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-pre-purchase-car-inspection-singapore-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-pre-purchase-car-inspection-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-pre-purchase-car-inspection-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: pre-purchase-car-inspection-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-pre-purchase-car-inspection-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-pre-purchase-car-inspection-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-pre-purchase-car-inspection-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: pre-purchase-car-inspection-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-pre-purchase-car-inspection-singapore-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-pre-purchase-car-inspection-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-pre-purchase-car-inspection-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: pre-purchase-car-inspection-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-insurance-premium-factors-singapore-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-premium-factors-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-premium-factors-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-insurance-premium-factors-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-insurance-premium-factors-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-premium-factors-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-premium-factors-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: car-insurance-premium-factors-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-insurance-premium-factors-singapore-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-premium-factors-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-premium-factors-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: car-insurance-premium-factors-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-insurance-broker-singapore-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-broker-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-broker-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-insurance-broker-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-insurance-broker-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-broker-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-broker-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: car-insurance-broker-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-insurance-broker-singapore-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-broker-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-broker-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: car-insurance-broker-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-scrap-car-singapore-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-scrap-car-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-scrap-car-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: scrap-car-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-scrap-car-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-scrap-car-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-scrap-car-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: scrap-car-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-scrap-car-singapore-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-scrap-car-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-scrap-car-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: scrap-car-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-export-car-singapore-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-export-car-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-export-car-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-export-car-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-export-car-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-export-car-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-export-car-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-export-car-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-export-car-singapore-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-export-car-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-export-car-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: coe-export-car-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-renewal-singapore-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-renewal-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-renewal-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-renewal-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-renewal-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-renewal-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-renewal-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-renewal-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-renewal-singapore-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-renewal-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-renewal-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: coe-renewal-singapore",
+      "status": "pending",
+      "attempts": 0
     }
   ],
   "posted": [
