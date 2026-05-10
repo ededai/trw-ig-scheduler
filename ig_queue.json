@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-first-car-service-singapore-wh-2026-05-10-2000",
-      "slot_time_sgt": "2026-05-10T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-first-car-service-singapore-wh-2026-05-10-2000/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-first-car-service-singapore-wh-2026-05-10-2000/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:C",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-dealer-vs-independent-workshop-2026-05-11-1100",
       "slot_time_sgt": "2026-05-11T11:00",
       "type": "story",
@@ -81,22 +69,6 @@
         "assets/igs-autofill-block-exemption-order-singapor-2026-05-12-2000/story.png"
       ],
       "notes": "Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:C",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "newseries-cow-mode-d-2026-05-06-20",
-      "slot_time_sgt": "2026-05-10T20:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-cow-mode-d-2026-05-06-20/caption.txt",
-      "image_paths": [
-        "assets/newseries-cow-mode-d-2026-05-06-20/slide.png",
-        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_2.png",
-        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_3.png",
-        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_4.png",
-        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_5.png"
-      ],
-      "notes": "Series: Cost of Waiting · Mode D (Polaroid Zine)",
       "status": "pending",
       "attempts": 0
     },
@@ -1031,6 +1003,40 @@
       "posted_url": "18098427683031163",
       "posted_at": "2026-05-10 16:27 SGT",
       "post_id": "18098427683031163"
+    },
+    {
+      "id": "igs-autofill-first-car-service-singapore-wh-2026-05-10-2000",
+      "slot_time_sgt": "2026-05-10T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-first-car-service-singapore-wh-2026-05-10-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-first-car-service-singapore-wh-2026-05-10-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:C",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18091590848462539",
+      "posted_at": "2026-05-10 20:00 SGT",
+      "post_id": "18091590848462539"
+    },
+    {
+      "id": "newseries-cow-mode-d-2026-05-06-20",
+      "slot_time_sgt": "2026-05-10T20:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-cow-mode-d-2026-05-06-20/caption.txt",
+      "image_paths": [
+        "assets/newseries-cow-mode-d-2026-05-06-20/slide.png",
+        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_2.png",
+        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_3.png",
+        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_4.png",
+        "assets/newseries-cow-mode-d-2026-05-06-20/slides/slide_5.png"
+      ],
+      "notes": "Series: Cost of Waiting · Mode D (Polaroid Zine)",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DYKEq1Ojgb6/",
+      "posted_at": "2026-05-10 20:01 SGT",
+      "post_id": "18102306970799431"
     }
   ],
   "failed": [],

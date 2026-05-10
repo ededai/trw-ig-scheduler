@@ -61,3 +61,5 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-10 11:00 | Single | Auto-filled IGS for blog: driving-singapore-rain-wet-weather (variant B) | 18323266516264696 | Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:B |
 | 2026-05-10 11:00 | Carousel | Bring receipts. Walk away clean. | https://www.instagram.com/p/DYJKR2MDUOO/ | Series: Straight Talk · Mode C (Poster Bold) |
 | 2026-05-10 15:30 | Single | Auto-filled IGS for blog: first-car-service-singapore-what-happens (variant A) | 18098427683031163 | Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:A |
+| 2026-05-10 20:00 | Single | Auto-filled IGS for blog: first-car-service-singapore-what-happens (variant C) | 18091590848462539 | Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:C |
+| 2026-05-10 20:00 | Carousel | I waited one year too long. | https://www.instagram.com/p/DYKEq1Ojgb6/ | Series: Cost of Waiting · Mode D (Polaroid Zine) |
