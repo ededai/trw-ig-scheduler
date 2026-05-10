@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-first-car-service-singapore-wh-2026-05-10-1530",
-      "slot_time_sgt": "2026-05-10T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-first-car-service-singapore-wh-2026-05-10-1530/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-first-car-service-singapore-wh-2026-05-10-1530/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:A",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-first-car-service-singapore-wh-2026-05-10-2000",
       "slot_time_sgt": "2026-05-10T20:00",
       "type": "story",
@@ -1028,6 +1016,21 @@
       "posted_url": "https://www.instagram.com/p/DYJKR2MDUOO/",
       "posted_at": "2026-05-10 11:31 SGT",
       "post_id": "18101383928055544"
+    },
+    {
+      "id": "igs-autofill-first-car-service-singapore-wh-2026-05-10-1530",
+      "slot_time_sgt": "2026-05-10T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-first-car-service-singapore-wh-2026-05-10-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-first-car-service-singapore-wh-2026-05-10-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:A",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18098427683031163",
+      "posted_at": "2026-05-10 16:27 SGT",
+      "post_id": "18098427683031163"
     }
   ],
   "failed": [],

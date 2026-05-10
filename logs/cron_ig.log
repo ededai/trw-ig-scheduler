@@ -734,3 +734,7 @@ ERROR publishing: Media ID is not available
 [2026-05-10 14:24:28 +08] HEARTBEAT lag 155 min (prev=2026-05-10T11:49:35.846096+08:00)
 [2026-05-10 14:24:28 +08] run: no due posts
 [2026-05-10 14:26:55 +08] run: no due posts
+[2026-05-10 16:26:48 +08] HEARTBEAT lag 120 min (prev=2026-05-10T14:26:55.036540+08:00)
+[2026-05-10 16:26:48 +08] CATCH-UP igs-autofill-first-car-service-singapore-wh-2026-05-10-1530 — 0.9h late, publishing
+[2026-05-10 16:26:48 +08] Posting igs-autofill-first-car-service-singapore-wh-2026-05-10-1530 (story) — notes: Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:A
+[2026-05-10 16:27:02 +08] OK  igs-autofill-first-car-service-singapore-wh-2026-05-10-1530 -> 18098427683031163
