@@ -327,6 +327,150 @@
       "notes": "IGS C for blog: coe-renewal-singapore",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "igs-what-is-the-right-workshop-singapore-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-what-is-the-right-workshop-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-what-is-the-right-workshop-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: what-is-the-right-workshop-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-what-is-the-right-workshop-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-what-is-the-right-workshop-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-what-is-the-right-workshop-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: what-is-the-right-workshop-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-what-is-the-right-workshop-singapore-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-what-is-the-right-workshop-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-what-is-the-right-workshop-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: what-is-the-right-workshop-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-erp-2-0-singapore-2026-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-erp-2-0-singapore-2026/caption.txt",
+      "image_paths": [
+        "assets/igs-erp-2-0-singapore-2026/igs_A.png"
+      ],
+      "notes": "IGS A for blog: erp-2-0-singapore-2026",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-erp-2-0-singapore-2026-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-erp-2-0-singapore-2026/caption.txt",
+      "image_paths": [
+        "assets/igs-erp-2-0-singapore-2026/igs_B.png"
+      ],
+      "notes": "IGS B for blog: erp-2-0-singapore-2026",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-erp-2-0-singapore-2026-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-erp-2-0-singapore-2026/caption.txt",
+      "image_paths": [
+        "assets/igs-erp-2-0-singapore-2026/igs_C.png"
+      ],
+      "notes": "IGS C for blog: erp-2-0-singapore-2026",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-cat-a-vs-cat-b-singapore-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-cat-a-vs-cat-b-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-cat-a-vs-cat-b-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: cat-a-vs-cat-b-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-cat-a-vs-cat-b-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-cat-a-vs-cat-b-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-cat-a-vs-cat-b-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: cat-a-vs-cat-b-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-cat-a-vs-cat-b-singapore-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-cat-a-vs-cat-b-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-cat-a-vs-cat-b-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: cat-a-vs-cat-b-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-explained-a-d1",
+      "slot_time_sgt": "2026-05-11T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-explained/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-explained/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-explained",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-explained-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-explained/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-explained/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-explained",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-explained-c-d3",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-explained/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-explained/igs_C.png"
+      ],
+      "notes": "IGS C for blog: coe-explained",
+      "status": "pending",
+      "attempts": 0
     }
   ],
   "posted": [

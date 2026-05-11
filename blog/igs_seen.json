@@ -167,6 +167,42 @@
         "igs-coe-renewal-singapore-c-d3"
       ],
       "title": "COE Renewal in Singapore: The Calculation No One Explains Clearly"
+    },
+    "what-is-the-right-workshop-singapore": {
+      "queued_at": "2026-05-11 12:22 SGT",
+      "queued_ids": [
+        "igs-what-is-the-right-workshop-singapore-a-d1",
+        "igs-what-is-the-right-workshop-singapore-b-d2",
+        "igs-what-is-the-right-workshop-singapore-c-d3"
+      ],
+      "title": "What is The Right Workshop? Singapore’s Independent Car Workshop at Kaki Bukit"
+    },
+    "erp-2-0-singapore-2026": {
+      "queued_at": "2026-05-11 12:22 SGT",
+      "queued_ids": [
+        "igs-erp-2-0-singapore-2026-a-d1",
+        "igs-erp-2-0-singapore-2026-b-d2",
+        "igs-erp-2-0-singapore-2026-c-d3"
+      ],
+      "title": "ERP 2.0 in 2026: What’s Already Changed, What’s Coming on 1 January 2027"
+    },
+    "cat-a-vs-cat-b-singapore": {
+      "queued_at": "2026-05-11 12:22 SGT",
+      "queued_ids": [
+        "igs-cat-a-vs-cat-b-singapore-a-d1",
+        "igs-cat-a-vs-cat-b-singapore-b-d2",
+        "igs-cat-a-vs-cat-b-singapore-c-d3"
+      ],
+      "title": "Cat A vs Cat B COE in Singapore: The Real Difference"
+    },
+    "coe-explained": {
+      "queued_at": "2026-05-11 12:22 SGT",
+      "queued_ids": [
+        "igs-coe-explained-a-d1",
+        "igs-coe-explained-b-d2",
+        "igs-coe-explained-c-d3"
+      ],
+      "title": "What is COE? Singapore’s Certificate of Entitlement, Explained"
     }
   }
 }
