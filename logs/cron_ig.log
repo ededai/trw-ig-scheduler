@@ -791,3 +791,28 @@ ERROR publishing: Media ID is not available
 [2026-05-11 12:00:20 +08] run: no due posts
 [2026-05-11 14:56:13 +08] HEARTBEAT lag 176 min (prev=2026-05-11T12:00:20.538459+08:00)
 [2026-05-11 14:56:13 +08] run: no due posts
+[2026-05-11 15:49:40 +08] HEARTBEAT lag 53 min (prev=2026-05-11T14:56:13.224215+08:00)
+[2026-05-11 15:49:40 +08] Posting igs-autofill-coolant-radiator-care-singapor-2026-05-11-1530 (story) — notes: Auto-fill IGS — blog:coolant-radiator-care-singapore variant:A
+[2026-05-11 15:49:53 +08] OK  igs-autofill-coolant-radiator-care-singapor-2026-05-11-1530 -> 18137842252470297
+[2026-05-11 15:49:54 +08] Posting igs-cheapest-car-workshop-singapore-a-d1 (story) — notes: IGS A for blog: cheapest-car-workshop-singapore
+[2026-05-11 15:50:05 +08] OK  igs-cheapest-car-workshop-singapore-a-d1 -> 18006953141859590
+[2026-05-11 15:50:06 +08] Posting igs-pre-purchase-car-inspection-singapore-a-d1 (story) — notes: IGS A for blog: pre-purchase-car-inspection-singapore
+[2026-05-11 15:50:17 +08] OK  igs-pre-purchase-car-inspection-singapore-a-d1 -> 18096034097128687
+[2026-05-11 15:50:18 +08] Posting igs-car-insurance-premium-factors-singapore-a-d1 (story) — notes: IGS A for blog: car-insurance-premium-factors-singapore
+[2026-05-11 15:50:29 +08] OK  igs-car-insurance-premium-factors-singapore-a-d1 -> 18104633150490155
+[2026-05-11 15:50:29 +08] Posting igs-car-insurance-broker-singapore-a-d1 (story) — notes: IGS A for blog: car-insurance-broker-singapore
+[2026-05-11 15:50:41 +08] OK  igs-car-insurance-broker-singapore-a-d1 -> 18102634327952505
+[2026-05-11 15:50:42 +08] Posting igs-scrap-car-singapore-a-d1 (story) — notes: IGS A for blog: scrap-car-singapore
+[2026-05-11 15:50:54 +08] OK  igs-scrap-car-singapore-a-d1 -> 18092989913218448
+[2026-05-11 15:50:54 +08] Posting igs-coe-export-car-singapore-a-d1 (story) — notes: IGS A for blog: coe-export-car-singapore
+[2026-05-11 15:51:06 +08] OK  igs-coe-export-car-singapore-a-d1 -> 17920441476353796
+[2026-05-11 15:51:06 +08] Posting igs-coe-renewal-singapore-a-d1 (story) — notes: IGS A for blog: coe-renewal-singapore
+[2026-05-11 15:51:18 +08] OK  igs-coe-renewal-singapore-a-d1 -> 17941348611197777
+[2026-05-11 15:51:19 +08] Posting igs-what-is-the-right-workshop-singapore-a-d1 (story) — notes: IGS A for blog: what-is-the-right-workshop-singapore
+[2026-05-11 15:51:30 +08] OK  igs-what-is-the-right-workshop-singapore-a-d1 -> 18079596005404747
+[2026-05-11 15:51:31 +08] Posting igs-erp-2-0-singapore-2026-a-d1 (story) — notes: IGS A for blog: erp-2-0-singapore-2026
+[2026-05-11 15:51:41 +08] OK  igs-erp-2-0-singapore-2026-a-d1 -> 18094321867919776
+[2026-05-11 15:51:42 +08] Posting igs-cat-a-vs-cat-b-singapore-a-d1 (story) — notes: IGS A for blog: cat-a-vs-cat-b-singapore
+[2026-05-11 15:51:54 +08] OK  igs-cat-a-vs-cat-b-singapore-a-d1 -> 18018387665672817
+[2026-05-11 15:51:55 +08] Posting igs-coe-explained-a-d1 (story) — notes: IGS A for blog: coe-explained
+[2026-05-11 15:52:07 +08] OK  igs-coe-explained-a-d1 -> 17961260376087133
