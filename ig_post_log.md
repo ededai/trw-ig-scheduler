@@ -77,3 +77,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-11 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18094321867919776 | IGS A for blog: erp-2-0-singapore-2026 |
 | 2026-05-11 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18018387665672817 | IGS A for blog: cat-a-vs-cat-b-singapore |
 | 2026-05-11 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17961260376087133 | IGS A for blog: coe-explained |
+| 2026-05-11 20:00 | Single | Auto-filled IGS for blog: tyres-battery-singapore-checks-guide (variant C) | 18063132917432756 | Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:C |

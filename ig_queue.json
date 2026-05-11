@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-tyres-battery-singapore-checks-2026-05-11-2000",
-      "slot_time_sgt": "2026-05-11T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-11-2000/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-11-2000/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:C",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-independent-workshop-vs-author-2026-05-12-1100",
       "slot_time_sgt": "2026-05-12T11:00",
       "type": "story",
@@ -1475,6 +1463,21 @@
       "posted_url": "17961260376087133",
       "posted_at": "2026-05-11 15:52 SGT",
       "post_id": "17961260376087133"
+    },
+    {
+      "id": "igs-autofill-tyres-battery-singapore-checks-2026-05-11-2000",
+      "slot_time_sgt": "2026-05-11T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-11-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-11-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:C",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18063132917432756",
+      "posted_at": "2026-05-11 21:34 SGT",
+      "post_id": "18063132917432756"
     }
   ],
   "failed": [],
