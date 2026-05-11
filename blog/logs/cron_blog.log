@@ -1783,3 +1783,158 @@ ARTICLE SCHEMA IMAGE FIX  |  mode=apply  |  24 articles
 0 of 24 articles need schema fix.
 No-op.
 ===== 2026-05-10T17:29:56Z daily_blog_refresh done (exit=0) =====
+
+===== 2026-05-11T18:16:21Z daily_blog_refresh start =====
+--- step 1: refresh_trw_blog_index --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+TRW BLOG INDEX REFRESH  |  mode=apply  |  2026-05-11
+Bucket #3  (epoch=2026-04-24, days=5)
+========================================================================
+Cards on /blog/: 28
+Currently featured: Why Your Car Aircon Isn’t Cold in Singapore (And What Actually Needs Fixing)
+Proposed featured (bucket 3): Why Your Car Aircon Isn’t Cold in Singapore (And What Actually Needs Fixing)
+  href     : /car-aircon-not-cold-singapore-fix/
+  category : Guides
+  img      : https://therightworkshop.com/wp-content/uploads/2026/04/nb_aircon_gauge_v1.webp
+
+--- DRIFT REPORT ---
+Hero drift (auto-fix): 3
+  • coe-explained
+      card: https://therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.webp
+      live: https://therightworkshop.com/wp-content/uploads/2026/05/COE_Explained_Hero_-_Singapore_Marina_Expressway.jpg
+  • cat-a-vs-cat-b-singapore
+      card: https://therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.webp
+      live: https://therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.jpg
+  • what-is-the-right-workshop-singapore
+      card: https://therightworkshop.com/wp-content/uploads/2026/04/trw-og-image-1200x630-1.webp
+      live: https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+OG:image drift (flag only): 13
+  • coe-explained og=https://therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.webp
+  • cat-a-vs-cat-b-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.webp
+  • erp-2-0-singapore-2026 og=https://therightworkshop.com/wp-content/uploads/2026/05/erp-2-0-gantry-singapore-hero.webp
+  • coe-renewal-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/01-coe-renewal-LOCKED.webp
+  • coe-export-car-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/02-coe-export-LOCKED.webp
+  • scrap-car-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/03-coe-scrap-LOCKED.webp
+  • car-insurance-broker-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/04-insurance-broker-LOCKED.webp
+  • car-insurance-premium-factors-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/05-insurance-premium-LOCKED.webp
+  • pre-purchase-car-inspection-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/06-inspection-LOCKED.webp
+  • cheapest-car-workshop-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/07-workshop-LOCKED.webp
+  • how-to-read-workshop-quote-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post_read-quote_v1.webp
+  • coe-renewal-vs-scrap-singapore-guide og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post7_coe_renewal_v1-1.webp
+  • brake-pads-rotors-singapore-when-to-change og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post5_brake_pads_v1-1.webp
+Schema Article.image drift (flag only): 0
+[2026-05-11T18:17:01] PUSH ok: featured='Why Your Car Aircon Isn’t Cold in Singapore (And What Actually Needs Fixing)' (/car-aircon-not-cold-singapore-fix/), hero_fixes=3, bucket=3
+[2026-05-11T18:17:01]   hero-fix coe-explained: https://i0.wp.com/therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.webp?w=800&ssl=1 -> https://therightworkshop.com/wp-content/uploads/2026/05/COE_Explained_Hero_-_Singapore_Marina_Expressway.jpg
+[2026-05-11T18:17:01]   hero-fix cat-a-vs-cat-b-singapore: https://i0.wp.com/therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.webp?w=800&ssl=1 -> https://therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.jpg
+[2026-05-11T18:17:01]   hero-fix what-is-the-right-workshop-singapore: https://i0.wp.com/therightworkshop.com/wp-content/uploads/2026/04/trw-og-image-1200x630-1.webp?w=800&ssl=1 -> https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+
+Pushed to WP page 475. modified=2026-05-12T02:16:59
+--- step 2: fix_article_featured_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+ARTICLE FEATURED IMAGE FIX  |  mode=apply  |  28 articles
+========================================================================
+  [CHANGE] coe-explained
+           page_id=4563  featured_media: 5592 -> 5590  (COE_Explained_Hero_-_Singapore_Marina_Expressway.jpg)
+  [ok    ] cat-a-vs-cat-b-singapore
+           page_id=4565  featured_media: 5592 -> 5592  (singapore-expressway-cat-a-cat-b-coe-cars.jpg)
+  [ok    ] erp-2-0-singapore-2026
+           page_id=5856  featured_media: 5857 -> 5857  (erp-2-0-gantry-singapore-hero.jpg)
+  [CHANGE] what-is-the-right-workshop-singapore
+           page_id=3774  featured_media: 0 -> 958  (nb_servicing_oilpour_v2.jpg)
+  [ok    ] coe-renewal-singapore
+           page_id=5720  featured_media: 5719 -> 5719  (01-coe-renewal-LOCKED.jpg)
+  [ok    ] coe-export-car-singapore
+           page_id=5723  featured_media: 5722 -> 5722  (02-coe-export-LOCKED.jpg)
+  [ok    ] scrap-car-singapore
+           page_id=5726  featured_media: 5725 -> 5725  (03-coe-scrap-LOCKED.jpg)
+  [ok    ] car-insurance-broker-singapore
+           page_id=5729  featured_media: 5728 -> 5728  (04-insurance-broker-LOCKED.jpg)
+  [ok    ] car-insurance-premium-factors-singapore
+           page_id=5732  featured_media: 5731 -> 5731  (05-insurance-premium-LOCKED.jpg)
+  [ok    ] pre-purchase-car-inspection-singapore
+           page_id=5736  featured_media: 5734 -> 5734  (06-inspection-LOCKED.jpg)
+  [ok    ] cheapest-car-workshop-singapore
+           page_id=5743  featured_media: 5742 -> 5742  (07-workshop-LOCKED.jpg)
+  [ok    ] first-car-service-singapore-what-happens
+           page_id=1354  featured_media: 1595 -> 1595  (nb_post_first-service_v2.webp)
+  [ok    ] questions-to-ask-before-new-car-workshop-singapore
+           page_id=1353  featured_media: 1480 -> 1480  (nb_post_12-questions_v1.webp)
+  [ok    ] block-exemption-order-singapore-car-servicing
+           page_id=1352  featured_media: 1478 -> 1478  (nb_post_block-exemption_v1.webp)
+  [ok    ] how-to-read-workshop-quote-singapore
+           page_id=1351  featured_media: 1476 -> 1476  (nb_post_read-quote_v1.jpg)
+  [ok    ] dealer-vs-independent-workshop-singapore
+           page_id=1350  featured_media: 1474 -> 1474  (nb_post_dealer-vs-indep_v1.webp)
+  [ok    ] 10-signs-trustworthy-mechanic-singapore
+           page_id=1349  featured_media: 1472 -> 1472  (nb_post_10-signs-mechanic_v1.webp)
+  [ok    ] what-to-look-for-car-workshop-singapore
+           page_id=1348  featured_media: 1469 -> 1469  (nb_post_what-to-look-for_v1.webp)
+  [ok    ] driving-singapore-rain-wet-weather
+           page_id=1226  featured_media: 1219 -> 1219  (nb_post10_rain_driving_v1-1.webp)
+  [ok    ] used-car-inspection-singapore
+           page_id=1225  featured_media: 1218 -> 1218  (nb_post9_used_car_inspection_v1-1.webp)
+  [ok    ] independent-workshop-vs-authorised-service-centre-singapore
+           page_id=1224  featured_media: 1217 -> 1217  (nb_post8_workshop_vs_asc_v1-1.webp)
+  [ok    ] coe-renewal-vs-scrap-singapore-guide
+           page_id=1223  featured_media: 1216 -> 1216  (nb_post7_coe_renewal_v1-1.jpg)
+  [ok    ] coolant-radiator-care-singapore
+           page_id=1222  featured_media: 1215 -> 1215  (nb_post6_coolant_radiator_v1-1.webp)
+  [ok    ] brake-pads-rotors-singapore-when-to-change
+           page_id=1221  featured_media: 1214 -> 1214  (nb_post5_brake_pads_v1-1.jpg)
+  [ok    ] dashboard-warning-lights-explained
+           page_id=1220  featured_media: 1213 -> 1213  (dashboard-warning-lights-16341407-1.webp)
+  [ok    ] tyres-battery-singapore-checks-guide
+           page_id=967  featured_media: 960 -> 960  (nb_tyre_treadgauge_battery_v1.webp)
+  [ok    ] car-aircon-not-cold-singapore-fix
+           page_id=966  featured_media: 959 -> 959  (nb_aircon_gauge_v1.webp)
+  [ok    ] how-often-service-car-singapore
+           page_id=965  featured_media: 958 -> 958  (nb_servicing_oilpour_v2.webp)
+
+2 of 28 articles need featured_media update. Errors: 0
+[2026-05-11T18:17:57] featured_media fix: coe-explained page=4563 5592 -> 5590
+  applied coe-explained  modified=2026-05-12T02:17:56
+[2026-05-11T18:17:59] featured_media fix: what-is-the-right-workshop-singapore page=3774 0 -> 958
+  applied what-is-the-right-workshop-singapore  modified=2026-05-12T02:17:58
+
+Post-fix spot-check (3 samples, allow 10s propagation)...
+  coe-explained: og drift still=https://therightworkshop.com/wp-content/uploads/2026/05/COE_Explained_Hero_-_Singapore_Marina_Expressway.webp  |  schema drift still=
+  what-is-the-right-workshop-singapore: og drift still=https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.webp  |  schema ✓=https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+--- step 3: fix_article_schema_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+ARTICLE SCHEMA IMAGE FIX  |  mode=apply  |  28 articles
+========================================================================
+  ok     coe-explained
+  ok     cat-a-vs-cat-b-singapore
+  ok     erp-2-0-singapore-2026
+  ok     what-is-the-right-workshop-singapore
+  ok     coe-renewal-singapore
+  ok     coe-export-car-singapore
+  ok     scrap-car-singapore
+  ok     car-insurance-broker-singapore
+  ok     car-insurance-premium-factors-singapore
+  ok     pre-purchase-car-inspection-singapore
+  ok     cheapest-car-workshop-singapore
+  ok     first-car-service-singapore-what-happens
+  ok     questions-to-ask-before-new-car-workshop-singapore
+  ok     block-exemption-order-singapore-car-servicing
+  ok     how-to-read-workshop-quote-singapore
+  ok     dealer-vs-independent-workshop-singapore
+  ok     10-signs-trustworthy-mechanic-singapore
+  ok     what-to-look-for-car-workshop-singapore
+  ok     driving-singapore-rain-wet-weather
+  ok     used-car-inspection-singapore
+  ok     independent-workshop-vs-authorised-service-centre-singapore
+  ok     coe-renewal-vs-scrap-singapore-guide
+  ok     coolant-radiator-care-singapore
+  ok     brake-pads-rotors-singapore-when-to-change
+  ok     dashboard-warning-lights-explained
+  ok     tyres-battery-singapore-checks-guide
+  ok     car-aircon-not-cold-singapore-fix
+  ok     how-often-service-car-singapore
+
+0 of 28 articles need schema fix.
+No-op.
+===== 2026-05-11T18:19:02Z daily_blog_refresh done (exit=0) =====

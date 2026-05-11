@@ -14,3 +14,9 @@
 [2026-05-08T17:52:13] featured_media fix: coe-renewal-vs-scrap-singapore-guide page=1223 5592 -> 1216
 [2026-05-09T17:27:32] No drift, featured unchanged — no push.
 [2026-05-10T17:28:37] No drift, featured unchanged — no push.
+[2026-05-11T18:17:01] PUSH ok: featured='Why Your Car Aircon Isn’t Cold in Singapore (And What Actually Needs Fixing)' (/car-aircon-not-cold-singapore-fix/), hero_fixes=3, bucket=3
+[2026-05-11T18:17:01]   hero-fix coe-explained: https://i0.wp.com/therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.webp?w=800&ssl=1 -> https://therightworkshop.com/wp-content/uploads/2026/05/COE_Explained_Hero_-_Singapore_Marina_Expressway.jpg
+[2026-05-11T18:17:01]   hero-fix cat-a-vs-cat-b-singapore: https://i0.wp.com/therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.webp?w=800&ssl=1 -> https://therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.jpg
+[2026-05-11T18:17:01]   hero-fix what-is-the-right-workshop-singapore: https://i0.wp.com/therightworkshop.com/wp-content/uploads/2026/04/trw-og-image-1200x630-1.webp?w=800&ssl=1 -> https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+[2026-05-11T18:17:57] featured_media fix: coe-explained page=4563 5592 -> 5590
+[2026-05-11T18:17:59] featured_media fix: what-is-the-right-workshop-singapore page=3774 0 -> 958
