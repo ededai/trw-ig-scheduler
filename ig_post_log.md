@@ -63,3 +63,5 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-10 15:30 | Single | Auto-filled IGS for blog: first-car-service-singapore-what-happens (variant A) | 18098427683031163 | Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:A |
 | 2026-05-10 20:00 | Single | Auto-filled IGS for blog: first-car-service-singapore-what-happens (variant C) | 18091590848462539 | Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:C |
 | 2026-05-10 20:00 | Carousel | I waited one year too long. | https://www.instagram.com/p/DYKEq1Ojgb6/ | Series: Cost of Waiting · Mode D (Polaroid Zine) |
+| 2026-05-11 11:00 | Single | Auto-filled IGS for blog: dealer-vs-independent-workshop-singapore (variant B) | 18095473733143858 | Auto-fill IGS — blog:dealer-vs-independent-workshop-singapore variant:B |
+| 2026-05-11 11:00 | Carousel | Find the right workshop. For your Vezel. | https://www.instagram.com/p/DYLwYk2DL6H/ | Series: Behind the Badge · Mode C (Poster Bold) · Honda Vezel |

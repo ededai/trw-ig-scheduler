@@ -781,3 +781,10 @@ ERROR publishing: Media ID is not available
 [2026-05-11 09:26:30 +08] HEARTBEAT lag 110 min (prev=2026-05-11T07:36:12.043912+08:00)
 [2026-05-11 09:26:30 +08] run: no due posts
 [2026-05-11 09:30:34 +08] run: no due posts
+[2026-05-11 11:41:55 +08] HEARTBEAT lag 131 min (prev=2026-05-11T09:30:34.645099+08:00)
+[2026-05-11 11:41:55 +08] CATCH-UP igs-autofill-dealer-vs-independent-workshop-2026-05-11-1100 — 0.7h late, publishing
+[2026-05-11 11:41:55 +08] CATCH-UP newseries-bbtb-vezel-mode-c-2026-05-07-20 — 0.7h late, publishing
+[2026-05-11 11:41:55 +08] Posting igs-autofill-dealer-vs-independent-workshop-2026-05-11-1100 (story) — notes: Auto-fill IGS — blog:dealer-vs-independent-workshop-singapore variant:B
+[2026-05-11 11:42:07 +08] OK  igs-autofill-dealer-vs-independent-workshop-2026-05-11-1100 -> 18095473733143858
+[2026-05-11 11:42:08 +08] Posting newseries-bbtb-vezel-mode-c-2026-05-07-20 (carousel) — notes: Series: Behind the Badge · Mode C (Poster Bold) · Honda Vezel
+[2026-05-11 11:42:48 +08] OK  newseries-bbtb-vezel-mode-c-2026-05-07-20 -> https://www.instagram.com/p/DYLwYk2DL6H/
