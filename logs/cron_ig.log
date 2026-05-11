@@ -816,3 +816,5 @@ ERROR publishing: Media ID is not available
 [2026-05-11 15:51:54 +08] OK  igs-cat-a-vs-cat-b-singapore-a-d1 -> 18018387665672817
 [2026-05-11 15:51:55 +08] Posting igs-coe-explained-a-d1 (story) — notes: IGS A for blog: coe-explained
 [2026-05-11 15:52:07 +08] OK  igs-coe-explained-a-d1 -> 17961260376087133
+[2026-05-11 18:40:15 +08] HEARTBEAT lag 171 min (prev=2026-05-11T15:49:40.530251+08:00)
+[2026-05-11 18:40:15 +08] run: no due posts
