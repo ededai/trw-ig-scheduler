@@ -891,3 +891,5 @@ ERROR publishing: Media ID is not available
 [2026-05-12 21:21:15 +08] Posting newseries-st-mode-e-2026-05-13-11 (carousel) — notes: Series: Straight Talk · Mode E (Spec Sheet)
 [2026-05-12 21:21:52 +08] OK  newseries-st-mode-e-2026-05-13-11 -> https://www.instagram.com/p/DYPXchKjpPa/
 [2026-05-12 21:22:42 +08] run: no due posts
+[2026-05-12 23:47:31 +08] HEARTBEAT lag 145 min (prev=2026-05-12T21:22:42.491997+08:00)
+[2026-05-12 23:47:32 +08] run: no due posts
