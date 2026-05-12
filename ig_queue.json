@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-independent-workshop-vs-author-2026-05-12-1100",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-independent-workshop-vs-author-2026-05-12-1100/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-independent-workshop-vs-author-2026-05-12-1100/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:independent-workshop-vs-authorised-service-centre-singapore variant:B",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530",
       "slot_time_sgt": "2026-05-12T15:30",
       "type": "story",
@@ -53,18 +41,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-cheapest-car-workshop-singapore-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-cheapest-car-workshop-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-cheapest-car-workshop-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: cheapest-car-workshop-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-cheapest-car-workshop-singapore-c-d3",
       "slot_time_sgt": "2026-05-13T20:00",
       "type": "story",
@@ -73,18 +49,6 @@
         "assets/igs-cheapest-car-workshop-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: cheapest-car-workshop-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-pre-purchase-car-inspection-singapore-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-pre-purchase-car-inspection-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-pre-purchase-car-inspection-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: pre-purchase-car-inspection-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -101,18 +65,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-car-insurance-premium-factors-singapore-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-car-insurance-premium-factors-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-car-insurance-premium-factors-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: car-insurance-premium-factors-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-car-insurance-premium-factors-singapore-c-d3",
       "slot_time_sgt": "2026-05-13T20:00",
       "type": "story",
@@ -121,18 +73,6 @@
         "assets/igs-car-insurance-premium-factors-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: car-insurance-premium-factors-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-car-insurance-broker-singapore-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-car-insurance-broker-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-car-insurance-broker-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: car-insurance-broker-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -149,18 +89,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-scrap-car-singapore-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-scrap-car-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-scrap-car-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: scrap-car-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-scrap-car-singapore-c-d3",
       "slot_time_sgt": "2026-05-13T20:00",
       "type": "story",
@@ -169,18 +97,6 @@
         "assets/igs-scrap-car-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: scrap-car-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-coe-export-car-singapore-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-coe-export-car-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-export-car-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: coe-export-car-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -197,18 +113,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-coe-renewal-singapore-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-coe-renewal-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-renewal-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: coe-renewal-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-coe-renewal-singapore-c-d3",
       "slot_time_sgt": "2026-05-13T20:00",
       "type": "story",
@@ -217,18 +121,6 @@
         "assets/igs-coe-renewal-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: coe-renewal-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-what-is-the-right-workshop-singapore-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-what-is-the-right-workshop-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-what-is-the-right-workshop-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: what-is-the-right-workshop-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -245,18 +137,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-erp-2-0-singapore-2026-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-erp-2-0-singapore-2026/caption.txt",
-      "image_paths": [
-        "assets/igs-erp-2-0-singapore-2026/igs_B.png"
-      ],
-      "notes": "IGS B for blog: erp-2-0-singapore-2026",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-erp-2-0-singapore-2026-c-d3",
       "slot_time_sgt": "2026-05-13T20:00",
       "type": "story",
@@ -269,18 +149,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-cat-a-vs-cat-b-singapore-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-cat-a-vs-cat-b-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-cat-a-vs-cat-b-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: cat-a-vs-cat-b-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-cat-a-vs-cat-b-singapore-c-d3",
       "slot_time_sgt": "2026-05-13T20:00",
       "type": "story",
@@ -289,18 +157,6 @@
         "assets/igs-cat-a-vs-cat-b-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: cat-a-vs-cat-b-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-coe-explained-b-d2",
-      "slot_time_sgt": "2026-05-12T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-coe-explained/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-explained/igs_B.png"
-      ],
-      "notes": "IGS B for blog: coe-explained",
       "status": "pending",
       "attempts": 0
     },
@@ -1478,6 +1334,186 @@
       "posted_url": "18063132917432756",
       "posted_at": "2026-05-11 21:34 SGT",
       "post_id": "18063132917432756"
+    },
+    {
+      "id": "igs-autofill-independent-workshop-vs-author-2026-05-12-1100",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-independent-workshop-vs-author-2026-05-12-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-independent-workshop-vs-author-2026-05-12-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:independent-workshop-vs-authorised-service-centre-singapore variant:B",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17899197891441216",
+      "posted_at": "2026-05-12 11:29 SGT",
+      "post_id": "17899197891441216"
+    },
+    {
+      "id": "igs-cheapest-car-workshop-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-cheapest-car-workshop-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-cheapest-car-workshop-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: cheapest-car-workshop-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18120906742733172",
+      "posted_at": "2026-05-12 11:29 SGT",
+      "post_id": "18120906742733172"
+    },
+    {
+      "id": "igs-pre-purchase-car-inspection-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-pre-purchase-car-inspection-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-pre-purchase-car-inspection-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: pre-purchase-car-inspection-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18339490009218650",
+      "posted_at": "2026-05-12 11:29 SGT",
+      "post_id": "18339490009218650"
+    },
+    {
+      "id": "igs-car-insurance-premium-factors-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-premium-factors-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-premium-factors-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: car-insurance-premium-factors-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18001354940753005",
+      "posted_at": "2026-05-12 11:29 SGT",
+      "post_id": "18001354940753005"
+    },
+    {
+      "id": "igs-car-insurance-broker-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-broker-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-broker-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: car-insurance-broker-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17973810351034489",
+      "posted_at": "2026-05-12 11:29 SGT",
+      "post_id": "17973810351034489"
+    },
+    {
+      "id": "igs-scrap-car-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-scrap-car-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-scrap-car-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: scrap-car-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18111413605676314",
+      "posted_at": "2026-05-12 11:29 SGT",
+      "post_id": "18111413605676314"
+    },
+    {
+      "id": "igs-coe-export-car-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-export-car-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-export-car-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-export-car-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17917222293166012",
+      "posted_at": "2026-05-12 11:29 SGT",
+      "post_id": "17917222293166012"
+    },
+    {
+      "id": "igs-coe-renewal-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-renewal-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-renewal-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-renewal-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18081683714536906",
+      "posted_at": "2026-05-12 11:30 SGT",
+      "post_id": "18081683714536906"
+    },
+    {
+      "id": "igs-what-is-the-right-workshop-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-what-is-the-right-workshop-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-what-is-the-right-workshop-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: what-is-the-right-workshop-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18316150678260042",
+      "posted_at": "2026-05-12 11:30 SGT",
+      "post_id": "18316150678260042"
+    },
+    {
+      "id": "igs-erp-2-0-singapore-2026-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-erp-2-0-singapore-2026/caption.txt",
+      "image_paths": [
+        "assets/igs-erp-2-0-singapore-2026/igs_B.png"
+      ],
+      "notes": "IGS B for blog: erp-2-0-singapore-2026",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18098404034032752",
+      "posted_at": "2026-05-12 11:30 SGT",
+      "post_id": "18098404034032752"
+    },
+    {
+      "id": "igs-cat-a-vs-cat-b-singapore-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-cat-a-vs-cat-b-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-cat-a-vs-cat-b-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: cat-a-vs-cat-b-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18577249282058740",
+      "posted_at": "2026-05-12 11:30 SGT",
+      "post_id": "18577249282058740"
+    },
+    {
+      "id": "igs-coe-explained-b-d2",
+      "slot_time_sgt": "2026-05-12T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-explained/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-explained/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-explained",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18048402119529122",
+      "posted_at": "2026-05-12 11:30 SGT",
+      "post_id": "18048402119529122"
     }
   ],
   "failed": [],

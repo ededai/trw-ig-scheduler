@@ -78,3 +78,15 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-11 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18018387665672817 | IGS A for blog: cat-a-vs-cat-b-singapore |
 | 2026-05-11 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17961260376087133 | IGS A for blog: coe-explained |
 | 2026-05-11 20:00 | Single | Auto-filled IGS for blog: tyres-battery-singapore-checks-guide (variant C) | 18063132917432756 | Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:C |
+| 2026-05-12 11:00 | Single | Auto-filled IGS for blog: independent-workshop-vs-authorised-service-centre-singapore (variant B) | 17899197891441216 | Auto-fill IGS — blog:independent-workshop-vs-authorised-service-centre-singapore variant:B |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18120906742733172 | IGS B for blog: cheapest-car-workshop-singapore |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18339490009218650 | IGS B for blog: pre-purchase-car-inspection-singapore |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18001354940753005 | IGS B for blog: car-insurance-premium-factors-singapore |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17973810351034489 | IGS B for blog: car-insurance-broker-singapore |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18111413605676314 | IGS B for blog: scrap-car-singapore |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17917222293166012 | IGS B for blog: coe-export-car-singapore |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18081683714536906 | IGS B for blog: coe-renewal-singapore |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18316150678260042 | IGS B for blog: what-is-the-right-workshop-singapore |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18098404034032752 | IGS B for blog: erp-2-0-singapore-2026 |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18577249282058740 | IGS B for blog: cat-a-vs-cat-b-singapore |
+| 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18048402119529122 | IGS B for blog: coe-explained |
