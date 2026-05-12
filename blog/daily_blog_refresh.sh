@@ -32,9 +32,10 @@ run_step () {
     fi
 }
 
-run_step "step 1: refresh_trw_blog_index --apply" "$PY" refresh_trw_blog_index.py --apply
-run_step "step 2: fix_article_featured_images --apply" "$PY" fix_article_featured_images.py --apply
-run_step "step 3: fix_article_schema_images --apply" "$PY" fix_article_schema_images.py --apply
+run_step "step 1: sync_blog_hub_posts (new posts + category fixes)" "$PY" sync_blog_hub_posts.py
+run_step "step 2: refresh_trw_blog_index --apply" "$PY" refresh_trw_blog_index.py --apply
+run_step "step 3: fix_article_featured_images --apply" "$PY" fix_article_featured_images.py --apply
+run_step "step 4: fix_article_schema_images --apply" "$PY" fix_article_schema_images.py --apply
 
 echo "===== $(date -u +'%Y-%m-%dT%H:%M:%SZ') daily_blog_refresh done (exit=$overall_exit) =====" >> "$LOG"
 exit $overall_exit
