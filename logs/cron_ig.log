@@ -883,3 +883,10 @@ ERROR publishing: Media ID is not available
 [2026-05-12 19:28:11 +08] HEARTBEAT lag 129 min (prev=2026-05-12T17:19:14.800459+08:00)
 [2026-05-12 19:28:11 +08] run: no due posts
 [2026-05-12 19:29:14 +08] run: no due posts
+[2026-05-12 21:21:02 +08] HEARTBEAT lag 112 min (prev=2026-05-12T19:29:14.615674+08:00)
+[2026-05-12 21:21:02 +08] CATCH-UP igs-autofill-block-exemption-order-singapor-2026-05-12-2000 — 1.4h late, publishing
+[2026-05-12 21:21:02 +08] CATCH-UP newseries-st-mode-e-2026-05-13-11 — 1.4h late, publishing
+[2026-05-12 21:21:02 +08] Posting igs-autofill-block-exemption-order-singapor-2026-05-12-2000 (story) — notes: Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:C
+[2026-05-12 21:21:14 +08] OK  igs-autofill-block-exemption-order-singapor-2026-05-12-2000 -> 18044690855782424
+[2026-05-12 21:21:15 +08] Posting newseries-st-mode-e-2026-05-13-11 (carousel) — notes: Series: Straight Talk · Mode E (Spec Sheet)
+[2026-05-12 21:21:52 +08] OK  newseries-st-mode-e-2026-05-13-11 -> https://www.instagram.com/p/DYPXchKjpPa/

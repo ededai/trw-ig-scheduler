@@ -1,34 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-block-exemption-order-singapor-2026-05-12-2000",
-      "slot_time_sgt": "2026-05-12T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-block-exemption-order-singapor-2026-05-12-2000/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-block-exemption-order-singapor-2026-05-12-2000/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:C",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "newseries-st-mode-e-2026-05-13-11",
-      "slot_time_sgt": "2026-05-12T20:00",
-      "type": "carousel",
-      "caption_file": "assets/newseries-st-mode-e-2026-05-13-11/caption.txt",
-      "image_paths": [
-        "assets/newseries-st-mode-e-2026-05-13-11/slide.png",
-        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_2.png",
-        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_3.png",
-        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_4.png",
-        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_5.png"
-      ],
-      "notes": "Series: Straight Talk · Mode E (Spec Sheet)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-cheapest-car-workshop-singapore-c-d3",
       "slot_time_sgt": "2026-05-13T20:00",
       "type": "story",
@@ -1556,6 +1528,40 @@
       "posted_url": "18004472876866174",
       "posted_at": "2026-05-12 17:19 SGT",
       "post_id": "18004472876866174"
+    },
+    {
+      "id": "igs-autofill-block-exemption-order-singapor-2026-05-12-2000",
+      "slot_time_sgt": "2026-05-12T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-block-exemption-order-singapor-2026-05-12-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-block-exemption-order-singapor-2026-05-12-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:C",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18044690855782424",
+      "posted_at": "2026-05-12 21:21 SGT",
+      "post_id": "18044690855782424"
+    },
+    {
+      "id": "newseries-st-mode-e-2026-05-13-11",
+      "slot_time_sgt": "2026-05-12T20:00",
+      "type": "carousel",
+      "caption_file": "assets/newseries-st-mode-e-2026-05-13-11/caption.txt",
+      "image_paths": [
+        "assets/newseries-st-mode-e-2026-05-13-11/slide.png",
+        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_2.png",
+        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_3.png",
+        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_4.png",
+        "assets/newseries-st-mode-e-2026-05-13-11/slides/slide_5.png"
+      ],
+      "notes": "Series: Straight Talk · Mode E (Spec Sheet)",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DYPXchKjpPa/",
+      "posted_at": "2026-05-12 21:21 SGT",
+      "post_id": "18114336988805585"
     }
   ],
   "failed": [],
