@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530",
-      "slot_time_sgt": "2026-05-12T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530/caption.txt",
-      "image_paths": [
-        "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530/story.png"
-      ],
-      "notes": "Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-autofill-block-exemption-order-singapor-2026-05-12-2000",
       "slot_time_sgt": "2026-05-12T20:00",
       "type": "story",
@@ -169,18 +157,6 @@
         "assets/igs-coe-explained/igs_C.png"
       ],
       "notes": "IGS C for blog: coe-explained",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-coe-results-explained-a-d1",
-      "slot_time_sgt": "2026-05-12T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-coe-results-explained/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-results-explained/igs_A.png"
-      ],
-      "notes": "IGS A for blog: coe-results-explained",
       "status": "pending",
       "attempts": 0
     },
@@ -1550,6 +1526,36 @@
       "posted_url": "18048402119529122",
       "posted_at": "2026-05-12 11:30 SGT",
       "post_id": "18048402119529122"
+    },
+    {
+      "id": "igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530",
+      "slot_time_sgt": "2026-05-12T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18118987852734500",
+      "posted_at": "2026-05-12 17:19 SGT",
+      "post_id": "18118987852734500"
+    },
+    {
+      "id": "igs-coe-results-explained-a-d1",
+      "slot_time_sgt": "2026-05-12T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-results-explained/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-results-explained/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-results-explained",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18004472876866174",
+      "posted_at": "2026-05-12 17:19 SGT",
+      "post_id": "18004472876866174"
     }
   ],
   "failed": [],

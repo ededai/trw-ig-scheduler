@@ -873,3 +873,10 @@ ERROR publishing: Media ID is not available
 [2026-05-12 14:26:04 +08] HEARTBEAT lag 163 min (prev=2026-05-12T11:42:54.698786+08:00)
 [2026-05-12 14:26:04 +08] run: no due posts
 [2026-05-12 14:29:00 +08] run: no due posts
+[2026-05-12 17:19:14 +08] HEARTBEAT lag 170 min (prev=2026-05-12T14:29:00.762909+08:00)
+[2026-05-12 17:19:14 +08] CATCH-UP igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530 — 1.8h late, publishing
+[2026-05-12 17:19:14 +08] CATCH-UP igs-coe-results-explained-a-d1 — 1.8h late, publishing
+[2026-05-12 17:19:14 +08] Posting igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530 (story) — notes: Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A
+[2026-05-12 17:19:22 +08] OK  igs-autofill-what-to-look-for-car-workshop--2026-05-12-1530 -> 18118987852734500
+[2026-05-12 17:19:23 +08] Posting igs-coe-results-explained-a-d1 (story) — notes: IGS A for blog: coe-results-explained
+[2026-05-12 17:19:29 +08] OK  igs-coe-results-explained-a-d1 -> 18004472876866174

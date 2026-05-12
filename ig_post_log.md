@@ -90,3 +90,5 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18098404034032752 | IGS B for blog: erp-2-0-singapore-2026 |
 | 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18577249282058740 | IGS B for blog: cat-a-vs-cat-b-singapore |
 | 2026-05-12 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18048402119529122 | IGS B for blog: coe-explained |
+| 2026-05-12 15:30 | Single | Auto-filled IGS for blog: what-to-look-for-car-workshop-singapore (variant A) | 18118987852734500 | Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A |
+| 2026-05-12 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18004472876866174 | IGS A for blog: coe-results-explained |
