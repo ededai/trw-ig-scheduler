@@ -86,7 +86,11 @@ def wp_get(env: dict, path: str, params: str = "") -> list | dict | None:
 
 def wp_push(env: dict, page_id: int, content: str) -> bool:
     url = f"{WP_ORIGIN}/wp-json/wp/v2/pages/{page_id}"
-    body = json.dumps({"content": content, "template": "elementor_canvas"}).encode()
+    body = json.dumps({
+        "content": content,
+        "template": "elementor_canvas",
+        "meta": {"_trw_canonical_chrome": ""},  # page has its own nav/footer; disable WP injection
+    }).encode()
     headers = {"Authorization": auth_header(env), "Content-Type": "application/json"}
     req = request.Request(url, data=body, method="POST", headers=headers)
     try:
