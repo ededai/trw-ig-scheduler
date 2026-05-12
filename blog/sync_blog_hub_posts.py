@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
-"""Sync /blog/ (WP page 475) post cards against WP category taxonomy.
+"""Sync /blog/ (WP page 475) post cards — auto-adds new blog posts.
 
 Runs daily in GitHub Actions. Idempotent — no-op when nothing has changed.
 
 What it does:
   1. Fetches all published WP pages assigned to Guides / Car Tips / News.
   2. Parses the current /blog/ HTML from WP page 475.
-  3. Adds any missing post cards (hero fetched from the article).
-  4. Fixes any post card where data-cat doesn't match the WP category.
-  5. Pushes back to WP only when changes were made.
+  3. Adds any missing post cards (hero + category read from article content).
+  4. Pushes back to WP only when changes were made.
 
-To categorize a new blog post: assign it to Guides / Car Tips / News
-in WP admin (or run fix_post_categories.py locally). This script
-auto-discovers it within 24 hours and adds it to /blog/.
+Category is read from <div class="article-eyebrow"> inside the article,
+NOT from WP taxonomy — the WP REST API does not expose page categories
+in the response body, so using taxonomy would silently default everything
+to Guides and corrupt Car Tips / News cards.
+
+To change a card's category: edit push_blog_hub.py POSTS_MANIFEST and
+re-run it, or run fix_post_categories.py to fix WP taxonomy first.
 
 Category IDs (therightworkshop.com):
   Guides = 1367 | Car Tips = 1368 | News = 1369
@@ -83,7 +86,7 @@ def wp_get(env: dict, path: str, params: str = "") -> list | dict | None:
 
 def wp_push(env: dict, page_id: int, content: str) -> bool:
     url = f"{WP_ORIGIN}/wp-json/wp/v2/pages/{page_id}"
-    body = json.dumps({"content": content}).encode()
+    body = json.dumps({"content": content, "template": "elementor_canvas"}).encode()
     headers = {"Authorization": auth_header(env), "Content-Type": "application/json"}
     req = request.Request(url, data=body, method="POST", headers=headers)
     try:
@@ -117,21 +120,27 @@ def fetch_all_blog_pages(env: dict) -> list[dict]:
     return pages or []
 
 
-def fetch_hero(env: dict, page_id: int) -> tuple[str, str]:
-    """Extract hero img src + alt from the article's WP content."""
+def fetch_hero_and_cat(env: dict, page_id: int) -> tuple[str, str, str]:
+    """Extract hero img src, alt, and category label from the article's WP content."""
     data = wp_get(env, f"/pages/{page_id}", "?context=edit&_fields=content")
     if not data:
-        return ("", "")
+        return ("", "", "")
     content = data.get("content", {}).get("raw", "")
     m = re.search(
         r'<section class="article-hero">.*?<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"',
         content, re.S
     )
     if not m:
-        return ("", "")
+        return ("", "", "")
     src = m.group(1)
     src = re.sub(r'^https?://i\d+\.wp\.com/', 'https://', src).split('?')[0]
-    return (src, m.group(2))
+    # Extract category from eyebrow inside article-hero
+    cat_m = re.search(r'<div class="article-eyebrow[^"]*"[^>]*>([^<]+)</div>', content)
+    cat = cat_m.group(1).strip() if cat_m else ""
+    # Validate against known categories; fall back to Guides
+    if cat not in CAT_NAMES.values():
+        cat = "Guides"
+    return (src, m.group(2), cat)
 
 
 def strip_html(s: str) -> str:
@@ -182,7 +191,7 @@ def main() -> None:
         inner = raw_html
         wrap = False
 
-    soup = BeautifulSoup(inner, "lxml")
+    soup = BeautifulSoup(inner, "html.parser")
     grid = soup.find(id="postGrid")
     if not grid:
         sys.exit("ERROR: #postGrid not found in /blog/ HTML.")
@@ -201,36 +210,25 @@ def main() -> None:
         if not slug:
             continue
 
-        # Resolve category name from WP taxonomy
-        page_cat_ids = page.get("categories", [])
-        cat = next((CAT_NAMES[c] for c in page_cat_ids if c in CAT_NAMES), "Guides")
-
+        # Only process slugs not already in the grid (ADD-only; never mutate existing cards).
+        # Category management is handled by push_blog_hub.py + fix_post_categories.py.
+        # WP REST API does not expose the category taxonomy on pages in the response body,
+        # so reading it here would always default to Guides and corrupt Car Tips / News cards.
         if slug in existing:
-            card = existing[slug]
-            current_cat = card.get("data-cat", "")
-            if current_cat != cat:
-                print(f"  FIX   /{slug}/ → data-cat={current_cat!r} should be {cat!r}")
-                if not dry:
-                    card["data-cat"] = cat
-                    eyebrow = card.find(class_="pc-eyebrow")
-                    if eyebrow:
-                        eyebrow.string = cat
-                changes += 1
-            else:
-                pass  # already correct
-        else:
-            print(f"  ADD   /{slug}/ ({cat}) — fetching hero...")
-            hero_src, hero_alt = fetch_hero(env, page["id"])
-            if not hero_src:
-                print(f"        WARN: no hero found for /{slug}/ — skipping")
-                continue
-            title   = strip_html(page.get("title", {}).get("rendered", slug))
-            excerpt = strip_html(page.get("excerpt", {}).get("rendered", ""))
-            card_html = build_card(slug, cat, title, excerpt, hero_src, hero_alt)
-            if not dry:
-                grid.append(BeautifulSoup(card_html, "lxml").find("a"))
-            print(f"        hero={hero_src[:70]}")
-            changes += 1
+            continue
+
+        print(f"  ADD   /{slug}/ — fetching hero and category...")
+        hero_src, hero_alt, cat = fetch_hero_and_cat(env, page["id"])
+        if not hero_src:
+            print(f"        WARN: no hero found for /{slug}/ — skipping")
+            continue
+        title   = strip_html(page.get("title", {}).get("rendered", slug))
+        excerpt = strip_html(page.get("excerpt", {}).get("rendered", ""))
+        card_html = build_card(slug, cat, title, excerpt, hero_src, hero_alt)
+        if not dry:
+            grid.append(BeautifulSoup(card_html, "html.parser").find("a"))
+        print(f"        cat={cat} hero={hero_src[:60]}")
+        changes += 1
 
     if changes == 0:
         print("No changes needed — /blog/ is up to date.")
@@ -242,7 +240,7 @@ def main() -> None:
         return
 
     # 4. Serialise + push
-    updated_inner = str(soup.body)[6:-7]  # strip <body>…</body>
+    updated_inner = str(soup)  # html.parser doesn't add <html><body> wrappers
     if wrap:
         new_raw = f"<!-- wp:html -->\n{updated_inner.strip()}\n<!-- /wp:html -->"
     else:
