@@ -133,18 +133,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-coe-results-explained-b-d2",
-      "slot_time_sgt": "2026-05-13T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-coe-results-explained/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-results-explained/igs_B.png"
-      ],
-      "notes": "IGS B for blog: coe-results-explained",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-coe-results-explained-c-d3",
       "slot_time_sgt": "2026-05-14T20:00",
       "type": "story",
@@ -1562,6 +1550,21 @@
       "posted_url": "https://www.instagram.com/p/DYPXchKjpPa/",
       "posted_at": "2026-05-12 21:21 SGT",
       "post_id": "18114336988805585"
+    },
+    {
+      "id": "igs-coe-results-explained-b-d2",
+      "slot_time_sgt": "2026-05-13T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-results-explained/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-results-explained/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-results-explained",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17924670126322753",
+      "posted_at": "2026-05-13 11:36 SGT",
+      "post_id": "17924670126322753"
     }
   ],
   "failed": [],

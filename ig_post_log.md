@@ -94,3 +94,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-12 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18004472876866174 | IGS A for blog: coe-results-explained |
 | 2026-05-12 20:00 | Single | Auto-filled IGS for blog: block-exemption-order-singapore-car-servicing (variant C) | 18044690855782424 | Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:C |
 | 2026-05-12 20:00 | Carousel | Honest vs upsell. Side by side. | https://www.instagram.com/p/DYPXchKjpPa/ | Series: Straight Talk · Mode E (Spec Sheet) |
+| 2026-05-13 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17924670126322753 | IGS B for blog: coe-results-explained |
