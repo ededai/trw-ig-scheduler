@@ -95,3 +95,14 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-12 20:00 | Single | Auto-filled IGS for blog: block-exemption-order-singapore-car-servicing (variant C) | 18044690855782424 | Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:C |
 | 2026-05-12 20:00 | Carousel | Honest vs upsell. Side by side. | https://www.instagram.com/p/DYPXchKjpPa/ | Series: Straight Talk · Mode E (Spec Sheet) |
 | 2026-05-13 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17924670126322753 | IGS B for blog: coe-results-explained |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18077680892201186 | IGS C for blog: cheapest-car-workshop-singapore |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18097765217107807 | IGS C for blog: pre-purchase-car-inspection-singapore |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18345990046243724 | IGS C for blog: car-insurance-premium-factors-singapore |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17896858059305353 | IGS C for blog: car-insurance-broker-singapore |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18007017479879911 | IGS C for blog: scrap-car-singapore |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17989665179979106 | IGS C for blog: coe-export-car-singapore |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18077056172636135 | IGS C for blog: coe-renewal-singapore |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18073812395285618 | IGS C for blog: what-is-the-right-workshop-singapore |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18094676996233878 | IGS C for blog: erp-2-0-singapore-2026 |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18115775092811974 | IGS C for blog: cat-a-vs-cat-b-singapore |
+| 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18079967150400008 | IGS C for blog: coe-explained |
