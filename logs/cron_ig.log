@@ -915,3 +915,5 @@ ERROR publishing: Media ID is not available
 [2026-05-13 11:36:47 +08] Posting igs-coe-results-explained-b-d2 (story) — notes: IGS B for blog: coe-results-explained
 [2026-05-13 11:36:56 +08] OK  igs-coe-results-explained-b-d2 -> 17924670126322753
 [2026-05-13 11:52:59 +08] run: no due posts
+[2026-05-13 14:39:25 +08] HEARTBEAT lag 166 min (prev=2026-05-13T11:52:59.193334+08:00)
+[2026-05-13 14:39:25 +08] run: no due posts
