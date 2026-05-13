@@ -1,0 +1,10 @@
+last_sync: 2026-05-13T06:35:00+08:00
+synced_by: Codi (initial vendoring)
+source_paths:
+  - ~/.claude/skills/{anti-ai-slop-writing,avoid-ai-writing,doc-coauthoring}
+  - ~/Desktop/Claude folder/Skills/{copywriting,copy-editing,ai-seo,claude-seo,schema-markup}
+stripped_from_claude_seo:
+  - .git/, .github/, .devcontainer/, .claude-plugin/
+  - screenshots/, scripts/, extensions/
+  - install.sh, install.ps1, uninstall.*, pyproject.toml, requirements.txt
+  - LICENSE, CITATION.cff, CODEOWNERS, SECURITY.md
