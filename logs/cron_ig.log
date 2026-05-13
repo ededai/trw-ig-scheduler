@@ -959,3 +959,5 @@ ERROR publishing: Media ID is not available
 [2026-05-13 21:55:12 +08] OK  igs-coe-explained-c-d3 -> 18079967150400008
 [2026-05-13 22:39:12 +08] HEARTBEAT lag 46 min (prev=2026-05-13T21:53:11.426652+08:00)
 [2026-05-13 22:39:12 +08] run: no due posts
+[2026-05-14 00:12:16 +08] HEARTBEAT lag 93 min (prev=2026-05-13T22:39:12.423484+08:00)
+[2026-05-14 00:12:16 +08] run: no due posts
