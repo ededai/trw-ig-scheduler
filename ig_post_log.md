@@ -106,3 +106,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18094676996233878 | IGS C for blog: erp-2-0-singapore-2026 |
 | 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18115775092811974 | IGS C for blog: cat-a-vs-cat-b-singapore |
 | 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18079967150400008 | IGS C for blog: coe-explained |
+| 2026-05-14 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17970595911052576 | IGS C for blog: coe-results-explained |

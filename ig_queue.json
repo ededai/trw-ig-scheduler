@@ -1,18 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "igs-coe-results-explained-c-d3",
-      "slot_time_sgt": "2026-05-14T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-coe-results-explained/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-results-explained/igs_C.png"
-      ],
-      "notes": "IGS C for blog: coe-results-explained",
-      "status": "pending",
-      "attempts": 0
-    }
-  ],
+  "pending": [],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
@@ -1598,6 +1585,21 @@
       "posted_url": "18079967150400008",
       "posted_at": "2026-05-13 21:55 SGT",
       "post_id": "18079967150400008"
+    },
+    {
+      "id": "igs-coe-results-explained-c-d3",
+      "slot_time_sgt": "2026-05-14T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-results-explained/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-results-explained/igs_C.png"
+      ],
+      "notes": "IGS C for blog: coe-results-explained",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17970595911052576",
+      "posted_at": "2026-05-14 21:11 SGT",
+      "post_id": "17970595911052576"
     }
   ],
   "failed": [],
