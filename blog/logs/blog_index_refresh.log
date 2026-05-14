@@ -25,3 +25,12 @@
 [2026-05-12T05:18:19] PUSH ok: featured='Why Your Car Aircon Isn’t Cold in Singapore (And What Actually Needs Fixing)' (/car-aircon-not-cold-singapore-fix/), hero_fixes=0, bucket=3
 [2026-05-12T18:22:53] No drift, featured unchanged — no push.
 [2026-05-13T18:24:22] PUSH ok: featured='Why Your Car Aircon Isn’t Cold in Singapore (And What Actually Needs Fixing)' (/car-aircon-not-cold-singapore-fix/), hero_fixes=0, bucket=3
+[2026-05-14T18:17:17] PUSH ok: featured='Car Insurance in Singapore: Why One Call to a Broker Beats Calling 10 Companies Yourself' (/car-insurance-broker-singapore/), hero_fixes=4, bucket=4
+[2026-05-14T18:17:17]   hero-fix singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026: https://therightworkshop.com/wp-content/uploads/2026/05/AB_regulation_revision-of-preferential-additional-regi.webp -> https://therightworkshop.com/wp-content/uploads/2026/04/logo-white-on-transparent.png
+[2026-05-14T18:17:17]   hero-fix singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation: https://therightworkshop.com/wp-content/uploads/2026/05/AB_ev_joint-news-release-by-lta-scdf-launc.webp -> https://therightworkshop.com/wp-content/uploads/2026/04/logo-white-on-transparent.png
+[2026-05-14T18:17:17]   hero-fix vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles: https://therightworkshop.com/wp-content/uploads/2026/05/AB_regulation_updates-for-foreign-registered-vehicles.webp -> https://therightworkshop.com/wp-content/uploads/2026/04/logo-white-on-transparent.png
+[2026-05-14T18:17:17]   hero-fix erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers: https://therightworkshop.com/wp-content/uploads/2026/05/AB_erp_amendments-to-road-traffic-act-to-facili.webp -> https://therightworkshop.com/wp-content/uploads/2026/04/logo-white-on-transparent.png
+[2026-05-14T18:18:26] featured_media fix: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026 page=6187 6186 -> 641
+[2026-05-14T18:18:27] featured_media fix: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation page=6193 6192 -> 641
+[2026-05-14T18:18:29] featured_media fix: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles page=6199 6198 -> 641
+[2026-05-14T18:18:30] featured_media fix: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers page=6279 6278 -> 641
