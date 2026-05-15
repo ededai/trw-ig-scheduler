@@ -1023,3 +1023,16 @@ ERROR publishing: Media ID is not available
 [2026-05-15 14:48:05 +08] run: no due posts
 [2026-05-15 15:28:38 +08] HEARTBEAT lag 41 min (prev=2026-05-15T14:48:05.290103+08:00)
 [2026-05-15 15:28:38 +08] run: no due posts
+[2026-05-15 17:36:25 +08] HEARTBEAT lag 128 min (prev=2026-05-15T15:28:38.056447+08:00)
+[2026-05-15 17:36:25 +08] CATCH-UP igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers-a-d1 — 2.1h late, publishing
+[2026-05-15 17:36:25 +08] CATCH-UP igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles-a-d1 — 2.1h late, publishing
+[2026-05-15 17:36:25 +08] CATCH-UP igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation-a-d1 — 2.1h late, publishing
+[2026-05-15 17:36:25 +08] CATCH-UP igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026-a-d1 — 2.1h late, publishing
+[2026-05-15 17:36:25 +08] Posting igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers-a-d1 (story) — notes: IGS A for blog: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers
+[2026-05-15 17:36:35 +08] OK  igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers-a-d1 -> 18394310818093416
+[2026-05-15 17:36:36 +08] Posting igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles-a-d1 (story) — notes: IGS A for blog: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles
+[2026-05-15 17:36:49 +08] OK  igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles-a-d1 -> 18101297426044766
+[2026-05-15 17:36:50 +08] Posting igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation-a-d1 (story) — notes: IGS A for blog: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation
+[2026-05-15 17:37:03 +08] OK  igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation-a-d1 -> 17860361970690797
+[2026-05-15 17:37:04 +08] Posting igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026-a-d1 (story) — notes: IGS A for blog: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026
+[2026-05-15 17:37:16 +08] OK  igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026-a-d1 -> 17889073341526145

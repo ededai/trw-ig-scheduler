@@ -107,3 +107,7 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18115775092811974 | IGS C for blog: cat-a-vs-cat-b-singapore |
 | 2026-05-13 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18079967150400008 | IGS C for blog: coe-explained |
 | 2026-05-14 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17970595911052576 | IGS C for blog: coe-results-explained |
+| 2026-05-15 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18394310818093416 | IGS A for blog: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers |
+| 2026-05-15 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18101297426044766 | IGS A for blog: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles |
+| 2026-05-15 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17860361970690797 | IGS A for blog: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation |
+| 2026-05-15 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17889073341526145 | IGS A for blog: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026 |
