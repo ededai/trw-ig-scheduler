@@ -38,6 +38,17 @@ CAT_IDS      = [1367, 1368, 1369]          # Guides, Car Tips, News
 CAT_NAMES    = {1367: "Guides", 1368: "Car Tips", 1369: "News"}
 WP_ORIGIN    = "https://therightworkshop.com"
 
+# Classifier: slug -> category. Single source of truth for hub assignment.
+# Cole/Bryan/Codi append entries at publish time.
+CLASSIFIER_PATH = Path(__file__).parent / "hub_classifier.json"
+HUB_CLASSIFIER: dict[str, str] = {}
+if CLASSIFIER_PATH.exists():
+    try:
+        _raw = json.loads(CLASSIFIER_PATH.read_text())
+        HUB_CLASSIFIER = {k: v for k, v in _raw.items() if not k.startswith("_")}
+    except Exception as e:
+        print(f"WARN: failed to load {CLASSIFIER_PATH.name}: {e}")
+
 # ── credentials ──────────────────────────────────────────────────────────────
 
 def load_env() -> dict:
