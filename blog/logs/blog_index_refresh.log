@@ -35,3 +35,12 @@
 [2026-05-14T18:18:29] featured_media fix: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles page=6199 6198 -> 641
 [2026-05-14T18:18:30] featured_media fix: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers page=6279 6278 -> 641
 [2026-05-15T18:01:43] No drift, featured unchanged — no push.
+[2026-05-16T17:30:18] PUSH ok: featured='Car Insurance in Singapore: Why One Call to a Broker Beats Calling 10 Companies Yourself' (/car-insurance-broker-singapore/), hero_fixes=4, bucket=4
+[2026-05-16T17:30:18]   hero-fix erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers: https://therightworkshop.com/wp-content/uploads/2026/05/news_b_6279_jfjhmcir.png -> https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+[2026-05-16T17:30:18]   hero-fix vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles: https://therightworkshop.com/wp-content/uploads/2026/05/news_b_6199_o95pzkv3.png -> https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+[2026-05-16T17:30:18]   hero-fix singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation: https://therightworkshop.com/wp-content/uploads/2026/05/news_b_6193_ahyant0o.png -> https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+[2026-05-16T17:30:18]   hero-fix singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026: https://therightworkshop.com/wp-content/uploads/2026/05/news_b_6187_288qizix.png -> https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+[2026-05-16T17:31:31] featured_media fix: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers page=6279 6829 -> 958
+[2026-05-16T17:31:32] featured_media fix: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles page=6199 6835 -> 958
+[2026-05-16T17:31:33] featured_media fix: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation page=6193 6840 -> 958
+[2026-05-16T17:31:34] featured_media fix: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026 page=6187 6845 -> 958
