@@ -136,26 +136,47 @@ def fetch_all_blog_pages(env: dict) -> list[dict]:
 
 
 def fetch_hero_and_cat(env: dict, page_id: int) -> tuple[str, str, str]:
-    """Extract hero img src, alt, and category label from the article's WP content."""
-    data = wp_get(env, f"/pages/{page_id}", "?context=edit&_fields=content")
+    """Extract hero img src, alt, and category label.
+
+    Hero lookup order (changed 2026-05-16, see Cole task NEWS_TEMPLATE_V3_HANDOFF):
+      1. WP featured_media (canonical — works for news articles which deliberately
+         do NOT emit an in-body article-hero img).
+      2. <section class="article-hero"><img>  (legacy blog-chrome posts).
+    Category: read from <div class="article-eyebrow"> inside content.
+    """
+    data = wp_get(env, f"/pages/{page_id}", "?context=edit&_fields=content,featured_media")
     if not data:
         return ("", "", "")
     content = data.get("content", {}).get("raw", "")
-    m = re.search(
-        r'<section class="article-hero">.*?<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"',
-        content, re.S
-    )
-    if not m:
+
+    # 1. featured_media first
+    fm_id = data.get("featured_media") or 0
+    src, alt = "", ""
+    if fm_id:
+        media = wp_get(env, f"/media/{fm_id}", "?_fields=source_url,alt_text")
+        if media and media.get("source_url"):
+            src = re.sub(r'^https?://i\d+\.wp\.com/', 'https://', media["source_url"]).split('?')[0]
+            alt = media.get("alt_text") or ""
+
+    # 2. fallback: article-hero img in body
+    if not src:
+        m = re.search(
+            r'<section class="article-hero">.*?<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"',
+            content, re.S
+        )
+        if m:
+            src = re.sub(r'^https?://i\d+\.wp\.com/', 'https://', m.group(1)).split('?')[0]
+            alt = m.group(2)
+
+    if not src:
         return ("", "", "")
-    src = m.group(1)
-    src = re.sub(r'^https?://i\d+\.wp\.com/', 'https://', src).split('?')[0]
-    # Extract category from eyebrow inside article-hero
+
+    # Extract category from eyebrow inside article body
     cat_m = re.search(r'<div class="article-eyebrow[^"]*"[^>]*>([^<]+)</div>', content)
     cat = cat_m.group(1).strip() if cat_m else ""
-    # Validate against known categories; fall back to Guides
     if cat not in CAT_NAMES.values():
         cat = "Guides"
-    return (src, m.group(2), cat)
+    return (src, alt, cat)
 
 
 def strip_html(s: str) -> str:
