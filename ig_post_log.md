@@ -111,3 +111,7 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-15 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18101297426044766 | IGS A for blog: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles |
 | 2026-05-15 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17860361970690797 | IGS A for blog: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation |
 | 2026-05-15 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17889073341526145 | IGS A for blog: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026 |
+| 2026-05-16 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17863248564686167 | IGS B for blog: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers |
+| 2026-05-16 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18215302519325473 | IGS B for blog: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles |
+| 2026-05-16 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18349843525215057 | IGS B for blog: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation |
+| 2026-05-16 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18121488742633344 | IGS B for blog: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026 |

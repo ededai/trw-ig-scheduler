@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers-b-d2",
-      "slot_time_sgt": "2026-05-16T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers/caption.txt",
-      "image_paths": [
-        "assets/igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers/igs_B.png"
-      ],
-      "notes": "IGS B for blog: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers-c-d3",
       "slot_time_sgt": "2026-05-17T20:00",
       "type": "story",
@@ -21,18 +9,6 @@
         "assets/igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers/igs_C.png"
       ],
       "notes": "IGS C for blog: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles-b-d2",
-      "slot_time_sgt": "2026-05-16T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles/caption.txt",
-      "image_paths": [
-        "assets/igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles/igs_B.png"
-      ],
-      "notes": "IGS B for blog: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles",
       "status": "pending",
       "attempts": 0
     },
@@ -49,18 +25,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation-b-d2",
-      "slot_time_sgt": "2026-05-16T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation/caption.txt",
-      "image_paths": [
-        "assets/igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation/igs_B.png"
-      ],
-      "notes": "IGS B for blog: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation-c-d3",
       "slot_time_sgt": "2026-05-17T20:00",
       "type": "story",
@@ -69,18 +33,6 @@
         "assets/igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation/igs_C.png"
       ],
       "notes": "IGS C for blog: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026-b-d2",
-      "slot_time_sgt": "2026-05-16T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026/caption.txt",
-      "image_paths": [
-        "assets/igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026/igs_B.png"
-      ],
-      "notes": "IGS B for blog: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026",
       "status": "pending",
       "attempts": 0
     },
@@ -1757,6 +1709,66 @@
       "posted_url": "17889073341526145",
       "posted_at": "2026-05-15 17:37 SGT",
       "post_id": "17889073341526145"
+    },
+    {
+      "id": "igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers-b-d2",
+      "slot_time_sgt": "2026-05-16T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers/caption.txt",
+      "image_paths": [
+        "assets/igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers/igs_B.png"
+      ],
+      "notes": "IGS B for blog: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17863248564686167",
+      "posted_at": "2026-05-16 11:23 SGT",
+      "post_id": "17863248564686167"
+    },
+    {
+      "id": "igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles-b-d2",
+      "slot_time_sgt": "2026-05-16T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles/caption.txt",
+      "image_paths": [
+        "assets/igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles/igs_B.png"
+      ],
+      "notes": "IGS B for blog: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18215302519325473",
+      "posted_at": "2026-05-16 11:24 SGT",
+      "post_id": "18215302519325473"
+    },
+    {
+      "id": "igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation-b-d2",
+      "slot_time_sgt": "2026-05-16T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation/caption.txt",
+      "image_paths": [
+        "assets/igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation/igs_B.png"
+      ],
+      "notes": "IGS B for blog: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18349843525215057",
+      "posted_at": "2026-05-16 11:24 SGT",
+      "post_id": "18349843525215057"
+    },
+    {
+      "id": "igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026-b-d2",
+      "slot_time_sgt": "2026-05-16T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026/caption.txt",
+      "image_paths": [
+        "assets/igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026/igs_B.png"
+      ],
+      "notes": "IGS B for blog: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18121488742633344",
+      "posted_at": "2026-05-16 11:24 SGT",
+      "post_id": "18121488742633344"
     }
   ],
   "failed": [],
