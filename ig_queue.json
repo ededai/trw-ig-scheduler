@@ -1,54 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers-c-d3",
-      "slot_time_sgt": "2026-05-17T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers/caption.txt",
-      "image_paths": [
-        "assets/igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers/igs_C.png"
-      ],
-      "notes": "IGS C for blog: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles-c-d3",
-      "slot_time_sgt": "2026-05-17T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles/caption.txt",
-      "image_paths": [
-        "assets/igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles/igs_C.png"
-      ],
-      "notes": "IGS C for blog: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation-c-d3",
-      "slot_time_sgt": "2026-05-17T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation/caption.txt",
-      "image_paths": [
-        "assets/igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation/igs_C.png"
-      ],
-      "notes": "IGS C for blog: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026-c-d3",
-      "slot_time_sgt": "2026-05-17T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026/caption.txt",
-      "image_paths": [
-        "assets/igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026/igs_C.png"
-      ],
-      "notes": "IGS C for blog: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026",
-      "status": "pending",
-      "attempts": 0
-    }
-  ],
+  "pending": [],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
@@ -1769,6 +1720,66 @@
       "posted_url": "18121488742633344",
       "posted_at": "2026-05-16 11:24 SGT",
       "post_id": "18121488742633344"
+    },
+    {
+      "id": "igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers-c-d3",
+      "slot_time_sgt": "2026-05-17T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers/caption.txt",
+      "image_paths": [
+        "assets/igs-erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers/igs_C.png"
+      ],
+      "notes": "IGS C for blog: erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18191529898371072",
+      "posted_at": "2026-05-17 20:39 SGT",
+      "post_id": "18191529898371072"
+    },
+    {
+      "id": "igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles-c-d3",
+      "slot_time_sgt": "2026-05-17T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles/caption.txt",
+      "image_paths": [
+        "assets/igs-vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles/igs_C.png"
+      ],
+      "notes": "IGS C for blog: vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18101746868015042",
+      "posted_at": "2026-05-17 20:39 SGT",
+      "post_id": "18101746868015042"
+    },
+    {
+      "id": "igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation-c-d3",
+      "slot_time_sgt": "2026-05-17T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation/caption.txt",
+      "image_paths": [
+        "assets/igs-singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation/igs_C.png"
+      ],
+      "notes": "IGS C for blog: singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17975138645875119",
+      "posted_at": "2026-05-17 20:39 SGT",
+      "post_id": "17975138645875119"
+    },
+    {
+      "id": "igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026-c-d3",
+      "slot_time_sgt": "2026-05-17T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026/caption.txt",
+      "image_paths": [
+        "assets/igs-singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026/igs_C.png"
+      ],
+      "notes": "IGS C for blog: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17937659346234987",
+      "posted_at": "2026-05-17 20:39 SGT",
+      "post_id": "17937659346234987"
     }
   ],
   "failed": [],
