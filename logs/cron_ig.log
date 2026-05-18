@@ -1184,3 +1184,7 @@ ERROR publishing: Media ID is not available
 [2026-05-18 11:52:44 +08] HEARTBEAT lag 221 min (prev=2026-05-18T08:12:03.023844+08:00)
 [2026-05-18 11:52:44 +08] run: no due posts
 [2026-05-18 12:09:28 +08] run: no due posts
+[2026-05-18 16:06:14 +08] HEARTBEAT lag 237 min (prev=2026-05-18T12:09:28.708831+08:00)
+[2026-05-18 16:06:14 +08] CATCH-UP igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-a-d1 — 0.6h late, publishing
+[2026-05-18 16:06:14 +08] Posting igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-a-d1 (story) — notes: IGS A for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines
+[2026-05-18 16:06:29 +08] OK  igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-a-d1 -> 18006801467872174

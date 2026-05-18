@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-a-d1",
-      "slot_time_sgt": "2026-05-18T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/caption.txt",
-      "image_paths": [
-        "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/igs_A.png"
-      ],
-      "notes": "IGS A for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-b-d2",
       "slot_time_sgt": "2026-05-19T11:00",
       "type": "story",
@@ -1817,6 +1805,21 @@
       "posted_url": "17937659346234987",
       "posted_at": "2026-05-17 20:39 SGT",
       "post_id": "17937659346234987"
+    },
+    {
+      "id": "igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-a-d1",
+      "slot_time_sgt": "2026-05-18T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/caption.txt",
+      "image_paths": [
+        "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/igs_A.png"
+      ],
+      "notes": "IGS A for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18006801467872174",
+      "posted_at": "2026-05-18 16:06 SGT",
+      "post_id": "18006801467872174"
     }
   ],
   "failed": [],
