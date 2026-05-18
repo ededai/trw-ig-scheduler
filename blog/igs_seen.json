@@ -257,6 +257,15 @@
         "igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-c-d3"
       ],
       "title": "VEP Applications Blocked for Foreign Vehicles with Outstanding Fines"
+    },
+    "engine-mounting-singapore": {
+      "queued_at": "2026-05-19 03:59 SGT",
+      "queued_ids": [
+        "igs-engine-mounting-singapore-a-d1",
+        "igs-engine-mounting-singapore-b-d2",
+        "igs-engine-mounting-singapore-c-d3"
+      ],
+      "title": "Engine Mountings in Singapore: Should You Leave Them or Fix Them?"
     }
   }
 }
