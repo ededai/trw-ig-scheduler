@@ -110,6 +110,15 @@ def discover_articles_by_category(env: dict) -> dict[str, list[dict]]:
     return out
 
 
+def is_real_article(env: dict, page_id: int) -> bool:
+    """Gate: only pages rendered by OUR pipeline have these markers."""
+    data = wp_get(env, f"/pages/{page_id}", "?context=edit&_fields=content")
+    if not data:
+        return False
+    raw = (data.get("content") or {}).get("raw", "") or ""
+    return '<section class="article-hero">' in raw or 'class="trw-news-article"' in raw
+
+
 def resolve_hero(env: dict, page_id: int, featured_media_id: int) -> tuple[str, str]:
     """featured_media first, article-hero img fallback."""
     if featured_media_id:
@@ -199,6 +208,9 @@ def main() -> int:
         new_raw = raw
         for a in missing:
             slug = a["slug"]
+            if not is_real_article(env, a["id"]):
+                print(f"      - /{slug}/ skipped (not a pipeline article)")
+                continue
             title = strip_html((a.get("title") or {}).get("rendered", slug))
             excerpt = strip_html((a.get("excerpt") or {}).get("rendered", ""))
             hero_src, hero_alt = resolve_hero(env, a["id"], a.get("featured_media") or 0)
