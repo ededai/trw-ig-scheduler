@@ -1228,3 +1228,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-19 15:54:26 +08] HEARTBEAT lag 51 min (prev=2026-05-19T15:03:45.759881+08:00)
 [2026-05-19 15:54:26 +08] Posting igs-engine-mounting-singapore-a-d1 (story) — notes: IGS A for blog: engine-mounting-singapore
 [2026-05-19 15:54:34 +08] OK  igs-engine-mounting-singapore-a-d1 -> 17928394926296683
+[2026-05-19 18:43:52 +08] HEARTBEAT lag 169 min (prev=2026-05-19T15:54:26.341695+08:00)
+[2026-05-19 18:43:52 +08] run: no due posts
