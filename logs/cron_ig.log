@@ -1214,3 +1214,11 @@ ERROR publishing: Media ID is not available
 [2026-05-19 07:48:01 +08] run: no due posts
 [2026-05-19 09:30:46 +08] HEARTBEAT lag 103 min (prev=2026-05-19T07:48:01.009232+08:00)
 [2026-05-19 09:30:46 +08] run: no due posts
+[2026-05-19 11:43:17 +08] HEARTBEAT lag 133 min (prev=2026-05-19T09:30:46.281766+08:00)
+[2026-05-19 11:43:17 +08] CATCH-UP igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-b-d2 — 0.7h late, publishing
+[2026-05-19 11:43:17 +08] Posting igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-b-d2 (story) — notes: IGS B for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines
+[2026-05-19 11:43:20 +08] ERR igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-b-d2: post_instagram.py --story failed: Resolving image URL: /home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/igs_B.png
+Image hosted at: https://raw.githubusercontent.com/ededai/trw-ig-scheduler/main/assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/igs_B.png (via raw.githubusercontent.com, attempt 1)
+Creating media container...
+ERROR creating container: Only photo or video can be accepted as media type.
+

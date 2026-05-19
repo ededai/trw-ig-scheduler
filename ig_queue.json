@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-b-d2",
-      "slot_time_sgt": "2026-05-19T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/caption.txt",
-      "image_paths": [
-        "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/igs_B.png"
-      ],
-      "notes": "IGS B for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-c-d3",
       "slot_time_sgt": "2026-05-20T20:00",
       "type": "story",
@@ -1858,7 +1846,21 @@
       "post_id": "18006801467872174"
     }
   ],
-  "failed": [],
+  "failed": [
+    {
+      "id": "igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-b-d2",
+      "slot_time_sgt": "2026-05-19T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/caption.txt",
+      "image_paths": [
+        "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/igs_B.png"
+      ],
+      "notes": "IGS B for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines",
+      "status": "failed",
+      "attempts": 1,
+      "error": "post_instagram.py --story failed: Resolving image URL: /home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/igs_B.png\nImage hosted at: https://raw.githubusercontent.com/ededai/trw-ig-scheduler/main/assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/igs_B.png (via raw.githubusercontent.com, attempt 1)\nCreating media container...\nERROR creating container: Only photo or video can be accepted "
+    }
+  ],
   "cancelled": [
     {
       "id": "doreen-review-2026-04-29",
