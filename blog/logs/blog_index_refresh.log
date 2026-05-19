@@ -48,3 +48,8 @@
 [2026-05-18T18:19:35] No drift, featured unchanged — no push.
 [2026-05-19T09:14:55] PUSH ok: featured='What Actually Changes Your Car Insurance Premium in Singapore' (/car-insurance-premium-factors-singapore/), hero_fixes=0, bucket=5
 [2026-05-19T09:19:54] No drift, featured unchanged — no push.
+[2026-05-19T09:26:08] PUSH ok: featured='What Actually Changes Your Car Insurance Premium in Singapore' (/car-insurance-premium-factors-singapore/), hero_fixes=2, bucket=5
+[2026-05-19T09:26:08]   hero-fix cat-a-coe-may-2026-hits-124790-whats-driving-the-climb: https://therightworkshop.com/wp-content/uploads/2026/05/coe-cat-a-may-2026-1st-round.png -> https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+[2026-05-19T09:26:08]   hero-fix coe-results: https://therightworkshop.com/wp-content/uploads/2026/05/how-to-read-coe-results-singapore-hero.webp -> https://therightworkshop.com/wp-content/uploads/2026/04/trw_export_scrap.jpg
+[2026-05-19T09:27:06] featured_media fix: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb page=7143 7202 -> 958
+[2026-05-19T09:27:07] featured_media fix: coe-results page=4572 5595 -> 760

@@ -5525,3 +5525,428 @@ ARTICLE SCHEMA IMAGE FIX  |  mode=apply  |  35 articles
 0 of 34 articles need schema fix.
 No-op.
 ===== 2026-05-19T09:21:39Z daily_blog_refresh done (exit=0) =====
+
+===== 2026-05-19T09:24:56Z daily_blog_refresh start =====
+--- step 1: sync_blog_hub_posts (new posts + category fixes) ---
+sync_blog_hub_posts
+Fetching WP pages with blog categories...
+  Found 100 pages in Guides/Car Tips/News
+Fetching current /blog/ HTML...
+  ADD   /cat-a-coe-may-2026-hits-124790-whats-driving-the-climb/ — fetching hero and category...
+        cat=Guides hero=https://therightworkshop.com/wp-content/uploads/2026/05/coe-
+  ADD   /warranty/ — fetching hero and category...
+        WARN: no hero found for /warranty/ — skipping
+  ADD   /warning-lights/ — fetching hero and category...
+        WARN: no hero found for /warning-lights/ — skipping
+  ADD   /trust/ — fetching hero and category...
+        WARN: no hero found for /trust/ — skipping
+  ADD   /singapore/ — fetching hero and category...
+        WARN: no hero found for /singapore/ — skipping
+  ADD   /safety/ — fetching hero and category...
+        WARN: no hero found for /safety/ — skipping
+  ADD   /quote/ — fetching hero and category...
+        WARN: no hero found for /quote/ — skipping
+  ADD   /questions/ — fetching hero and category...
+        WARN: no hero found for /questions/ — skipping
+  ADD   /pricing/ — fetching hero and category...
+        WARN: no hero found for /pricing/ — skipping
+  ADD   /ppi/ — fetching hero and category...
+        WARN: no hero found for /ppi/ — skipping
+  ADD   /oil-change/ — fetching hero and category...
+        WARN: no hero found for /oil-change/ — skipping
+  ADD   /new-driver/ — fetching hero and category...
+        WARN: no hero found for /new-driver/ — skipping
+  ADD   /monsoon/ — fetching hero and category...
+        WARN: no hero found for /monsoon/ — skipping
+  ADD   /mechanic/ — fetching hero and category...
+        WARN: no hero found for /mechanic/ — skipping
+  ADD   /maintenance/ — fetching hero and category...
+        WARN: no hero found for /maintenance/ — skipping
+  ADD   /first-service/ — fetching hero and category...
+        WARN: no hero found for /first-service/ — skipping
+  ADD   /diagnostics/ — fetching hero and category...
+        WARN: no hero found for /diagnostics/ — skipping
+  ADD   /dealer/ — fetching hero and category...
+        WARN: no hero found for /dealer/ — skipping
+  ADD   /cooling/ — fetching hero and category...
+        WARN: no hero found for /cooling/ — skipping
+  ADD   /buying/ — fetching hero and category...
+        WARN: no hero found for /buying/ — skipping
+  ADD   /brake-pads/ — fetching hero and category...
+        WARN: no hero found for /brake-pads/ — skipping
+  ADD   /beo/ — fetching hero and category...
+        WARN: no hero found for /beo/ — skipping
+  ADD   /deadlines/ — fetching hero and category...
+        WARN: no hero found for /deadlines/ — skipping
+  ADD   /penalties/ — fetching hero and category...
+        WARN: no hero found for /penalties/ — skipping
+  ADD   /fines/ — fetching hero and category...
+        WARN: no hero found for /fines/ — skipping
+  ADD   /foreign-vehicles/ — fetching hero and category...
+        WARN: no hero found for /foreign-vehicles/ — skipping
+  ADD   /vep/ — fetching hero and category...
+        WARN: no hero found for /vep/ — skipping
+  ADD   /scrap-or-export/ — fetching hero and category...
+        WARN: no hero found for /scrap-or-export/ — skipping
+  ADD   /accident-repair/ — fetching hero and category...
+        WARN: no hero found for /accident-repair/ — skipping
+  ADD   /electrical/ — fetching hero and category...
+        WARN: no hero found for /electrical/ — skipping
+  ADD   /gearbox/ — fetching hero and category...
+        WARN: no hero found for /gearbox/ — skipping
+  ADD   /engine/ — fetching hero and category...
+        WARN: no hero found for /engine/ — skipping
+  ADD   /suspension/ — fetching hero and category...
+        WARN: no hero found for /suspension/ — skipping
+  ADD   /quota/ — fetching hero and category...
+        WARN: no hero found for /quota/ — skipping
+  ADD   /ev/ — fetching hero and category...
+        WARN: no hero found for /ev/ — skipping
+  ADD   /enforcement/ — fetching hero and category...
+        WARN: no hero found for /enforcement/ — skipping
+  ADD   /erp/ — fetching hero and category...
+        WARN: no hero found for /erp/ — skipping
+  ADD   /selling-your-car/ — fetching hero and category...
+        WARN: no hero found for /selling-your-car/ — skipping
+  ADD   /car-insurance/ — fetching hero and category...
+        WARN: no hero found for /car-insurance/ — skipping
+  ADD   /maserati/ — fetching hero and category...
+        WARN: no hero found for /maserati/ — skipping
+  ADD   /infiniti/ — fetching hero and category...
+        WARN: no hero found for /infiniti/ — skipping
+  ADD   /may-2026-1st-bidding/ — fetching hero and category...
+        WARN: no hero found for /may-2026-1st-bidding/ — skipping
+  ADD   /april-2026-2nd-bidding/ — fetching hero and category...
+        WARN: no hero found for /april-2026-2nd-bidding/ — skipping
+  ADD   /coe-results/ — fetching hero and category...
+        cat=Guides hero=https://therightworkshop.com/wp-content/uploads/2026/05/how-
+  ADD   /archive/ — fetching hero and category...
+        WARN: no hero found for /archive/ — skipping
+  ADD   /seat/ — fetching hero and category...
+        WARN: no hero found for /seat/ — skipping
+  ADD   /tesla/ — fetching hero and category...
+        WARN: no hero found for /tesla/ — skipping
+  ADD   /byd/ — fetching hero and category...
+        WARN: no hero found for /byd/ — skipping
+  ADD   /cupra/ — fetching hero and category...
+        WARN: no hero found for /cupra/ — skipping
+  ADD   /citroen/ — fetching hero and category...
+        WARN: no hero found for /citroen/ — skipping
+  ADD   /opel/ — fetching hero and category...
+        WARN: no hero found for /opel/ — skipping
+  ADD   /renault/ — fetching hero and category...
+        WARN: no hero found for /renault/ — skipping
+  ADD   /skoda/ — fetching hero and category...
+        WARN: no hero found for /skoda/ — skipping
+  ADD   /peugeot/ — fetching hero and category...
+        WARN: no hero found for /peugeot/ — skipping
+  ADD   /alfa-romeo/ — fetching hero and category...
+        WARN: no hero found for /alfa-romeo/ — skipping
+  ADD   /ford/ — fetching hero and category...
+        WARN: no hero found for /ford/ — skipping
+  ADD   /ssangyong/ — fetching hero and category...
+        WARN: no hero found for /ssangyong/ — skipping
+  ADD   /chevrolet/ — fetching hero and category...
+        WARN: no hero found for /chevrolet/ — skipping
+  ADD   /jaguar/ — fetching hero and category...
+        WARN: no hero found for /jaguar/ — skipping
+  ADD   /bentley/ — fetching hero and category...
+        WARN: no hero found for /bentley/ — skipping
+  ADD   /news/ — fetching hero and category...
+        WARN: no hero found for /news/ — skipping
+  ADD   /car-tips/ — fetching hero and category...
+        WARN: no hero found for /car-tips/ — skipping
+  ADD   /guides/ — fetching hero and category...
+        WARN: no hero found for /guides/ — skipping
+  ADD   /workshop/ — fetching hero and category...
+        WARN: no hero found for /workshop/ — skipping
+  ADD   /used-car/ — fetching hero and category...
+        WARN: no hero found for /used-car/ — skipping
+  ADD   /tyres/ — fetching hero and category...
+        WARN: no hero found for /tyres/ — skipping
+  ADD   /servicing/ — fetching hero and category...
+        WARN: no hero found for /servicing/ — skipping
+  ADD   /regulation/ — fetching hero and category...
+        WARN: no hero found for /regulation/ — skipping
+  ADD   /ownership/ — fetching hero and category...
+        WARN: no hero found for /ownership/ — skipping
+  ADD   /driving-tips/ — fetching hero and category...
+        WARN: no hero found for /driving-tips/ — skipping
+  ADD   /coolant/ — fetching hero and category...
+        WARN: no hero found for /coolant/ — skipping
+  ADD   /coe/ — fetching hero and category...
+        WARN: no hero found for /coe/ — skipping
+  ADD   /brakes/ — fetching hero and category...
+        WARN: no hero found for /brakes/ — skipping
+  ADD   /battery/ — fetching hero and category...
+        WARN: no hero found for /battery/ — skipping
+  ADD   /aircon/ — fetching hero and category...
+        WARN: no hero found for /aircon/ — skipping
+  ADD   /topics/ — fetching hero and category...
+        WARN: no hero found for /topics/ — skipping
+2 change(s) made.
+Pushing to WP...
+OK — /blog/ updated with 2 change(s).
+--- step 2: refresh_trw_blog_index --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+TRW BLOG INDEX REFRESH  |  mode=apply  |  2026-05-19
+Bucket #5  (epoch=2026-04-24, days=5)
+========================================================================
+Cards on /blog/: 37
+Currently featured: What Actually Changes Your Car Insurance Premium in Singapore
+Proposed featured (bucket 5): What Actually Changes Your Car Insurance Premium in Singapore
+  href     : /car-insurance-premium-factors-singapore/
+  category : Guides
+  img      : https://therightworkshop.com/wp-content/uploads/2026/05/05-insurance-premium-LOCKED.jpg
+
+--- DRIFT REPORT ---
+Hero drift (auto-fix): 2
+  • cat-a-coe-may-2026-hits-124790-whats-driving-the-climb
+      card: https://therightworkshop.com/wp-content/uploads/2026/05/coe-cat-a-may-2026-1st-round.png
+      live: https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+  • coe-results
+      card: https://therightworkshop.com/wp-content/uploads/2026/05/how-to-read-coe-results-singapore-hero.webp
+      live: https://therightworkshop.com/wp-content/uploads/2026/04/trw_export_scrap.jpg
+OG:image drift (flag only): 21
+  • car-insurance-broker-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/04-insurance-broker-LOCKED.webp
+  • pre-purchase-car-inspection-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/06-inspection-LOCKED.webp
+  • cheapest-car-workshop-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/07-workshop-LOCKED.webp
+  • car-insurance-premium-factors-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/05-insurance-premium-LOCKED.webp
+  • coe-explained og=https://therightworkshop.com/wp-content/uploads/2026/05/COE_Explained_Hero_-_Singapore_Marina_Expressway.webp
+  • cat-a-vs-cat-b-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/singapore-expressway-cat-a-cat-b-coe-cars.webp
+  • coe-results-explained og=https://therightworkshop.com/wp-content/uploads/2026/05/how-to-read-coe-results-singapore-hero.webp
+  • coe-renewal-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/01-coe-renewal-LOCKED.webp
+  • coe-export-car-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/02-coe-export-LOCKED.webp
+  • scrap-car-singapore og=https://therightworkshop.com/wp-content/uploads/2026/05/03-coe-scrap-LOCKED.webp
+  • coe-renewal-vs-scrap-singapore-guide og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post7_coe_renewal_v1-1.webp
+  • what-is-the-right-workshop-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.webp
+  • how-to-read-workshop-quote-singapore og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post_read-quote_v1.webp
+  • brake-pads-rotors-singapore-when-to-change og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_post5_brake_pads_v1-1.webp
+  • erp-2-0-singapore-2026 og=https://therightworkshop.com/wp-content/uploads/2026/05/erp-2-0-gantry-singapore-hero.webp
+  • erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.webp
+  • vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.webp
+  • singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.webp
+  • singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026 og=https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.webp
+  • cat-a-coe-may-2026-hits-124790-whats-driving-the-climb og=https://therightworkshop.com/wp-content/uploads/2026/05/coe-cat-a-may-2026-1st-round.png
+  • coe-results og=https://therightworkshop.com/wp-content/uploads/2026/05/how-to-read-coe-results-singapore-hero.webp
+Schema Article.image drift (flag only): 0
+FETCH ERRORS: 1
+  • vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines: HTTPError: HTTP Error 404: Not Found
+[2026-05-19T09:26:08] PUSH ok: featured='What Actually Changes Your Car Insurance Premium in Singapore' (/car-insurance-premium-factors-singapore/), hero_fixes=2, bucket=5
+[2026-05-19T09:26:08]   hero-fix cat-a-coe-may-2026-hits-124790-whats-driving-the-climb: https://therightworkshop.com/wp-content/uploads/2026/05/coe-cat-a-may-2026-1st-round.png -> https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg
+[2026-05-19T09:26:08]   hero-fix coe-results: https://therightworkshop.com/wp-content/uploads/2026/05/how-to-read-coe-results-singapore-hero.webp -> https://therightworkshop.com/wp-content/uploads/2026/04/trw_export_scrap.jpg
+
+Pushed to WP page 475. modified=2026-05-19T17:26:06
+--- step 3: fix_article_featured_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+ARTICLE FEATURED IMAGE FIX  |  mode=apply  |  37 articles
+========================================================================
+  [ok    ] first-car-service-singapore-what-happens
+           page_id=1354  featured_media: 1595 -> 1595  (nb_post_first-service_v2.webp)
+  [ok    ] dealer-vs-independent-workshop-singapore
+           page_id=1350  featured_media: 1474 -> 1474  (nb_post_dealer-vs-indep_v1.webp)
+  [ok    ] car-insurance-broker-singapore
+           page_id=5729  featured_media: 5728 -> 5728  (04-insurance-broker-LOCKED.jpg)
+  [ok    ] pre-purchase-car-inspection-singapore
+           page_id=5736  featured_media: 5734 -> 5734  (06-inspection-LOCKED.jpg)
+  [ok    ] cheapest-car-workshop-singapore
+           page_id=5743  featured_media: 5742 -> 5742  (07-workshop-LOCKED.jpg)
+  [ok    ] car-insurance-premium-factors-singapore
+           page_id=5732  featured_media: 5731 -> 5731  (05-insurance-premium-LOCKED.jpg)
+  [ok    ] coe-explained
+           page_id=4563  featured_media: 5590 -> 5590  (COE_Explained_Hero_-_Singapore_Marina_Expressway.jpg)
+  [ok    ] cat-a-vs-cat-b-singapore
+           page_id=4565  featured_media: 5592 -> 5592  (singapore-expressway-cat-a-cat-b-coe-cars.jpg)
+  [ok    ] coe-results-explained
+           page_id=4564  featured_media: 5595 -> 5595  (how-to-read-coe-results-singapore-hero.jpg)
+  [ok    ] coe-renewal-singapore
+           page_id=5720  featured_media: 5719 -> 5719  (01-coe-renewal-LOCKED.jpg)
+  [ok    ] coe-export-car-singapore
+           page_id=5723  featured_media: 5722 -> 5722  (02-coe-export-LOCKED.jpg)
+  [ok    ] scrap-car-singapore
+           page_id=5726  featured_media: 5725 -> 5725  (03-coe-scrap-LOCKED.jpg)
+  [ok    ] coe-renewal-vs-scrap-singapore-guide
+           page_id=1223  featured_media: 1216 -> 1216  (nb_post7_coe_renewal_v1-1.jpg)
+  [ok    ] what-is-the-right-workshop-singapore
+           page_id=3774  featured_media: 958 -> 958  (nb_servicing_oilpour_v2.jpg)
+  [ok    ] dashboard-warning-lights-explained
+           page_id=1220  featured_media: 1213 -> 1213  (dashboard-warning-lights-16341407-1.webp)
+  [ok    ] how-often-service-car-singapore
+           page_id=965  featured_media: 958 -> 958  (nb_servicing_oilpour_v2.webp)
+  [ok    ] independent-workshop-vs-authorised-service-centre-singapore
+           page_id=1224  featured_media: 1217 -> 1217  (nb_post8_workshop_vs_asc_v1-1.webp)
+  [ok    ] used-car-inspection-singapore
+           page_id=1225  featured_media: 1218 -> 1218  (nb_post9_used_car_inspection_v1-1.webp)
+  [ok    ] what-to-look-for-car-workshop-singapore
+           page_id=1348  featured_media: 1469 -> 1469  (nb_post_what-to-look-for_v1.webp)
+  [ok    ] how-to-read-workshop-quote-singapore
+           page_id=1351  featured_media: 1476 -> 1476  (nb_post_read-quote_v1.jpg)
+  [ok    ] block-exemption-order-singapore-car-servicing
+           page_id=1352  featured_media: 1478 -> 1478  (nb_post_block-exemption_v1.webp)
+  [ok    ] tyres-battery-singapore-checks-guide
+           page_id=967  featured_media: 960 -> 960  (nb_tyre_treadgauge_battery_v1.webp)
+  [ok    ] car-aircon-not-cold-singapore-fix
+           page_id=966  featured_media: 959 -> 959  (nb_aircon_gauge_v1.webp)
+  [ok    ] coolant-radiator-care-singapore
+           page_id=1222  featured_media: 1215 -> 1215  (nb_post6_coolant_radiator_v1-1.webp)
+  [ok    ] driving-singapore-rain-wet-weather
+           page_id=1226  featured_media: 1219 -> 1219  (nb_post10_rain_driving_v1-1.webp)
+  [ok    ] brake-pads-rotors-singapore-when-to-change
+           page_id=1221  featured_media: 1214 -> 1214  (nb_post5_brake_pads_v1-1.jpg)
+  [ok    ] 10-signs-trustworthy-mechanic-singapore
+           page_id=1349  featured_media: 1472 -> 1472  (nb_post_10-signs-mechanic_v1.webp)
+  [ok    ] questions-to-ask-before-new-car-workshop-singapore
+           page_id=1353  featured_media: 1480 -> 1480  (nb_post_12-questions_v1.webp)
+  [ok    ] erp-2-0-singapore-2026
+           page_id=5856  featured_media: 5857 -> 5857  (erp-2-0-gantry-singapore-hero.jpg)
+  [ok    ] erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers
+           page_id=6279  featured_media: 958 -> 958  (nb_servicing_oilpour_v2.jpg)
+  [ok    ] vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles
+           page_id=6199  featured_media: 958 -> 958  (nb_servicing_oilpour_v2.jpg)
+  [ok    ] singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation
+           page_id=6193  featured_media: 958 -> 958  (nb_servicing_oilpour_v2.jpg)
+  [ok    ] singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026
+           page_id=6187  featured_media: 958 -> 958  (nb_servicing_oilpour_v2.jpg)
+  [ok    ] engine-mounting-singapore
+           page_id=7132  featured_media: 7122 -> 7122  (engine-mount-04.jpg)
+  [CHANGE] cat-a-coe-may-2026-hits-124790-whats-driving-the-climb
+           page_id=7143  featured_media: 7202 -> 958  (nb_servicing_oilpour_v2.jpg)
+  [CHANGE] coe-results
+           page_id=4572  featured_media: 5595 -> 760  (trw_export_scrap.jpg)
+
+2 of 36 articles need featured_media update. Errors: 1
+  ERROR vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines: fetch article: HTTP Error 404: Not Found
+[2026-05-19T09:27:06] featured_media fix: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb page=7143 7202 -> 958
+  applied cat-a-coe-may-2026-hits-124790-whats-driving-the-climb  modified=2026-05-19T17:27:05
+[2026-05-19T09:27:07] featured_media fix: coe-results page=4572 5595 -> 760
+  applied coe-results  modified=2026-05-19T17:27:06
+
+Post-fix spot-check (3 samples, allow 10s propagation)...
+  cat-a-coe-may-2026-hits-124790-whats-driving-the-climb: og drift still=https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.webp  |  schema drift still=
+  coe-results: og drift still=https://therightworkshop.com/wp-content/uploads/2026/04/trw_export_scrap.webp  |  schema drift still=
+step 3: fix_article_featured_images --apply FAILED rc=1
+--- step 4: fix_article_schema_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+ARTICLE SCHEMA IMAGE FIX  |  mode=apply  |  37 articles
+========================================================================
+  FETCH_FAIL vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines: HTTP Error 404: Not Found
+  ok     first-car-service-singapore-what-happens
+  ok     dealer-vs-independent-workshop-singapore
+  ok     car-insurance-broker-singapore
+  ok     pre-purchase-car-inspection-singapore
+  ok     cheapest-car-workshop-singapore
+  ok     car-insurance-premium-factors-singapore
+  ok     coe-explained
+  ok     cat-a-vs-cat-b-singapore
+  ok     coe-results-explained
+  ok     coe-renewal-singapore
+  ok     coe-export-car-singapore
+  ok     scrap-car-singapore
+  ok     coe-renewal-vs-scrap-singapore-guide
+  ok     what-is-the-right-workshop-singapore
+  ok     dashboard-warning-lights-explained
+  ok     how-often-service-car-singapore
+  ok     independent-workshop-vs-authorised-service-centre-singapore
+  ok     used-car-inspection-singapore
+  ok     what-to-look-for-car-workshop-singapore
+  ok     how-to-read-workshop-quote-singapore
+  ok     block-exemption-order-singapore-car-servicing
+  ok     tyres-battery-singapore-checks-guide
+  ok     car-aircon-not-cold-singapore-fix
+  ok     coolant-radiator-care-singapore
+  ok     driving-singapore-rain-wet-weather
+  ok     brake-pads-rotors-singapore-when-to-change
+  ok     10-signs-trustworthy-mechanic-singapore
+  ok     questions-to-ask-before-new-car-workshop-singapore
+  ok     erp-2-0-singapore-2026
+  ok     erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers
+  ok     vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles
+  ok     singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation
+  ok     singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026
+  ok     engine-mounting-singapore
+  ok     cat-a-coe-may-2026-hits-124790-whats-driving-the-climb
+  ok     coe-results
+
+0 of 36 articles need schema fix.
+No-op.
+--- step 5b: refresh_topic_tags_json (auto-merge from WP tags) ---
+loaded topic_tags.json: 37 entries
+WP tag taxonomy: 0 tags
+WP pages scanned: 149
+topic_tags.json: no changes needed.
+--- step 5c: sync_topic_pages (/topics/{tag}/ cards) ---
+Pillars in topic_tags: 18
+  ✓ /topics/aircon/ (1598) — already has 1 card(s), no adds needed
+  ✓ /topics/battery/ (1602) — already has 1 card(s), no adds needed
+  ✓ /topics/brakes/ (1606) — already has 1 card(s), no adds needed
+  ✓ /topics/car-insurance/ (5822) — already has 2 card(s), no adds needed
+  + /topics/coe/ (1610) — need to add 7 card(s): ['coe-explained', 'cat-a-vs-cat-b-singapore', 'coe-results-explained', 'coe-renewal-singapore', 'coe-export-car-singapore', 'scrap-car-singapore', 'singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026']
+      ✓ pushed 7 cards to /topics/coe/
+  ✓ /topics/coolant/ (1612) — already has 1 card(s), no adds needed
+  + /topics/driving-tips/ (1620) — need to add 1 card(s): ['brake-pads-rotors-singapore-when-to-change']
+      ✓ pushed 1 cards to /topics/driving-tips/
+  ✓ /topics/electrical/ (6864) — already has 1 card(s), no adds needed
+  ✓ /topics/erp/ (6328) — already has 2 card(s), no adds needed
+  ✓ /topics/ev/ (6333) — already has 1 card(s), no adds needed
+  + /topics/ownership/ (1636) — need to add 13 card(s): ['first-car-service-singapore-what-happens', 'car-insurance-broker-singapore', 'cheapest-car-workshop-singapore', 'car-insurance-premium-factors-singapore', 'coe-explained', 'cat-a-vs-cat-b-singapore', 'coe-renewal-singapore', 'coe-export-car-singapore', 'scrap-car-singapore', 'how-often-service-car-singapore', 'erp-2-0-singapore-2026', 'vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles', 'singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026']
+      ✓ pushed 13 cards to /topics/ownership/
+  + /topics/regulation/ (1646) — need to add 5 card(s): ['erp-2-0-singapore-2026', 'erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers', 'vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles', 'singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation', 'singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026']
+      ✓ pushed 5 cards to /topics/regulation/
+  ✓ /topics/scrap-or-export/ (6866) — already has 4 card(s), no adds needed
+  ✓ /topics/selling-your-car/ (5844) — already has 2 card(s), no adds needed
+  + /topics/servicing/ (1650) — need to add 7 card(s): ['cheapest-car-workshop-singapore', 'what-is-the-right-workshop-singapore', 'dashboard-warning-lights-explained', 'block-exemption-order-singapore-car-servicing', 'tyres-battery-singapore-checks-guide', 'car-aircon-not-cold-singapore-fix', 'coolant-radiator-care-singapore']
+      ✓ pushed 7 cards to /topics/servicing/
+  ✓ /topics/tyres/ (1656) — already has 1 card(s), no adds needed
+  + /topics/used-car/ (1658) — need to add 1 card(s): ['pre-purchase-car-inspection-singapore']
+      ✓ pushed 1 cards to /topics/used-car/
+  + /topics/workshop/ (1664) — need to add 6 card(s): ['pre-purchase-car-inspection-singapore', 'cheapest-car-workshop-singapore', 'what-is-the-right-workshop-singapore', 'how-to-read-workshop-quote-singapore', 'block-exemption-order-singapore-car-servicing', '10-signs-trustworthy-mechanic-singapore']
+      ✓ pushed 6 cards to /topics/workshop/
+
+Total pillars touched: 2
+Total cards added: 40 (LIVE)
+--- step 6: refresh_card_excerpts (defensive sweep) ---
+Building slug -> excerpt cache...
+  cached 49 article excerpts
+    475 /blog/                                 refreshed 3 cards
+   1776 /news/                                 refreshed 7 cards
+   7192 /topics/trust/                         refreshed 1 cards
+   7189 /topics/singapore/                     refreshed 1 cards
+   7186 /topics/safety/                        refreshed 1 cards
+   7183 /topics/quote/                         refreshed 1 cards
+   7179 /topics/pricing/                       refreshed 1 cards
+   7172 /topics/new-driver/                    refreshed 1 cards
+   7168 /topics/mechanic/                      refreshed 1 cards
+   7164 /topics/first-service/                 refreshed 1 cards
+   7158 /topics/dealer/                        refreshed 1 cards
+   7156 /topics/cooling/                       refreshed 1 cards
+   7152 /topics/buying/                        refreshed 1 cards
+   7149 /topics/brake-pads/                    refreshed 1 cards
+   6862 /topics/engine/                        refreshed 1 cards
+   6861 /topics/suspension/                    refreshed 1 cards
+   1664 /topics/workshop/                      refreshed 6 cards
+   1650 /topics/servicing/                     refreshed 4 cards
+   1646 /topics/regulation/                    refreshed 3 cards
+   1636 /topics/ownership/                     refreshed 3 cards
+   1610 /topics/coe/                           refreshed 1 cards
+   1606 /topics/brakes/                        refreshed 1 cards
+   1598 /topics/aircon/                        refreshed 1 cards
+
+Total cards refreshed: 43
+--- step 7: notify_thumb_check (Telegram sanity check) ---
+  re-pinned ERP 2 OBU fm=6829
+  re-pinned VEP & GVP fm=6835
+  re-pinned EV plates fm=6840
+  re-pinned PARF rebate fm=6845
+TRW Thumb Check — REVERTED
+
+• ERP 2 OBU: was `nb_servicing_oilpour_v2.webp` (media 958), expected `6829`
+• VEP & GVP: was `nb_servicing_oilpour_v2.webp` (media 958), expected `6835`
+• EV plates: was `nb_servicing_oilpour_v2.webp` (media 958), expected `6840`
+• PARF rebate: was `nb_servicing_oilpour_v2.webp` (media 958), expected `6845`
+
+Auto-re-pinned 4/4. Ed: open /news/ to verify thumbs render correctly.
+  TG creds missing — skipping notification
+===== 2026-05-19T09:30:41Z daily_blog_refresh done (exit=1) =====
