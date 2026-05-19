@@ -266,6 +266,24 @@
         "igs-engine-mounting-singapore-c-d3"
       ],
       "title": "Engine Mountings in Singapore: Should You Leave Them or Fix Them?"
+    },
+    "coe-results": {
+      "queued_at": "2026-05-19 20:19 SGT",
+      "queued_ids": [
+        "igs-coe-results-a-d1",
+        "igs-coe-results-b-d2",
+        "igs-coe-results-c-d3"
+      ],
+      "title": "Singapore COE Results"
+    },
+    "cat-a-coe-may-2026-hits-124790-whats-driving-the-climb": {
+      "queued_at": "2026-05-19 20:19 SGT",
+      "queued_ids": [
+        "igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-a-d1",
+        "igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-b-d2",
+        "igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-c-d3"
+      ],
+      "title": "Cat A COE May 2026 Hits $124,790: What’s Driving the Climb?"
     }
   }
 }
