@@ -53,7 +53,15 @@ WHITE    = (255, 255, 255)
 
 # Text layout — left-side text zone, 130px left margin
 MARGIN_L = 130
-TEXT_ZONE_W = 1350             # text occupies left ~52% of card
+
+# Per-template config: text_zone_w, headline_font_size, headline_font_size_sm
+# coe: bar chart starts at ~x=1350 → 1280px safe zone; short headline so 230px fits
+# lta: gantry starts at ~x=1100 → 950px safe zone; longer headlines need smaller font
+CARD_CONFIG = {
+    "coe": {"zone": 1280, "font": 230, "font_sm": 195},
+    "lta": {"zone":  950, "font": 185, "font_sm": 155},
+}
+CARD_CONFIG_DEFAULT = {"zone": 1100, "font": 200, "font_sm": 165}
 
 # Vertical positions (absolute px on 2624×1632 canvas)
 Y_LABEL    = 90                # small eyebrow label
@@ -124,9 +132,10 @@ def _wrap_headline(text: str, font: ImageFont.FreeTypeFont, max_w: int) -> list[
     if current:
         lines.append(current)
 
-    # Enforce max 2 lines — merge any overflow onto line 2
-    if len(lines) > 2:
-        lines = [lines[0], " ".join(lines[1:])]
+    # Enforce max 3 lines — merge any overflow onto line 3.
+    # 2-line max caused merged lines to exceed text_zone_w on narrow zones.
+    if len(lines) > 3:
+        lines = [lines[0], lines[1], " ".join(lines[2:])]
     return lines or [text]
 
 
@@ -153,6 +162,8 @@ def render_news_card(
         Absolute path to the saved PNG.
     """
     card_type = card_type.lower().strip()
+    cfg = CARD_CONFIG.get(card_type, CARD_CONFIG_DEFAULT)
+    text_zone_w  = cfg["zone"]
     base_file = ASSETS / f"base-{card_type}.png"
     if not base_file.exists():
         raise FileNotFoundError(
@@ -183,27 +194,22 @@ def render_news_card(
         card.paste(logo, (lx, ly), logo)
 
     # 3. Load fonts
-    bold_font_path  = _find_font(bold=True)
-    label_font      = _load(bold_font_path, 68)
-    headline_font   = _load(bold_font_path, 230)
-    headline_font_sm = _load(bold_font_path, 195)   # fallback if headline is long
-    stat_font       = _load(bold_font_path, 88)
+    bold_font_path   = _find_font(bold=True)
+    label_font       = _load(bold_font_path, 68)
+    headline_font    = _load(bold_font_path, cfg["font"])
+    headline_font_sm = _load(bold_font_path, cfg["font_sm"])
+    stat_font        = _load(bold_font_path, 88)
 
     # 4. Draw label (small white caps eyebrow)
     draw.text((MARGIN_L, Y_LABEL), label.upper(), font=label_font, fill=WHITE)
 
-    # 5. Draw headline (wrap to TEXT_ZONE_W, reduce font if needed)
-    lines = _wrap_headline(headline, headline_font, TEXT_ZONE_W)
-    if len(lines) > 1:
-        # Check if second line overflows; if so shrink font
-        tmp = Image.new("RGB", (1, 1))
-        tmp_draw = ImageDraw.Draw(tmp)
-        for ln in lines:
-            bb = tmp_draw.textbbox((0, 0), ln, font=headline_font)
-            if bb[2] - bb[0] > TEXT_ZONE_W:
-                headline_font = headline_font_sm
-                lines = _wrap_headline(headline, headline_font, TEXT_ZONE_W)
-                break
+    # 5. Draw headline (wrap to text_zone_w, reduce font if needed)
+    lines = _wrap_headline(headline, headline_font, text_zone_w)
+    # If any line exceeds zone, shrink font and re-wrap once
+    tmp_draw = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    if any(tmp_draw.textbbox((0,0), ln, font=headline_font)[2] > text_zone_w for ln in lines):
+        headline_font = headline_font_sm
+        lines = _wrap_headline(headline, headline_font, text_zone_w)
 
     line_h = int(headline_font.size * 1.1)
     y = Y_HEADLINE
