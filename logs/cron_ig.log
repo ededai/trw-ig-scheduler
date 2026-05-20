@@ -1250,3 +1250,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-20 09:31:47 +08] HEARTBEAT lag 118 min (prev=2026-05-20T07:33:40.172191+08:00)
 [2026-05-20 09:31:47 +08] run: no due posts
 [2026-05-20 09:50:06 +08] run: no due posts
+[2026-05-20 11:44:36 +08] HEARTBEAT lag 115 min (prev=2026-05-20T09:50:06.158989+08:00)
+[2026-05-20 11:44:36 +08] CATCH-UP igs-engine-mounting-singapore-b-d2 — 0.7h late, publishing
+[2026-05-20 11:44:36 +08] Posting igs-engine-mounting-singapore-b-d2 (story) — notes: IGS B for blog: engine-mounting-singapore
+[2026-05-20 11:44:52 +08] OK  igs-engine-mounting-singapore-b-d2 -> 18014007440892954

@@ -121,3 +121,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-17 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17937659346234987 | IGS C for blog: singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026 |
 | 2026-05-18 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18006801467872174 | IGS A for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines |
 | 2026-05-19 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17928394926296683 | IGS A for blog: engine-mounting-singapore |
+| 2026-05-20 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18014007440892954 | IGS B for blog: engine-mounting-singapore |
