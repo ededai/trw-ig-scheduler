@@ -1257,3 +1257,8 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-20 12:03:43 +08] run: no due posts
 [2026-05-20 15:03:25 +08] HEARTBEAT lag 180 min (prev=2026-05-20T12:03:43.689501+08:00)
 [2026-05-20 15:03:25 +08] run: no due posts
+[2026-05-20 15:53:54 +08] HEARTBEAT lag 50 min (prev=2026-05-20T15:03:25.573336+08:00)
+[2026-05-20 15:53:54 +08] Posting igs-coe-results-a-d1 (story) — notes: IGS A for blog: coe-results
+[2026-05-20 15:54:03 +08] OK  igs-coe-results-a-d1 -> 18084959126247968
+[2026-05-20 15:54:04 +08] Posting igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-a-d1 (story) — notes: IGS A for blog: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb
+[2026-05-20 15:54:10 +08] OK  igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-a-d1 -> 18105061934511459

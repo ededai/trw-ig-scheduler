@@ -122,3 +122,5 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-18 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18006801467872174 | IGS A for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines |
 | 2026-05-19 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17928394926296683 | IGS A for blog: engine-mounting-singapore |
 | 2026-05-20 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18014007440892954 | IGS B for blog: engine-mounting-singapore |
+| 2026-05-20 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18084959126247968 | IGS A for blog: coe-results |
+| 2026-05-20 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18105061934511459 | IGS A for blog: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb |
