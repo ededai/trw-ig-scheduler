@@ -242,13 +242,11 @@ def main() -> None:
     changes = 0
 
     # UPDATE PASS: fix existing cards whose img src is still the oil-pour default.
+    # Iterates existing grid cards directly — catches articles not in WP taxonomy categories
+    # (e.g. news posts mis-catted or un-catted), which wp_pages would silently skip.
     # Only updates the img element — never touches category, title, excerpt, or href.
     OIL_POUR_DEFAULT = 958  # WP media ID for nb_servicing_oilpour_v2.webp
-    for page in wp_pages:
-        slug = page.get("slug", "")
-        if not slug or slug not in existing:
-            continue
-        card = existing[slug]
+    for slug, card in list(existing.items()):
         img = card.find("img")
         if not img:
             continue
@@ -256,10 +254,16 @@ def main() -> None:
         if "nb_servicing_oilpour" not in current_src:
             continue  # already has a real image
 
-        data = wp_get(env, f"/pages/{page['id']}", "?_fields=featured_media")
-        fm_id = (data or {}).get("featured_media") or 0
+        # Look up the WP page by slug to get featured_media
+        pages_data = wp_get(env, "/pages",
+                            f"?slug={slug}&status=publish&_fields=id,featured_media")
+        if not pages_data:
+            print(f"  UPDATE /{slug}/ — WP page not found, skipping")
+            continue
+        page_data = pages_data[0] if isinstance(pages_data, list) else pages_data
+        fm_id = (page_data or {}).get("featured_media") or 0
         if not fm_id or fm_id == OIL_POUR_DEFAULT:
-            continue  # featured_media still points at default; nothing to do
+            continue  # featured_media not set or still points at default
 
         media = wp_get(env, f"/media/{fm_id}", "?_fields=source_url,alt_text")
         if not media or not media.get("source_url"):
