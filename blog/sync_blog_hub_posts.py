@@ -241,15 +241,48 @@ def main() -> None:
 
     changes = 0
 
+    # UPDATE PASS: fix existing cards whose img src is still the oil-pour default.
+    # Only updates the img element — never touches category, title, excerpt, or href.
+    OIL_POUR_DEFAULT = 958  # WP media ID for nb_servicing_oilpour_v2.webp
+    for page in wp_pages:
+        slug = page.get("slug", "")
+        if not slug or slug not in existing:
+            continue
+        card = existing[slug]
+        img = card.find("img")
+        if not img:
+            continue
+        current_src = img.get("src", "")
+        if "nb_servicing_oilpour" not in current_src:
+            continue  # already has a real image
+
+        data = wp_get(env, f"/pages/{page['id']}", "?_fields=featured_media")
+        fm_id = (data or {}).get("featured_media") or 0
+        if not fm_id or fm_id == OIL_POUR_DEFAULT:
+            continue  # featured_media still points at default; nothing to do
+
+        media = wp_get(env, f"/media/{fm_id}", "?_fields=source_url,alt_text")
+        if not media or not media.get("source_url"):
+            continue
+
+        new_src = re.sub(r'^https?://i\d+\.wp\.com/', 'https://', media["source_url"]).split('?')[0]
+        new_alt = media.get("alt_text") or ""
+        if new_src == current_src:
+            continue
+
+        print(f"  UPDATE /{slug}/ — refreshing image → {new_src.split('/')[-1]}")
+        if not dry:
+            img["src"] = new_src
+            img["alt"] = new_alt
+        changes += 1
+
     for page in wp_pages:
         slug = page.get("slug", "")
         if not slug:
             continue
 
-        # Only process slugs not already in the grid (ADD-only; never mutate existing cards).
-        # Category management is handled by push_blog_hub.py + fix_post_categories.py.
-        # WP REST API does not expose the category taxonomy on pages in the response body,
-        # so reading it here would always default to Guides and corrupt Car Tips / News cards.
+        # Skip slugs already in the grid (category managed by push_blog_hub.py).
+        # UPDATE pass above handles image-only refreshes for existing cards.
         if slug in existing:
             continue
 
