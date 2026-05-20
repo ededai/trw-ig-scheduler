@@ -1255,3 +1255,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-20 11:44:36 +08] Posting igs-engine-mounting-singapore-b-d2 (story) — notes: IGS B for blog: engine-mounting-singapore
 [2026-05-20 11:44:52 +08] OK  igs-engine-mounting-singapore-b-d2 -> 18014007440892954
 [2026-05-20 12:03:43 +08] run: no due posts
+[2026-05-20 15:03:25 +08] HEARTBEAT lag 180 min (prev=2026-05-20T12:03:43.689501+08:00)
+[2026-05-20 15:03:25 +08] run: no due posts
