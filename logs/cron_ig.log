@@ -1265,3 +1265,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-20 18:29:02 +08] HEARTBEAT lag 155 min (prev=2026-05-20T15:53:54.611310+08:00)
 [2026-05-20 18:29:02 +08] run: no due posts
 [2026-05-20 18:39:31 +08] run: no due posts
+[2026-05-20 21:21:06 +08] HEARTBEAT lag 162 min (prev=2026-05-20T18:39:31.592664+08:00)
+[2026-05-20 21:21:06 +08] CATCH-UP igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-c-d3 — 1.4h late, publishing
+[2026-05-20 21:21:06 +08] Posting igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-c-d3 (story) — notes: IGS C for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines
+[2026-05-20 21:21:14 +08] OK  igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-c-d3 -> 17969848233108507

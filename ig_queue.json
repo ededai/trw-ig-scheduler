@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-c-d3",
-      "slot_time_sgt": "2026-05-20T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/caption.txt",
-      "image_paths": [
-        "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/igs_C.png"
-      ],
-      "notes": "IGS C for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-engine-mounting-singapore-c-d3",
       "slot_time_sgt": "2026-05-21T20:00",
       "type": "story",
@@ -1928,6 +1916,21 @@
       "posted_url": "18105061934511459",
       "posted_at": "2026-05-20 15:54 SGT",
       "post_id": "18105061934511459"
+    },
+    {
+      "id": "igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines-c-d3",
+      "slot_time_sgt": "2026-05-20T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/caption.txt",
+      "image_paths": [
+        "assets/igs-vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines/igs_C.png"
+      ],
+      "notes": "IGS C for blog: vep-applications-blocked-for-foreign-vehicles-with-outstanding-fines",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17969848233108507",
+      "posted_at": "2026-05-20 21:21 SGT",
+      "post_id": "17969848233108507"
     }
   ],
   "failed": [
