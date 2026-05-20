@@ -67,15 +67,7 @@ CARD_CONFIG_DEFAULT = {"zone": 1100, "font": 200, "font_sm": 165}
 Y_LABEL    = 90                # small eyebrow label
 Y_HEADLINE = 210               # large headline starts here
 Y_STAT     = 1150              # stat / subline
-Y_LOGO     = 1430              # logo vertical centre
-
-# Logo cover band: paint over AI-generated fake logo before placing real one
-LOGO_COVER_Y1 = 1360
-LOGO_COVER_Y2 = 1580
-LOGO_COVER_X1 = 80
-LOGO_COVER_X2 = W - 80
-
-LOGO_TARGET_W  = 680           # rendered width of the real TRW wordmark
+# Logo and cover are baked into base templates — no runtime compositing needed
 
 
 # ── font helpers ──────────────────────────────────────────────────────────────
@@ -171,29 +163,11 @@ def render_news_card(
             f"Available types: {[p.stem.replace('base-','') for p in ASSETS.glob('base-*.png')]}"
         )
 
-    # Load base template
+    # Load base template (logo + cover already baked in by patch script)
     card = Image.open(base_file).convert("RGBA")
     draw = ImageDraw.Draw(card)
 
-    # 1. Paint over AI-generated fake logo at bottom
-    draw.rectangle(
-        [LOGO_COVER_X1, LOGO_COVER_Y1, LOGO_COVER_X2, LOGO_COVER_Y2],
-        fill=(*BG, 255),
-    )
-
-    # 2. Composite real TRW horizontal logo
-    logo_file = ASSETS / "logo-light.png"
-    if logo_file.exists():
-        logo = Image.open(logo_file).convert("RGBA")
-        lw, lh = logo.size
-        new_w = LOGO_TARGET_W
-        new_h = int(lh * (new_w / lw))
-        logo = logo.resize((new_w, new_h), Image.LANCZOS)
-        lx = (W - new_w) // 2
-        ly = Y_LOGO - new_h // 2
-        card.paste(logo, (lx, ly), logo)
-
-    # 3. Load fonts
+    # 1. Load fonts
     bold_font_path   = _find_font(bold=True)
     label_font       = _load(bold_font_path, 68)
     headline_font    = _load(bold_font_path, cfg["font"])
