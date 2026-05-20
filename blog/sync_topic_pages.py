@@ -120,38 +120,70 @@ def extract_existing_slugs(raw):
     """Find all post-card hrefs in the raw page content."""
     return set(re.findall(r'class="post-card"[^>]*href="/([^"/]+)/"', raw))
 
+def _find_div_close(raw, start):
+    """Return the index of the </div> that closes the <div> opening at `start`.
+
+    Uses depth counting to handle arbitrarily nested divs — regex-based
+    patterns using [\s\S]*? stop at the first </div></div> inside any
+    child element, which causes cards to be injected inside nested divs
+    instead of as grid siblings.
+    """
+    depth = 0
+    i = start
+    open_re = re.compile(r'<div\b', re.IGNORECASE)
+    close_re = re.compile(r'</div\s*>', re.IGNORECASE)
+    while i < len(raw):
+        om = open_re.search(raw, i)
+        cm = close_re.search(raw, i)
+        if not cm:
+            break
+        if om and om.start() < cm.start():
+            depth += 1
+            i = om.end()
+        else:
+            if depth == 0:
+                return cm.start()
+            depth -= 1
+            i = cm.end()
+    return -1
+
 def inject_cards(raw, new_cards_html):
     """Insert cards into the post-grid. Handle two patterns:
-       A) <div class="post-grid"... id="postGrid"...> ... <div class="empty-state">...</div> ... </div>
+       A) <div class="post-grid"...> ... <div class="empty-state">...</div> ... </div>
           (new pages) — replace empty-state with cards
-       B) <div class="post-grid">...</div> (legacy) — append before closing </div>
-       C) ANY grid container with class containing 'grid' that holds existing post-cards
+       B) <div class="post-grid">existing cards</div>
+          Append new cards before the grid's closing </div>, found via
+          depth-counting so nested card divs don't fool the match.
     """
     if not new_cards_html:
         return raw, False
 
-    # Pattern A: empty-state placeholder
-    es_re = re.compile(r'(<div class="post-grid"[^>]*>\s*)<div class="empty-state">[\s\S]*?</div>(\s*</div>)', re.IGNORECASE)
-    m = es_re.search(raw)
-    if m:
-        return es_re.sub(m.group(1) + new_cards_html + m.group(2), raw), True
+    # Find the post-grid opening tag
+    grid_open_re = re.compile(r'<div[^>]*class="[^"]*post-grid[^"]*"[^>]*>', re.IGNORECASE)
+    m = grid_open_re.search(raw)
+    if not m:
+        return raw, False
 
-    # Pattern B: find post-grid container with existing cards inside
-    # Append before closing tag of grid container
-    grid_re = re.compile(r'(<div[^>]*class="[^"]*post-grid[^"]*"[^>]*>)([\s\S]*?)(</div>\s*(?:</section>|</div>|<!-- |<script))', re.IGNORECASE)
-    m = grid_re.search(raw)
-    if m:
-        head, body, tail = m.group(1), m.group(2), m.group(3)
-        return raw.replace(m.group(0), head + body + new_cards_html + tail), True
+    grid_start = m.start()
+    grid_inner_start = m.end()  # position just after the opening tag
 
-    # Pattern C: any div with 'grid' class containing post-card
-    any_grid_re = re.compile(r'(<div[^>]*class="[^"]*grid[^"]*"[^>]*>)([\s\S]*?<a class="post-card"[\s\S]*?)(</div>\s*(?:</section>|</div>|<!--))', re.IGNORECASE)
-    m = any_grid_re.search(raw)
-    if m:
-        head, body, tail = m.group(1), m.group(2), m.group(3)
-        return raw.replace(m.group(0), head + body + new_cards_html + tail), True
+    # Find the matching closing </div> via depth counting
+    grid_close = _find_div_close(raw, grid_inner_start)
+    if grid_close < 0:
+        return raw, False
 
-    return raw, False
+    inner = raw[grid_inner_start:grid_close]
+
+    # Pattern A: empty-state placeholder — replace it with cards
+    es_re = re.compile(r'\s*<div class="empty-state">[\s\S]*?</div>\s*', re.IGNORECASE)
+    if es_re.search(inner):
+        new_inner = es_re.sub(new_cards_html, inner)
+        new_raw = raw[:grid_inner_start] + new_inner + raw[grid_close:]
+        return new_raw, True
+
+    # Pattern B: existing cards — append new cards before closing </div>
+    new_raw = raw[:grid_close] + new_cards_html + raw[grid_close:]
+    return new_raw, True
 
 def main():
     ap = argparse.ArgumentParser()
