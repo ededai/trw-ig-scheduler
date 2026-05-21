@@ -35,6 +35,42 @@
       "notes": "IGS C for blog: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "igs-may-2026-2nd-bidding-a-d1",
+      "slot_time_sgt": "2026-05-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-may-2026-2nd-bidding/caption.txt",
+      "image_paths": [
+        "assets/igs-may-2026-2nd-bidding/igs_A.png"
+      ],
+      "notes": "IGS A for blog: may-2026-2nd-bidding",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-may-2026-2nd-bidding-b-d2",
+      "slot_time_sgt": "2026-05-23T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-may-2026-2nd-bidding/caption.txt",
+      "image_paths": [
+        "assets/igs-may-2026-2nd-bidding/igs_B.png"
+      ],
+      "notes": "IGS B for blog: may-2026-2nd-bidding",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-may-2026-2nd-bidding-c-d3",
+      "slot_time_sgt": "2026-05-24T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-may-2026-2nd-bidding/caption.txt",
+      "image_paths": [
+        "assets/igs-may-2026-2nd-bidding/igs_C.png"
+      ],
+      "notes": "IGS C for blog: may-2026-2nd-bidding",
+      "status": "pending",
+      "attempts": 0
     }
   ],
   "posted": [
