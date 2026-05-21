@@ -38,6 +38,25 @@ CAT_IDS      = [1367, 1368, 1369]          # Guides, Car Tips, News
 CAT_NAMES    = {1367: "Guides", 1368: "Car Tips", 1369: "News"}
 WP_ORIGIN    = "https://therightworkshop.com"
 
+# Hub/topic pages that show up in the WP categories query but are NOT blog articles.
+# These are excluded from the ADD pass so they never appear in the blog grid.
+SKIP_SLUGS = {
+    "coe-results",        # COE hub page
+    "coe",                # COE topic hub
+    "erp",                # ERP topic hub
+    "ev",                 # EV topic hub
+    "news",               # News category page
+    "guides",             # Guides category page
+    "car-tips",           # Car Tips category page
+    "topics",             # Topics index
+    "archive",            # Archive page
+    "workshop",           # Workshop service page
+    "servicing",          # Servicing service page
+    "used-car",           # Used car service page
+    "may-2026-1st-bidding",   # COE bidding results hub
+    "april-2026-2nd-bidding", # COE bidding results hub
+}
+
 # Classifier: slug -> category. Single source of truth for hub assignment.
 # Cole/Bryan/Codi append entries at publish time.
 CLASSIFIER_PATH = Path(__file__).parent / "hub_classifier.json"
@@ -363,6 +382,10 @@ def main() -> None:
     for page in wp_pages:
         slug = page.get("slug", "")
         if not slug:
+            continue
+
+        # Skip hub/topic pages that aren't blog articles.
+        if slug in SKIP_SLUGS:
             continue
 
         # Skip slugs already in the grid (category managed by push_blog_hub.py).
