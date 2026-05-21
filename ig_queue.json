@@ -13,18 +13,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-coe-results-b-d2",
-      "slot_time_sgt": "2026-05-21T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-coe-results/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-results/igs_B.png"
-      ],
-      "notes": "IGS B for blog: coe-results",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-coe-results-c-d3",
       "slot_time_sgt": "2026-05-22T20:00",
       "type": "story",
@@ -33,18 +21,6 @@
         "assets/igs-coe-results/igs_C.png"
       ],
       "notes": "IGS C for blog: coe-results",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-b-d2",
-      "slot_time_sgt": "2026-05-21T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb/caption.txt",
-      "image_paths": [
-        "assets/igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb/igs_B.png"
-      ],
-      "notes": "IGS B for blog: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb",
       "status": "pending",
       "attempts": 0
     },
@@ -1931,6 +1907,36 @@
       "posted_url": "17969848233108507",
       "posted_at": "2026-05-20 21:21 SGT",
       "post_id": "17969848233108507"
+    },
+    {
+      "id": "igs-coe-results-b-d2",
+      "slot_time_sgt": "2026-05-21T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-results/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-results/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-results",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18086749829575490",
+      "posted_at": "2026-05-21 11:55 SGT",
+      "post_id": "18086749829575490"
+    },
+    {
+      "id": "igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-b-d2",
+      "slot_time_sgt": "2026-05-21T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb/caption.txt",
+      "image_paths": [
+        "assets/igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb/igs_B.png"
+      ],
+      "notes": "IGS B for blog: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18108026801501126",
+      "posted_at": "2026-05-21 11:55 SGT",
+      "post_id": "18108026801501126"
     }
   ],
   "failed": [
