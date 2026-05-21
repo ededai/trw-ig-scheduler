@@ -58,10 +58,10 @@ MARGIN_L = 130
 # coe: bar chart starts at ~x=1350 → 1280px safe zone; short headline so 230px fits
 # lta: gantry starts at ~x=1100 → 950px safe zone; longer headlines need smaller font
 CARD_CONFIG = {
-    "coe": {"zone": 1280, "font": 230, "font_sm": 195},
-    "lta": {"zone":  950, "font": 185, "font_sm": 155},
+    "coe": {"zone": 1280, "font": 230, "font_sm": 195, "y_shift":  0},
+    "lta": {"zone":  950, "font": 185, "font_sm": 155, "y_shift": 50},
 }
-CARD_CONFIG_DEFAULT = {"zone": 1100, "font": 200, "font_sm": 165}
+CARD_CONFIG_DEFAULT = {"zone": 1100, "font": 200, "font_sm": 165, "y_shift": 0}
 
 # Vertical positions (absolute px on 2624×1632 canvas)
 Y_LABEL    = 90                # small eyebrow label
@@ -155,7 +155,8 @@ def render_news_card(
     """
     card_type = card_type.lower().strip()
     cfg = CARD_CONFIG.get(card_type, CARD_CONFIG_DEFAULT)
-    text_zone_w  = cfg["zone"]
+    text_zone_w = cfg["zone"]
+    y_shift     = cfg["y_shift"]
     base_file = ASSETS / f"base-{card_type}.png"
     if not base_file.exists():
         raise FileNotFoundError(
@@ -175,7 +176,7 @@ def render_news_card(
     stat_font        = _load(bold_font_path, 88)
 
     # 4. Draw label (small white caps eyebrow)
-    draw.text((MARGIN_L, Y_LABEL), label.upper(), font=label_font, fill=WHITE)
+    draw.text((MARGIN_L, Y_LABEL + y_shift), label.upper(), font=label_font, fill=WHITE)
 
     # 5. Draw headline (wrap to text_zone_w, reduce font if needed)
     lines = _wrap_headline(headline, headline_font, text_zone_w)
@@ -186,13 +187,13 @@ def render_news_card(
         lines = _wrap_headline(headline, headline_font, text_zone_w)
 
     line_h = int(headline_font.size * 1.1)
-    y = Y_HEADLINE
+    y = Y_HEADLINE + y_shift
     for ln in lines:
         draw.text((MARGIN_L, y), ln, font=headline_font, fill=WHITE)
         y += line_h
 
     # 6. Draw stat line in orange
-    draw.text((MARGIN_L, Y_STAT), stat, font=stat_font, fill=ORANGE)
+    draw.text((MARGIN_L, Y_STAT + y_shift), stat, font=stat_font, fill=ORANGE)
 
     # 7. Save
     out = Path(out_path)
