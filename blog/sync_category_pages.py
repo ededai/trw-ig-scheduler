@@ -155,30 +155,92 @@ def extract_existing_slugs(raw: str) -> set[str]:
     return set(re.findall(r'class="post-card"[^>]*href="/([^"/]+)/"', raw))
 
 
-def inject_into_grid(raw: str, card_html: str) -> tuple[str, bool]:
-    """Insert card just before the closing </div> of <div class='post-grid'...>.
-    Returns (new_raw, success)."""
-    m = re.search(r'<div\s+class="post-grid"[^>]*>', raw)
+# ── dead-link validation ───────────────────────────────────────────────────────
+
+def validate_card_links(raw: str, env: dict) -> tuple[str, list[str]]:
+    """Remove post-cards whose WP page/post is gone or unpublished.
+
+    For each <a class="post-card"> href found in raw:
+      1. Queries /posts?slug=…&_fields=id,status then /pages?slug=… (posts first).
+      2. If no result found, or status != "publish", card is considered dead.
+      3. Removes the dead card block from raw HTML.
+
+    Returns (updated_raw, list_of_removed_slugs).
+    """
+    card_re = re.compile(
+        r'<a\s[^>]*class="[^"]*post-card[^"]*"[^>]*href="/([^"]+)/"[^>]*>.*?</a>',
+        re.S,
+    )
+    dead: list[str] = []
+    updated = raw
+
+    for m in card_re.finditer(raw):
+        slug = m.group(1).strip("/")
+        if not slug:
+            continue
+
+        # Try posts then pages
+        status = None
+        for endpoint in ("/posts", "/pages"):
+            data = wp_get(env, endpoint,
+                          f"?slug={slug}&_fields=id,status")
+            if data:
+                row = data[0] if isinstance(data, list) else data
+                status = (row or {}).get("status")
+                if status:
+                    break
+
+        if status == "publish":
+            continue  # healthy card, leave it alone
+
+        reason = "not found" if status is None else f"status={status}"
+        print(f"  DEAD LINK /{slug}/ ({reason}) — removing card")
+        dead.append(slug)
+        updated = updated.replace(m.group(0), "", 1)
+
+    return updated, dead
+
+
+def _find_div_close(raw, start):
+    depth, i = 0, start
+    open_re = re.compile(r'<div\b', re.IGNORECASE)
+    close_re = re.compile(r'</div\s*>', re.IGNORECASE)
+    while i < len(raw):
+        om = open_re.search(raw, i)
+        cm = close_re.search(raw, i)
+        if not cm:
+            break
+        if om and om.start() < cm.start():
+            depth += 1
+            i = om.end()
+        else:
+            if depth == 0:
+                return cm.start()
+            depth -= 1
+            i = cm.end()
+    return -1
+
+def inject_cards(raw, new_cards_html):
+    """Insert cards into the post-grid using div depth-counting.
+    Replaces the old non-greedy regex approach which nested cards inside
+    existing card divs when the first card used a split-anchor structure.
+    """
+    if not new_cards_html:
+        return raw, False
+    grid_open_re = re.compile(r'<div[^>]*class="[^"]*post-grid[^"]*"[^>]*>', re.IGNORECASE)
+    m = grid_open_re.search(raw)
     if not m:
         return raw, False
-    open_end = m.end()
-    depth = 1
-    pos = open_end
-    div_re = re.compile(r'</?div\b', re.IGNORECASE)
-    while pos < len(raw):
-        mm = div_re.search(raw, pos)
-        if not mm:
-            return raw, False
-        if raw[mm.start():mm.start() + 2] == "</":
-            depth -= 1
-            if depth == 0:
-                close_start = mm.start()
-                return raw[:close_start] + "\n      " + card_html + raw[close_start:], True
-            pos = mm.end()
-        else:
-            depth += 1
-            pos = mm.end()
-    return raw, False
+    grid_inner_start = m.end()
+    grid_close = _find_div_close(raw, grid_inner_start)
+    if grid_close < 0:
+        return raw, False
+    inner = raw[grid_inner_start:grid_close]
+    es_re = re.compile(r'\s*<div class="empty-state">[\s\S]*?</div>\s*', re.IGNORECASE)
+    if es_re.search(inner):
+        new_inner = es_re.sub(new_cards_html, inner)
+        return raw[:grid_inner_start] + new_inner + raw[grid_close:], True
+    return raw[:grid_close] + new_cards_html + raw[grid_close:], True
 
 
 def main() -> int:
@@ -198,13 +260,22 @@ def main() -> int:
         if not hub_page:
             print(f"  /{CAT_TO_WP_SLUG[cat_name]}/: failed to fetch hub page {hub_pid}")
             continue
-        raw = (hub_page.get("content") or {}).get("raw", "") or ""
+        original_raw = (hub_page.get("content") or {}).get("raw", "") or ""
+
+        # Dead-link validation: remove cards whose WP page/post is gone or unpublished.
+        print(f"  /{CAT_TO_WP_SLUG[cat_name]}/ ({hub_pid}): validating existing card links...")
+        raw, removed = validate_card_links(original_raw, env)
+        if removed:
+            print(f"    Removed {len(removed)} dead card(s): {', '.join(removed)}")
+            total_added -= len(removed)  # net count reflects removals too
+
         existing = extract_existing_slugs(raw)
         missing = [a for a in articles if a["slug"] not in existing]
-        if not missing:
+        if not missing and not removed:
             print(f"  /{CAT_TO_WP_SLUG[cat_name]}/ ({hub_pid}): up-to-date ({len(existing)} cards)")
             continue
-        print(f"  /{CAT_TO_WP_SLUG[cat_name]}/ ({hub_pid}): adding {len(missing)} card(s)")
+        if missing:
+            print(f"  /{CAT_TO_WP_SLUG[cat_name]}/ ({hub_pid}): adding {len(missing)} card(s)")
         new_raw = raw
         for a in missing:
             slug = a["slug"]
@@ -218,13 +289,13 @@ def main() -> int:
                 print(f"      ! /{slug}/ no hero — skipping")
                 continue
             card = build_card(slug, cat_name, title, excerpt, hero_src, hero_alt or title)
-            new_raw, ok = inject_into_grid(new_raw, card)
+            new_raw, ok = inject_cards(new_raw, card)
             if ok:
                 print(f"      + /{slug}/ added")
                 total_added += 1
             else:
                 print(f"      ! /{slug}/ inject failed (no .post-grid found)")
-        if new_raw != raw:
+        if new_raw != original_raw:
             if wp_push(env, hub_pid, new_raw):
                 print(f"      pushed.")
             else:

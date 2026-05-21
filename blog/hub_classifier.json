@@ -2,7 +2,7 @@
   "_schema_version": "1.0",
   "_description": "Single source of truth for which hub each article belongs to. One of: Guides | Car Tips | News. Cole's pipeline writes News entries. Bryan/Ed write Guide and Car Tip entries. Codi can append via a publish skill.",
   "_categories": ["Guides", "Car Tips", "News"],
-  "_last_updated": "2026-05-15",
+  "_last_updated": "2026-05-21",
 
   "first-car-service-singapore-what-happens":               "Guides",
   "dealer-vs-independent-workshop-singapore":                "Guides",
@@ -33,7 +33,10 @@
   "brake-pads-rotors-singapore-when-to-change":              "Car Tips",
   "10-signs-trustworthy-mechanic-singapore":                 "Car Tips",
   "questions-to-ask-before-new-car-workshop-singapore":      "Car Tips",
+  "engine-mounting-singapore":                               "Car Tips",
 
+  "may-2026-2nd-bidding":                                    "News",
+  "cat-a-coe-may-2026-hits-124790-whats-driving-the-climb":  "News",
   "erp-2-0-singapore-2026":                                  "News",
   "erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers": "News",
   "vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles": "News",

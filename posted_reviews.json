@@ -1,0 +1,39 @@
+{
+  "_doc": "Track which Real Reviews customers have been used in IG posts. Update after every Real Reviews post fires (manual or scheduled). Cross-check before scheduling new ones.",
+  "_updated": "2026-04-29",
+  "posted": [
+    {
+      "name": "Cerise Ho",
+      "platform": "Instagram",
+      "posted_via": "manual",
+      "notes": "First Real Reviews post, before scheduler revamp"
+    }
+  ],
+  "scheduled_then_cancelled": [
+    {
+      "name": "Doreen",
+      "service": "Cooling coil replacement",
+      "originally_scheduled": "2026-04-29T12:30",
+      "status": "cancelled in 2026-04-29 IG revamp"
+    },
+    {
+      "name": "Leon Yeong",
+      "originally_scheduled": "2026-04-30T21:00",
+      "status": "cancelled in 2026-04-29 IG revamp"
+    },
+    {
+      "name": "Johnathon Low",
+      "originally_scheduled": "2026-05-02T12:30",
+      "status": "cancelled in 2026-04-29 IG revamp"
+    }
+  ],
+  "available_for_use": [
+    {"name": "Wen Hing Chow", "service": "Multi-service", "tone": "endorsement"},
+    {"name": "Doreen", "service": "Cooling coil", "tone": "service-specific"},
+    {"name": "Ash Ariffin", "service": "General", "tone": "punchy one-liner"},
+    {"name": "Leon Yeong", "service": "Brake job after bad workshop", "tone": "rescue story"},
+    {"name": "Johnathon Low", "service": "Long-term loyal", "tone": "deep loyalty"},
+    {"name": "Darren Kee", "service": "Civic to Lexus", "tone": "personal journey"},
+    {"name": "Chloe Lim", "service": "Paint and bodywork", "tone": "specific service"}
+  ]
+}

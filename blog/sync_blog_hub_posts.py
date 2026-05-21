@@ -183,6 +183,86 @@ def strip_html(s: str) -> str:
     return re.sub(r'<[^>]+>', '', s or '').strip()
 
 
+# ── image-refresh pass ────────────────────────────────────────────────────────
+
+def refresh_existing_card_images(env: dict, raw: str, dry: bool = False) -> tuple[str, int]:
+    """Refresh featured_media img src on every existing post-card in raw HTML.
+
+    For each <a class="post-card"> block found in raw:
+      1. Extracts the href slug.
+      2. Queries WP REST /posts?slug=… then /pages?slug=… (posts first) for
+         featured_media.
+      3. If featured_media > 0, fetches /media/{id} for source_url + alt_text.
+      4. Strips Jetpack proxy prefix and query-string args.
+      5. Replaces img src/alt in that card's HTML when the src has changed.
+
+    Returns (updated_raw, changes_count).
+    """
+    # Find every post-card block: from the opening <a class="post-card" to </a>
+    card_re = re.compile(
+        r'(<a\s[^>]*class="[^"]*post-card[^"]*"[^>]*href="/([^"]+)/"[^>]*>.*?</a>)',
+        re.S,
+    )
+    changes = 0
+    updated = raw
+
+    for m in card_re.finditer(raw):
+        card_html = m.group(1)
+        slug = m.group(2).strip("/")
+        if not slug:
+            continue
+
+        # Current img src in card
+        img_m = re.search(r'<img[^>]*src="([^"]+)"[^>]*>', card_html)
+        if not img_m:
+            continue
+        current_src = img_m.group(1)
+
+        # Resolve featured_media — try posts, then pages
+        fm_id = 0
+        for endpoint in ("/posts", "/pages"):
+            data = wp_get(env, endpoint,
+                          f"?slug={slug}&status=publish&_fields=id,featured_media")
+            if data:
+                row = data[0] if isinstance(data, list) else data
+                fm_id = (row or {}).get("featured_media") or 0
+                if fm_id:
+                    break
+
+        if not fm_id:
+            continue
+
+        media = wp_get(env, f"/media/{fm_id}", "?_fields=source_url,alt_text")
+        if not media or not media.get("source_url"):
+            continue
+
+        new_src = re.sub(r'^https?://i\d+\.wp\.com/', 'https://',
+                         media["source_url"]).split('?')[0]
+        new_alt = media.get("alt_text") or ""
+
+        if new_src == current_src:
+            continue  # already current
+
+        print(f"  REFRESH /{slug}/ → {new_src.split('/')[-1]}")
+        if not dry:
+            # Replace src (and alt if present) inside this card's HTML
+            new_card = re.sub(
+                r'(<img[^>]*\ssrc=")[^"]+(")',
+                lambda _m: _m.group(1) + new_src + _m.group(2),
+                card_html,
+            )
+            new_card = re.sub(
+                r'(<img[^>]*\salt=")[^"]*(")',
+                lambda _m: _m.group(1) + new_alt + _m.group(2),
+                new_card,
+            )
+            # Replace the exact card block in updated (use first occurrence)
+            updated = updated.replace(card_html, new_card, 1)
+        changes += 1
+
+    return updated, changes
+
+
 def build_card(slug: str, cat: str, title: str, excerpt: str,
                hero_src: str, hero_alt: str) -> str:
     return (
@@ -303,21 +383,32 @@ def main() -> None:
         print(f"        cat={cat} hero={hero_src[:60]}")
         changes += 1
 
-    if changes == 0:
-        print("No changes needed — /blog/ is up to date.")
-        return
-
-    print(f"{changes} change(s) {'would be' if dry else 'made'}.")
+    print(f"{changes} structural change(s) {'would be' if dry else 'made'}.")
 
     if dry:
         return
 
-    # 4. Serialise + push
+    # 4. Serialise soup changes
     updated_inner = str(soup)  # html.parser doesn't add <html><body> wrappers
     if wrap:
-        new_raw = f"<!-- wp:html -->\n{updated_inner.strip()}\n<!-- /wp:html -->"
+        interim_raw = f"<!-- wp:html -->\n{updated_inner.strip()}\n<!-- /wp:html -->"
     else:
-        new_raw = updated_inner
+        interim_raw = updated_inner
+
+    # 5. Full image-refresh pass — updates ALL card img srcs from WP featured_media.
+    #    Runs every sync so stale images are fixed even when no cards were added.
+    print("Running full image-refresh pass on existing cards...")
+    new_raw, img_changes = refresh_existing_card_images(env, interim_raw, dry=False)
+    if img_changes:
+        print(f"  Refreshed {img_changes} card image(s).")
+        changes += img_changes
+    else:
+        print("  All card images already current.")
+        new_raw = interim_raw  # no modification
+
+    if changes == 0:
+        print("No changes needed — /blog/ is up to date.")
+        return
 
     print("Pushing to WP...")
     if wp_push(env, BLOG_PAGE_ID, new_raw):

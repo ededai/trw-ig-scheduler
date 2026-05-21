@@ -185,6 +185,21 @@ def inject_cards(raw, new_cards_html):
     new_raw = raw[:grid_close] + new_cards_html + raw[grid_close:]
     return new_raw, True
 
+CHROME_STRIP_PATTERNS = [
+    re.compile(r'\n?<!-- NAV -->\n<nav\b[\s\S]*?</nav>\n<div class="mobile-nav"[\s\S]*?</div>\n?'),
+    re.compile(r'\n?<!-- FOOTER -->\n<footer[\s\S]*?</footer>\n?'),
+    re.compile(r'\n?<script>\s*\(function\(\)\{\s*const btn = document\.getElementById\(\'navHamburger\'[\s\S]*?\}\)\(\);\s*</script>\n?'),
+]
+
+def strip_embedded_chrome(raw: str) -> tuple[str, bool]:
+    changed = False
+    for pattern in CHROME_STRIP_PATTERNS:
+        new = pattern.sub('\n', raw, count=1)
+        if new != raw:
+            changed = True
+            raw = new
+    return raw, changed
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
@@ -252,6 +267,10 @@ def main():
 
         if not cards_html:
             continue
+
+        raw, chrome_stripped = strip_embedded_chrome(raw)
+        if chrome_stripped:
+            print(f"      ✓ stripped embedded chrome from /topics/{pillar}/")
 
         new_raw, ok = inject_cards(raw, cards_html)
         if not ok:

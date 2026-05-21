@@ -1,6 +1,18 @@
 {
   "pending": [
     {
+      "id": "igs-engine-mounting-singapore-c-d3",
+      "slot_time_sgt": "2026-05-21T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-engine-mounting-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-engine-mounting-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: engine-mounting-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
       "id": "igs-coe-results-c-d3",
       "slot_time_sgt": "2026-05-22T20:00",
       "type": "story",
@@ -25,38 +37,314 @@
       "attempts": 0
     },
     {
-      "id": "igs-may-2026-2nd-bidding-a-d1",
-      "slot_time_sgt": "2026-05-22T15:30",
+      "id": "igs-autofill-how-often-service-car-singapor-2026-05-01-2000",
+      "slot_time_sgt": "2026-05-01T20:00",
       "type": "story",
-      "caption_file": "assets/igs-may-2026-2nd-bidding/caption.txt",
+      "caption_file": "assets/igs-autofill-how-often-service-car-singapor-2026-05-01-2000/caption.txt",
       "image_paths": [
-        "assets/igs-may-2026-2nd-bidding/igs_A.png"
+        "assets/igs-autofill-how-often-service-car-singapor-2026-05-01-2000/story.png"
       ],
-      "notes": "IGS A for blog: may-2026-2nd-bidding",
+      "notes": "Auto-fill IGS — blog:how-often-service-car-singapore variant:C",
       "status": "pending",
       "attempts": 0
     },
     {
-      "id": "igs-may-2026-2nd-bidding-b-d2",
-      "slot_time_sgt": "2026-05-23T11:00",
+      "id": "igs-autofill-driving-singapore-rain-wet-wea-2026-05-02-1100",
+      "slot_time_sgt": "2026-05-02T11:00",
       "type": "story",
-      "caption_file": "assets/igs-may-2026-2nd-bidding/caption.txt",
+      "caption_file": "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-05-02-1100/caption.txt",
       "image_paths": [
-        "assets/igs-may-2026-2nd-bidding/igs_B.png"
+        "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-05-02-1100/story.png"
       ],
-      "notes": "IGS B for blog: may-2026-2nd-bidding",
+      "notes": "Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:B",
       "status": "pending",
       "attempts": 0
     },
     {
-      "id": "igs-may-2026-2nd-bidding-c-d3",
-      "slot_time_sgt": "2026-05-24T20:00",
+      "id": "igs-autofill-questions-to-ask-before-new-ca-2026-05-02-1530",
+      "slot_time_sgt": "2026-05-02T15:30",
       "type": "story",
-      "caption_file": "assets/igs-may-2026-2nd-bidding/caption.txt",
+      "caption_file": "assets/igs-autofill-questions-to-ask-before-new-ca-2026-05-02-1530/caption.txt",
       "image_paths": [
-        "assets/igs-may-2026-2nd-bidding/igs_C.png"
+        "assets/igs-autofill-questions-to-ask-before-new-ca-2026-05-02-1530/story.png"
       ],
-      "notes": "IGS C for blog: may-2026-2nd-bidding",
+      "notes": "Auto-fill IGS — blog:questions-to-ask-before-new-car-workshop-singapore variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-how-to-read-workshop-quote-sin-2026-05-02-2000",
+      "slot_time_sgt": "2026-05-02T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-05-02-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-how-to-read-workshop-quote-sin-2026-05-02-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:how-to-read-workshop-quote-singapore variant:C",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-tyres-battery-singapore-checks-2026-05-03-1100",
+      "slot_time_sgt": "2026-05-03T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-03-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-03-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-what-to-look-for-car-workshop--2026-05-03-1530",
+      "slot_time_sgt": "2026-05-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-03-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-what-to-look-for-car-workshop--2026-05-03-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:what-to-look-for-car-workshop-singapore variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-coolant-radiator-care-singapor-2026-05-03-2000",
+      "slot_time_sgt": "2026-05-03T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-coolant-radiator-care-singapor-2026-05-03-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-coolant-radiator-care-singapor-2026-05-03-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:coolant-radiator-care-singapore variant:C",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-how-often-service-car-singapor-2026-05-04-1100",
+      "slot_time_sgt": "2026-05-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-how-often-service-car-singapor-2026-05-04-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-how-often-service-car-singapor-2026-05-04-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:how-often-service-car-singapore variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-dealer-vs-independent-workshop-2026-05-04-1530",
+      "slot_time_sgt": "2026-05-04T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-dealer-vs-independent-workshop-2026-05-04-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-dealer-vs-independent-workshop-2026-05-04-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:dealer-vs-independent-workshop-singapore variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-first-car-service-singapore-wh-2026-05-04-2000",
+      "slot_time_sgt": "2026-05-04T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-first-car-service-singapore-wh-2026-05-04-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-first-car-service-singapore-wh-2026-05-04-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:C",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-independent-workshop-vs-author-2026-05-05-1100",
+      "slot_time_sgt": "2026-05-05T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-independent-workshop-vs-author-2026-05-05-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-independent-workshop-vs-author-2026-05-05-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:independent-workshop-vs-authorised-service-centre-singapore variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-block-exemption-order-singapor-2026-05-05-1530",
+      "slot_time_sgt": "2026-05-05T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-block-exemption-order-singapor-2026-05-05-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-block-exemption-order-singapor-2026-05-05-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-tyres-battery-singapore-checks-2026-05-05-2000",
+      "slot_time_sgt": "2026-05-05T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-05-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-05-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:C",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-driving-singapore-rain-wet-wea-2026-05-06-1100",
+      "slot_time_sgt": "2026-05-06T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-05-06-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-05-06-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-brake-pads-rotors-singapore-wh-2026-05-06-1530",
+      "slot_time_sgt": "2026-05-06T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-06-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-06-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-how-often-service-car-singapor-2026-05-06-2000",
+      "slot_time_sgt": "2026-05-06T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-how-often-service-car-singapor-2026-05-06-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-how-often-service-car-singapor-2026-05-06-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:how-often-service-car-singapore variant:C",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-10-signs-trustworthy-mechanic--2026-05-07-1100",
+      "slot_time_sgt": "2026-05-07T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-10-signs-trustworthy-mechanic--2026-05-07-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-10-signs-trustworthy-mechanic--2026-05-07-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:10-signs-trustworthy-mechanic-singapore variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-coe-renewal-vs-scrap-singapore-2026-05-07-1530",
+      "slot_time_sgt": "2026-05-07T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-coe-renewal-vs-scrap-singapore-2026-05-07-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-coe-renewal-vs-scrap-singapore-2026-05-07-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:coe-renewal-vs-scrap-singapore-guide variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-first-car-service-singapore-wh-2026-05-07-2000",
+      "slot_time_sgt": "2026-05-07T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-first-car-service-singapore-wh-2026-05-07-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-first-car-service-singapore-wh-2026-05-07-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:first-car-service-singapore-what-happens variant:C",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-car-aircon-not-cold-singapore--2026-05-08-1100",
+      "slot_time_sgt": "2026-05-08T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-car-aircon-not-cold-singapore--2026-05-08-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-car-aircon-not-cold-singapore--2026-05-08-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:car-aircon-not-cold-singapore-fix variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-tyres-battery-singapore-checks-2026-05-13-1100",
+      "slot_time_sgt": "2026-05-13T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-13-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-tyres-battery-singapore-checks-2026-05-13-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:tyres-battery-singapore-checks-guide variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-coolant-radiator-care-singapor-2026-05-13-1530",
+      "slot_time_sgt": "2026-05-13T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-coolant-radiator-care-singapor-2026-05-13-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-coolant-radiator-care-singapor-2026-05-13-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:coolant-radiator-care-singapore variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-brake-pads-rotors-singapore-wh-2026-05-13-2000",
+      "slot_time_sgt": "2026-05-13T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-13-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-brake-pads-rotors-singapore-wh-2026-05-13-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:brake-pads-rotors-singapore-when-to-change variant:C",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-driving-singapore-rain-wet-wea-2026-05-14-1100",
+      "slot_time_sgt": "2026-05-14T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-05-14-1100/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-driving-singapore-rain-wet-wea-2026-05-14-1100/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:driving-singapore-rain-wet-weather variant:B",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-used-car-inspection-singapore-2026-05-14-1530",
+      "slot_time_sgt": "2026-05-14T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-used-car-inspection-singapore-2026-05-14-1530/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-used-car-inspection-singapore-2026-05-14-1530/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:used-car-inspection-singapore variant:A",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-autofill-block-exemption-order-singapor-2026-05-14-2000",
+      "slot_time_sgt": "2026-05-14T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-autofill-block-exemption-order-singapor-2026-05-14-2000/caption.txt",
+      "image_paths": [
+        "assets/igs-autofill-block-exemption-order-singapor-2026-05-14-2000/story.png"
+      ],
+      "notes": "Auto-fill IGS — blog:block-exemption-order-singapore-car-servicing variant:C",
       "status": "pending",
       "attempts": 0
     }
@@ -1961,21 +2249,6 @@
       "posted_url": "18108026801501126",
       "posted_at": "2026-05-21 11:55 SGT",
       "post_id": "18108026801501126"
-    },
-    {
-      "id": "igs-engine-mounting-singapore-c-d3",
-      "slot_time_sgt": "2026-05-21T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-engine-mounting-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-engine-mounting-singapore/igs_C.png"
-      ],
-      "notes": "IGS C for blog: engine-mounting-singapore",
-      "status": "posted",
-      "attempts": 0,
-      "posted_url": "17862440241630083",
-      "posted_at": "2026-05-21 22:22 SGT",
-      "post_id": "17862440241630083"
     }
   ],
   "failed": [

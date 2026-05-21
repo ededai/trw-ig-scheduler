@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.11
 """
 TRW IG Daily Pre-flight + Telegram Heartbeat.
 

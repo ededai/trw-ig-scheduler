@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.11
 """IGS auto-fill — back-fill all free IGS slots over the next 14 days
 with random blog post variants (A / B / C).
 

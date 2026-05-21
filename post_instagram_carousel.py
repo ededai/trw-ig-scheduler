@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.11
 """
 Instagram carousel posting tool for The Right Workshop.
 Uses the Meta Graph API (same creds as post_instagram.py) to publish
