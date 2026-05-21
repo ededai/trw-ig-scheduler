@@ -1333,3 +1333,4 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-22 01:08:37 +08] SKIP igs-autofill-block-exemption-order-singapor-2026-05-14-2000 — 173.1h past slot (max lag 12h)
 [2026-05-22 01:08:37 +08] Posting igs-engine-mounting-singapore-c-d3 (story) — notes: IGS C for blog: engine-mounting-singapore
 [2026-05-22 01:08:53 +08] OK  igs-engine-mounting-singapore-c-d3 -> 18123147214634945
+[2026-05-22 01:14:39 +08] run: no due posts
