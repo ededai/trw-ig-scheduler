@@ -52,21 +52,21 @@ ORANGE   = (255, 107, 33)
 WHITE    = (255, 255, 255)
 
 # Text layout — left-side text zone, 130px left margin
-MARGIN_L = 130
+MARGIN_L = 150        # breathing room from left border
 
-# Per-template config: text_zone_w, headline_font_size, headline_font_size_sm
-# coe: bar chart starts at ~x=1350 → 1280px safe zone; short headline so 230px fits
-# lta: gantry starts at ~x=1100 → 950px safe zone; longer headlines need smaller font
+# Per-template config — zones derived from pixel scan of base templates:
+#   coe: bar chart leftmost orange at x=1382 → safe zone = 1382-150-92=1140
+#   lta: gantry leftmost pixel at x=1427 → safe zone = 1427-150-97=1180
 CARD_CONFIG = {
-    "coe": {"zone": 1280, "font": 230, "font_sm": 195, "y_shift":  0},
-    "lta": {"zone":  950, "font": 185, "font_sm": 155, "y_shift": 50},
+    "coe": {"zone": 1140, "font": 215, "font_sm": 175, "font_xs": 145, "y_shift":  0},
+    "lta": {"zone": 1180, "font": 185, "font_sm": 155, "font_xs": 128, "y_shift": 40},
 }
-CARD_CONFIG_DEFAULT = {"zone": 1100, "font": 200, "font_sm": 165, "y_shift": 0}
+CARD_CONFIG_DEFAULT = {"zone": 1100, "font": 200, "font_sm": 165, "font_xs": 135, "y_shift": 0}
 
 # Vertical positions (absolute px on 2624×1632 canvas)
-Y_LABEL    = 90                # small eyebrow label
-Y_HEADLINE = 210               # large headline starts here
-Y_STAT     = 1150              # stat / subline
+Y_LABEL      = 110             # small eyebrow label (breathing from top border)
+Y_HEADLINE   = 260             # large headline starts here (gap below label)
+Y_STAT_BASE  = 1120            # minimum stat baseline; renderer uses max(this+y_shift, headline_end+90)
 # Logo and cover are baked into base templates — no runtime compositing needed
 
 
@@ -105,8 +105,9 @@ def _load(path: str, size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
 # ── text wrapping ─────────────────────────────────────────────────────────────
 
 def _wrap_headline(text: str, font: ImageFont.FreeTypeFont, max_w: int) -> list[str]:
-    """Wrap headline to fit within max_w pixels, max 2 lines.
-    Any overflow beyond 2 lines is merged onto line 2 (no words dropped)."""
+    """Wrap headline to fit within max_w pixels. No forced merging — returns as many
+    lines as natural wrapping produces. Single words that exceed max_w stay on their
+    own line (no sub-word splitting). Caller shrinks font if line count is too high."""
     words = text.split()
     lines: list[str] = []
     current = ""
@@ -124,10 +125,6 @@ def _wrap_headline(text: str, font: ImageFont.FreeTypeFont, max_w: int) -> list[
     if current:
         lines.append(current)
 
-    # Enforce max 3 lines — merge any overflow onto line 3.
-    # 2-line max caused merged lines to exceed text_zone_w on narrow zones.
-    if len(lines) > 3:
-        lines = [lines[0], lines[1], " ".join(lines[2:])]
     return lines or [text]
 
 
@@ -169,21 +166,25 @@ def render_news_card(
     draw = ImageDraw.Draw(card)
 
     # 1. Load fonts
-    bold_font_path   = _find_font(bold=True)
-    label_font       = _load(bold_font_path, 68)
-    headline_font    = _load(bold_font_path, cfg["font"])
-    headline_font_sm = _load(bold_font_path, cfg["font_sm"])
-    stat_font        = _load(bold_font_path, 88)
+    bold_font_path = _find_font(bold=True)
+    label_font     = _load(bold_font_path, 68)
+    stat_font      = _load(bold_font_path, 88)
 
     # 4. Draw label (small white caps eyebrow)
     draw.text((MARGIN_L, Y_LABEL + y_shift), label.upper(), font=label_font, fill=WHITE)
 
-    # 5. Draw headline (wrap to text_zone_w, reduce font if needed)
-    lines = _wrap_headline(headline, headline_font, text_zone_w)
-    # If any line exceeds zone, shrink font and re-wrap once
+    # 5. Draw headline — try font sizes from largest to smallest until all lines fit
+    #    within zone AND line count <= 3. Prevents the merged-overflow bug.
     tmp_draw = ImageDraw.Draw(Image.new("RGB", (1, 1)))
-    if any(tmp_draw.textbbox((0,0), ln, font=headline_font)[2] > text_zone_w for ln in lines):
-        headline_font = headline_font_sm
+    font_sizes = [cfg["font"], cfg["font_sm"], cfg["font_xs"]]
+    headline_font = _load(bold_font_path, font_sizes[0])
+    lines = _wrap_headline(headline, headline_font, text_zone_w)
+    for fsz in font_sizes[1:]:
+        all_fit  = all(tmp_draw.textbbox((0,0), ln, font=headline_font)[2] <= text_zone_w for ln in lines)
+        fits_3   = len(lines) <= 3
+        if all_fit and fits_3:
+            break
+        headline_font = _load(bold_font_path, fsz)
         lines = _wrap_headline(headline, headline_font, text_zone_w)
 
     line_h = int(headline_font.size * 1.1)
@@ -192,8 +193,16 @@ def render_news_card(
         draw.text((MARGIN_L, y), ln, font=headline_font, fill=WHITE)
         y += line_h
 
-    # 6. Draw stat line in orange
-    draw.text((MARGIN_L, Y_STAT + y_shift), stat, font=stat_font, fill=ORANGE)
+    # 6. Draw stat line in orange — shrink font if stat would exceed zone width
+    stat_w = tmp_draw.textbbox((0, 0), stat, font=stat_font)[2]
+    if stat_w > text_zone_w:
+        for sz in range(80, 44, -4):
+            sf = _load(bold_font_path, sz)
+            if tmp_draw.textbbox((0, 0), stat, font=sf)[2] <= text_zone_w:
+                stat_font = sf
+                break
+    stat_y = max(Y_STAT_BASE + y_shift, y + 90)
+    draw.text((MARGIN_L, stat_y), stat, font=stat_font, fill=ORANGE)
 
     # 7. Save
     out = Path(out_path)
