@@ -1303,3 +1303,33 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-21 22:22:13 +08] CATCH-UP igs-engine-mounting-singapore-c-d3 — 2.4h late, publishing
 [2026-05-21 22:22:13 +08] Posting igs-engine-mounting-singapore-c-d3 (story) — notes: IGS C for blog: engine-mounting-singapore
 [2026-05-21 22:22:26 +08] OK  igs-engine-mounting-singapore-c-d3 -> 17862440241630083
+[2026-05-22 01:08:19 +08] HEARTBEAT lag 166 min (prev=2026-05-21T22:22:13.501089+08:00)
+[2026-05-22 01:08:19 +08] CATCH-UP igs-engine-mounting-singapore-c-d3 — 5.1h late, publishing
+[2026-05-22 01:08:19 +08] SKIP igs-autofill-how-often-service-car-singapor-2026-05-01-2000 — 485.1h past slot (max lag 12h)
+[2026-05-22 01:08:19 +08] SKIP igs-autofill-driving-singapore-rain-wet-wea-2026-05-02-1100 — 470.1h past slot (max lag 12h)
+[2026-05-22 01:08:20 +08] SKIP igs-autofill-questions-to-ask-before-new-ca-2026-05-02-1530 — 465.6h past slot (max lag 12h)
+[2026-05-22 01:08:21 +08] SKIP igs-autofill-how-to-read-workshop-quote-sin-2026-05-02-2000 — 461.1h past slot (max lag 12h)
+[2026-05-22 01:08:22 +08] SKIP igs-autofill-tyres-battery-singapore-checks-2026-05-03-1100 — 446.1h past slot (max lag 12h)
+[2026-05-22 01:08:22 +08] SKIP igs-autofill-what-to-look-for-car-workshop--2026-05-03-1530 — 441.6h past slot (max lag 12h)
+[2026-05-22 01:08:23 +08] SKIP igs-autofill-coolant-radiator-care-singapor-2026-05-03-2000 — 437.1h past slot (max lag 12h)
+[2026-05-22 01:08:24 +08] SKIP igs-autofill-how-often-service-car-singapor-2026-05-04-1100 — 422.1h past slot (max lag 12h)
+[2026-05-22 01:08:25 +08] SKIP igs-autofill-dealer-vs-independent-workshop-2026-05-04-1530 — 417.6h past slot (max lag 12h)
+[2026-05-22 01:08:25 +08] SKIP igs-autofill-first-car-service-singapore-wh-2026-05-04-2000 — 413.1h past slot (max lag 12h)
+[2026-05-22 01:08:26 +08] SKIP igs-autofill-independent-workshop-vs-author-2026-05-05-1100 — 398.1h past slot (max lag 12h)
+[2026-05-22 01:08:27 +08] SKIP igs-autofill-block-exemption-order-singapor-2026-05-05-1530 — 393.6h past slot (max lag 12h)
+[2026-05-22 01:08:27 +08] SKIP igs-autofill-tyres-battery-singapore-checks-2026-05-05-2000 — 389.1h past slot (max lag 12h)
+[2026-05-22 01:08:28 +08] SKIP igs-autofill-driving-singapore-rain-wet-wea-2026-05-06-1100 — 374.1h past slot (max lag 12h)
+[2026-05-22 01:08:29 +08] SKIP igs-autofill-brake-pads-rotors-singapore-wh-2026-05-06-1530 — 369.6h past slot (max lag 12h)
+[2026-05-22 01:08:30 +08] SKIP igs-autofill-how-often-service-car-singapor-2026-05-06-2000 — 365.1h past slot (max lag 12h)
+[2026-05-22 01:08:30 +08] SKIP igs-autofill-10-signs-trustworthy-mechanic--2026-05-07-1100 — 350.1h past slot (max lag 12h)
+[2026-05-22 01:08:31 +08] SKIP igs-autofill-coe-renewal-vs-scrap-singapore-2026-05-07-1530 — 345.6h past slot (max lag 12h)
+[2026-05-22 01:08:32 +08] SKIP igs-autofill-first-car-service-singapore-wh-2026-05-07-2000 — 341.1h past slot (max lag 12h)
+[2026-05-22 01:08:32 +08] SKIP igs-autofill-car-aircon-not-cold-singapore--2026-05-08-1100 — 326.1h past slot (max lag 12h)
+[2026-05-22 01:08:33 +08] SKIP igs-autofill-tyres-battery-singapore-checks-2026-05-13-1100 — 206.1h past slot (max lag 12h)
+[2026-05-22 01:08:34 +08] SKIP igs-autofill-coolant-radiator-care-singapor-2026-05-13-1530 — 201.6h past slot (max lag 12h)
+[2026-05-22 01:08:35 +08] SKIP igs-autofill-brake-pads-rotors-singapore-wh-2026-05-13-2000 — 197.1h past slot (max lag 12h)
+[2026-05-22 01:08:35 +08] SKIP igs-autofill-driving-singapore-rain-wet-wea-2026-05-14-1100 — 182.1h past slot (max lag 12h)
+[2026-05-22 01:08:36 +08] SKIP igs-autofill-used-car-inspection-singapore-2026-05-14-1530 — 177.6h past slot (max lag 12h)
+[2026-05-22 01:08:37 +08] SKIP igs-autofill-block-exemption-order-singapor-2026-05-14-2000 — 173.1h past slot (max lag 12h)
+[2026-05-22 01:08:37 +08] Posting igs-engine-mounting-singapore-c-d3 (story) — notes: IGS C for blog: engine-mounting-singapore
+[2026-05-22 01:08:53 +08] OK  igs-engine-mounting-singapore-c-d3 -> 18123147214634945
