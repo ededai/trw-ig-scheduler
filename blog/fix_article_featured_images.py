@@ -146,6 +146,22 @@ def run(mode: str) -> int:
             continue
         current_fm = wp_page.get("featured_media", 0)
 
+        # Guard: don't overwrite news_card_* thumbnails — managed by Cole's news
+        # pipeline, must not drift back to article-hero imgs via this script.
+        if current_fm:
+            try:
+                base = wp_base(env)
+                url = f"{base}/wp-json/wp/v2/media/{current_fm}?_fields=source_url"
+                headers = {"Authorization": auth_header(env), "User-Agent": "trw-fix-feat/1.0"}
+                req = request.Request(url, headers=headers)
+                with request.urlopen(req, timeout=20) as resp:
+                    m_data = json.loads(resp.read())
+                if "news_card_" in m_data.get("source_url", ""):
+                    print(f"  [SKIP] {slug} — news_card thumbnail protected")
+                    continue
+            except Exception:
+                pass  # Can't fetch media details, proceed normally
+
         media = wp_find_media_by_filename(env, filename)
         if not media:
             errors.append((slug, f"media not found: {filename}"))
