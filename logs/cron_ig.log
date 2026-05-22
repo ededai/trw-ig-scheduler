@@ -1358,3 +1358,10 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-22 18:36:45 +08] HEARTBEAT lag 164 min (prev=2026-05-22T15:53:00.151267+08:00)
 [2026-05-22 18:36:45 +08] run: no due posts
 [2026-05-22 18:37:44 +08] run: no due posts
+[2026-05-22 21:15:14 +08] HEARTBEAT lag 157 min (prev=2026-05-22T18:37:44.501682+08:00)
+[2026-05-22 21:15:14 +08] CATCH-UP igs-coe-results-c-d3 — 1.3h late, publishing
+[2026-05-22 21:15:14 +08] CATCH-UP igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-c-d3 — 1.3h late, publishing
+[2026-05-22 21:15:14 +08] Posting igs-coe-results-c-d3 (story) — notes: IGS C for blog: coe-results
+[2026-05-22 21:15:27 +08] OK  igs-coe-results-c-d3 -> 18004436018866172
+[2026-05-22 21:15:28 +08] Posting igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-c-d3 (story) — notes: IGS C for blog: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb
+[2026-05-22 21:15:40 +08] OK  igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-c-d3 -> 18150890050488853

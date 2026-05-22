@@ -1,30 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "igs-coe-results-c-d3",
-      "slot_time_sgt": "2026-05-22T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-coe-results/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-results/igs_C.png"
-      ],
-      "notes": "IGS C for blog: coe-results",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-c-d3",
-      "slot_time_sgt": "2026-05-22T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb/caption.txt",
-      "image_paths": [
-        "assets/igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb/igs_C.png"
-      ],
-      "notes": "IGS C for blog: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb",
-      "status": "pending",
-      "attempts": 0
-    }
-  ],
+  "pending": [],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
@@ -1940,6 +1915,36 @@
       "posted_url": "18123147214634945",
       "posted_at": "2026-05-22 01:08 SGT",
       "post_id": "18123147214634945"
+    },
+    {
+      "id": "igs-coe-results-c-d3",
+      "slot_time_sgt": "2026-05-22T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-results/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-results/igs_C.png"
+      ],
+      "notes": "IGS C for blog: coe-results",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18004436018866172",
+      "posted_at": "2026-05-22 21:15 SGT",
+      "post_id": "18004436018866172"
+    },
+    {
+      "id": "igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb-c-d3",
+      "slot_time_sgt": "2026-05-22T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb/caption.txt",
+      "image_paths": [
+        "assets/igs-cat-a-coe-may-2026-hits-124790-whats-driving-the-climb/igs_C.png"
+      ],
+      "notes": "IGS C for blog: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18150890050488853",
+      "posted_at": "2026-05-22 21:15 SGT",
+      "post_id": "18150890050488853"
     }
   ],
   "failed": [
