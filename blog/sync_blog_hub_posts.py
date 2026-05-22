@@ -53,9 +53,23 @@ SKIP_SLUGS = {
     "workshop",           # Workshop service page
     "servicing",          # Servicing service page
     "used-car",           # Used car service page
-    "may-2026-1st-bidding",   # COE bidding results hub
-    "april-2026-2nd-bidding", # COE bidding results hub
+    "may-2026-1st-bidding",    # COE bidding results hub
+    "may-2026-2nd-bidding",    # COE bidding results hub
+    "april-2026-2nd-bidding",  # COE bidding results hub
 }
+
+# Any slug matching these patterns is also a hub/topic page, never a blog article.
+# Used by is_skip_slug() for future-proofing without needing to update SKIP_SLUGS.
+import re as _re
+_SKIP_PATTERNS = [
+    _re.compile(r'^.+-\d+(?:st|nd|rd|th)-bidding$'),  # e.g. may-2026-2nd-bidding
+]
+
+
+def is_skip_slug(slug: str) -> bool:
+    if slug in SKIP_SLUGS:
+        return True
+    return any(p.match(slug) for p in _SKIP_PATTERNS)
 
 # Classifier: slug -> category. Single source of truth for hub assignment.
 # Cole/Bryan/Codi append entries at publish time.
@@ -231,6 +245,10 @@ def refresh_existing_card_images(env: dict, raw: str, dry: bool = False) -> tupl
         if not slug:
             continue
 
+        # Don't refresh hub/topic page cards — they should be removed, not updated.
+        if is_skip_slug(slug):
+            continue
+
         # Current img src in card
         img_m = re.search(r'<img[^>]*src="([^"]+)"[^>]*>', card_html)
         if not img_m:
@@ -340,6 +358,16 @@ def main() -> None:
 
     changes = 0
 
+    # CLEANUP PASS: remove any hub/topic page cards that shouldn't be in the grid.
+    # Guards against cards that snuck in before SKIP_SLUGS was added.
+    for slug in list(existing.keys()):
+        if is_skip_slug(slug):
+            print(f"  REMOVE /{slug}/ — hub/topic page, should not be in blog grid")
+            if not dry:
+                card_el = existing.pop(slug)
+                card_el.decompose()
+            changes += 1
+
     # UPDATE PASS: fix existing cards whose img src is still the oil-pour default.
     # Iterates existing grid cards directly — catches articles not in WP taxonomy categories
     # (e.g. news posts mis-catted or un-catted), which wp_pages would silently skip.
@@ -385,7 +413,7 @@ def main() -> None:
             continue
 
         # Skip hub/topic pages that aren't blog articles.
-        if slug in SKIP_SLUGS:
+        if is_skip_slug(slug):
             continue
 
         # Skip slugs already in the grid (category managed by push_blog_hub.py).
