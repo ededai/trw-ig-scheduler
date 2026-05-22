@@ -160,7 +160,9 @@ def run(mode: str) -> int:
                     print(f"  [SKIP] {slug} — news_card thumbnail protected")
                     continue
             except Exception:
-                pass  # Can't fetch media details, proceed normally
+                # Can't verify — skip to be safe (never overwrite when uncertain)
+                print(f"  [SKIP] {slug} — could not verify current media, skipping to be safe")
+                continue
 
         media = wp_find_media_by_filename(env, filename)
         if not media:
