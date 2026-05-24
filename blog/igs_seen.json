@@ -293,6 +293,24 @@
         "igs-may-2026-2nd-bidding-c-d3"
       ],
       "title": "COE Results: May 2026 2nd Bidding"
+    },
+    "services": {
+      "queued_at": "2026-05-25 03:38 SGT",
+      "queued_ids": [
+        "igs-services-a-d1",
+        "igs-services-b-d2",
+        "igs-services-c-d3"
+      ],
+      "title": "All Car Services Singapore"
+    },
+    "car-servicing": {
+      "queued_at": "2026-05-25 03:38 SGT",
+      "queued_ids": [
+        "igs-car-servicing-a-d1",
+        "igs-car-servicing-b-d2",
+        "igs-car-servicing-c-d3"
+      ],
+      "title": "Car Servicing Singapore"
     }
   }
 }

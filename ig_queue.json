@@ -1,5 +1,78 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "igs-services-a-d1",
+      "slot_time_sgt": "2026-05-25T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-services/caption.txt",
+      "image_paths": [
+        "assets/igs-services/igs_A.png"
+      ],
+      "notes": "IGS A for blog: services",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-services-b-d2",
+      "slot_time_sgt": "2026-05-26T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-services/caption.txt",
+      "image_paths": [
+        "assets/igs-services/igs_B.png"
+      ],
+      "notes": "IGS B for blog: services",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-services-c-d3",
+      "slot_time_sgt": "2026-05-27T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-services/caption.txt",
+      "image_paths": [
+        "assets/igs-services/igs_C.png"
+      ],
+      "notes": "IGS C for blog: services",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-servicing-a-d1",
+      "slot_time_sgt": "2026-05-25T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-servicing/caption.txt",
+      "image_paths": [
+        "assets/igs-car-servicing/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-servicing",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-servicing-b-d2",
+      "slot_time_sgt": "2026-05-26T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-servicing/caption.txt",
+      "image_paths": [
+        "assets/igs-car-servicing/igs_B.png"
+      ],
+      "notes": "IGS B for blog: car-servicing",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-servicing-c-d3",
+      "slot_time_sgt": "2026-05-27T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-servicing/caption.txt",
+      "image_paths": [
+        "assets/igs-car-servicing/igs_C.png"
+      ],
+      "notes": "IGS C for blog: car-servicing",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
