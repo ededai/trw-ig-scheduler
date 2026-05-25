@@ -1473,3 +1473,10 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-25 12:00:45 +08] HEARTBEAT lag 125 min (prev=2026-05-25T09:55:16.142551+08:00)
 [2026-05-25 12:00:45 +08] run: no due posts
 [2026-05-25 12:18:14 +08] run: no due posts
+[2026-05-25 16:39:11 +08] HEARTBEAT lag 261 min (prev=2026-05-25T12:18:14.735739+08:00)
+[2026-05-25 16:39:11 +08] CATCH-UP igs-services-a-d1 — 1.2h late, publishing
+[2026-05-25 16:39:11 +08] CATCH-UP igs-car-servicing-a-d1 — 1.2h late, publishing
+[2026-05-25 16:39:11 +08] Posting igs-services-a-d1 (story) — notes: IGS A for blog: services
+[2026-05-25 16:39:26 +08] OK  igs-services-a-d1 -> 18103064381007175
+[2026-05-25 16:39:27 +08] Posting igs-car-servicing-a-d1 (story) — notes: IGS A for blog: car-servicing
+[2026-05-25 16:39:38 +08] OK  igs-car-servicing-a-d1 -> 17925124872121258
