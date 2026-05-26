@@ -49,24 +49,6 @@
       "attempts": 0
     },
     {
-      "id": "trw-c1-used-car-checks-2026-05-26-20",
-      "slot_time_sgt": "2026-05-26T20:00",
-      "type": "carousel",
-      "caption_file": "assets/trw-c1-used-car-checks-2026-05-26-20/caption.txt",
-      "image_paths": [
-        "assets/trw-c1-used-car-checks-2026-05-26-20/slide.png",
-        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_2.png",
-        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_3.png",
-        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_4.png",
-        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_5.png",
-        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_6.png",
-        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_7.png"
-      ],
-      "notes": "Carousel 1 of 9 · 10 checks before you buy a used car",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "trw-c2-servicing-prices-2026-05-27-20",
       "slot_time_sgt": "2026-05-27T20:00",
       "type": "carousel",
@@ -2226,6 +2208,27 @@
       "posted_url": "18439716640143805",
       "posted_at": "2026-05-26 15:58 SGT",
       "post_id": "18439716640143805"
+    },
+    {
+      "id": "trw-c1-used-car-checks-2026-05-26-20",
+      "slot_time_sgt": "2026-05-26T20:00",
+      "type": "carousel",
+      "caption_file": "assets/trw-c1-used-car-checks-2026-05-26-20/caption.txt",
+      "image_paths": [
+        "assets/trw-c1-used-car-checks-2026-05-26-20/slide.png",
+        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_2.png",
+        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_3.png",
+        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_4.png",
+        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_5.png",
+        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_6.png",
+        "assets/trw-c1-used-car-checks-2026-05-26-20/slides/slide_7.png"
+      ],
+      "notes": "Carousel 1 of 9 · 10 checks before you buy a used car",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DYzehnLki6g/",
+      "posted_at": "2026-05-26 21:56 SGT",
+      "post_id": "18048954830754804"
     }
   ],
   "failed": [

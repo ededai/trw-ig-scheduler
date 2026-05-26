@@ -1517,3 +1517,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-26 15:58:06 +08] HEARTBEAT lag 56 min (prev=2026-05-26T15:02:36.502421+08:00)
 [2026-05-26 15:58:06 +08] Posting igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-a-d1 (story) — notes: IGS A for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises
 [2026-05-26 15:58:19 +08] OK  igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-a-d1 -> 18439716640143805
+[2026-05-26 21:55:37 +08] HEARTBEAT lag 358 min (prev=2026-05-26T15:58:06.834972+08:00)
+[2026-05-26 21:55:37 +08] CATCH-UP trw-c1-used-car-checks-2026-05-26-20 — 1.9h late, publishing
+[2026-05-26 21:55:37 +08] Posting trw-c1-used-car-checks-2026-05-26-20 (carousel) — notes: Carousel 1 of 9 · 10 checks before you buy a used car
+[2026-05-26 21:56:24 +08] OK  trw-c1-used-car-checks-2026-05-26-20 -> https://www.instagram.com/p/DYzehnLki6g/
