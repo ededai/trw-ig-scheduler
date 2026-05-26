@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-services-b-d2",
-      "slot_time_sgt": "2026-05-26T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-services/caption.txt",
-      "image_paths": [
-        "assets/igs-services/igs_B.png"
-      ],
-      "notes": "IGS B for blog: services",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-services-c-d3",
       "slot_time_sgt": "2026-05-27T20:00",
       "type": "story",
@@ -21,18 +9,6 @@
         "assets/igs-services/igs_C.png"
       ],
       "notes": "IGS C for blog: services",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-car-servicing-b-d2",
-      "slot_time_sgt": "2026-05-26T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-car-servicing/caption.txt",
-      "image_paths": [
-        "assets/igs-car-servicing/igs_B.png"
-      ],
-      "notes": "IGS B for blog: car-servicing",
       "status": "pending",
       "attempts": 0
     },
@@ -2024,6 +2000,36 @@
       "posted_url": "17925124872121258",
       "posted_at": "2026-05-25 16:39 SGT",
       "post_id": "17925124872121258"
+    },
+    {
+      "id": "igs-services-b-d2",
+      "slot_time_sgt": "2026-05-26T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-services/caption.txt",
+      "image_paths": [
+        "assets/igs-services/igs_B.png"
+      ],
+      "notes": "IGS B for blog: services",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18252171757306873",
+      "posted_at": "2026-05-26 11:43 SGT",
+      "post_id": "18252171757306873"
+    },
+    {
+      "id": "igs-car-servicing-b-d2",
+      "slot_time_sgt": "2026-05-26T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-servicing/caption.txt",
+      "image_paths": [
+        "assets/igs-car-servicing/igs_B.png"
+      ],
+      "notes": "IGS B for blog: car-servicing",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18115763888497487",
+      "posted_at": "2026-05-26 11:43 SGT",
+      "post_id": "18115763888497487"
     }
   ],
   "failed": [

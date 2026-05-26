@@ -133,3 +133,5 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-22 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18150890050488853 | IGS C for blog: cat-a-coe-may-2026-hits-124790-whats-driving-the-climb |
 | 2026-05-25 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18103064381007175 | IGS A for blog: services |
 | 2026-05-25 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17925124872121258 | IGS A for blog: car-servicing |
+| 2026-05-26 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18252171757306873 | IGS B for blog: services |
+| 2026-05-26 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18115763888497487 | IGS B for blog: car-servicing |
