@@ -135,3 +135,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-25 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17925124872121258 | IGS A for blog: car-servicing |
 | 2026-05-26 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18252171757306873 | IGS B for blog: services |
 | 2026-05-26 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18115763888497487 | IGS B for blog: car-servicing |
+| 2026-05-26 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18439716640143805 | IGS A for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises |
