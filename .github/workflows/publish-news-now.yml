@@ -1,0 +1,157 @@
+name: Publish News Post Now
+
+# Triggered manually by Ed (or Bryan in future) after approving a news article.
+# Generates a branded featured image, uploads it, sets featured_media,
+# optionally publishes the post, syncs all hub pages, then notifies via Telegram.
+#
+# Laptop does NOT need to be on — fully cloud-hosted.
+
+on:
+  workflow_dispatch:
+    inputs:
+      post_id:
+        description: 'WP page/post ID (e.g. 7557)'
+        required: true
+        type: string
+      post_type:
+        description: 'WP object type'
+        required: false
+        default: 'page'
+        type: choice
+        options: [page, post]
+      card_type:
+        description: 'Card template — lta (ERP/LTA/road news) or coe (COE bidding)'
+        required: false
+        default: 'lta'
+        type: choice
+        options: [lta, coe]
+      label:
+        description: 'Eyebrow label (all-caps), e.g. SINGAPORE LTA UPDATE'
+        required: true
+        type: string
+      headline:
+        description: 'Article headline (main card text)'
+        required: true
+        type: string
+      stat:
+        description: 'Orange stat line, e.g. $1 rise from 2 Jun 2026'
+        required: true
+        type: string
+      publish:
+        description: 'Publish the post after setting featured image?'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['true', 'false']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-news-now
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install requests beautifulsoup4 lxml Pillow
+
+      - name: Generate featured image + set on WP
+        id: featured
+        env:
+          WORDPRESS_API_URL:  ${{ secrets.WORDPRESS_API_URL }}
+          WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
+          WORDPRESS_PASSWORD: ${{ secrets.WORDPRESS_PASSWORD }}
+          POST_ID:    ${{ inputs.post_id }}
+          POST_TYPE:  ${{ inputs.post_type }}
+          CARD_TYPE:  ${{ inputs.card_type }}
+          LABEL:      ${{ inputs.label }}
+          HEADLINE:   ${{ inputs.headline }}
+          STAT:       ${{ inputs.stat }}
+          DO_PUBLISH: ${{ inputs.publish }}
+        run: |
+          PUBLISH_FLAG=""
+          if [[ "$DO_PUBLISH" == "true" ]]; then PUBLISH_FLAG="--publish"; fi
+          python3 blog/generate_and_upload_featured.py \
+            --post-id   "$POST_ID" \
+            --post-type "$POST_TYPE" \
+            --card-type "$CARD_TYPE" \
+            --label     "$LABEL" \
+            --headline  "$HEADLINE" \
+            --stat      "$STAT" \
+            $PUBLISH_FLAG
+
+      - name: Sync hub pages (blog + topic hubs)
+        env:
+          WORDPRESS_API_URL:  ${{ secrets.WORDPRESS_API_URL }}
+          WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
+          WORDPRESS_PASSWORD: ${{ secrets.WORDPRESS_PASSWORD }}
+        run: bash blog/daily_blog_refresh.sh
+
+      - name: Commit log
+        if: always()
+        run: |
+          if [[ -n "$(git status --porcelain blog/logs/ 2>/dev/null)" ]]; then
+            git config user.name  "trw-ig-scheduler-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add blog/logs/
+            git commit -m "chore: publish-news-now log [$(date -u +%FT%TZ)]"
+            git push
+          fi
+
+      - name: Notify Telegram
+        if: always()
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID:   ${{ secrets.TG_CHAT_ID }}
+          STATUS:       ${{ job.status }}
+          POST_ID:      ${{ inputs.post_id }}
+          HEADLINE:     ${{ inputs.headline }}
+          DO_PUBLISH:   ${{ inputs.publish }}
+        run: |
+          python3 <<'PYEOF'
+          import os, urllib.request, urllib.parse
+
+          token = (os.environ.get("TG_BOT_TOKEN") or "").strip()
+          chat  = (os.environ.get("TG_CHAT_ID")   or "").strip()
+          if not token or not chat:
+              print("::warning::No Telegram creds — skipping notify.")
+              raise SystemExit(0)
+
+          status    = os.environ.get("STATUS", "unknown")
+          post_id   = os.environ.get("POST_ID", "?")
+          headline  = os.environ.get("HEADLINE", "?")
+          published = os.environ.get("DO_PUBLISH", "false") == "true"
+
+          icon = "✅" if status == "success" else "❌"
+          pub_note = " · published" if published else " · image set (not published)"
+          msg = (
+              f"{icon} <b>TRW publish-news-now</b>\n"
+              f"Post ID: <code>{post_id}</code>{pub_note}\n"
+              f"Headline: {headline}\n"
+              f"Status: {status}"
+          )
+          data = urllib.parse.urlencode({
+              "chat_id": chat,
+              "text": msg,
+              "parse_mode": "HTML",
+              "disable_web_page_preview": "true",
+          }).encode()
+          req = urllib.request.Request(
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              data=data,
+              method="POST",
+          )
+          urllib.request.urlopen(req, timeout=10)
+          print("::notice::Telegram notified.")
+          PYEOF
