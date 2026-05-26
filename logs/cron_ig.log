@@ -1522,3 +1522,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-26 21:55:37 +08] Posting trw-c1-used-car-checks-2026-05-26-20 (carousel) — notes: Carousel 1 of 9 · 10 checks before you buy a used car
 [2026-05-26 21:56:24 +08] OK  trw-c1-used-car-checks-2026-05-26-20 -> https://www.instagram.com/p/DYzehnLki6g/
 [2026-05-26 22:15:09 +08] run: no due posts
+[2026-05-27 01:28:05 +08] HEARTBEAT lag 193 min (prev=2026-05-26T22:15:09.884980+08:00)
+[2026-05-27 01:28:05 +08] run: no due posts
