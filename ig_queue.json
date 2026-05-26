@@ -23,6 +23,42 @@
       "notes": "IGS C for blog: car-servicing",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-a-d1",
+      "slot_time_sgt": "2026-05-26T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/caption.txt",
+      "image_paths": [
+        "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/igs_A.png"
+      ],
+      "notes": "IGS A for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-b-d2",
+      "slot_time_sgt": "2026-05-27T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/caption.txt",
+      "image_paths": [
+        "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/igs_B.png"
+      ],
+      "notes": "IGS B for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-c-d3",
+      "slot_time_sgt": "2026-05-28T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/caption.txt",
+      "image_paths": [
+        "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/igs_C.png"
+      ],
+      "notes": "IGS C for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises",
+      "status": "pending",
+      "attempts": 0
     }
   ],
   "posted": [
