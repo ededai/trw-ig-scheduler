@@ -1547,3 +1547,13 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-27 16:13:54 +08] run: no due posts
 [2026-05-27 19:49:32 +08] HEARTBEAT lag 216 min (prev=2026-05-27T16:13:54.980356+08:00)
 [2026-05-27 19:49:32 +08] run: no due posts
+[2026-05-27 22:45:29 +08] HEARTBEAT lag 176 min (prev=2026-05-27T19:49:32.988149+08:00)
+[2026-05-27 22:45:29 +08] CATCH-UP igs-services-c-d3 — 2.8h late, publishing
+[2026-05-27 22:45:29 +08] CATCH-UP igs-car-servicing-c-d3 — 2.8h late, publishing
+[2026-05-27 22:45:29 +08] CATCH-UP trw-c2-servicing-prices-2026-05-27-20 — 2.8h late, publishing
+[2026-05-27 22:45:29 +08] Posting igs-services-c-d3 (story) — notes: IGS C for blog: services
+[2026-05-27 22:45:45 +08] OK  igs-services-c-d3 -> 18135450562553271
+[2026-05-27 22:45:46 +08] Posting igs-car-servicing-c-d3 (story) — notes: IGS C for blog: car-servicing
+[2026-05-27 22:45:59 +08] OK  igs-car-servicing-c-d3 -> 18070805792672636
+[2026-05-27 22:45:59 +08] Posting trw-c2-servicing-prices-2026-05-27-20 (carousel) — notes: Carousel 2 of 9 · What servicing should cost
+[2026-05-27 22:46:39 +08] OK  trw-c2-servicing-prices-2026-05-27-20 -> https://www.instagram.com/p/DY2JEueliVC/

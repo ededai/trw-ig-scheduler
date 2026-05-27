@@ -138,3 +138,6 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-26 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18439716640143805 | IGS A for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises |
 | 2026-05-26 20:00 | Carousel | A clean service book is not a clean car. | https://www.instagram.com/p/DYzehnLki6g/ | Carousel 1 of 9 · 10 checks before you buy a used car |
 | 2026-05-27 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17887764192545768 | IGS B for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises |
+| 2026-05-27 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18135450562553271 | IGS C for blog: services |
+| 2026-05-27 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18070805792672636 | IGS C for blog: car-servicing |
+| 2026-05-27 20:00 | Carousel | You shouldn't have to guess what a fair price is in Singapore. Here are four. | https://www.instagram.com/p/DY2JEueliVC/ | Carousel 2 of 9 · What servicing should cost |
