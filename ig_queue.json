@@ -25,18 +25,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-b-d2",
-      "slot_time_sgt": "2026-05-27T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/caption.txt",
-      "image_paths": [
-        "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/igs_B.png"
-      ],
-      "notes": "IGS B for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-c-d3",
       "slot_time_sgt": "2026-05-28T20:00",
       "type": "story",
@@ -2229,6 +2217,21 @@
       "posted_url": "https://www.instagram.com/p/DYzehnLki6g/",
       "posted_at": "2026-05-26 21:56 SGT",
       "post_id": "18048954830754804"
+    },
+    {
+      "id": "igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-b-d2",
+      "slot_time_sgt": "2026-05-27T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/caption.txt",
+      "image_paths": [
+        "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/igs_B.png"
+      ],
+      "notes": "IGS B for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17887764192545768",
+      "posted_at": "2026-05-27 12:00 SGT",
+      "post_id": "17887764192545768"
     }
   ],
   "failed": [
