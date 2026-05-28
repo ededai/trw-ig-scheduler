@@ -1,36 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-c-d3",
-      "slot_time_sgt": "2026-05-28T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/caption.txt",
-      "image_paths": [
-        "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/igs_C.png"
-      ],
-      "notes": "IGS C for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "trw-c3-car-myths-2026-05-28-20",
-      "slot_time_sgt": "2026-05-28T20:00",
-      "type": "carousel",
-      "caption_file": "assets/trw-c3-car-myths-2026-05-28-20/caption.txt",
-      "image_paths": [
-        "assets/trw-c3-car-myths-2026-05-28-20/slide.png",
-        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_2.png",
-        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_3.png",
-        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_4.png",
-        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_5.png",
-        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_6.png",
-        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_7.png"
-      ],
-      "notes": "Carousel 3 of 9 · 5 car myths busted",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "trw-c4-read-a-quote-2026-05-29-20",
       "slot_time_sgt": "2026-05-29T20:00",
       "type": "carousel",
@@ -2241,6 +2211,42 @@
       "posted_url": "https://www.instagram.com/p/DY2JEueliVC/",
       "posted_at": "2026-05-27 22:46 SGT",
       "post_id": "17970121335102674"
+    },
+    {
+      "id": "igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-c-d3",
+      "slot_time_sgt": "2026-05-28T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/caption.txt",
+      "image_paths": [
+        "assets/igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises/igs_C.png"
+      ],
+      "notes": "IGS C for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17945864463014323",
+      "posted_at": "2026-05-28 22:51 SGT",
+      "post_id": "17945864463014323"
+    },
+    {
+      "id": "trw-c3-car-myths-2026-05-28-20",
+      "slot_time_sgt": "2026-05-28T20:00",
+      "type": "carousel",
+      "caption_file": "assets/trw-c3-car-myths-2026-05-28-20/caption.txt",
+      "image_paths": [
+        "assets/trw-c3-car-myths-2026-05-28-20/slide.png",
+        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_2.png",
+        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_3.png",
+        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_4.png",
+        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_5.png",
+        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_6.png",
+        "assets/trw-c3-car-myths-2026-05-28-20/slides/slide_7.png"
+      ],
+      "notes": "Carousel 3 of 9 · 5 car myths busted",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DY4uhD6GXF_/",
+      "posted_at": "2026-05-28 22:52 SGT",
+      "post_id": "17957165711962602"
     }
   ],
   "failed": [
