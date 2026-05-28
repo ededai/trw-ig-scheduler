@@ -448,6 +448,10 @@ def apply_featured(soup: BeautifulSoup, featured_card: dict, drift_by_slug: dict
     # IMG + alt
     f_img = f.select_one(".f-media img")
     hero = drift_by_slug.get(featured_card["slug"], {}).get("article_hero") or featured_card["img_src"]
+    # Never set the featured card image to a logo — it means the page has no proper
+    # hero image and we fell back to the site logo. Leave the current image unchanged.
+    if hero and "logo" in hero.lower():
+        hero = None
     if f_img is not None and hero:
         f_img["src"] = hero
         if featured_card.get("img_alt"):
