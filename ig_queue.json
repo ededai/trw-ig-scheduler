@@ -1,24 +1,6 @@
 {
   "pending": [
     {
-      "id": "trw-c4-read-a-quote-2026-05-29-20",
-      "slot_time_sgt": "2026-05-29T20:00",
-      "type": "carousel",
-      "caption_file": "assets/trw-c4-read-a-quote-2026-05-29-20/caption.txt",
-      "image_paths": [
-        "assets/trw-c4-read-a-quote-2026-05-29-20/slide.png",
-        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_2.png",
-        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_3.png",
-        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_4.png",
-        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_5.png",
-        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_6.png",
-        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_7.png"
-      ],
-      "notes": "Carousel 4 of 9 · How to read a workshop quote",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "trw-c5-dealer-vs-independent-2026-05-30-20",
       "slot_time_sgt": "2026-05-30T20:00",
       "type": "carousel",
@@ -2247,6 +2229,27 @@
       "posted_url": "https://www.instagram.com/p/DY4uhD6GXF_/",
       "posted_at": "2026-05-28 22:52 SGT",
       "post_id": "17957165711962602"
+    },
+    {
+      "id": "trw-c4-read-a-quote-2026-05-29-20",
+      "slot_time_sgt": "2026-05-29T20:00",
+      "type": "carousel",
+      "caption_file": "assets/trw-c4-read-a-quote-2026-05-29-20/caption.txt",
+      "image_paths": [
+        "assets/trw-c4-read-a-quote-2026-05-29-20/slide.png",
+        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_2.png",
+        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_3.png",
+        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_4.png",
+        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_5.png",
+        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_6.png",
+        "assets/trw-c4-read-a-quote-2026-05-29-20/slides/slide_7.png"
+      ],
+      "notes": "Carousel 4 of 9 · How to read a workshop quote",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DY7O9xrIHtd/",
+      "posted_at": "2026-05-29 22:14 SGT",
+      "post_id": "17957170938137218"
     }
   ],
   "failed": [

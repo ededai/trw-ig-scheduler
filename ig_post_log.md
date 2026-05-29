@@ -143,3 +143,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-05-27 20:00 | Carousel | You shouldn't have to guess what a fair price is in Singapore. Here are four. | https://www.instagram.com/p/DY2JEueliVC/ | Carousel 2 of 9 · What servicing should cost |
 | 2026-05-28 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17945864463014323 | IGS C for blog: revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises |
 | 2026-05-28 20:00 | Carousel | If your mechanic still tells you to change your oil every 5,000 km, you're funding their second car. | https://www.instagram.com/p/DY4uhD6GXF_/ | Carousel 3 of 9 · 5 car myths busted |
+| 2026-05-29 20:00 | Carousel | Any workshop quote that just says "general servicing" is hiding things. You're allowed to ask what. | https://www.instagram.com/p/DY7O9xrIHtd/ | Carousel 4 of 9 · How to read a workshop quote |
