@@ -1689,3 +1689,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-05-31 19:49:52 +08] HEARTBEAT lag 92 min (prev=2026-05-31T18:17:43.809240+08:00)
 [2026-05-31 19:49:52 +08] run: no due posts
 [2026-05-31 19:52:42 +08] run: no due posts
+[2026-05-31 21:03:05 +08] HEARTBEAT lag 70 min (prev=2026-05-31T19:52:42.686738+08:00)
+[2026-05-31 21:03:05 +08] CATCH-UP trw-c6-monsoon-checks-2026-05-31-20 — 1.1h late, publishing
+[2026-05-31 21:03:05 +08] Posting trw-c6-monsoon-checks-2026-05-31-20 (carousel) — notes: Carousel 6 of 9 · Monsoon: 6 checks before the rain
+[2026-05-31 21:03:39 +08] OK  trw-c6-monsoon-checks-2026-05-31-20 -> https://www.instagram.com/p/DZAQefUD9Ee/
