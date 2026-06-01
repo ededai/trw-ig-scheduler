@@ -1732,3 +1732,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-01 23:42:24 +08] CATCH-UP trw-c7-jb-road-trip-2026-06-01-20 — 3.7h late, publishing
 [2026-06-01 23:42:24 +08] Posting trw-c7-jb-road-trip-2026-06-01-20 (carousel) — notes: Carousel 7 of 9 · 8 checks before a JB road trip
 [2026-06-01 23:43:07 +08] OK  trw-c7-jb-road-trip-2026-06-01-20 -> https://www.instagram.com/p/DZDHgbtmkK3/
+[2026-06-02 00:17:58 +08] HEARTBEAT lag 36 min (prev=2026-06-01T23:42:24.022569+08:00)
+[2026-06-02 00:17:58 +08] run: no due posts
