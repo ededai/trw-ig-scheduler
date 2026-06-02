@@ -1756,3 +1756,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-02 20:30:42 +08] Posting trw-c8-tyre-prices-2026-06-02-20 (carousel) — notes: Carousel 8 of 9 · Tyres & alignment: what it should cost
 [2026-06-02 20:31:29 +08] OK  trw-c8-tyre-prices-2026-06-02-20 -> https://www.instagram.com/p/DZFWXZYIAIz/
 [2026-06-02 20:32:04 +08] run: no due posts
+[2026-06-03 01:05:07 +08] HEARTBEAT lag 273 min (prev=2026-06-02T20:32:04.729911+08:00)
+[2026-06-03 01:05:07 +08] run: no due posts
