@@ -1,23 +1,6 @@
 {
   "pending": [
     {
-      "id": "trw-c8-tyre-prices-2026-06-02-20",
-      "slot_time_sgt": "2026-06-02T20:00",
-      "type": "carousel",
-      "caption_file": "assets/trw-c8-tyre-prices-2026-06-02-20/caption.txt",
-      "image_paths": [
-        "assets/trw-c8-tyre-prices-2026-06-02-20/slide.png",
-        "assets/trw-c8-tyre-prices-2026-06-02-20/slides/slide_2.png",
-        "assets/trw-c8-tyre-prices-2026-06-02-20/slides/slide_3.png",
-        "assets/trw-c8-tyre-prices-2026-06-02-20/slides/slide_4.png",
-        "assets/trw-c8-tyre-prices-2026-06-02-20/slides/slide_5.png",
-        "assets/trw-c8-tyre-prices-2026-06-02-20/slides/slide_6.png"
-      ],
-      "notes": "Carousel 8 of 9 · Tyres & alignment: what it should cost",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "trw-c9-fuel-myths-2026-06-03-20",
       "slot_time_sgt": "2026-06-03T20:00",
       "type": "carousel",
@@ -2259,6 +2242,26 @@
       "posted_url": "https://www.instagram.com/p/DZDHgbtmkK3/",
       "posted_at": "2026-06-01 23:43 SGT",
       "post_id": "18092480932995708"
+    },
+    {
+      "id": "trw-c8-tyre-prices-2026-06-02-20",
+      "slot_time_sgt": "2026-06-02T20:00",
+      "type": "carousel",
+      "caption_file": "assets/trw-c8-tyre-prices-2026-06-02-20/caption.txt",
+      "image_paths": [
+        "assets/trw-c8-tyre-prices-2026-06-02-20/slide.png",
+        "assets/trw-c8-tyre-prices-2026-06-02-20/slides/slide_2.png",
+        "assets/trw-c8-tyre-prices-2026-06-02-20/slides/slide_3.png",
+        "assets/trw-c8-tyre-prices-2026-06-02-20/slides/slide_4.png",
+        "assets/trw-c8-tyre-prices-2026-06-02-20/slides/slide_5.png",
+        "assets/trw-c8-tyre-prices-2026-06-02-20/slides/slide_6.png"
+      ],
+      "notes": "Carousel 8 of 9 · Tyres & alignment: what it should cost",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DZFWXZYIAIz/",
+      "posted_at": "2026-06-02 20:31 SGT",
+      "post_id": "18103664006052142"
     }
   ],
   "failed": [
