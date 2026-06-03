@@ -17,6 +17,30 @@
       "notes": "Carousel 9 of 9 · 5 fuel & petrol myths",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "trw-voice-fair-not-cheap-2026-06-04",
+      "slot_time_sgt": "2026-06-04T20:00",
+      "type": "single",
+      "caption_file": "assets/trw-voice-fair-not-cheap-2026-06-04/caption.txt",
+      "image_paths": [
+        "assets/trw-voice-fair-not-cheap-2026-06-04/slide1.png"
+      ],
+      "notes": "Voice card #7 — Fair not cheap (Straight Talk single graphic)",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "trw-voice-its-okay-2026-06-05",
+      "slot_time_sgt": "2026-06-05T20:00",
+      "type": "single",
+      "caption_file": "assets/trw-voice-its-okay-2026-06-05/caption.txt",
+      "image_paths": [
+        "assets/trw-voice-its-okay-2026-06-05/slide1.png"
+      ],
+      "notes": "Voice card #10 — It's okay if you never fix with me (Straight Talk single graphic)",
+      "status": "pending",
+      "attempts": 0
     }
   ],
   "posted": [
