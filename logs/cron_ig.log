@@ -1780,3 +1780,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-03 22:11:55 +08] OK  trw-c9-fuel-myths-2026-06-03-20 -> https://www.instagram.com/p/DZIGqkEFUeh/
 [2026-06-04 02:32:24 +08] HEARTBEAT lag 261 min (prev=2026-06-03T22:11:14.992877+08:00)
 [2026-06-04 02:32:24 +08] run: no due posts
+[2026-06-04 03:53:16 +08] HEARTBEAT lag 81 min (prev=2026-06-04T02:32:24.865005+08:00)
+[2026-06-04 03:53:16 +08] run: no due posts
