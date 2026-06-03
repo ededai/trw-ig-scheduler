@@ -1778,3 +1778,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-03 22:11:14 +08] CATCH-UP trw-c9-fuel-myths-2026-06-03-20 — 2.2h late, publishing
 [2026-06-03 22:11:15 +08] Posting trw-c9-fuel-myths-2026-06-03-20 (carousel) — notes: Carousel 9 of 9 · 5 fuel & petrol myths
 [2026-06-03 22:11:55 +08] OK  trw-c9-fuel-myths-2026-06-03-20 -> https://www.instagram.com/p/DZIGqkEFUeh/
+[2026-06-04 02:32:24 +08] HEARTBEAT lag 261 min (prev=2026-06-03T22:11:14.992877+08:00)
+[2026-06-04 02:32:24 +08] run: no due posts
