@@ -1801,3 +1801,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-04 22:17:31 +08] CATCH-UP trw-voice-fair-not-cheap-2026-06-04 — 2.3h late, publishing
 [2026-06-04 22:17:31 +08] Posting trw-voice-fair-not-cheap-2026-06-04 (single) — notes: Voice card #7 — Fair not cheap (Straight Talk single graphic)
 [2026-06-04 22:17:50 +08] OK  trw-voice-fair-not-cheap-2026-06-04 -> https://www.instagram.com/p/DZKsImnltgV/
+[2026-06-05 01:26:08 +08] HEARTBEAT lag 189 min (prev=2026-06-04T22:17:31.776009+08:00)
+[2026-06-05 01:26:08 +08] run: no due posts
