@@ -149,3 +149,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-01 20:00 | Carousel | Most JB breakdowns are avoidable. They start at home, before you ever pull out of the driveway. | https://www.instagram.com/p/DZDHgbtmkK3/ | Carousel 7 of 9 · 8 checks before a JB road trip |
 | 2026-06-02 20:00 | Carousel | Tyre shops in Singapore quietly mark up the brand more than the rubber. | https://www.instagram.com/p/DZFWXZYIAIz/ | Carousel 8 of 9 · Tyres & alignment: what it should cost |
 | 2026-06-03 20:00 | Carousel | If you fill up V-Power on a Civic, you're paying Shell extra for nothing. | https://www.instagram.com/p/DZIGqkEFUeh/ | Carousel 9 of 9 · 5 fuel & petrol myths |
+| 2026-06-04 20:00 | Single | Cheapest quote in Singapore isn't the goal. Not getting robbed is. | https://www.instagram.com/p/DZKsImnltgV/ | Voice card #7 — Fair not cheap (Straight Talk single graphic) |

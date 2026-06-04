@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "trw-voice-fair-not-cheap-2026-06-04",
-      "slot_time_sgt": "2026-06-04T20:00",
-      "type": "single",
-      "caption_file": "assets/trw-voice-fair-not-cheap-2026-06-04/caption.txt",
-      "image_paths": [
-        "assets/trw-voice-fair-not-cheap-2026-06-04/slide1.png"
-      ],
-      "notes": "Voice card #7 — Fair not cheap (Straight Talk single graphic)",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "trw-voice-its-okay-2026-06-05",
       "slot_time_sgt": "2026-06-05T20:00",
       "type": "single",
@@ -2289,6 +2277,21 @@
       "posted_url": "https://www.instagram.com/p/DZIGqkEFUeh/",
       "posted_at": "2026-06-03 22:11 SGT",
       "post_id": "17960728965141538"
+    },
+    {
+      "id": "trw-voice-fair-not-cheap-2026-06-04",
+      "slot_time_sgt": "2026-06-04T20:00",
+      "type": "single",
+      "caption_file": "assets/trw-voice-fair-not-cheap-2026-06-04/caption.txt",
+      "image_paths": [
+        "assets/trw-voice-fair-not-cheap-2026-06-04/slide1.png"
+      ],
+      "notes": "Voice card #7 — Fair not cheap (Straight Talk single graphic)",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DZKsImnltgV/",
+      "posted_at": "2026-06-04 22:17 SGT",
+      "post_id": "18057083672509743"
     }
   ],
   "failed": [
