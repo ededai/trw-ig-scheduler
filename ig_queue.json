@@ -1,18 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "trw-voice-its-okay-2026-06-05",
-      "slot_time_sgt": "2026-06-05T20:00",
-      "type": "single",
-      "caption_file": "assets/trw-voice-its-okay-2026-06-05/caption.txt",
-      "image_paths": [
-        "assets/trw-voice-its-okay-2026-06-05/slide1.png"
-      ],
-      "notes": "Voice card #10 — It's okay if you never fix with me (Straight Talk single graphic)",
-      "status": "pending",
-      "attempts": 0
-    }
-  ],
+  "pending": [],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
@@ -2292,6 +2279,21 @@
       "posted_url": "https://www.instagram.com/p/DZKsImnltgV/",
       "posted_at": "2026-06-04 22:17 SGT",
       "post_id": "18057083672509743"
+    },
+    {
+      "id": "trw-voice-its-okay-2026-06-05",
+      "slot_time_sgt": "2026-06-05T20:00",
+      "type": "single",
+      "caption_file": "assets/trw-voice-its-okay-2026-06-05/caption.txt",
+      "image_paths": [
+        "assets/trw-voice-its-okay-2026-06-05/slide1.png"
+      ],
+      "notes": "Voice card #10 — It's okay if you never fix with me (Straight Talk single graphic)",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DZNP6-BIKir/",
+      "posted_at": "2026-06-05 22:08 SGT",
+      "post_id": "18089692853341253"
     }
   ],
   "failed": [

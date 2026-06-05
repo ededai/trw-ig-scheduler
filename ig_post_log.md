@@ -150,3 +150,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-02 20:00 | Carousel | Tyre shops in Singapore quietly mark up the brand more than the rubber. | https://www.instagram.com/p/DZFWXZYIAIz/ | Carousel 8 of 9 · Tyres & alignment: what it should cost |
 | 2026-06-03 20:00 | Carousel | If you fill up V-Power on a Civic, you're paying Shell extra for nothing. | https://www.instagram.com/p/DZIGqkEFUeh/ | Carousel 9 of 9 · 5 fuel & petrol myths |
 | 2026-06-04 20:00 | Single | Cheapest quote in Singapore isn't the goal. Not getting robbed is. | https://www.instagram.com/p/DZKsImnltgV/ | Voice card #7 — Fair not cheap (Straight Talk single graphic) |
+| 2026-06-05 20:00 | Single | It's okay if you never fix your car with me. That's the whole point of honest car servicing in Singapore. | https://www.instagram.com/p/DZNP6-BIKir/ | Voice card #10 — It's okay if you never fix with me (Straight Talk single graphic) |

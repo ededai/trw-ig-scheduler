@@ -1824,3 +1824,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-05 16:17:04 +08] run: no due posts
 [2026-06-05 19:38:16 +08] HEARTBEAT lag 201 min (prev=2026-06-05T16:17:04.957717+08:00)
 [2026-06-05 19:38:16 +08] run: no due posts
+[2026-06-05 22:08:45 +08] HEARTBEAT lag 150 min (prev=2026-06-05T19:38:16.656942+08:00)
+[2026-06-05 22:08:45 +08] CATCH-UP trw-voice-its-okay-2026-06-05 — 2.1h late, publishing
+[2026-06-05 22:08:45 +08] Posting trw-voice-its-okay-2026-06-05 (single) — notes: Voice card #10 — It's okay if you never fix with me (Straight Talk single graphic)
+[2026-06-05 22:08:57 +08] OK  trw-voice-its-okay-2026-06-05 -> https://www.instagram.com/p/DZNP6-BIKir/
