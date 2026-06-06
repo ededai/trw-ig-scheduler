@@ -1,5 +1,18 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "trw-voice-not-to-fix-2026-06-07",
+      "slot_time_sgt": "2026-06-07T20:00",
+      "type": "single",
+      "caption_file": "assets/trw-voice-not-to-fix-2026-06-07/caption.txt",
+      "image_paths": [
+        "assets/trw-voice-not-to-fix-2026-06-07/slide1.png"
+      ],
+      "notes": "Voice card #5 — We'll tell you when NOT to fix it (Straight Talk single graphic, principle reframe)",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
