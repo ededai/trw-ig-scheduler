@@ -53,6 +53,18 @@ SKIP_SLUGS = {
     "workshop",           # Workshop service page
     "servicing",          # Servicing service page
     "used-car",           # Used car service page
+    # Real service-page slugs. The three above were guessed/stale and never
+    # matched anything; car-servicing + services were leaking into the grid as
+    # fake "Guides" cards (fixed 2026-06-07). Slug = full path from href.
+    "services",                 # /services/ landing page
+    "car-servicing",            # /car-servicing/ service page
+    "car-aircon-repair",        # service page
+    "tyres-and-battery",        # service page
+    "brakes-and-suspension",    # service page
+    "engine-and-gearbox",       # service page
+    "wiring-and-electrical",    # service page
+    "accident-claims",          # service page
+    "paintjob-and-body-works",  # service page
     "may-2026-1st-bidding",    # COE bidding results hub
     "may-2026-2nd-bidding",    # COE bidding results hub
     "april-2026-2nd-bidding",  # COE bidding results hub
@@ -63,6 +75,7 @@ SKIP_SLUGS = {
 import re as _re
 _SKIP_PATTERNS = [
     _re.compile(r'^.+-\d+(?:st|nd|rd|th)-bidding$'),  # e.g. may-2026-2nd-bidding
+    _re.compile(r'^services(?:/|$)'),                 # /services/ and any /services/<x>/ page
 ]
 
 
