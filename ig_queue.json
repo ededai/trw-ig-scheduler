@@ -1,18 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "trw-voice-not-to-fix-2026-06-07",
-      "slot_time_sgt": "2026-06-07T20:00",
-      "type": "single",
-      "caption_file": "assets/trw-voice-not-to-fix-2026-06-07/caption.txt",
-      "image_paths": [
-        "assets/trw-voice-not-to-fix-2026-06-07/slide1.png"
-      ],
-      "notes": "Voice card #5 — We'll tell you when NOT to fix it (Straight Talk single graphic, principle reframe)",
-      "status": "pending",
-      "attempts": 0
-    }
-  ],
+  "pending": [],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
@@ -2307,6 +2294,21 @@
       "posted_url": "https://www.instagram.com/p/DZNP6-BIKir/",
       "posted_at": "2026-06-05 22:08 SGT",
       "post_id": "18089692853341253"
+    },
+    {
+      "id": "trw-voice-not-to-fix-2026-06-07",
+      "slot_time_sgt": "2026-06-07T20:00",
+      "type": "single",
+      "caption_file": "assets/trw-voice-not-to-fix-2026-06-07/caption.txt",
+      "image_paths": [
+        "assets/trw-voice-not-to-fix-2026-06-07/slide1.png"
+      ],
+      "notes": "Voice card #5 — We'll tell you when NOT to fix it (Straight Talk single graphic, principle reframe)",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DZSL7g_kpY3/",
+      "posted_at": "2026-06-07 20:10 SGT",
+      "post_id": "18089226197608768"
     }
   ],
   "failed": [
