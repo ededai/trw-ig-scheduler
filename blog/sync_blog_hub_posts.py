@@ -35,6 +35,12 @@ except ImportError:
 
 BLOG_PAGE_ID = 475
 CAT_IDS      = [1367, 1368, 1369]          # Guides, Car Tips, News
+# Parent page IDs whose children are landing/hub pages, never blog articles.
+# /brands/<make>/ (981) and /topics/<topic>/ (1597). WordPress ignores the
+# ?categories= filter for pages and returns ALL pages, so without this filter
+# any brand/topic hub page that gets a featured image would be carded onto the
+# blog as a fake "Guides" post (same bug as /car-servicing/ + /services/).
+HUB_PARENT_IDS = {981, 1597}               # brands, topics
 CAT_NAMES    = {1367: "Guides", 1368: "Car Tips", 1369: "News"}
 WP_ORIGIN    = "https://therightworkshop.com"
 
@@ -171,14 +177,25 @@ def fetch_blog_page_raw(env: dict) -> str:
 
 
 def fetch_all_blog_pages(env: dict) -> list[dict]:
-    """Fetch all published WP pages assigned to Guides/Car Tips/News."""
+    """Fetch published WP pages that are candidate blog articles.
+
+    WordPress ignores the ?categories= filter for pages (it returns ALL
+    published pages), so the real guards are is_skip_slug() and the
+    HUB_PARENT_IDS filter below: any page parented under /brands/ or /topics/
+    is a hub/landing page, never an article, and is dropped here so it can
+    never be carded onto the blog grid.
+    """
     cat_str = ",".join(map(str, CAT_IDS))
     pages = wp_get(
         env, "/pages",
         f"?categories={cat_str}&per_page=100&orderby=date&order=desc"
-        f"&status=publish&_fields=id,slug,title,excerpt,categories"
-    )
-    return pages or []
+        f"&status=publish&_fields=id,slug,title,excerpt,categories,parent"
+    ) or []
+    filtered = [p for p in pages if p.get("parent") not in HUB_PARENT_IDS]
+    dropped = len(pages) - len(filtered)
+    if dropped:
+        print(f"  Excluded {dropped} /brands/ + /topics/ hub pages (not articles).")
+    return filtered
 
 
 def fetch_hero_and_cat(env: dict, page_id: int) -> tuple[str, str, str]:
