@@ -1987,3 +1987,8 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-10 19:47:44 +08] HEARTBEAT lag 211 min (prev=2026-06-10T16:16:58.257617+08:00)
 [2026-06-10 19:47:44 +08] run: no due posts
 [2026-06-10 19:50:01 +08] run: no due posts
+[2026-06-10 22:42:22 +08] HEARTBEAT lag 172 min (prev=2026-06-10T19:50:01.027787+08:00)
+[2026-06-10 22:42:22 +08] CATCH-UP batch-n2-dm-mode-e-2026-06-09-20 — 2.7h late, publishing
+[2026-06-10 22:42:22 +08] Posting batch-n2-dm-mode-e-2026-06-09-20 (carousel) — notes: Series: Driver's Manual · Mode E (Spec Sheet) · Brake pads in 10s
+[2026-06-10 22:42:22 +08] ERR batch-n2-dm-mode-e-2026-06-09-20: post_instagram_carousel.py failed: ERROR: missing image /Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n2-dm-mode-e-2026-06-09-20/slide_1.png
+
