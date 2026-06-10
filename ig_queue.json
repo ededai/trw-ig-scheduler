@@ -4,13 +4,13 @@
       "id": "batch-n3-wld-mode-b-2026-06-10-20",
       "slot_time_sgt": "2026-06-11T20:00",
       "type": "carousel",
-      "caption_file": "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n3-wld-mode-b-2026-06-10-20/caption.txt",
+      "caption_file": "assets/batch-n3-wld-mode-b-2026-06-10-20/caption.txt",
       "image_paths": [
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n3-wld-mode-b-2026-06-10-20/slide_1.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n3-wld-mode-b-2026-06-10-20/slide_2.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n3-wld-mode-b-2026-06-10-20/slide_3.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n3-wld-mode-b-2026-06-10-20/slide_4.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n3-wld-mode-b-2026-06-10-20/slide_5.png"
+        "assets/batch-n3-wld-mode-b-2026-06-10-20/slide_1.png",
+        "assets/batch-n3-wld-mode-b-2026-06-10-20/slide_2.png",
+        "assets/batch-n3-wld-mode-b-2026-06-10-20/slide_3.png",
+        "assets/batch-n3-wld-mode-b-2026-06-10-20/slide_4.png",
+        "assets/batch-n3-wld-mode-b-2026-06-10-20/slide_5.png"
       ],
       "notes": "Series: Warning Light Decoded · Mode B (Cream Magazine) · TPMS",
       "status": "pending",
@@ -20,13 +20,13 @@
       "id": "batch-n4-cow-mode-c-2026-06-11-20",
       "slot_time_sgt": "2026-06-12T20:00",
       "type": "carousel",
-      "caption_file": "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n4-cow-mode-c-2026-06-11-20/caption.txt",
+      "caption_file": "assets/batch-n4-cow-mode-c-2026-06-11-20/caption.txt",
       "image_paths": [
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n4-cow-mode-c-2026-06-11-20/slide_1.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n4-cow-mode-c-2026-06-11-20/slide_2.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n4-cow-mode-c-2026-06-11-20/slide_3.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n4-cow-mode-c-2026-06-11-20/slide_4.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n4-cow-mode-c-2026-06-11-20/slide_5.png"
+        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_1.png",
+        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_2.png",
+        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_3.png",
+        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_4.png",
+        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_5.png"
       ],
       "notes": "Series: Cost of Waiting · Mode C (Poster Bold) · Alignment",
       "status": "pending",
@@ -36,13 +36,13 @@
       "id": "batch-n5-bbtb-mode-d-2026-06-12-20",
       "slot_time_sgt": "2026-06-13T20:00",
       "type": "carousel",
-      "caption_file": "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n5-bbtb-mode-d-2026-06-12-20/caption.txt",
+      "caption_file": "assets/batch-n5-bbtb-mode-d-2026-06-12-20/caption.txt",
       "image_paths": [
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n5-bbtb-mode-d-2026-06-12-20/slide_1.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n5-bbtb-mode-d-2026-06-12-20/slide_2.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n5-bbtb-mode-d-2026-06-12-20/slide_3.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n5-bbtb-mode-d-2026-06-12-20/slide_4.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n5-bbtb-mode-d-2026-06-12-20/slide_5.png"
+        "assets/batch-n5-bbtb-mode-d-2026-06-12-20/slide_1.png",
+        "assets/batch-n5-bbtb-mode-d-2026-06-12-20/slide_2.png",
+        "assets/batch-n5-bbtb-mode-d-2026-06-12-20/slide_3.png",
+        "assets/batch-n5-bbtb-mode-d-2026-06-12-20/slide_4.png",
+        "assets/batch-n5-bbtb-mode-d-2026-06-12-20/slide_5.png"
       ],
       "notes": "Series: Behind the Badge · Mode D (Polaroid Zine) · Corolla Altis",
       "status": "pending",
@@ -52,13 +52,13 @@
       "id": "batch-n6-bbtb-mode-a-2026-06-13-20",
       "slot_time_sgt": "2026-06-14T20:00",
       "type": "carousel",
-      "caption_file": "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n6-bbtb-mode-a-2026-06-13-20/caption.txt",
+      "caption_file": "assets/batch-n6-bbtb-mode-a-2026-06-13-20/caption.txt",
       "image_paths": [
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n6-bbtb-mode-a-2026-06-13-20/slide_1.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n6-bbtb-mode-a-2026-06-13-20/slide_2.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n6-bbtb-mode-a-2026-06-13-20/slide_3.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n6-bbtb-mode-a-2026-06-13-20/slide_4.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n6-bbtb-mode-a-2026-06-13-20/slide_5.png"
+        "assets/batch-n6-bbtb-mode-a-2026-06-13-20/slide_1.png",
+        "assets/batch-n6-bbtb-mode-a-2026-06-13-20/slide_2.png",
+        "assets/batch-n6-bbtb-mode-a-2026-06-13-20/slide_3.png",
+        "assets/batch-n6-bbtb-mode-a-2026-06-13-20/slide_4.png",
+        "assets/batch-n6-bbtb-mode-a-2026-06-13-20/slide_5.png"
       ],
       "notes": "Series: Behind the Badge · Mode A (Editorial Dark) · BMW F30",
       "status": "pending",
@@ -68,11 +68,11 @@
       "id": "batch-v1-truth-beats-polish-2026-06-14-20",
       "slot_time_sgt": "2026-06-15T20:00",
       "type": "carousel",
-      "caption_file": "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v1-truth-beats-polish-2026-06-14-20/caption.txt",
+      "caption_file": "assets/batch-v1-truth-beats-polish-2026-06-14-20/caption.txt",
       "image_paths": [
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_1.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_2.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_3.png"
+        "assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_1.png",
+        "assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_2.png",
+        "assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_3.png"
       ],
       "notes": "Voice card · Truth beats polish",
       "status": "pending",
@@ -82,11 +82,11 @@
       "id": "batch-v2-if-you-dont-need-it-2026-06-15-20",
       "slot_time_sgt": "2026-06-16T20:00",
       "type": "carousel",
-      "caption_file": "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v2-if-you-dont-need-it-2026-06-15-20/caption.txt",
+      "caption_file": "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/caption.txt",
       "image_paths": [
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_1.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_2.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_3.png"
+        "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_1.png",
+        "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_2.png",
+        "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_3.png"
       ],
       "notes": "Voice card · If you don't need it, we'll tell you",
       "status": "pending",
@@ -96,13 +96,45 @@
       "id": "batch-v3-truth-not-sale-2026-06-16-20",
       "slot_time_sgt": "2026-06-17T20:00",
       "type": "carousel",
-      "caption_file": "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v3-truth-not-sale-2026-06-16-20/caption.txt",
+      "caption_file": "assets/batch-v3-truth-not-sale-2026-06-16-20/caption.txt",
       "image_paths": [
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v3-truth-not-sale-2026-06-16-20/slide_1.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v3-truth-not-sale-2026-06-16-20/slide_2.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-v3-truth-not-sale-2026-06-16-20/slide_3.png"
+        "assets/batch-v3-truth-not-sale-2026-06-16-20/slide_1.png",
+        "assets/batch-v3-truth-not-sale-2026-06-16-20/slide_2.png",
+        "assets/batch-v3-truth-not-sale-2026-06-16-20/slide_3.png"
       ],
       "notes": "Voice card · Truth, not the sale",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "batch-n1-st-mode-a-2026-06-08-20",
+      "slot_time_sgt": "2026-06-18T20:00",
+      "type": "carousel",
+      "caption_file": "assets/batch-n1-st-mode-a-2026-06-08-20/caption.txt",
+      "image_paths": [
+        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_1.png",
+        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_2.png",
+        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_3.png",
+        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_4.png",
+        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_5.png"
+      ],
+      "notes": "Series: Straight Talk · Mode A (Editorial Dark) · 3 questions",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "batch-n2-dm-mode-e-2026-06-09-20",
+      "slot_time_sgt": "2026-06-19T20:00",
+      "type": "carousel",
+      "caption_file": "assets/batch-n2-dm-mode-e-2026-06-09-20/caption.txt",
+      "image_paths": [
+        "assets/batch-n2-dm-mode-e-2026-06-09-20/slide_1.png",
+        "assets/batch-n2-dm-mode-e-2026-06-09-20/slide_2.png",
+        "assets/batch-n2-dm-mode-e-2026-06-09-20/slide_3.png",
+        "assets/batch-n2-dm-mode-e-2026-06-09-20/slide_4.png",
+        "assets/batch-n2-dm-mode-e-2026-06-09-20/slide_5.png"
+      ],
+      "notes": "Series: Driver's Manual · Mode E (Spec Sheet) · Brake pads in 10s",
       "status": "pending",
       "attempts": 0
     }
@@ -2769,40 +2801,6 @@
       "status": "failed",
       "attempts": 0,
       "error": "missed_max_lag_window (173.1h late, max 12h)"
-    },
-    {
-      "id": "batch-n1-st-mode-a-2026-06-08-20",
-      "slot_time_sgt": "2026-06-09T20:00",
-      "type": "carousel",
-      "caption_file": "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n1-st-mode-a-2026-06-08-20/caption.txt",
-      "image_paths": [
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n1-st-mode-a-2026-06-08-20/slide_1.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n1-st-mode-a-2026-06-08-20/slide_2.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n1-st-mode-a-2026-06-08-20/slide_3.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n1-st-mode-a-2026-06-08-20/slide_4.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n1-st-mode-a-2026-06-08-20/slide_5.png"
-      ],
-      "notes": "Series: Straight Talk · Mode A (Editorial Dark) · 3 questions",
-      "status": "failed",
-      "attempts": 1,
-      "error": "post_instagram_carousel.py failed: ERROR: missing image /Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n1-st-mode-a-2026-06-08-20/slide_1.png\n"
-    },
-    {
-      "id": "batch-n2-dm-mode-e-2026-06-09-20",
-      "slot_time_sgt": "2026-06-10T20:00",
-      "type": "carousel",
-      "caption_file": "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n2-dm-mode-e-2026-06-09-20/caption.txt",
-      "image_paths": [
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n2-dm-mode-e-2026-06-09-20/slide_1.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n2-dm-mode-e-2026-06-09-20/slide_2.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n2-dm-mode-e-2026-06-09-20/slide_3.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n2-dm-mode-e-2026-06-09-20/slide_4.png",
-        "/Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n2-dm-mode-e-2026-06-09-20/slide_5.png"
-      ],
-      "notes": "Series: Driver's Manual · Mode E (Spec Sheet) · Brake pads in 10s",
-      "status": "failed",
-      "attempts": 1,
-      "error": "post_instagram_carousel.py failed: ERROR: missing image /Users/admin/the-right-workshop/trw-ig-scheduler/assets/batch-n2-dm-mode-e-2026-06-09-20/slide_1.png\n"
     }
   ],
   "cancelled": [
