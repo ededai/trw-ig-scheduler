@@ -2013,3 +2013,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-11 16:54:35 +08] HEARTBEAT lag 270 min (prev=2026-06-11T12:24:43.396755+08:00)
 [2026-06-11 16:54:35 +08] run: no due posts
 [2026-06-11 16:58:15 +08] run: no due posts
+[2026-06-11 20:47:52 +08] HEARTBEAT lag 230 min (prev=2026-06-11T16:58:15.424992+08:00)
+[2026-06-11 20:47:52 +08] CATCH-UP batch-n3-wld-mode-b-2026-06-10-20 — 0.8h late, publishing
+[2026-06-11 20:47:52 +08] Posting batch-n3-wld-mode-b-2026-06-10-20 (carousel) — notes: Series: Warning Light Decoded · Mode B (Cream Magazine) · TPMS
+[2026-06-11 20:48:23 +08] OK  batch-n3-wld-mode-b-2026-06-10-20 -> https://www.instagram.com/p/DZcjeD3jd0G/
