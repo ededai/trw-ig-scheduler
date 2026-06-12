@@ -105,6 +105,42 @@
       "notes": "Series: Driver's Manual · Mode E (Spec Sheet) · Brake pads in 10s",
       "status": "pending",
       "attempts": 0
+    },
+    {
+      "id": "igs-car-insurance-broker-a-d1",
+      "slot_time_sgt": "2026-06-13T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-broker/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-broker/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-insurance-broker",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-insurance-broker-b-d2",
+      "slot_time_sgt": "2026-06-14T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-broker/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-broker/igs_B.png"
+      ],
+      "notes": "IGS B for blog: car-insurance-broker",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-insurance-broker-c-d3",
+      "slot_time_sgt": "2026-06-15T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-broker/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-broker/igs_C.png"
+      ],
+      "notes": "IGS C for blog: car-insurance-broker",
+      "status": "pending",
+      "attempts": 0
     }
   ],
   "posted": [

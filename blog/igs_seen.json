@@ -320,6 +320,15 @@
         "igs-revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises-c-d3"
       ],
       "title": "Revised ERP rates from 2 June 2026: school holiday cuts and post-holiday rises"
+    },
+    "car-insurance-broker": {
+      "queued_at": "2026-06-12 22:15 SGT",
+      "queued_ids": [
+        "igs-car-insurance-broker-a-d1",
+        "igs-car-insurance-broker-b-d2",
+        "igs-car-insurance-broker-c-d3"
+      ],
+      "title": "Car Insurance in Singapore: Why One Call to a Broker Beats Calling 10 Companies Yourself"
     }
   }
 }
