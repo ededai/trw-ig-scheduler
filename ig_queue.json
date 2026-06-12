@@ -1,22 +1,6 @@
 {
   "pending": [
     {
-      "id": "batch-n4-cow-mode-c-2026-06-11-20",
-      "slot_time_sgt": "2026-06-12T20:00",
-      "type": "carousel",
-      "caption_file": "assets/batch-n4-cow-mode-c-2026-06-11-20/caption.txt",
-      "image_paths": [
-        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_1.png",
-        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_2.png",
-        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_3.png",
-        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_4.png",
-        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_5.png"
-      ],
-      "notes": "Series: Cost of Waiting · Mode C (Poster Bold) · Alignment",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "batch-n5-bbtb-mode-d-2026-06-12-20",
       "slot_time_sgt": "2026-06-13T20:00",
       "type": "carousel",
@@ -2451,6 +2435,25 @@
       "posted_url": "https://www.instagram.com/p/DZcjeD3jd0G/",
       "posted_at": "2026-06-11 20:48 SGT",
       "post_id": "17907791187423237"
+    },
+    {
+      "id": "batch-n4-cow-mode-c-2026-06-11-20",
+      "slot_time_sgt": "2026-06-12T20:00",
+      "type": "carousel",
+      "caption_file": "assets/batch-n4-cow-mode-c-2026-06-11-20/caption.txt",
+      "image_paths": [
+        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_1.png",
+        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_2.png",
+        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_3.png",
+        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_4.png",
+        "assets/batch-n4-cow-mode-c-2026-06-11-20/slide_5.png"
+      ],
+      "notes": "Series: Cost of Waiting · Mode C (Poster Bold) · Alignment",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DZfDRtok6Db/",
+      "posted_at": "2026-06-12 20:04 SGT",
+      "post_id": "18035669192807523"
     }
   ],
   "failed": [
