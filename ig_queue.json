@@ -107,18 +107,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-car-insurance-broker-a-d1",
-      "slot_time_sgt": "2026-06-13T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-car-insurance-broker/caption.txt",
-      "image_paths": [
-        "assets/igs-car-insurance-broker/igs_A.png"
-      ],
-      "notes": "IGS A for blog: car-insurance-broker",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-car-insurance-broker-b-d2",
       "slot_time_sgt": "2026-06-14T11:00",
       "type": "story",
@@ -2490,6 +2478,21 @@
       "posted_url": "https://www.instagram.com/p/DZfDRtok6Db/",
       "posted_at": "2026-06-12 20:04 SGT",
       "post_id": "18035669192807523"
+    },
+    {
+      "id": "igs-car-insurance-broker-a-d1",
+      "slot_time_sgt": "2026-06-13T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-broker/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-broker/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-insurance-broker",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17951709390170237",
+      "posted_at": "2026-06-13 15:53 SGT",
+      "post_id": "17951709390170237"
     }
   ],
   "failed": [
