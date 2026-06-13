@@ -155,3 +155,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-11 20:00 | Carousel | Your tyre pressure light came on. Singapore heat makes it lie four ways, and only one needs action today. | https://www.instagram.com/p/DZcjeD3jd0G/ | Series: Warning Light Decoded · Mode B (Cream Magazine) · TPMS |
 | 2026-06-12 20:00 | Carousel | A $60 wheel alignment in Singapore can save you a $1,200 set of tyres. | https://www.instagram.com/p/DZfDRtok6Db/ | Series: Cost of Waiting · Mode C (Poster Bold) · Alignment |
 | 2026-06-13 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17951709390170237 | IGS A for blog: car-insurance-broker |
+| 2026-06-13 20:00 | Carousel | The honest Toyota Corolla Altis brief, from the workshop floor in Singapore. | https://www.instagram.com/p/DZhozdWk1Pq/ | Series: Behind the Badge · Mode D (Polaroid Zine) · Corolla Altis |
