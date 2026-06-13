@@ -2072,3 +2072,4 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-13 20:10:43 +08] HEARTBEAT lag 97 min (prev=2026-06-13T18:33:47.042950+08:00)
 [2026-06-13 20:10:43 +08] Posting batch-n5-bbtb-mode-d-2026-06-12-20 (carousel) — notes: Series: Behind the Badge · Mode D (Polaroid Zine) · Corolla Altis
 [2026-06-13 20:11:11 +08] OK  batch-n5-bbtb-mode-d-2026-06-12-20 -> https://www.instagram.com/p/DZhozdWk1Pq/
+[2026-06-13 20:12:45 +08] run: no due posts
