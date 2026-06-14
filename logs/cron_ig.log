@@ -2107,3 +2107,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-14 16:33:47 +08] run: no due posts
 [2026-06-14 19:15:29 +08] HEARTBEAT lag 162 min (prev=2026-06-14T16:33:47.794787+08:00)
 [2026-06-14 19:15:29 +08] run: no due posts
+[2026-06-14 21:08:21 +08] HEARTBEAT lag 113 min (prev=2026-06-14T19:15:29.754680+08:00)
+[2026-06-14 21:08:21 +08] CATCH-UP batch-n6-bbtb-mode-a-2026-06-13-20 — 1.1h late, publishing
+[2026-06-14 21:08:21 +08] Posting batch-n6-bbtb-mode-a-2026-06-13-20 (carousel) — notes: Series: Behind the Badge · Mode A (Editorial Dark) · BMW F30
+[2026-06-14 21:08:55 +08] OK  batch-n6-bbtb-mode-a-2026-06-13-20 -> https://www.instagram.com/p/DZkUNIYEjqS/
