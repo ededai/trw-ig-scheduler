@@ -2097,3 +2097,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-14 09:37:36 +08] HEARTBEAT lag 146 min (prev=2026-06-14T07:11:45.027604+08:00)
 [2026-06-14 09:37:36 +08] run: no due posts
 [2026-06-14 09:56:31 +08] run: no due posts
+[2026-06-14 12:16:29 +08] HEARTBEAT lag 140 min (prev=2026-06-14T09:56:31.128790+08:00)
+[2026-06-14 12:16:29 +08] CATCH-UP igs-car-insurance-broker-b-d2 — 1.3h late, publishing
+[2026-06-14 12:16:29 +08] Posting igs-car-insurance-broker-b-d2 (story) — notes: IGS B for blog: car-insurance-broker
+[2026-06-14 12:16:39 +08] OK  igs-car-insurance-broker-b-d2 -> 18094474667120538
