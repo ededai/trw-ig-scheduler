@@ -1,20 +1,6 @@
 {
   "pending": [
     {
-      "id": "batch-v1-truth-beats-polish-2026-06-14-20",
-      "slot_time_sgt": "2026-06-15T20:00",
-      "type": "carousel",
-      "caption_file": "assets/batch-v1-truth-beats-polish-2026-06-14-20/caption.txt",
-      "image_paths": [
-        "assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_1.png",
-        "assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_2.png",
-        "assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_3.png"
-      ],
-      "notes": "Voice card · Truth beats polish",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "batch-v2-if-you-dont-need-it-2026-06-15-20",
       "slot_time_sgt": "2026-06-16T20:00",
       "type": "carousel",
@@ -71,18 +57,6 @@
         "assets/batch-n2-dm-mode-e-2026-06-09-20/slide_5.png"
       ],
       "notes": "Series: Driver's Manual · Mode E (Spec Sheet) · Brake pads in 10s",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-car-insurance-broker-c-d3",
-      "slot_time_sgt": "2026-06-15T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-car-insurance-broker/caption.txt",
-      "image_paths": [
-        "assets/igs-car-insurance-broker/igs_C.png"
-      ],
-      "notes": "IGS C for blog: car-insurance-broker",
       "status": "pending",
       "attempts": 0
     }
@@ -2502,6 +2476,38 @@
       "posted_url": "https://www.instagram.com/p/DZkUNIYEjqS/",
       "posted_at": "2026-06-14 21:08 SGT",
       "post_id": "18087726662378988"
+    },
+    {
+      "id": "batch-v1-truth-beats-polish-2026-06-14-20",
+      "slot_time_sgt": "2026-06-15T20:00",
+      "type": "carousel",
+      "caption_file": "assets/batch-v1-truth-beats-polish-2026-06-14-20/caption.txt",
+      "image_paths": [
+        "assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_1.png",
+        "assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_2.png",
+        "assets/batch-v1-truth-beats-polish-2026-06-14-20/slide_3.png"
+      ],
+      "notes": "Voice card · Truth beats polish",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DZnNy4lEgJU/",
+      "posted_at": "2026-06-16 00:10 SGT",
+      "post_id": "17949779586078973"
+    },
+    {
+      "id": "igs-car-insurance-broker-c-d3",
+      "slot_time_sgt": "2026-06-15T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-broker/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-broker/igs_C.png"
+      ],
+      "notes": "IGS C for blog: car-insurance-broker",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18083975306453213",
+      "posted_at": "2026-06-16 00:10 SGT",
+      "post_id": "18083975306453213"
     }
   ],
   "failed": [

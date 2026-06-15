@@ -158,3 +158,5 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-13 20:00 | Carousel | The honest Toyota Corolla Altis brief, from the workshop floor in Singapore. | https://www.instagram.com/p/DZhozdWk1Pq/ | Series: Behind the Badge · Mode D (Polaroid Zine) · Corolla Altis |
 | 2026-06-14 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18094474667120538 | IGS B for blog: car-insurance-broker |
 | 2026-06-14 20:00 | Carousel | The honest BMW F30 brief, from a workshop floor in Singapore. | https://www.instagram.com/p/DZkUNIYEjqS/ | Series: Behind the Badge · Mode A (Editorial Dark) · BMW F30 |
+| 2026-06-15 20:00 | Carousel | Truth beats polish. Always. | https://www.instagram.com/p/DZnNy4lEgJU/ | Voice card · Truth beats polish |
+| 2026-06-15 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18083975306453213 | IGS C for blog: car-insurance-broker |
