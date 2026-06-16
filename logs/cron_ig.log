@@ -2171,3 +2171,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-16 22:33:18 +08] CATCH-UP batch-v2-if-you-dont-need-it-2026-06-15-20 — 2.6h late, publishing
 [2026-06-16 22:33:18 +08] Posting batch-v2-if-you-dont-need-it-2026-06-15-20 (carousel) — notes: Voice card · If you don't need it, we'll tell you
 [2026-06-16 22:33:42 +08] OK  batch-v2-if-you-dont-need-it-2026-06-15-20 -> https://www.instagram.com/p/DZpnf9uGkfQ/
+[2026-06-16 23:23:05 +08] HEARTBEAT lag 50 min (prev=2026-06-16T22:33:18.281693+08:00)
+[2026-06-16 23:23:05 +08] run: no due posts
