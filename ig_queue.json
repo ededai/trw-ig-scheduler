@@ -1,20 +1,6 @@
 {
   "pending": [
     {
-      "id": "batch-v2-if-you-dont-need-it-2026-06-15-20",
-      "slot_time_sgt": "2026-06-16T20:00",
-      "type": "carousel",
-      "caption_file": "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/caption.txt",
-      "image_paths": [
-        "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_1.png",
-        "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_2.png",
-        "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_3.png"
-      ],
-      "notes": "Voice card · If you don't need it, we'll tell you",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "batch-v3-truth-not-sale-2026-06-16-20",
       "slot_time_sgt": "2026-06-17T20:00",
       "type": "carousel",
@@ -2547,6 +2533,23 @@
       "posted_url": "18192782752371044",
       "posted_at": "2026-06-16 17:40 SGT",
       "post_id": "18192782752371044"
+    },
+    {
+      "id": "batch-v2-if-you-dont-need-it-2026-06-15-20",
+      "slot_time_sgt": "2026-06-16T20:00",
+      "type": "carousel",
+      "caption_file": "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/caption.txt",
+      "image_paths": [
+        "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_1.png",
+        "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_2.png",
+        "assets/batch-v2-if-you-dont-need-it-2026-06-15-20/slide_3.png"
+      ],
+      "notes": "Voice card · If you don't need it, we'll tell you",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DZpnf9uGkfQ/",
+      "posted_at": "2026-06-16 22:33 SGT",
+      "post_id": "18131971051597318"
     }
   ],
   "failed": [
