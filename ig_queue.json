@@ -1,20 +1,6 @@
 {
   "pending": [
     {
-      "id": "batch-v3-truth-not-sale-2026-06-16-20",
-      "slot_time_sgt": "2026-06-17T20:00",
-      "type": "carousel",
-      "caption_file": "assets/batch-v3-truth-not-sale-2026-06-16-20/caption.txt",
-      "image_paths": [
-        "assets/batch-v3-truth-not-sale-2026-06-16-20/slide_1.png",
-        "assets/batch-v3-truth-not-sale-2026-06-16-20/slide_2.png",
-        "assets/batch-v3-truth-not-sale-2026-06-16-20/slide_3.png"
-      ],
-      "notes": "Voice card · Truth, not the sale",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "batch-n1-st-mode-a-2026-06-08-20",
       "slot_time_sgt": "2026-06-18T20:00",
       "type": "carousel",
@@ -2553,6 +2539,23 @@
       "posted_url": "18219318847322201",
       "posted_at": "2026-06-17 12:18 SGT",
       "post_id": "18219318847322201"
+    },
+    {
+      "id": "batch-v3-truth-not-sale-2026-06-16-20",
+      "slot_time_sgt": "2026-06-17T20:00",
+      "type": "carousel",
+      "caption_file": "assets/batch-v3-truth-not-sale-2026-06-16-20/caption.txt",
+      "image_paths": [
+        "assets/batch-v3-truth-not-sale-2026-06-16-20/slide_1.png",
+        "assets/batch-v3-truth-not-sale-2026-06-16-20/slide_2.png",
+        "assets/batch-v3-truth-not-sale-2026-06-16-20/slide_3.png"
+      ],
+      "notes": "Voice card · Truth, not the sale",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DZsBbXNkyul/",
+      "posted_at": "2026-06-17 20:58 SGT",
+      "post_id": "18106428830050609"
     }
   ],
   "failed": [
