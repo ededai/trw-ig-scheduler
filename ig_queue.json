@@ -47,18 +47,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb-b-d2",
-      "slot_time_sgt": "2026-06-17T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb/caption.txt",
-      "image_paths": [
-        "assets/igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb/igs_B.png"
-      ],
-      "notes": "IGS B for blog: cat-a-coe-june-2026-hits-126009-whats-driving-the-climb",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb-c-d3",
       "slot_time_sgt": "2026-06-18T20:00",
       "type": "story",
@@ -2550,6 +2538,21 @@
       "posted_url": "https://www.instagram.com/p/DZpnf9uGkfQ/",
       "posted_at": "2026-06-16 22:33 SGT",
       "post_id": "18131971051597318"
+    },
+    {
+      "id": "igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb-b-d2",
+      "slot_time_sgt": "2026-06-17T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb/caption.txt",
+      "image_paths": [
+        "assets/igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb/igs_B.png"
+      ],
+      "notes": "IGS B for blog: cat-a-coe-june-2026-hits-126009-whats-driving-the-climb",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18219318847322201",
+      "posted_at": "2026-06-17 12:18 SGT",
+      "post_id": "18219318847322201"
     }
   ],
   "failed": [
