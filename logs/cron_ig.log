@@ -2219,3 +2219,8 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-18 16:56:16 +08] HEARTBEAT lag 269 min (prev=2026-06-18T12:27:12.729480+08:00)
 [2026-06-18 16:56:16 +08] run: no due posts
 [2026-06-18 17:04:27 +08] run: no due posts
+[2026-06-18 20:28:57 +08] HEARTBEAT lag 205 min (prev=2026-06-18T17:04:27.015504+08:00)
+[2026-06-18 20:28:57 +08] Posting batch-n1-st-mode-a-2026-06-08-20 (carousel) — notes: Series: Straight Talk · Mode A (Editorial Dark) · 3 questions
+[2026-06-18 20:29:34 +08] OK  batch-n1-st-mode-a-2026-06-08-20 -> https://www.instagram.com/p/DZui3zRFPMP/
+[2026-06-18 20:29:35 +08] Posting igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb-c-d3 (story) — notes: IGS C for blog: cat-a-coe-june-2026-hits-126009-whats-driving-the-climb
+[2026-06-18 20:29:47 +08] OK  igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb-c-d3 -> 17883233379435215

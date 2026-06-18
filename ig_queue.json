@@ -1,22 +1,6 @@
 {
   "pending": [
     {
-      "id": "batch-n1-st-mode-a-2026-06-08-20",
-      "slot_time_sgt": "2026-06-18T20:00",
-      "type": "carousel",
-      "caption_file": "assets/batch-n1-st-mode-a-2026-06-08-20/caption.txt",
-      "image_paths": [
-        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_1.png",
-        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_2.png",
-        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_3.png",
-        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_4.png",
-        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_5.png"
-      ],
-      "notes": "Series: Straight Talk · Mode A (Editorial Dark) · 3 questions",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "batch-n2-dm-mode-e-2026-06-09-20",
       "slot_time_sgt": "2026-06-19T20:00",
       "type": "carousel",
@@ -29,18 +13,6 @@
         "assets/batch-n2-dm-mode-e-2026-06-09-20/slide_5.png"
       ],
       "notes": "Series: Driver's Manual · Mode E (Spec Sheet) · Brake pads in 10s",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb-c-d3",
-      "slot_time_sgt": "2026-06-18T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb/caption.txt",
-      "image_paths": [
-        "assets/igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb/igs_C.png"
-      ],
-      "notes": "IGS C for blog: cat-a-coe-june-2026-hits-126009-whats-driving-the-climb",
       "status": "pending",
       "attempts": 0
     }
@@ -2556,6 +2528,40 @@
       "posted_url": "https://www.instagram.com/p/DZsBbXNkyul/",
       "posted_at": "2026-06-17 20:58 SGT",
       "post_id": "18106428830050609"
+    },
+    {
+      "id": "batch-n1-st-mode-a-2026-06-08-20",
+      "slot_time_sgt": "2026-06-18T20:00",
+      "type": "carousel",
+      "caption_file": "assets/batch-n1-st-mode-a-2026-06-08-20/caption.txt",
+      "image_paths": [
+        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_1.png",
+        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_2.png",
+        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_3.png",
+        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_4.png",
+        "assets/batch-n1-st-mode-a-2026-06-08-20/slide_5.png"
+      ],
+      "notes": "Series: Straight Talk · Mode A (Editorial Dark) · 3 questions",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DZui3zRFPMP/",
+      "posted_at": "2026-06-18 20:29 SGT",
+      "post_id": "18206301676351646"
+    },
+    {
+      "id": "igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb-c-d3",
+      "slot_time_sgt": "2026-06-18T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb/caption.txt",
+      "image_paths": [
+        "assets/igs-cat-a-coe-june-2026-hits-126009-whats-driving-the-climb/igs_C.png"
+      ],
+      "notes": "IGS C for blog: cat-a-coe-june-2026-hits-126009-whats-driving-the-climb",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17883233379435215",
+      "posted_at": "2026-06-18 20:29 SGT",
+      "post_id": "17883233379435215"
     }
   ],
   "failed": [
