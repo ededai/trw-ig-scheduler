@@ -2253,3 +2253,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-19 20:56:42 +08] Posting batch-n2-dm-mode-e-2026-06-09-20 (carousel) — notes: Series: Driver's Manual · Mode E (Spec Sheet) · Brake pads in 10s
 [2026-06-19 20:57:31 +08] OK  batch-n2-dm-mode-e-2026-06-09-20 -> https://www.instagram.com/p/DZxK290H8e5/
 [2026-06-19 20:59:45 +08] run: no due posts
+[2026-06-20 00:09:49 +08] HEARTBEAT lag 190 min (prev=2026-06-19T20:59:45.692908+08:00)
+[2026-06-20 00:09:49 +08] run: no due posts
