@@ -166,3 +166,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-17 20:00 | Carousel | I'm here for the truth, not the sale. That's the whole brief. | https://www.instagram.com/p/DZsBbXNkyul/ | Voice card · Truth, not the sale |
 | 2026-06-18 20:00 | Carousel | Ask these three questions before any car workshop in Singapore touches your car: what part are you putting in, why now, and how does the labour break down. | https://www.instagram.com/p/DZui3zRFPMP/ | Series: Straight Talk · Mode A (Editorial Dark) · 3 questions |
 | 2026-06-18 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17883233379435215 | IGS C for blog: cat-a-coe-june-2026-hits-126009-whats-driving-the-climb |
+| 2026-06-19 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17896181604471564 | IGS A for blog: car-insurance-broker-vs-direct-singapore |

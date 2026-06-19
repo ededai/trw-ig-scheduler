@@ -17,18 +17,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-car-insurance-broker-vs-direct-singapore-a-d1",
-      "slot_time_sgt": "2026-06-19T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-car-insurance-broker-vs-direct-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-car-insurance-broker-vs-direct-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: car-insurance-broker-vs-direct-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-car-insurance-broker-vs-direct-singapore-b-d2",
       "slot_time_sgt": "2026-06-20T11:00",
       "type": "story",
@@ -2598,6 +2586,21 @@
       "posted_url": "17883233379435215",
       "posted_at": "2026-06-18 20:29 SGT",
       "post_id": "17883233379435215"
+    },
+    {
+      "id": "igs-car-insurance-broker-vs-direct-singapore-a-d1",
+      "slot_time_sgt": "2026-06-19T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-insurance-broker-vs-direct-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-insurance-broker-vs-direct-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-insurance-broker-vs-direct-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17896181604471564",
+      "posted_at": "2026-06-19 17:21 SGT",
+      "post_id": "17896181604471564"
     }
   ],
   "failed": [
