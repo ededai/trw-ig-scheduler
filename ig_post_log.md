@@ -168,3 +168,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-18 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17883233379435215 | IGS C for blog: cat-a-coe-june-2026-hits-126009-whats-driving-the-climb |
 | 2026-06-19 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17896181604471564 | IGS A for blog: car-insurance-broker-vs-direct-singapore |
 | 2026-06-19 20:00 | Carousel | Check your own brake pads in 10 seconds. No hoist, no tools beyond your phone torch. | https://www.instagram.com/p/DZxK290H8e5/ | Series: Driver's Manual · Mode E (Spec Sheet) · Brake pads in 10s |
+| 2026-06-20 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18395520475093133 | IGS B for blog: car-insurance-broker-vs-direct-singapore |

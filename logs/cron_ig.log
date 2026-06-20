@@ -2272,3 +2272,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-20 07:49:30 +08] run: no due posts
 [2026-06-20 09:36:44 +08] HEARTBEAT lag 107 min (prev=2026-06-20T07:49:30.086884+08:00)
 [2026-06-20 09:36:44 +08] run: no due posts
+[2026-06-20 11:52:41 +08] HEARTBEAT lag 136 min (prev=2026-06-20T09:36:44.258257+08:00)
+[2026-06-20 11:52:41 +08] CATCH-UP igs-car-insurance-broker-vs-direct-singapore-b-d2 — 0.9h late, publishing
+[2026-06-20 11:52:41 +08] Posting igs-car-insurance-broker-vs-direct-singapore-b-d2 (story) — notes: IGS B for blog: car-insurance-broker-vs-direct-singapore
+[2026-06-20 11:52:51 +08] OK  igs-car-insurance-broker-vs-direct-singapore-b-d2 -> 18395520475093133
