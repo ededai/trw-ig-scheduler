@@ -2321,3 +2321,4 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-21 21:25:06 +08] OK  igs-car-insurance-broker-vs-direct-singapore-c-d3 -> 18093031637255600
 [2026-06-21 23:20:49 +08] HEARTBEAT lag 116 min (prev=2026-06-21T21:24:52.071848+08:00)
 [2026-06-21 23:20:49 +08] run: no due posts
+[2026-06-21 23:27:15 +08] run: no due posts
