@@ -44,6 +44,7 @@ HERE = Path(__file__).resolve().parent
 WP_ORIGIN = "https://therightworkshop.com"
 BLOG_PAGE_ID = 475
 TOPICS_HUB_ID = 1597
+NEWS_PAGE_ID = 1776          # /news/ — search scoped to its own grid (Ed-locked 2026-05-16)
 TOPIC_TAGS_PATH = HERE / "topic_tags.json"
 
 # Derive the canonical corpus + init <script> tags and the rank patterns from
@@ -119,11 +120,11 @@ def load_topic_tags():
     return {k: v for k, v in d.items() if not k.startswith("_")}
 
 
-def parse_blog_cards(blog_raw):
-    """Master article list from /blog/ post-cards: [(slug, title)] in page order."""
+def parse_blog_cards(blog_raw, selector="a.post-card"):
+    """Article list from post-cards: [(slug, title)] in page order."""
     soup = BeautifulSoup(blog_raw, "html.parser")
     out, seen = [], set()
-    for a in soup.select("a.post-card"):
+    for a in soup.select(selector):
         href = a.get("href", "")
         m = re.match(r"^/([^/]+)/$", href)
         if not m:
@@ -245,6 +246,14 @@ def main():
     changed = 0
     changed += refresh_page(env, BLOG_PAGE_ID, "/blog/", all_corpus, args.apply)
     changed += refresh_page(env, TOPICS_HUB_ID, "/topics/", all_corpus, args.apply)
+
+    # /news/ search is scoped to its own grid cards (Ed-locked: category page
+    # searches its own articles only). Build that corpus from the live /news/ grid.
+    overrides = T.load_keyword_overrides()
+    news_cards = parse_blog_cards(get_raw(env, NEWS_PAGE_ID), "section.post-grid-section a.post-card")
+    news_corpus = [T.corpus_item(s, t, tags_by_slug.get(s, []), overrides) for s, t in news_cards]
+    if news_corpus:
+        changed += refresh_page(env, NEWS_PAGE_ID, "/news/", news_corpus, args.apply)
 
     tag_pages = wp_get(env, f"/pages?parent={TOPICS_HUB_ID}&per_page=100&_fields=id,slug")
     for tp in sorted(tag_pages, key=lambda p: p["slug"]):
