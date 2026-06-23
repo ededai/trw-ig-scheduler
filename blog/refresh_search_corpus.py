@@ -180,13 +180,12 @@ def _build_new_raw(raw, corpus):
             scripts right after the section, inside its existing wp:html block.
     Returns (None, reason) when there is nothing to do.
     """
-    # Path 1
-    m = T.SEARCH_BLOCK_RE.search(raw)
-    if m:
-        scope, chip = extract_scope_chip(m.group(0))
-        new_block = T.build_search_bar(corpus, scope, chip)
-        return (raw[:m.start()] + new_block + raw[m.end():], "block")
-    # Path 2: corpus + init exist, just split by wp:html comments
+    # Path 1: corpus + init already present -> in-place swap of the corpus array,
+    # rank() and the Enter handler ONLY. We deliberately do NOT rebuild the whole
+    # <section> block: WordPress KSES re-orders the chip <svg> attributes on every
+    # save, so a full-block rebuild never byte-matches the stored markup and would
+    # re-push every cron run forever (idempotency thrash). The in-place swap never
+    # touches the KSES-normalised SVG, so identical corpus => identical bytes => no-op.
     if "TRW_SEARCH_CORPUS" in raw and "function rank(q)" in raw:
         new = _CORPUS_ASSIGN_RE.sub(
             lambda _m: "window.TRW_SEARCH_CORPUS=" + json.dumps(corpus, ensure_ascii=False) + ";", raw, count=1)
