@@ -2,7 +2,7 @@
   "pending": [
     {
       "id": "eng-mon-tyre-age",
-      "slot_time_sgt": "2026-06-29T20:00",
+      "slot_time_sgt": "2026-06-25T20:00",
       "type": "carousel",
       "caption_file": "assets/eng-mon-tyre-age/caption.txt",
       "image_paths": [
@@ -18,7 +18,7 @@
     },
     {
       "id": "eng-tue-40k-80",
-      "slot_time_sgt": "2026-06-30T20:00",
+      "slot_time_sgt": "2026-06-26T20:00",
       "type": "carousel",
       "caption_file": "assets/eng-tue-40k-80/caption.txt",
       "image_paths": [
@@ -34,7 +34,7 @@
     },
     {
       "id": "eng-wed-100k-repairs",
-      "slot_time_sgt": "2026-07-01T20:00",
+      "slot_time_sgt": "2026-06-27T20:00",
       "type": "carousel",
       "caption_file": "assets/eng-wed-100k-repairs/caption.txt",
       "image_paths": [
@@ -50,7 +50,7 @@
     },
     {
       "id": "eng-thu-aircon",
-      "slot_time_sgt": "2026-07-02T20:00",
+      "slot_time_sgt": "2026-06-28T20:00",
       "type": "carousel",
       "caption_file": "assets/eng-thu-aircon/caption.txt",
       "image_paths": [
@@ -66,7 +66,7 @@
     },
     {
       "id": "eng-fri-5-checks",
-      "slot_time_sgt": "2026-07-03T20:00",
+      "slot_time_sgt": "2026-06-29T20:00",
       "type": "carousel",
       "caption_file": "assets/eng-fri-5-checks/caption.txt",
       "image_paths": [
