@@ -1,5 +1,86 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "eng-mon-tyre-age",
+      "slot_time_sgt": "2026-06-29T20:00",
+      "type": "carousel",
+      "caption_file": "assets/eng-mon-tyre-age/caption.txt",
+      "image_paths": [
+        "assets/eng-mon-tyre-age/slide_1.png",
+        "assets/eng-mon-tyre-age/slide_2.png",
+        "assets/eng-mon-tyre-age/slide_3.png",
+        "assets/eng-mon-tyre-age/slide_4.png",
+        "assets/eng-mon-tyre-age/slide_5.png"
+      ],
+      "notes": "Engine wk1 · Driver's Manual · Mode A · Tyre date code",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "eng-tue-40k-80",
+      "slot_time_sgt": "2026-06-30T20:00",
+      "type": "carousel",
+      "caption_file": "assets/eng-tue-40k-80/caption.txt",
+      "image_paths": [
+        "assets/eng-tue-40k-80/slide_1.png",
+        "assets/eng-tue-40k-80/slide_2.png",
+        "assets/eng-tue-40k-80/slide_3.png",
+        "assets/eng-tue-40k-80/slide_4.png",
+        "assets/eng-tue-40k-80/slide_5.png"
+      ],
+      "notes": "Engine wk1 · Cost of Waiting · Mode C · $40k car $80 service",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "eng-wed-100k-repairs",
+      "slot_time_sgt": "2026-07-01T20:00",
+      "type": "carousel",
+      "caption_file": "assets/eng-wed-100k-repairs/caption.txt",
+      "image_paths": [
+        "assets/eng-wed-100k-repairs/slide_1.png",
+        "assets/eng-wed-100k-repairs/slide_2.png",
+        "assets/eng-wed-100k-repairs/slide_3.png",
+        "assets/eng-wed-100k-repairs/slide_4.png",
+        "assets/eng-wed-100k-repairs/slide_5.png"
+      ],
+      "notes": "Engine wk1 · Driver's Manual · Mode B · 3 repairs after 100k",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "eng-thu-aircon",
+      "slot_time_sgt": "2026-07-02T20:00",
+      "type": "carousel",
+      "caption_file": "assets/eng-thu-aircon/caption.txt",
+      "image_paths": [
+        "assets/eng-thu-aircon/slide_1.png",
+        "assets/eng-thu-aircon/slide_2.png",
+        "assets/eng-thu-aircon/slide_3.png",
+        "assets/eng-thu-aircon/slide_4.png",
+        "assets/eng-thu-aircon/slide_5.png"
+      ],
+      "notes": "Engine wk1 · Warning Light Decoded · Mode D · Aircon not cold",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "eng-fri-5-checks",
+      "slot_time_sgt": "2026-07-03T20:00",
+      "type": "carousel",
+      "caption_file": "assets/eng-fri-5-checks/caption.txt",
+      "image_paths": [
+        "assets/eng-fri-5-checks/slide_1.png",
+        "assets/eng-fri-5-checks/slide_2.png",
+        "assets/eng-fri-5-checks/slide_3.png",
+        "assets/eng-fri-5-checks/slide_4.png",
+        "assets/eng-fri-5-checks/slide_5.png"
+      ],
+      "notes": "Engine wk1 · Straight Talk · Mode A · 5 free checks",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
