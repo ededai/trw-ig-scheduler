@@ -2435,3 +2435,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-25 18:19:39 +08] HEARTBEAT lag 148 min (prev=2026-06-25T15:52:03.308835+08:00)
 [2026-06-25 18:19:39 +08] run: no due posts
 [2026-06-25 18:30:21 +08] run: no due posts
+[2026-06-25 20:35:05 +08] HEARTBEAT lag 125 min (prev=2026-06-25T18:30:21.936391+08:00)
+[2026-06-25 20:35:05 +08] CATCH-UP eng-mon-tyre-age — 0.6h late, publishing
+[2026-06-25 20:35:05 +08] Posting eng-mon-tyre-age (carousel) — notes: Engine wk1 · Driver's Manual · Mode A · Tyre date code
+[2026-06-25 20:35:48 +08] OK  eng-mon-tyre-age -> https://www.instagram.com/p/DaAlJcIEiy6/

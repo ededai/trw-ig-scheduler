@@ -1,22 +1,6 @@
 {
   "pending": [
     {
-      "id": "eng-mon-tyre-age",
-      "slot_time_sgt": "2026-06-25T20:00",
-      "type": "carousel",
-      "caption_file": "assets/eng-mon-tyre-age/caption.txt",
-      "image_paths": [
-        "assets/eng-mon-tyre-age/slide_1.png",
-        "assets/eng-mon-tyre-age/slide_2.png",
-        "assets/eng-mon-tyre-age/slide_3.png",
-        "assets/eng-mon-tyre-age/slide_4.png",
-        "assets/eng-mon-tyre-age/slide_5.png"
-      ],
-      "notes": "Engine wk1 · Driver's Manual · Mode A · Tyre date code",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "eng-tue-40k-80",
       "slot_time_sgt": "2026-06-26T20:00",
       "type": "carousel",
@@ -2690,6 +2674,25 @@
       "posted_url": "18093031637255600",
       "posted_at": "2026-06-21 21:25 SGT",
       "post_id": "18093031637255600"
+    },
+    {
+      "id": "eng-mon-tyre-age",
+      "slot_time_sgt": "2026-06-25T20:00",
+      "type": "carousel",
+      "caption_file": "assets/eng-mon-tyre-age/caption.txt",
+      "image_paths": [
+        "assets/eng-mon-tyre-age/slide_1.png",
+        "assets/eng-mon-tyre-age/slide_2.png",
+        "assets/eng-mon-tyre-age/slide_3.png",
+        "assets/eng-mon-tyre-age/slide_4.png",
+        "assets/eng-mon-tyre-age/slide_5.png"
+      ],
+      "notes": "Engine wk1 · Driver's Manual · Mode A · Tyre date code",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DaAlJcIEiy6/",
+      "posted_at": "2026-06-25 20:35 SGT",
+      "post_id": "18200990857317760"
     }
   ],
   "failed": [
