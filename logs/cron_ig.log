@@ -2456,3 +2456,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-26 06:46:58 +08] run: no due posts
 [2026-06-26 07:53:54 +08] HEARTBEAT lag 67 min (prev=2026-06-26T06:46:58.266261+08:00)
 [2026-06-26 07:53:55 +08] run: no due posts
+[2026-06-26 09:30:38 +08] HEARTBEAT lag 97 min (prev=2026-06-26T07:53:54.994253+08:00)
+[2026-06-26 09:30:38 +08] run: no due posts
