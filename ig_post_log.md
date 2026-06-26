@@ -171,3 +171,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-20 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18395520475093133 | IGS B for blog: car-insurance-broker-vs-direct-singapore |
 | 2026-06-21 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18093031637255600 | IGS C for blog: car-insurance-broker-vs-direct-singapore |
 | 2026-06-25 20:00 | Carousel | That brand-new tyre your shop just fitted in Singapore might've been built before your last car. | https://www.instagram.com/p/DaAlJcIEiy6/ | Engine wk1 · Driver's Manual · Mode A · Tyre date code |
+| 2026-06-26 20:00 | Carousel | The cheapest line on your service sheet is usually the one guarding the most expensive part of the car. | https://www.instagram.com/p/DaDOUSSkjBn/ | Engine wk1 · Cost of Waiting · Mode C · $40k car $80 service |
