@@ -1,22 +1,6 @@
 {
   "pending": [
     {
-      "id": "eng-wed-100k-repairs",
-      "slot_time_sgt": "2026-06-27T20:00",
-      "type": "carousel",
-      "caption_file": "assets/eng-wed-100k-repairs/caption.txt",
-      "image_paths": [
-        "assets/eng-wed-100k-repairs/slide_1.png",
-        "assets/eng-wed-100k-repairs/slide_2.png",
-        "assets/eng-wed-100k-repairs/slide_3.png",
-        "assets/eng-wed-100k-repairs/slide_4.png",
-        "assets/eng-wed-100k-repairs/slide_5.png"
-      ],
-      "notes": "Engine wk1 · Driver's Manual · Mode B · 3 repairs after 100k",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "eng-thu-aircon",
       "slot_time_sgt": "2026-06-28T20:00",
       "type": "carousel",
@@ -2735,6 +2719,25 @@
       "posted_url": "18602465527039618",
       "posted_at": "2026-06-27 17:17 SGT",
       "post_id": "18602465527039618"
+    },
+    {
+      "id": "eng-wed-100k-repairs",
+      "slot_time_sgt": "2026-06-27T20:00",
+      "type": "carousel",
+      "caption_file": "assets/eng-wed-100k-repairs/caption.txt",
+      "image_paths": [
+        "assets/eng-wed-100k-repairs/slide_1.png",
+        "assets/eng-wed-100k-repairs/slide_2.png",
+        "assets/eng-wed-100k-repairs/slide_3.png",
+        "assets/eng-wed-100k-repairs/slide_4.png",
+        "assets/eng-wed-100k-repairs/slide_5.png"
+      ],
+      "notes": "Engine wk1 · Driver's Manual · Mode B · 3 repairs after 100k",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DaFsrqUEjhD/",
+      "posted_at": "2026-06-27 20:17 SGT",
+      "post_id": "17948996052013499"
     }
   ],
   "failed": [

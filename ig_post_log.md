@@ -173,3 +173,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-25 20:00 | Carousel | That brand-new tyre your shop just fitted in Singapore might've been built before your last car. | https://www.instagram.com/p/DaAlJcIEiy6/ | Engine wk1 · Driver's Manual · Mode A · Tyre date code |
 | 2026-06-26 20:00 | Carousel | The cheapest line on your service sheet is usually the one guarding the most expensive part of the car. | https://www.instagram.com/p/DaDOUSSkjBn/ | Engine wk1 · Cost of Waiting · Mode C · $40k car $80 service |
 | 2026-06-27 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18602465527039618 | IGS A for blog: timing-belt-vs-timing-chain-singapore |
+| 2026-06-27 20:00 | Carousel | Past 100,000 km in Singapore, three repairs tend to turn up whether you want them or not. | https://www.instagram.com/p/DaFsrqUEjhD/ | Engine wk1 · Driver's Manual · Mode B · 3 repairs after 100k |
