@@ -2512,3 +2512,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-27 20:17:54 +08] OK  eng-wed-100k-repairs -> https://www.instagram.com/p/DaFsrqUEjhD/
 [2026-06-27 22:10:41 +08] HEARTBEAT lag 113 min (prev=2026-06-27T20:17:12.835096+08:00)
 [2026-06-27 22:10:41 +08] run: no due posts
+[2026-06-27 23:37:40 +08] HEARTBEAT lag 87 min (prev=2026-06-27T22:10:41.062480+08:00)
+[2026-06-27 23:37:40 +08] run: no due posts
