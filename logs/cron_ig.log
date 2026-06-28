@@ -2536,3 +2536,7 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-28 08:15:27 +08] run: no due posts
 [2026-06-28 09:34:58 +08] HEARTBEAT lag 80 min (prev=2026-06-28T08:15:27.735168+08:00)
 [2026-06-28 09:34:58 +08] run: no due posts
+[2026-06-28 12:00:03 +08] HEARTBEAT lag 145 min (prev=2026-06-28T09:34:58.322605+08:00)
+[2026-06-28 12:00:03 +08] CATCH-UP igs-timing-belt-vs-timing-chain-singapore-b-d2 — 1.0h late, publishing
+[2026-06-28 12:00:03 +08] Posting igs-timing-belt-vs-timing-chain-singapore-b-d2 (story) — notes: IGS B for blog: timing-belt-vs-timing-chain-singapore
+[2026-06-28 12:00:10 +08] OK  igs-timing-belt-vs-timing-chain-singapore-b-d2 -> 18370619935230852
