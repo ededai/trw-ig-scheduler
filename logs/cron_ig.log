@@ -2551,3 +2551,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-06-28 20:04:19 +08] Posting eng-thu-aircon (carousel) — notes: Engine wk1 · Warning Light Decoded · Mode D · Aircon not cold
 [2026-06-28 20:04:58 +08] OK  eng-thu-aircon -> https://www.instagram.com/p/DaIQA5HE8WL/
 [2026-06-28 20:05:36 +08] run: no due posts
+[2026-06-28 22:08:52 +08] HEARTBEAT lag 123 min (prev=2026-06-28T20:05:36.788060+08:00)
+[2026-06-28 22:08:52 +08] run: no due posts
