@@ -26724,3 +26724,85 @@ Total cards refreshed: 0
 All 4 articles OK
   TG creds missing — skipping notification
 ===== 2026-06-27T17:37:08Z daily_blog_refresh done (exit=1) =====
+
+===== 2026-06-28T17:43:04Z daily_blog_refresh start =====
+--- step 1: sync_blog_hub_posts (new posts + category fixes) ---
+sync_blog_hub_posts
+Fetching WP pages with blog categories...
+  Excluded 52 /brands/ + /topics/ hub pages (not articles).
+  Found 48 pages in Guides/Car Tips/News
+Fetching current /blog/ HTML...
+ERROR: #postGrid not found in /blog/ HTML.
+step 1: sync_blog_hub_posts (new posts + category fixes) FAILED rc=1
+--- step 2: refresh_trw_blog_index --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+Traceback (most recent call last):
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 624, in <module>
+    main()
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 618, in main
+    sys.exit(run("apply"))
+             ^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 521, in run
+    picked = pick_featured(cards, bucket, cfg)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/trw-ig-scheduler/trw-ig-scheduler/blog/refresh_trw_blog_index.py", line 363, in pick_featured
+    return eligible_sorted[bucket % len(eligible_sorted)]
+                           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: integer modulo by zero
+step 2: refresh_trw_blog_index --apply FAILED rc=1
+--- step 3: fix_article_featured_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+ARTICLE FEATURED IMAGE FIX  |  mode=apply  |  0 articles
+========================================================================
+
+0 of 0 articles need featured_media update. Errors: 0
+No-op.
+--- step 4: fix_article_schema_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+ARTICLE SCHEMA IMAGE FIX  |  mode=apply  |  0 articles
+========================================================================
+
+0 of 0 articles need schema fix.
+No-op.
+--- step 5b: refresh_topic_tags_json (auto-merge from WP tags) ---
+loaded topic_tags.json: 37 entries
+WP tag taxonomy: 0 tags
+WP pages scanned: 127
+topic_tags.json: no changes needed.
+--- step 5c: sync_topic_pages (/topics/{tag}/ cards) ---
+Pillars in topic_tags: 18
+  ✓ /topics/aircon/ (1598) — already has 1 card(s), no adds needed
+  ✓ /topics/battery/ (1602) — already has 1 card(s), no adds needed
+  ✓ /topics/brakes/ (1606) — already has 1 card(s), no adds needed
+  ✓ /topics/car-insurance/ (5822) — already has 2 card(s), no adds needed
+  ✓ /topics/coe/ (1610) — already has 8 card(s), no adds needed
+  ✓ /topics/coolant/ (1612) — already has 1 card(s), no adds needed
+  ✓ /topics/driving-tips/ (1620) — already has 2 card(s), no adds needed
+  ✓ /topics/electrical/ (6864) — already has 1 card(s), no adds needed
+  ✓ /topics/erp/ (6328) — already has 3 card(s), no adds needed
+  ✓ /topics/ev/ (6333) — already has 1 card(s), no adds needed
+  ✓ /topics/ownership/ (1636) — already has 14 card(s), no adds needed
+  ✓ /topics/regulation/ (1646) — already has 7 card(s), no adds needed
+  ✓ /topics/scrap-or-export/ (6866) — already has 4 card(s), no adds needed
+  ✓ /topics/selling-your-car/ (5844) — already has 2 card(s), no adds needed
+  ✓ /topics/servicing/ (1650) — already has 9 card(s), no adds needed
+  ✓ /topics/tyres/ (1656) — already has 1 card(s), no adds needed
+  ✓ /topics/used-car/ (1658) — already has 2 card(s), no adds needed
+  ✓ /topics/workshop/ (1664) — already has 10 card(s), no adds needed
+
+Total pillars touched: 0
+Total cards added: 0 (LIVE)
+--- step 5d: refresh_search_corpus (keyworded site search on all search pages) ---
+No post-cards found on /blog/ — aborting (refusing to write an empty corpus).
+step 5d: refresh_search_corpus (keyworded site search on all search pages) FAILED rc=1
+--- step 6: refresh_card_excerpts (defensive sweep) ---
+Building slug -> excerpt cache...
+  cached 52 article excerpts
+
+Total cards refreshed: 0
+--- step 7: notify_thumb_check (Telegram sanity check) ---
+All 4 articles OK
+  TG creds missing — skipping notification
+===== 2026-06-28T17:43:53Z daily_blog_refresh done (exit=1) =====
