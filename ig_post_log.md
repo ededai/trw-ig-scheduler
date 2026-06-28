@@ -175,3 +175,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-27 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18602465527039618 | IGS A for blog: timing-belt-vs-timing-chain-singapore |
 | 2026-06-27 20:00 | Carousel | Past 100,000 km in Singapore, three repairs tend to turn up whether you want them or not. | https://www.instagram.com/p/DaFsrqUEjhD/ | Engine wk1 · Driver's Manual · Mode B · 3 repairs after 100k |
 | 2026-06-28 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18370619935230852 | IGS B for blog: timing-belt-vs-timing-chain-singapore |
+| 2026-06-28 20:00 | Carousel | When your car aircon stops blowing cold in this heat, it's usually the cheap fix, not the dear one, whatever some workshops might tell you. | https://www.instagram.com/p/DaIQA5HE8WL/ | Engine wk1 · Warning Light Decoded · Mode D · Aircon not cold |

@@ -1,22 +1,6 @@
 {
   "pending": [
     {
-      "id": "eng-thu-aircon",
-      "slot_time_sgt": "2026-06-28T20:00",
-      "type": "carousel",
-      "caption_file": "assets/eng-thu-aircon/caption.txt",
-      "image_paths": [
-        "assets/eng-thu-aircon/slide_1.png",
-        "assets/eng-thu-aircon/slide_2.png",
-        "assets/eng-thu-aircon/slide_3.png",
-        "assets/eng-thu-aircon/slide_4.png",
-        "assets/eng-thu-aircon/slide_5.png"
-      ],
-      "notes": "Engine wk1 · Warning Light Decoded · Mode D · Aircon not cold",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "eng-fri-5-checks",
       "slot_time_sgt": "2026-06-29T20:00",
       "type": "carousel",
@@ -2741,6 +2725,25 @@
       "posted_url": "18370619935230852",
       "posted_at": "2026-06-28 12:00 SGT",
       "post_id": "18370619935230852"
+    },
+    {
+      "id": "eng-thu-aircon",
+      "slot_time_sgt": "2026-06-28T20:00",
+      "type": "carousel",
+      "caption_file": "assets/eng-thu-aircon/caption.txt",
+      "image_paths": [
+        "assets/eng-thu-aircon/slide_1.png",
+        "assets/eng-thu-aircon/slide_2.png",
+        "assets/eng-thu-aircon/slide_3.png",
+        "assets/eng-thu-aircon/slide_4.png",
+        "assets/eng-thu-aircon/slide_5.png"
+      ],
+      "notes": "Engine wk1 · Warning Light Decoded · Mode D · Aircon not cold",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DaIQA5HE8WL/",
+      "posted_at": "2026-06-28 20:04 SGT",
+      "post_id": "18088493807311933"
     }
   ],
   "failed": [
