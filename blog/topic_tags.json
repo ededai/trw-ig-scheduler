@@ -37,5 +37,12 @@
   "erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers": ["erp", "regulation"],
   "vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles": ["regulation", "ownership"],
   "singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation": ["ev", "regulation"],
-  "singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026": ["coe", "regulation", "ownership"]
+  "singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026": ["coe", "regulation", "ownership"],
+
+  "engine-mounting-singapore":                                ["engine", "servicing"],
+  "timing-belt-vs-timing-chain-singapore":                    ["engine", "servicing"],
+  "car-insurance-broker-vs-direct-singapore":                 ["car-insurance", "ownership"],
+  "revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises": ["erp", "regulation"],
+  "cat-a-coe-may-2026-hits-124790-whats-driving-the-climb":   ["coe"],
+  "cat-a-coe-june-2026-hits-126009-whats-driving-the-climb":  ["coe"]
 }

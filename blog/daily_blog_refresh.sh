@@ -50,6 +50,7 @@ run_step "step 4: fix_article_schema_images --apply" "$PY" fix_article_schema_im
 run_step "step 5b: refresh_topic_tags_json (auto-merge from WP tags)" "$PY" refresh_topic_tags_json.py
 run_step "step 5c: sync_topic_pages (/topics/{tag}/ cards)" "$PY" sync_topic_pages.py
 run_step "step 5d: refresh_search_corpus (keyworded site search on all search pages)" "$PY" refresh_search_corpus.py --apply
+run_step "step 5e: refresh_related_reading (auto-pull pool + pillars into the [trw_related_reads] engine)" "$PY" refresh_related_reading.py --apply
 run_step "step 6: refresh_card_excerpts (defensive sweep)" "$PY" refresh_card_excerpts.py
 run_step "step 7: notify_thumb_check (Telegram sanity check)" "$PY" notify_thumb_check.py
 
