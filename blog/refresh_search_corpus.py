@@ -147,15 +147,37 @@ def extract_scope_chip(block):
     return scope, chip
 
 
+# /blog/ (475) became a hub with no flat post grid; the live article post-card grids now live on
+# the category pages. The article REGISTRY is topic_tags.json (auto-maintained by refresh_topic_tags_json,
+# step 5b), so a newly published article becomes searchable as soon as it has tags — even before it is
+# added to a category grid. Titles come from the live category-page cards, WP-API fallback for any gap.
+CATEGORY_PAGE_IDS = [1772, 1774, 1776]  # /guides/ /car-tips/ /news/
+
+
+def fetch_title(env, slug):
+    arr = wp_get(env, f"/pages?slug={slug}&status=publish&_fields=title")
+    if isinstance(arr, list) and arr:
+        return clean(arr[0].get("title", {}).get("rendered", ""))
+    return ""
+
+
 def build_master(env):
-    """Return ordered list of corpus items {n,u,k} for all live /blog/ articles."""
+    """Corpus items {n,u,k} for every article in topic_tags.json (the maintained registry)."""
     tags_by_slug = load_topic_tags()
     overrides = T.load_keyword_overrides()
-    cards = parse_blog_cards(get_raw(env, BLOG_PAGE_ID))
-    if not cards:
-        sys.exit("No post-cards found on /blog/ — aborting (refusing to write an empty corpus).")
+    # current titles from the live category-page post-card grids
+    title_map = {}
+    for pid in CATEGORY_PAGE_IDS:
+        for slug, title in parse_blog_cards(get_raw(env, pid), "section.post-grid-section a.post-card"):
+            title_map.setdefault(slug, title)
+    if not title_map:
+        sys.exit("No post-cards found on any category page — aborting (refusing to write an empty corpus).")
     master = []
-    for slug, title in cards:
+    for slug in tags_by_slug:
+        title = title_map.get(slug) or fetch_title(env, slug)
+        if not title:
+            print(f"  WARN no title for {slug} — skipped")
+            continue
         master.append({
             "item": T.corpus_item(slug, title, tags_by_slug.get(slug, []), overrides),
             "slug": slug,

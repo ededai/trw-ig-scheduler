@@ -36,8 +36,15 @@ run_step () {
     fi
 }
 
-run_step "step 1: sync_blog_hub_posts (new posts + category fixes)" "$PY" sync_blog_hub_posts.py
-run_step "step 2: refresh_trw_blog_index --apply" "$PY" refresh_trw_blog_index.py --apply
+# steps 1 & 2 DISABLED 2026-06-29 — superseded by the DYNAMIC blog index (Code Snippets id 56:
+# [trw_blog_featured] / [trw_blog_grid]). /blog/ was redesigned into a hub that renders the featured
+# card + #postGrid post-cards LIVE from pages flagged _trw_is_article=1 (a new article auto-appears,
+# no manual cards), and the grid shortcode regenerates window.TRW_SEARCH_CORPUS itself. The old
+# scrapers below crashed on the now-removed #postGrid (sync_blog_hub_posts: "#postGrid not found";
+# refresh_trw_blog_index: ZeroDivisionError from 0 post-cards). Re-enable only if /blog/ ever reverts
+# to a hand-built static grid.
+# run_step "step 1: sync_blog_hub_posts (new posts + category fixes)" "$PY" sync_blog_hub_posts.py
+# run_step "step 2: refresh_trw_blog_index --apply" "$PY" refresh_trw_blog_index.py --apply
 run_step "step 3: fix_article_featured_images --apply" "$PY" fix_article_featured_images.py --apply
 run_step "step 4: fix_article_schema_images --apply" "$PY" fix_article_schema_images.py --apply
 # step 5 sync_category_pages is DISABLED pending allowlist tightening.
