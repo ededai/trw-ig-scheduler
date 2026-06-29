@@ -1,34 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "eng-fri-5-checks",
-      "slot_time_sgt": "2026-06-29T20:00",
-      "type": "carousel",
-      "caption_file": "assets/eng-fri-5-checks/caption.txt",
-      "image_paths": [
-        "assets/eng-fri-5-checks/slide_1.png",
-        "assets/eng-fri-5-checks/slide_2.png",
-        "assets/eng-fri-5-checks/slide_3.png",
-        "assets/eng-fri-5-checks/slide_4.png",
-        "assets/eng-fri-5-checks/slide_5.png"
-      ],
-      "notes": "Engine wk1 · Straight Talk · Mode A · 5 free checks",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-timing-belt-vs-timing-chain-singapore-c-d3",
-      "slot_time_sgt": "2026-06-29T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-timing-belt-vs-timing-chain-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-timing-belt-vs-timing-chain-singapore/igs_C.png"
-      ],
-      "notes": "IGS C for blog: timing-belt-vs-timing-chain-singapore",
-      "status": "pending",
-      "attempts": 0
-    }
-  ],
+  "pending": [],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
@@ -2744,6 +2715,40 @@
       "posted_url": "https://www.instagram.com/p/DaIQA5HE8WL/",
       "posted_at": "2026-06-28 20:04 SGT",
       "post_id": "18088493807311933"
+    },
+    {
+      "id": "eng-fri-5-checks",
+      "slot_time_sgt": "2026-06-29T20:00",
+      "type": "carousel",
+      "caption_file": "assets/eng-fri-5-checks/caption.txt",
+      "image_paths": [
+        "assets/eng-fri-5-checks/slide_1.png",
+        "assets/eng-fri-5-checks/slide_2.png",
+        "assets/eng-fri-5-checks/slide_3.png",
+        "assets/eng-fri-5-checks/slide_4.png",
+        "assets/eng-fri-5-checks/slide_5.png"
+      ],
+      "notes": "Engine wk1 · Straight Talk · Mode A · 5 free checks",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DaK8yotli_j/",
+      "posted_at": "2026-06-29 21:14 SGT",
+      "post_id": "18085836074531727"
+    },
+    {
+      "id": "igs-timing-belt-vs-timing-chain-singapore-c-d3",
+      "slot_time_sgt": "2026-06-29T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-timing-belt-vs-timing-chain-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-timing-belt-vs-timing-chain-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: timing-belt-vs-timing-chain-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17895358722354175",
+      "posted_at": "2026-06-29 21:14 SGT",
+      "post_id": "17895358722354175"
     }
   ],
   "failed": [

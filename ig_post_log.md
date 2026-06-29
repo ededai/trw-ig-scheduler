@@ -176,3 +176,5 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-27 20:00 | Carousel | Past 100,000 km in Singapore, three repairs tend to turn up whether you want them or not. | https://www.instagram.com/p/DaFsrqUEjhD/ | Engine wk1 · Driver's Manual · Mode B · 3 repairs after 100k |
 | 2026-06-28 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18370619935230852 | IGS B for blog: timing-belt-vs-timing-chain-singapore |
 | 2026-06-28 20:00 | Carousel | When your car aircon stops blowing cold in this heat, it's usually the cheap fix, not the dear one, whatever some workshops might tell you. | https://www.instagram.com/p/DaIQA5HE8WL/ | Engine wk1 · Warning Light Decoded · Mode D · Aircon not cold |
+| 2026-06-29 20:00 | Carousel | Before you pay any workshop in Singapore a diagnostic fee, there are five quick things worth checking yourself first. | https://www.instagram.com/p/DaK8yotli_j/ | Engine wk1 · Straight Talk · Mode A · 5 free checks |
+| 2026-06-29 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17895358722354175 | IGS C for blog: timing-belt-vs-timing-chain-singapore |
