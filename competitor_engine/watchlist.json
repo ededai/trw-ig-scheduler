@@ -1,0 +1,30 @@
+{
+  "_comment": "TRW competitor intelligence watchlist. category drives scoring + which lane it informs. active=false skips it. Accounts dormant > dormancy_days (no post) are auto-skipped by the ranker and flagged for review.",
+  "dormancy_days": 90,
+  "recency_window_days": 60,
+  "accounts": [
+    {"handle": "ocd.singapore", "category": "sg_detailer", "active": true},
+    {"handle": "dow.detailing", "category": "sg_detailer", "active": true},
+    {"handle": "acedetailingsg", "category": "sg_detailer", "active": true},
+    {"handle": "sgcarmart", "category": "sg_media", "active": true},
+    {"handle": "carbuyersingapore", "category": "sg_media", "active": true},
+    {"handle": "bobbyang", "category": "sg_creator", "active": true},
+    {"handle": "koocesterautos", "category": "sg_enthusiast", "active": true},
+    {"handle": "eamgaragejb", "category": "sg_enthusiast", "active": true},
+    {"handle": "scottykilmer", "category": "overseas_mechanic", "active": true},
+    {"handle": "thecarcarenut", "category": "overseas_mechanic", "active": true},
+    {"handle": "chrisfixit", "category": "overseas_mechanic", "active": true}
+  ],
+  "_cut_2026_06_24": ["revolcarzgarage_sg (264 followers, 0 engagement, dormant)", "1car.sg (~46 followers, near-dormant)"],
+  "youtube": {
+    "_comment": "Phase 1c — yt-dlp (free, no key) pulls view/like/comment counts + titles. Educational long-form source the IG accounts mirror.",
+    "channels": ["ChrisFix", "Scotty Kilmer", "The Car Care Nut", "Royalty Auto Service", "Rainman Ray's Repairs"],
+    "active": false
+  },
+  "ad_library": {
+    "_comment": "Phase 1b — Facebook Ad Library, public + free. Proven SG car ads.",
+    "country": "SG",
+    "search_terms": ["car servicing", "car workshop", "car insurance", "car grooming"],
+    "active": false
+  }
+}
