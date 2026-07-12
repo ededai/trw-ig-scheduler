@@ -28198,3 +28198,140 @@ Total cards refreshed: 0
 All 4 articles OK
   TG creds missing — skipping notification
 ===== 2026-07-11T17:30:37Z daily_blog_refresh done (exit=0) =====
+
+===== 2026-07-12T17:31:51Z daily_blog_refresh start =====
+--- step 3: fix_article_featured_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+ARTICLE FEATURED IMAGE FIX  |  mode=apply  |  0 articles
+========================================================================
+
+0 of 0 articles need featured_media update. Errors: 0
+No-op.
+--- step 4: fix_article_schema_images --apply ---
+[load_env] WP_API_URL='https://therightworkshop.com' WP_USER='therightworkshoppteltd' WP_PASSWORD len=29
+========================================================================
+ARTICLE SCHEMA IMAGE FIX  |  mode=apply  |  0 articles
+========================================================================
+
+0 of 0 articles need schema fix.
+No-op.
+--- step 5b: refresh_topic_tags_json (auto-merge from WP tags) ---
+loaded topic_tags.json: 43 entries
+WP tag taxonomy: 0 tags
+WP pages scanned: 137
+topic_tags.json: no changes needed.
+--- step 5c: sync_topic_pages (/topics/{tag}/ cards) ---
+Pillars in topic_tags: 19
+  + /topics/aircon/ (1598) — need to add 1 card(s): ['car-aircon-not-cold-singapore-fix']
+      ✓ pushed 1 cards to /topics/aircon/
+  + /topics/battery/ (1602) — need to add 1 card(s): ['tyres-battery-singapore-checks-guide']
+      ✓ pushed 1 cards to /topics/battery/
+  + /topics/brakes/ (1606) — need to add 1 card(s): ['brake-pads-rotors-singapore-when-to-change']
+      ✓ pushed 1 cards to /topics/brakes/
+  + /topics/car-insurance/ (5822) — need to add 3 card(s): ['car-insurance-broker-singapore', 'car-insurance-premium-factors-singapore', 'car-insurance-broker-vs-direct-singapore']
+      ! could not fetch car-insurance-broker-singapore, skipping
+      ✓ pushed 3 cards to /topics/car-insurance/
+  + /topics/coe/ (1610) — need to add 10 card(s): ['coe-explained', 'cat-a-vs-cat-b-singapore', 'coe-results-explained', 'coe-renewal-singapore', 'coe-export-car-singapore', 'scrap-car-singapore', 'coe-renewal-vs-scrap-singapore-guide', 'singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026', 'cat-a-coe-may-2026-hits-124790-whats-driving-the-climb', 'cat-a-coe-june-2026-hits-126009-whats-driving-the-climb']
+      ! could not fetch cat-a-coe-june-2026-hits-126009-whats-driving-the-climb, skipping
+      ✓ pushed 10 cards to /topics/coe/
+  + /topics/coolant/ (1612) — need to add 1 card(s): ['coolant-radiator-care-singapore']
+      ✓ pushed 1 cards to /topics/coolant/
+  + /topics/driving-tips/ (1620) — need to add 2 card(s): ['driving-singapore-rain-wet-weather', 'brake-pads-rotors-singapore-when-to-change']
+      ✓ pushed 2 cards to /topics/driving-tips/
+  + /topics/electrical/ (6864) — need to add 1 card(s): ['dashboard-warning-lights-explained']
+      ✓ stripped embedded chrome from /topics/electrical/
+      ✓ pushed 1 cards to /topics/electrical/
+  + /topics/engine/ (6862) — need to add 2 card(s): ['engine-mounting-singapore', 'timing-belt-vs-timing-chain-singapore']
+      ! could not fetch timing-belt-vs-timing-chain-singapore, skipping
+      ✓ pushed 2 cards to /topics/engine/
+  + /topics/erp/ (6328) — need to add 3 card(s): ['erp-2-0-singapore-2026', 'erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers', 'revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises']
+      ✓ stripped embedded chrome from /topics/erp/
+      ✓ pushed 3 cards to /topics/erp/
+  + /topics/ev/ (6333) — need to add 1 card(s): ['singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation']
+      ✓ stripped embedded chrome from /topics/ev/
+      ✓ pushed 1 cards to /topics/ev/
+  + /topics/ownership/ (1636) — need to add 15 card(s): ['first-car-service-singapore-what-happens', 'car-insurance-broker-singapore', 'cheapest-car-workshop-singapore', 'car-insurance-premium-factors-singapore', 'coe-explained', 'cat-a-vs-cat-b-singapore', 'coe-renewal-singapore', 'coe-export-car-singapore', 'scrap-car-singapore', 'coe-renewal-vs-scrap-singapore-guide', 'how-often-service-car-singapore', 'erp-2-0-singapore-2026', 'vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles', 'singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026', 'car-insurance-broker-vs-direct-singapore']
+      ! could not fetch car-insurance-broker-singapore, skipping
+      ✓ pushed 15 cards to /topics/ownership/
+  + /topics/regulation/ (1646) — need to add 7 card(s): ['block-exemption-order-singapore-car-servicing', 'erp-2-0-singapore-2026', 'erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers', 'vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles', 'singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation', 'singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026', 'revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises']
+      ✓ pushed 7 cards to /topics/regulation/
+  + /topics/scrap-or-export/ (6866) — need to add 4 card(s): ['coe-renewal-singapore', 'coe-export-car-singapore', 'scrap-car-singapore', 'coe-renewal-vs-scrap-singapore-guide']
+      ✓ stripped embedded chrome from /topics/scrap-or-export/
+      ✓ pushed 4 cards to /topics/scrap-or-export/
+  + /topics/selling-your-car/ (5844) — need to add 2 card(s): ['coe-export-car-singapore', 'scrap-car-singapore']
+      ✓ stripped embedded chrome from /topics/selling-your-car/
+      ✓ pushed 2 cards to /topics/selling-your-car/
+  + /topics/servicing/ (1650) — need to add 11 card(s): ['first-car-service-singapore-what-happens', 'cheapest-car-workshop-singapore', 'what-is-the-right-workshop-singapore', 'dashboard-warning-lights-explained', 'how-often-service-car-singapore', 'block-exemption-order-singapore-car-servicing', 'tyres-battery-singapore-checks-guide', 'car-aircon-not-cold-singapore-fix', 'coolant-radiator-care-singapore', 'engine-mounting-singapore', 'timing-belt-vs-timing-chain-singapore']
+      ! could not fetch timing-belt-vs-timing-chain-singapore, skipping
+      ✓ pushed 11 cards to /topics/servicing/
+  + /topics/tyres/ (1656) — need to add 1 card(s): ['tyres-battery-singapore-checks-guide']
+      ✓ pushed 1 cards to /topics/tyres/
+  + /topics/used-car/ (1658) — need to add 2 card(s): ['pre-purchase-car-inspection-singapore', 'used-car-inspection-singapore']
+      ✓ pushed 2 cards to /topics/used-car/
+  + /topics/workshop/ (1664) — need to add 10 card(s): ['dealer-vs-independent-workshop-singapore', 'pre-purchase-car-inspection-singapore', 'cheapest-car-workshop-singapore', 'what-is-the-right-workshop-singapore', 'independent-workshop-vs-authorised-service-centre-singapore', 'what-to-look-for-car-workshop-singapore', 'how-to-read-workshop-quote-singapore', 'block-exemption-order-singapore-car-servicing', '10-signs-trustworthy-mechanic-singapore', 'questions-to-ask-before-new-car-workshop-singapore']
+      ✓ pushed 10 cards to /topics/workshop/
+
+Total pillars touched: 4
+Total cards added: 78 (LIVE)
+--- step 5d: refresh_search_corpus (keyworded site search on all search pages) ---
+Master article list: 39 posts from /blog/.
+  OK   /blog/ (475): already current (39 items, inplace)
+  OK   /topics/ (1597): already current (39 items, inplace)
+  OK   /news/ (1776): already current (9 items, inplace)
+  SKIP /topics/accident-repair/ (6865): 0 posts for tag
+  OK   /topics/aircon/ (1598): already current (1 items, inplace)
+  OK   /topics/battery/ (1602): already current (1 items, inplace)
+  OK   /topics/brakes/ (1606): already current (1 items, inplace)
+  OK   /topics/car-insurance/ (5822): already current (3 items, inplace)
+  OK   /topics/coe/ (1610): already current (10 items, inplace)
+  SKIP /topics/congestion/ (8993): 0 posts for tag
+  OK   /topics/coolant/ (1612): already current (1 items, inplace)
+  SKIP /topics/cooling/ (8990): 0 posts for tag
+  SKIP /topics/deadlines/ (8992): 0 posts for tag
+  OK   /topics/driving-tips/ (1620): already current (2 items, inplace)
+  OK   /topics/electrical/ (6864): already current (1 items, inplace)
+  SKIP /topics/enforcement/ (8991): 0 posts for tag
+  OK   /topics/engine/ (6862): already current (2 items, inplace)
+  OK   /topics/erp/ (6328): already current (3 items, inplace)
+  OK   /topics/ev/ (6333): already current (1 items, inplace)
+  SKIP /topics/gearbox/ (6863): 0 posts for tag
+  SKIP /topics/maintenance/ (8988): 0 posts for tag
+  OK   /topics/ownership/ (1636): already current (15 items, inplace)
+  OK   /topics/regulation/ (1646): already current (7 items, inplace)
+  SKIP /topics/safety/ (8989): 0 posts for tag
+  OK   /topics/scrap-or-export/ (6866): already current (4 items, inplace)
+  OK   /topics/selling-your-car/ (5844): already current (2 items, inplace)
+  OK   /topics/servicing/ (1650): already current (11 items, inplace)
+  SKIP /topics/suspension/ (6861): 0 posts for tag
+  SKIP /topics/traffic/ (8994): 0 posts for tag
+  OK   /topics/tyres/ (1656): already current (1 items, inplace)
+  OK   /topics/used-car/ (1658): already current (2 items, inplace)
+  OK   /topics/workshop/ (1664): already current (10 items, inplace)
+
+APPLIED: 0 page(s) changed.
+--- step 5e: refresh_related_reading (auto-pull pool + pillars into the [trw_related_reads] engine) ---
+Registry: 38 articles (topic_tags + 38 seed pool IDs preserved).
+  WARN topic_tags slug->id unresolved (skipped): ['car-insurance-broker-singapore']
+  OK: snippet 52 already current (registry sync). No write.
+--- step 6: refresh_card_excerpts (defensive sweep) ---
+Building slug -> excerpt cache...
+  cached 53 article excerpts
+   6862 /topics/engine/                        refreshed 1 cards
+   6333 /topics/ev/                            refreshed 1 cards
+   6328 /topics/erp/                           refreshed 3 cards
+   5822 /topics/car-insurance/                 refreshed 2 cards
+   1664 /topics/workshop/                      refreshed 5 cards
+   1650 /topics/servicing/                     refreshed 5 cards
+   1646 /topics/regulation/                    refreshed 6 cards
+   1636 /topics/ownership/                     refreshed 5 cards
+   1620 /topics/driving-tips/                  refreshed 2 cards
+   1610 /topics/coe/                           refreshed 2 cards
+   1606 /topics/brakes/                        refreshed 1 cards
+   1598 /topics/aircon/                        refreshed 1 cards
+
+Total cards refreshed: 34
+--- step 7: notify_thumb_check (Telegram sanity check) ---
+All 4 articles OK
+  TG creds missing — skipping notification
+===== 2026-07-12T17:35:29Z daily_blog_refresh done (exit=0) =====
