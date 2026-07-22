@@ -3512,3 +3512,5 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-07-22 16:01:21 +08] OK  igs-renew-coe-5-or-10-years-mechanical-checklist-a-d1 -> 18114973901294535
 [2026-07-22 16:01:22 +08] Posting igs-tesla-servicing-independent-workshop-singapore-a-d1 (story) — notes: IGS A for blog: tesla-servicing-independent-workshop-singapore
 [2026-07-22 16:01:37 +08] OK  igs-tesla-servicing-independent-workshop-singapore-a-d1 -> 18070236746434003
+[2026-07-22 16:41:21 +08] HEARTBEAT lag 44 min (prev=2026-07-22T15:57:50.072755+08:00)
+[2026-07-22 16:41:21 +08] run: no due posts
