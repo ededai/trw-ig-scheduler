@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-car-aircon-servicing-price-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-car-aircon-servicing-price-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-car-aircon-servicing-price-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: car-aircon-servicing-price-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-car-aircon-servicing-price-singapore-b-d2",
       "slot_time_sgt": "2026-07-23T11:00",
       "type": "story",
@@ -33,18 +21,6 @@
         "assets/igs-car-aircon-servicing-price-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: car-aircon-servicing-price-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-car-aircon-smell-musty-regas-trap-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-car-aircon-smell-musty-regas-trap/caption.txt",
-      "image_paths": [
-        "assets/igs-car-aircon-smell-musty-regas-trap/igs_A.png"
-      ],
-      "notes": "IGS A for blog: car-aircon-smell-musty-regas-trap",
       "status": "pending",
       "attempts": 0
     },
@@ -73,18 +49,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-car-battery-dead-emergency-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-car-battery-dead-emergency-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-car-battery-dead-emergency-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: car-battery-dead-emergency-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-car-battery-dead-emergency-singapore-b-d2",
       "slot_time_sgt": "2026-07-23T11:00",
       "type": "story",
@@ -105,18 +69,6 @@
         "assets/igs-car-battery-dead-emergency-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: car-battery-dead-emergency-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-car-battery-replacement-singapore-price-types-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-car-battery-replacement-singapore-price-types/caption.txt",
-      "image_paths": [
-        "assets/igs-car-battery-replacement-singapore-price-types/igs_A.png"
-      ],
-      "notes": "IGS A for blog: car-battery-replacement-singapore-price-types",
       "status": "pending",
       "attempts": 0
     },
@@ -145,18 +97,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-car-jerking-when-accelerating-gearbox-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-car-jerking-when-accelerating-gearbox-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-car-jerking-when-accelerating-gearbox-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: car-jerking-when-accelerating-gearbox-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-car-jerking-when-accelerating-gearbox-singapore-b-d2",
       "slot_time_sgt": "2026-07-23T11:00",
       "type": "story",
@@ -177,18 +117,6 @@
         "assets/igs-car-jerking-when-accelerating-gearbox-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: car-jerking-when-accelerating-gearbox-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-check-engine-light-singapore-what-to-do-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-check-engine-light-singapore-what-to-do/caption.txt",
-      "image_paths": [
-        "assets/igs-check-engine-light-singapore-what-to-do/igs_A.png"
-      ],
-      "notes": "IGS A for blog: check-engine-light-singapore-what-to-do",
       "status": "pending",
       "attempts": 0
     },
@@ -217,18 +145,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-coe-renewal-car-maintenance-budget-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-coe-renewal-car-maintenance-budget-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-renewal-car-maintenance-budget-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: coe-renewal-car-maintenance-budget-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-coe-renewal-car-maintenance-budget-singapore-b-d2",
       "slot_time_sgt": "2026-07-23T11:00",
       "type": "story",
@@ -249,18 +165,6 @@
         "assets/igs-coe-renewal-car-maintenance-budget-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: coe-renewal-car-maintenance-budget-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-engine-oil-leak-singapore-serious-or-not-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-engine-oil-leak-singapore-serious-or-not/caption.txt",
-      "image_paths": [
-        "assets/igs-engine-oil-leak-singapore-serious-or-not/igs_A.png"
-      ],
-      "notes": "IGS A for blog: engine-oil-leak-singapore-serious-or-not",
       "status": "pending",
       "attempts": 0
     },
@@ -289,18 +193,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-engine-overhaul-cost-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-engine-overhaul-cost-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-engine-overhaul-cost-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: engine-overhaul-cost-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-engine-overhaul-cost-singapore-b-d2",
       "slot_time_sgt": "2026-07-23T11:00",
       "type": "story",
@@ -321,18 +213,6 @@
         "assets/igs-engine-overhaul-cost-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: engine-overhaul-cost-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-ev-hybrid-servicing-independent-workshop-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-ev-hybrid-servicing-independent-workshop-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-ev-hybrid-servicing-independent-workshop-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: ev-hybrid-servicing-independent-workshop-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -361,18 +241,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-failed-vicom-inspection-what-next-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-failed-vicom-inspection-what-next-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-failed-vicom-inspection-what-next-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: failed-vicom-inspection-what-next-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-failed-vicom-inspection-what-next-singapore-b-d2",
       "slot_time_sgt": "2026-07-23T11:00",
       "type": "story",
@@ -393,18 +261,6 @@
         "assets/igs-failed-vicom-inspection-what-next-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: failed-vicom-inspection-what-next-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-gearbox-oil-change-singapore-cost-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-gearbox-oil-change-singapore-cost/caption.txt",
-      "image_paths": [
-        "assets/igs-gearbox-oil-change-singapore-cost/igs_A.png"
-      ],
-      "notes": "IGS A for blog: gearbox-oil-change-singapore-cost",
       "status": "pending",
       "attempts": 0
     },
@@ -433,18 +289,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-gearbox-repair-cost-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-gearbox-repair-cost-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-gearbox-repair-cost-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: gearbox-repair-cost-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-gearbox-repair-cost-singapore-b-d2",
       "slot_time_sgt": "2026-07-23T11:00",
       "type": "story",
@@ -465,18 +309,6 @@
         "assets/igs-gearbox-repair-cost-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: gearbox-repair-cost-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-hybrid-battery-replacement-cost-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-hybrid-battery-replacement-cost-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-hybrid-battery-replacement-cost-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: hybrid-battery-replacement-cost-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -505,18 +337,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-pass-vicom-inspection-first-try-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-pass-vicom-inspection-first-try-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-pass-vicom-inspection-first-try-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: pass-vicom-inspection-first-try-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-pass-vicom-inspection-first-try-singapore-b-d2",
       "slot_time_sgt": "2026-07-23T11:00",
       "type": "story",
@@ -541,18 +361,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-renew-coe-5-or-10-years-mechanical-checklist-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-renew-coe-5-or-10-years-mechanical-checklist/caption.txt",
-      "image_paths": [
-        "assets/igs-renew-coe-5-or-10-years-mechanical-checklist/igs_A.png"
-      ],
-      "notes": "IGS A for blog: renew-coe-5-or-10-years-mechanical-checklist",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-renew-coe-5-or-10-years-mechanical-checklist-b-d2",
       "slot_time_sgt": "2026-07-23T11:00",
       "type": "story",
@@ -573,18 +381,6 @@
         "assets/igs-renew-coe-5-or-10-years-mechanical-checklist/igs_C.png"
       ],
       "notes": "IGS C for blog: renew-coe-5-or-10-years-mechanical-checklist",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-tesla-servicing-independent-workshop-singapore-a-d1",
-      "slot_time_sgt": "2026-07-22T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-tesla-servicing-independent-workshop-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-tesla-servicing-independent-workshop-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: tesla-servicing-independent-workshop-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -3362,6 +3158,261 @@
       "posted_url": "17895358722354175",
       "posted_at": "2026-06-29 21:14 SGT",
       "post_id": "17895358722354175"
+    },
+    {
+      "id": "igs-car-aircon-servicing-price-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-aircon-servicing-price-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-aircon-servicing-price-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-aircon-servicing-price-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18131332006715778",
+      "posted_at": "2026-07-22 15:58 SGT",
+      "post_id": "18131332006715778"
+    },
+    {
+      "id": "igs-car-aircon-smell-musty-regas-trap-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-aircon-smell-musty-regas-trap/caption.txt",
+      "image_paths": [
+        "assets/igs-car-aircon-smell-musty-regas-trap/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-aircon-smell-musty-regas-trap",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18423003286194408",
+      "posted_at": "2026-07-22 15:58 SGT",
+      "post_id": "18423003286194408"
+    },
+    {
+      "id": "igs-car-battery-dead-emergency-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-battery-dead-emergency-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-battery-dead-emergency-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-battery-dead-emergency-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17923693197163687",
+      "posted_at": "2026-07-22 15:58 SGT",
+      "post_id": "17923693197163687"
+    },
+    {
+      "id": "igs-car-battery-replacement-singapore-price-types-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-battery-replacement-singapore-price-types/caption.txt",
+      "image_paths": [
+        "assets/igs-car-battery-replacement-singapore-price-types/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-battery-replacement-singapore-price-types",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18454702411191247",
+      "posted_at": "2026-07-22 15:58 SGT",
+      "post_id": "18454702411191247"
+    },
+    {
+      "id": "igs-car-jerking-when-accelerating-gearbox-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-jerking-when-accelerating-gearbox-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-jerking-when-accelerating-gearbox-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-jerking-when-accelerating-gearbox-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18153885892500780",
+      "posted_at": "2026-07-22 15:58 SGT",
+      "post_id": "18153885892500780"
+    },
+    {
+      "id": "igs-check-engine-light-singapore-what-to-do-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-check-engine-light-singapore-what-to-do/caption.txt",
+      "image_paths": [
+        "assets/igs-check-engine-light-singapore-what-to-do/igs_A.png"
+      ],
+      "notes": "IGS A for blog: check-engine-light-singapore-what-to-do",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18141925717557405",
+      "posted_at": "2026-07-22 15:59 SGT",
+      "post_id": "18141925717557405"
+    },
+    {
+      "id": "igs-coe-renewal-car-maintenance-budget-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-renewal-car-maintenance-budget-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-renewal-car-maintenance-budget-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-renewal-car-maintenance-budget-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18086933378381511",
+      "posted_at": "2026-07-22 15:59 SGT",
+      "post_id": "18086933378381511"
+    },
+    {
+      "id": "igs-engine-oil-leak-singapore-serious-or-not-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-engine-oil-leak-singapore-serious-or-not/caption.txt",
+      "image_paths": [
+        "assets/igs-engine-oil-leak-singapore-serious-or-not/igs_A.png"
+      ],
+      "notes": "IGS A for blog: engine-oil-leak-singapore-serious-or-not",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18213133750339217",
+      "posted_at": "2026-07-22 15:59 SGT",
+      "post_id": "18213133750339217"
+    },
+    {
+      "id": "igs-engine-overhaul-cost-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-engine-overhaul-cost-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-engine-overhaul-cost-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: engine-overhaul-cost-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18066941570535705",
+      "posted_at": "2026-07-22 15:59 SGT",
+      "post_id": "18066941570535705"
+    },
+    {
+      "id": "igs-ev-hybrid-servicing-independent-workshop-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-ev-hybrid-servicing-independent-workshop-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-ev-hybrid-servicing-independent-workshop-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: ev-hybrid-servicing-independent-workshop-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18110420269979668",
+      "posted_at": "2026-07-22 16:00 SGT",
+      "post_id": "18110420269979668"
+    },
+    {
+      "id": "igs-failed-vicom-inspection-what-next-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-failed-vicom-inspection-what-next-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-failed-vicom-inspection-what-next-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: failed-vicom-inspection-what-next-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18079473446689145",
+      "posted_at": "2026-07-22 16:00 SGT",
+      "post_id": "18079473446689145"
+    },
+    {
+      "id": "igs-gearbox-oil-change-singapore-cost-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-gearbox-oil-change-singapore-cost/caption.txt",
+      "image_paths": [
+        "assets/igs-gearbox-oil-change-singapore-cost/igs_A.png"
+      ],
+      "notes": "IGS A for blog: gearbox-oil-change-singapore-cost",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18129104551711488",
+      "posted_at": "2026-07-22 16:00 SGT",
+      "post_id": "18129104551711488"
+    },
+    {
+      "id": "igs-gearbox-repair-cost-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-gearbox-repair-cost-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-gearbox-repair-cost-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: gearbox-repair-cost-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18097124834001853",
+      "posted_at": "2026-07-22 16:00 SGT",
+      "post_id": "18097124834001853"
+    },
+    {
+      "id": "igs-hybrid-battery-replacement-cost-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-hybrid-battery-replacement-cost-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-hybrid-battery-replacement-cost-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: hybrid-battery-replacement-cost-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17930089188360707",
+      "posted_at": "2026-07-22 16:00 SGT",
+      "post_id": "17930089188360707"
+    },
+    {
+      "id": "igs-pass-vicom-inspection-first-try-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-pass-vicom-inspection-first-try-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-pass-vicom-inspection-first-try-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: pass-vicom-inspection-first-try-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18102521270269357",
+      "posted_at": "2026-07-22 16:01 SGT",
+      "post_id": "18102521270269357"
+    },
+    {
+      "id": "igs-renew-coe-5-or-10-years-mechanical-checklist-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-renew-coe-5-or-10-years-mechanical-checklist/caption.txt",
+      "image_paths": [
+        "assets/igs-renew-coe-5-or-10-years-mechanical-checklist/igs_A.png"
+      ],
+      "notes": "IGS A for blog: renew-coe-5-or-10-years-mechanical-checklist",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18114973901294535",
+      "posted_at": "2026-07-22 16:01 SGT",
+      "post_id": "18114973901294535"
+    },
+    {
+      "id": "igs-tesla-servicing-independent-workshop-singapore-a-d1",
+      "slot_time_sgt": "2026-07-22T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-tesla-servicing-independent-workshop-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-tesla-servicing-independent-workshop-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: tesla-servicing-independent-workshop-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18070236746434003",
+      "posted_at": "2026-07-22 16:01 SGT",
+      "post_id": "18070236746434003"
     }
   ],
   "failed": [

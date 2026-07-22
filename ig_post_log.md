@@ -178,3 +178,20 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-06-28 20:00 | Carousel | When your car aircon stops blowing cold in this heat, it's usually the cheap fix, not the dear one, whatever some workshops might tell you. | https://www.instagram.com/p/DaIQA5HE8WL/ | Engine wk1 · Warning Light Decoded · Mode D · Aircon not cold |
 | 2026-06-29 20:00 | Carousel | Before you pay any workshop in Singapore a diagnostic fee, there are five quick things worth checking yourself first. | https://www.instagram.com/p/DaK8yotli_j/ | Engine wk1 · Straight Talk · Mode A · 5 free checks |
 | 2026-06-29 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17895358722354175 | IGS C for blog: timing-belt-vs-timing-chain-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18131332006715778 | IGS A for blog: car-aircon-servicing-price-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18423003286194408 | IGS A for blog: car-aircon-smell-musty-regas-trap |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17923693197163687 | IGS A for blog: car-battery-dead-emergency-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18454702411191247 | IGS A for blog: car-battery-replacement-singapore-price-types |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18153885892500780 | IGS A for blog: car-jerking-when-accelerating-gearbox-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18141925717557405 | IGS A for blog: check-engine-light-singapore-what-to-do |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18086933378381511 | IGS A for blog: coe-renewal-car-maintenance-budget-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18213133750339217 | IGS A for blog: engine-oil-leak-singapore-serious-or-not |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18066941570535705 | IGS A for blog: engine-overhaul-cost-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18110420269979668 | IGS A for blog: ev-hybrid-servicing-independent-workshop-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18079473446689145 | IGS A for blog: failed-vicom-inspection-what-next-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18129104551711488 | IGS A for blog: gearbox-oil-change-singapore-cost |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18097124834001853 | IGS A for blog: gearbox-repair-cost-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17930089188360707 | IGS A for blog: hybrid-battery-replacement-cost-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18102521270269357 | IGS A for blog: pass-vicom-inspection-first-try-singapore |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18114973901294535 | IGS A for blog: renew-coe-5-or-10-years-mechanical-checklist |
+| 2026-07-22 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18070236746434003 | IGS A for blog: tesla-servicing-independent-workshop-singapore |
