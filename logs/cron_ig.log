@@ -3546,3 +3546,53 @@ ERROR creating container: Only photo or video can be accepted as media type.
 [2026-07-23 09:13:42 +08] run: no due posts
 [2026-07-23 10:52:00 +08] HEARTBEAT lag 98 min (prev=2026-07-23T09:13:42.972836+08:00)
 [2026-07-23 10:52:00 +08] run: no due posts
+[2026-07-23 11:21:57 +08] Posting igs-car-aircon-servicing-price-singapore-b-d2 (story) — notes: IGS B for blog: car-aircon-servicing-price-singapore
+[2026-07-23 11:22:10 +08] OK  igs-car-aircon-servicing-price-singapore-b-d2 -> 18126222910656509
+[2026-07-23 11:22:11 +08] Posting igs-car-aircon-smell-musty-regas-trap-b-d2 (story) — notes: IGS B for blog: car-aircon-smell-musty-regas-trap
+[2026-07-23 11:22:22 +08] OK  igs-car-aircon-smell-musty-regas-trap-b-d2 -> 18347545906169552
+[2026-07-23 11:22:23 +08] Posting igs-car-battery-dead-emergency-singapore-b-d2 (story) — notes: IGS B for blog: car-battery-dead-emergency-singapore
+[2026-07-23 11:22:36 +08] OK  igs-car-battery-dead-emergency-singapore-b-d2 -> 18158250892482744
+[2026-07-23 11:22:37 +08] Posting igs-car-battery-replacement-singapore-price-types-b-d2 (story) — notes: IGS B for blog: car-battery-replacement-singapore-price-types
+[2026-07-23 11:22:48 +08] OK  igs-car-battery-replacement-singapore-price-types-b-d2 -> 18108260797998616
+[2026-07-23 11:22:49 +08] Posting igs-car-jerking-when-accelerating-gearbox-singapore-b-d2 (story) — notes: IGS B for blog: car-jerking-when-accelerating-gearbox-singapore
+[2026-07-23 11:23:04 +08] OK  igs-car-jerking-when-accelerating-gearbox-singapore-b-d2 -> 18100604837185990
+[2026-07-23 11:23:04 +08] Posting igs-check-engine-light-singapore-what-to-do-b-d2 (story) — notes: IGS B for blog: check-engine-light-singapore-what-to-do
+[2026-07-23 11:23:17 +08] OK  igs-check-engine-light-singapore-what-to-do-b-d2 -> 17937349767306129
+[2026-07-23 11:23:18 +08] Posting igs-coe-renewal-car-maintenance-budget-singapore-b-d2 (story) — notes: IGS B for blog: coe-renewal-car-maintenance-budget-singapore
+[2026-07-23 11:23:31 +08] OK  igs-coe-renewal-car-maintenance-budget-singapore-b-d2 -> 18110382421986888
+[2026-07-23 11:23:32 +08] Posting igs-engine-oil-leak-singapore-serious-or-not-b-d2 (story) — notes: IGS B for blog: engine-oil-leak-singapore-serious-or-not
+[2026-07-23 11:23:44 +08] OK  igs-engine-oil-leak-singapore-serious-or-not-b-d2 -> 18145083634534472
+[2026-07-23 11:23:44 +08] Posting igs-engine-overhaul-cost-singapore-b-d2 (story) — notes: IGS B for blog: engine-overhaul-cost-singapore
+[2026-07-23 11:23:56 +08] OK  igs-engine-overhaul-cost-singapore-b-d2 -> 18141979162559090
+[2026-07-23 11:23:57 +08] Posting igs-ev-hybrid-servicing-independent-workshop-singapore-b-d2 (story) — notes: IGS B for blog: ev-hybrid-servicing-independent-workshop-singapore
+[2026-07-23 11:24:02 +08] ERR igs-ev-hybrid-servicing-independent-workshop-singapore-b-d2: post_instagram.py --story failed: Resolving image URL: /home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/igs-ev-hybrid-servicing-independent-workshop-singapore/igs_B.png
+Image hosted at: https://raw.githubusercontent.com/ededai/trw-ig-scheduler/main/assets/igs-ev-hybrid-servicing-independent-workshop-singapore/igs_B.png (via raw.githubusercontent.com, attempt 1)
+Creating media container...
+Container created: 17892792027592927
+Waiting for container to be ready...
+Container ready.
+Publishing post...
+ERROR publishing: Media ID is not available
+
+[2026-07-23 11:24:02 +08] Posting igs-failed-vicom-inspection-what-next-singapore-b-d2 (story) — notes: IGS B for blog: failed-vicom-inspection-what-next-singapore
+[2026-07-23 11:24:14 +08] OK  igs-failed-vicom-inspection-what-next-singapore-b-d2 -> 18384532579167228
+[2026-07-23 11:24:14 +08] Posting igs-gearbox-oil-change-singapore-cost-b-d2 (story) — notes: IGS B for blog: gearbox-oil-change-singapore-cost
+[2026-07-23 11:24:19 +08] ERR igs-gearbox-oil-change-singapore-cost-b-d2: post_instagram.py --story failed: Resolving image URL: /home/runner/work/trw-ig-scheduler/trw-ig-scheduler/assets/igs-gearbox-oil-change-singapore-cost/igs_B.png
+Image hosted at: https://raw.githubusercontent.com/ededai/trw-ig-scheduler/main/assets/igs-gearbox-oil-change-singapore-cost/igs_B.png (via raw.githubusercontent.com, attempt 1)
+Creating media container...
+Container created: 17892792063592927
+Waiting for container to be ready...
+Container ready.
+Publishing post...
+ERROR publishing: Media ID is not available
+
+[2026-07-23 11:24:20 +08] Posting igs-gearbox-repair-cost-singapore-b-d2 (story) — notes: IGS B for blog: gearbox-repair-cost-singapore
+[2026-07-23 11:24:32 +08] OK  igs-gearbox-repair-cost-singapore-b-d2 -> 18091114961566570
+[2026-07-23 11:24:32 +08] Posting igs-hybrid-battery-replacement-cost-singapore-b-d2 (story) — notes: IGS B for blog: hybrid-battery-replacement-cost-singapore
+[2026-07-23 11:24:45 +08] OK  igs-hybrid-battery-replacement-cost-singapore-b-d2 -> 18145096225529780
+[2026-07-23 11:24:46 +08] Posting igs-pass-vicom-inspection-first-try-singapore-b-d2 (story) — notes: IGS B for blog: pass-vicom-inspection-first-try-singapore
+[2026-07-23 11:24:58 +08] OK  igs-pass-vicom-inspection-first-try-singapore-b-d2 -> 17909302029264497
+[2026-07-23 11:24:59 +08] Posting igs-renew-coe-5-or-10-years-mechanical-checklist-b-d2 (story) — notes: IGS B for blog: renew-coe-5-or-10-years-mechanical-checklist
+[2026-07-23 11:25:10 +08] OK  igs-renew-coe-5-or-10-years-mechanical-checklist-b-d2 -> 18160539118461948
+[2026-07-23 11:25:11 +08] Posting igs-tesla-servicing-independent-workshop-singapore-b-d2 (story) — notes: IGS B for blog: tesla-servicing-independent-workshop-singapore
+[2026-07-23 11:25:23 +08] OK  igs-tesla-servicing-independent-workshop-singapore-b-d2 -> 18114918706923388
