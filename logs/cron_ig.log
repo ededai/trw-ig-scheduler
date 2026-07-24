@@ -3684,3 +3684,5 @@ ERROR publishing: Media ID is not available
 [2026-07-24 20:05:36 +08] OK  igs-tesla-servicing-independent-workshop-singapore-c-d3 -> 18335193715249727
 [2026-07-24 22:08:24 +08] HEARTBEAT lag 127 min (prev=2026-07-24T20:01:51.115666+08:00)
 [2026-07-24 22:08:24 +08] run: no due posts
+[2026-07-24 23:42:33 +08] HEARTBEAT lag 94 min (prev=2026-07-24T22:08:24.454786+08:00)
+[2026-07-24 23:42:33 +08] run: no due posts
