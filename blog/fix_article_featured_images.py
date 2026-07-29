@@ -156,8 +156,14 @@ def run(mode: str) -> int:
                 req = request.Request(url, headers=headers)
                 with request.urlopen(req, timeout=20) as resp:
                     m_data = json.loads(resp.read())
-                if "news_card_" in m_data.get("source_url", ""):
-                    print(f"  [SKIP] {slug} — news_card thumbnail protected")
+                m_file = m_data.get("source_url", "").rsplit("/", 1)[-1]
+                # Cole's news pipeline owns these thumbnails (naming has drifted
+                # across pipeline versions: news_card_*, news_b_*, D_*). The news
+                # template renders the featured image as the first body <img>, so
+                # aligning "hero" back onto featured_media here is circular and
+                # locks in whatever was set — never touch them from this script.
+                if m_file.startswith(("news_card_", "news_b_", "D_")):
+                    print(f"  [SKIP] {slug} — Cole news thumbnail protected ({m_file})")
                     continue
             except Exception:
                 # Can't verify — skip to be safe (never overwrite when uncertain)
