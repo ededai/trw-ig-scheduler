@@ -1,5 +1,114 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "igs-gearbox-making-noise-singapore-a-d1",
+      "slot_time_sgt": "2026-07-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-gearbox-making-noise-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-gearbox-making-noise-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: gearbox-making-noise-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-gearbox-making-noise-singapore-b-d2",
+      "slot_time_sgt": "2026-07-31T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-gearbox-making-noise-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-gearbox-making-noise-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: gearbox-making-noise-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-gearbox-making-noise-singapore-c-d3",
+      "slot_time_sgt": "2026-08-01T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-gearbox-making-noise-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-gearbox-making-noise-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: gearbox-making-noise-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-battery-flat-singapore-warning-signs-a-d1",
+      "slot_time_sgt": "2026-07-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-battery-flat-singapore-warning-signs/caption.txt",
+      "image_paths": [
+        "assets/igs-car-battery-flat-singapore-warning-signs/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-battery-flat-singapore-warning-signs",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-battery-flat-singapore-warning-signs-b-d2",
+      "slot_time_sgt": "2026-07-31T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-battery-flat-singapore-warning-signs/caption.txt",
+      "image_paths": [
+        "assets/igs-car-battery-flat-singapore-warning-signs/igs_B.png"
+      ],
+      "notes": "IGS B for blog: car-battery-flat-singapore-warning-signs",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-car-battery-flat-singapore-warning-signs-c-d3",
+      "slot_time_sgt": "2026-08-01T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-battery-flat-singapore-warning-signs/caption.txt",
+      "image_paths": [
+        "assets/igs-car-battery-flat-singapore-warning-signs/igs_C.png"
+      ],
+      "notes": "IGS C for blog: car-battery-flat-singapore-warning-signs",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-brake-squeal-judder-singapore-a-d1",
+      "slot_time_sgt": "2026-07-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-brake-squeal-judder-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-brake-squeal-judder-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: brake-squeal-judder-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-brake-squeal-judder-singapore-b-d2",
+      "slot_time_sgt": "2026-07-31T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-brake-squeal-judder-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-brake-squeal-judder-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: brake-squeal-judder-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-brake-squeal-judder-singapore-c-d3",
+      "slot_time_sgt": "2026-08-01T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-brake-squeal-judder-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-brake-squeal-judder-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: brake-squeal-judder-singapore",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
