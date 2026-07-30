@@ -227,3 +227,6 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-07-24 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18118880188859522 | IGS C for blog: pass-vicom-inspection-first-try-singapore |
 | 2026-07-24 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18080156447294755 | IGS C for blog: renew-coe-5-or-10-years-mechanical-checklist |
 | 2026-07-24 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18335193715249727 | IGS C for blog: tesla-servicing-independent-workshop-singapore |
+| 2026-07-30 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17870958654566594 | IGS A for blog: gearbox-making-noise-singapore |
+| 2026-07-30 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18110183761801413 | IGS A for blog: car-battery-flat-singapore-warning-signs |
+| 2026-07-30 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17948807265212662 | IGS A for blog: brake-squeal-judder-singapore |

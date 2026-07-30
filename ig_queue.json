@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-gearbox-making-noise-singapore-a-d1",
-      "slot_time_sgt": "2026-07-30T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-gearbox-making-noise-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-gearbox-making-noise-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: gearbox-making-noise-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-gearbox-making-noise-singapore-b-d2",
       "slot_time_sgt": "2026-07-31T11:00",
       "type": "story",
@@ -37,18 +25,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-car-battery-flat-singapore-warning-signs-a-d1",
-      "slot_time_sgt": "2026-07-30T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-car-battery-flat-singapore-warning-signs/caption.txt",
-      "image_paths": [
-        "assets/igs-car-battery-flat-singapore-warning-signs/igs_A.png"
-      ],
-      "notes": "IGS A for blog: car-battery-flat-singapore-warning-signs",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-car-battery-flat-singapore-warning-signs-b-d2",
       "slot_time_sgt": "2026-07-31T11:00",
       "type": "story",
@@ -69,18 +45,6 @@
         "assets/igs-car-battery-flat-singapore-warning-signs/igs_C.png"
       ],
       "notes": "IGS C for blog: car-battery-flat-singapore-warning-signs",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-brake-squeal-judder-singapore-a-d1",
-      "slot_time_sgt": "2026-07-30T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-brake-squeal-judder-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-brake-squeal-judder-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: brake-squeal-judder-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -3593,6 +3557,51 @@
       "posted_url": "18335193715249727",
       "posted_at": "2026-07-24 20:05 SGT",
       "post_id": "18335193715249727"
+    },
+    {
+      "id": "igs-gearbox-making-noise-singapore-a-d1",
+      "slot_time_sgt": "2026-07-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-gearbox-making-noise-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-gearbox-making-noise-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: gearbox-making-noise-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17870958654566594",
+      "posted_at": "2026-07-30 15:55 SGT",
+      "post_id": "17870958654566594"
+    },
+    {
+      "id": "igs-car-battery-flat-singapore-warning-signs-a-d1",
+      "slot_time_sgt": "2026-07-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-car-battery-flat-singapore-warning-signs/caption.txt",
+      "image_paths": [
+        "assets/igs-car-battery-flat-singapore-warning-signs/igs_A.png"
+      ],
+      "notes": "IGS A for blog: car-battery-flat-singapore-warning-signs",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18110183761801413",
+      "posted_at": "2026-07-30 15:55 SGT",
+      "post_id": "18110183761801413"
+    },
+    {
+      "id": "igs-brake-squeal-judder-singapore-a-d1",
+      "slot_time_sgt": "2026-07-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-brake-squeal-judder-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-brake-squeal-judder-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: brake-squeal-judder-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17948807265212662",
+      "posted_at": "2026-07-30 15:55 SGT",
+      "post_id": "17948807265212662"
     }
   ],
   "failed": [
