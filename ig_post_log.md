@@ -230,3 +230,6 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-07-30 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17870958654566594 | IGS A for blog: gearbox-making-noise-singapore |
 | 2026-07-30 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18110183761801413 | IGS A for blog: car-battery-flat-singapore-warning-signs |
 | 2026-07-30 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17948807265212662 | IGS A for blog: brake-squeal-judder-singapore |
+| 2026-07-31 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18131413633649514 | IGS B for blog: gearbox-making-noise-singapore |
+| 2026-07-31 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18483624634100418 | IGS B for blog: car-battery-flat-singapore-warning-signs |
+| 2026-07-31 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18089083679138297 | IGS B for blog: brake-squeal-judder-singapore |

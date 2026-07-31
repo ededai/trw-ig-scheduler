@@ -3949,3 +3949,10 @@ ERROR publishing: Media ID is not available
 [2026-07-31 08:15:44 +08] run: no due posts
 [2026-07-31 10:55:36 +08] HEARTBEAT lag 160 min (prev=2026-07-31T08:15:44.052317+08:00)
 [2026-07-31 10:55:36 +08] run: no due posts
+[2026-07-31 11:27:20 +08] HEARTBEAT lag 32 min (prev=2026-07-31T10:55:36.713167+08:00)
+[2026-07-31 11:27:20 +08] Posting igs-gearbox-making-noise-singapore-b-d2 (story) — notes: IGS B for blog: gearbox-making-noise-singapore
+[2026-07-31 11:27:28 +08] OK  igs-gearbox-making-noise-singapore-b-d2 -> 18131413633649514
+[2026-07-31 11:27:29 +08] Posting igs-car-battery-flat-singapore-warning-signs-b-d2 (story) — notes: IGS B for blog: car-battery-flat-singapore-warning-signs
+[2026-07-31 11:27:37 +08] OK  igs-car-battery-flat-singapore-warning-signs-b-d2 -> 18483624634100418
+[2026-07-31 11:27:38 +08] Posting igs-brake-squeal-judder-singapore-b-d2 (story) — notes: IGS B for blog: brake-squeal-judder-singapore
+[2026-07-31 11:27:47 +08] OK  igs-brake-squeal-judder-singapore-b-d2 -> 18089083679138297
