@@ -4001,3 +4001,13 @@ ERROR publishing: Media ID is not available
 [2026-08-01 18:18:27 +08] run: no due posts
 [2026-08-01 19:36:59 +08] HEARTBEAT lag 79 min (prev=2026-08-01T18:18:27.721054+08:00)
 [2026-08-01 19:36:59 +08] run: no due posts
+[2026-08-01 20:37:17 +08] HEARTBEAT lag 60 min (prev=2026-08-01T19:36:59.808198+08:00)
+[2026-08-01 20:37:17 +08] CATCH-UP igs-gearbox-making-noise-singapore-c-d3 — 0.6h late, publishing
+[2026-08-01 20:37:17 +08] CATCH-UP igs-car-battery-flat-singapore-warning-signs-c-d3 — 0.6h late, publishing
+[2026-08-01 20:37:17 +08] CATCH-UP igs-brake-squeal-judder-singapore-c-d3 — 0.6h late, publishing
+[2026-08-01 20:37:17 +08] Posting igs-gearbox-making-noise-singapore-c-d3 (story) — notes: IGS C for blog: gearbox-making-noise-singapore
+[2026-08-01 20:37:33 +08] OK  igs-gearbox-making-noise-singapore-c-d3 -> 17877830877683949
+[2026-08-01 20:37:34 +08] Posting igs-car-battery-flat-singapore-warning-signs-c-d3 (story) — notes: IGS C for blog: car-battery-flat-singapore-warning-signs
+[2026-08-01 20:37:51 +08] OK  igs-car-battery-flat-singapore-warning-signs-c-d3 -> 18434701483131077
+[2026-08-01 20:37:51 +08] Posting igs-brake-squeal-judder-singapore-c-d3 (story) — notes: IGS C for blog: brake-squeal-judder-singapore
+[2026-08-01 20:37:59 +08] OK  igs-brake-squeal-judder-singapore-c-d3 -> 17898962406518838
