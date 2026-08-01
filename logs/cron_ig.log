@@ -4011,3 +4011,5 @@ ERROR publishing: Media ID is not available
 [2026-08-01 20:37:51 +08] OK  igs-car-battery-flat-singapore-warning-signs-c-d3 -> 18434701483131077
 [2026-08-01 20:37:51 +08] Posting igs-brake-squeal-judder-singapore-c-d3 (story) — notes: IGS C for blog: brake-squeal-judder-singapore
 [2026-08-01 20:37:59 +08] OK  igs-brake-squeal-judder-singapore-c-d3 -> 17898962406518838
+[2026-08-01 22:11:42 +08] HEARTBEAT lag 94 min (prev=2026-08-01T20:37:17.195739+08:00)
+[2026-08-01 22:11:42 +08] run: no due posts
