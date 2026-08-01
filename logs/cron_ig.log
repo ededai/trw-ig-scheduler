@@ -4013,3 +4013,5 @@ ERROR publishing: Media ID is not available
 [2026-08-01 20:37:59 +08] OK  igs-brake-squeal-judder-singapore-c-d3 -> 17898962406518838
 [2026-08-01 22:11:42 +08] HEARTBEAT lag 94 min (prev=2026-08-01T20:37:17.195739+08:00)
 [2026-08-01 22:11:42 +08] run: no due posts
+[2026-08-01 23:15:45 +08] HEARTBEAT lag 64 min (prev=2026-08-01T22:11:42.305530+08:00)
+[2026-08-01 23:15:45 +08] run: no due posts
