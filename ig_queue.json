@@ -1,5 +1,78 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "igs-coe-renewal-loan-singapore-a-d1",
+      "slot_time_sgt": "2026-08-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-renewal-loan-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-renewal-loan-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-renewal-loan-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-renewal-loan-singapore-b-d2",
+      "slot_time_sgt": "2026-08-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-renewal-loan-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-renewal-loan-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-renewal-loan-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-renewal-loan-singapore-c-d3",
+      "slot_time_sgt": "2026-08-05T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-renewal-loan-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-renewal-loan-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: coe-renewal-loan-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-quota-for-august-to-october-2026-19085-certificates-available-a-d1",
+      "slot_time_sgt": "2026-08-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-quota-for-august-to-october-2026-19085-certificates-available/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-quota-for-august-to-october-2026-19085-certificates-available/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-quota-for-august-to-october-2026-19085-certificates-available",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-quota-for-august-to-october-2026-19085-certificates-available-b-d2",
+      "slot_time_sgt": "2026-08-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-quota-for-august-to-october-2026-19085-certificates-available/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-quota-for-august-to-october-2026-19085-certificates-available/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-quota-for-august-to-october-2026-19085-certificates-available",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-quota-for-august-to-october-2026-19085-certificates-available-c-d3",
+      "slot_time_sgt": "2026-08-05T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-quota-for-august-to-october-2026-19085-certificates-available/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-quota-for-august-to-october-2026-19085-certificates-available/igs_C.png"
+      ],
+      "notes": "IGS C for blog: coe-quota-for-august-to-october-2026-19085-certificates-available",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",

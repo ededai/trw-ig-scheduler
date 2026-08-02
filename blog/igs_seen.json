@@ -536,6 +536,24 @@
         "igs-brake-squeal-judder-singapore-c-d3"
       ],
       "title": "Brake squeal, judder or grinding on Singapore roads"
+    },
+    "coe-renewal-loan-singapore": {
+      "queued_at": "2026-08-02 18:06 SGT",
+      "queued_ids": [
+        "igs-coe-renewal-loan-singapore-a-d1",
+        "igs-coe-renewal-loan-singapore-b-d2",
+        "igs-coe-renewal-loan-singapore-c-d3"
+      ],
+      "title": "COE Renewal Loan Singapore: How Much You Can Borrow + Calculator"
+    },
+    "coe-quota-for-august-to-october-2026-19085-certificates-available": {
+      "queued_at": "2026-08-02 18:06 SGT",
+      "queued_ids": [
+        "igs-coe-quota-for-august-to-october-2026-19085-certificates-available-a-d1",
+        "igs-coe-quota-for-august-to-october-2026-19085-certificates-available-b-d2",
+        "igs-coe-quota-for-august-to-october-2026-19085-certificates-available-c-d3"
+      ],
+      "title": "COE quota for August to October 2026: 19,085 certificates available"
     }
   }
 }
