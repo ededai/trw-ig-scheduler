@@ -1,18 +1,13 @@
 name: TRW Blog Daily Refresh
 
 on:
-  schedule:
-    # 16:30 UTC = 00:30 SGT daily.
-    # 5-day featured rotation + og:image drift fix + schema.org image fix.
-    - cron: "30 16 * * *"
+  # FROZEN 2026-08-02 for the index auto-update build (Step 0b of
+  # trw-index-autoupdate-2026-08/BUILD-PLAN-V2.md). refresh_search_corpus.py
+  # pattern-edits pages 475/1597/1776 and scrapes static cards that the build
+  # removes — it must not run until rebuilt against the dynamic pages (Step 14).
+  # Restore the schedule + push triggers ONLY as part of Step 14.
+  #   was: schedule cron "30 16 * * *" (00:30 SGT) + push on blog/** changes
   workflow_dispatch: {}
-  # Auto-fire on any change to the blog cron itself, so we self-verify on each
-  # workflow/script edit instead of waiting for the next scheduled tick.
-  push:
-    branches: [main]
-    paths:
-      - "blog/**"
-      - ".github/workflows/blog-cron.yml"
 
 permissions:
   contents: write
