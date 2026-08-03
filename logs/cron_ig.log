@@ -4093,3 +4093,22 @@ ERROR publishing: Media ID is not available
 [2026-08-03 14:25:22 +08] HEARTBEAT lag 178 min (prev=2026-08-03T11:27:50.608916+08:00)
 [2026-08-03 14:25:22 +08] run: no due posts
 [2026-08-03 14:44:58 +08] run: no due posts
+[2026-08-03 18:13:02 +08] HEARTBEAT lag 208 min (prev=2026-08-03T14:44:58.571713+08:00)
+[2026-08-03 18:13:02 +08] CATCH-UP igs-coe-renewal-loan-singapore-a-d1 — 2.7h late, publishing
+[2026-08-03 18:13:02 +08] CATCH-UP igs-coe-quota-for-august-to-october-2026-19085-certificates-available-a-d1 — 2.7h late, publishing
+[2026-08-03 18:13:02 +08] CATCH-UP igs-wheel-alignment-vs-balancing-singapore-a-d1 — 2.7h late, publishing
+[2026-08-03 18:13:02 +08] CATCH-UP igs-car-pulls-to-one-side-singapore-a-d1 — 2.7h late, publishing
+[2026-08-03 18:13:02 +08] CATCH-UP igs-pothole-kerb-alignment-check-singapore-a-d1 — 2.7h late, publishing
+[2026-08-03 18:13:02 +08] CATCH-UP igs-wheel-alignment-new-tyres-singapore-a-d1 — 2.7h late, publishing
+[2026-08-03 18:13:02 +08] Posting igs-coe-renewal-loan-singapore-a-d1 (story) — notes: IGS A for blog: coe-renewal-loan-singapore
+[2026-08-03 18:13:10 +08] OK  igs-coe-renewal-loan-singapore-a-d1 -> 17907223812463609
+[2026-08-03 18:13:11 +08] Posting igs-coe-quota-for-august-to-october-2026-19085-certificates-available-a-d1 (story) — notes: IGS A for blog: coe-quota-for-august-to-october-2026-19085-certificates-available
+[2026-08-03 18:13:18 +08] OK  igs-coe-quota-for-august-to-october-2026-19085-certificates-available-a-d1 -> 18106918937463750
+[2026-08-03 18:13:19 +08] Posting igs-wheel-alignment-vs-balancing-singapore-a-d1 (story) — notes: IGS A for blog: wheel-alignment-vs-balancing-singapore
+[2026-08-03 18:13:32 +08] OK  igs-wheel-alignment-vs-balancing-singapore-a-d1 -> 18001247078969703
+[2026-08-03 18:13:33 +08] Posting igs-car-pulls-to-one-side-singapore-a-d1 (story) — notes: IGS A for blog: car-pulls-to-one-side-singapore
+[2026-08-03 18:13:45 +08] OK  igs-car-pulls-to-one-side-singapore-a-d1 -> 18071592440463542
+[2026-08-03 18:13:46 +08] Posting igs-pothole-kerb-alignment-check-singapore-a-d1 (story) — notes: IGS A for blog: pothole-kerb-alignment-check-singapore
+[2026-08-03 18:13:59 +08] OK  igs-pothole-kerb-alignment-check-singapore-a-d1 -> 18113771930294193
+[2026-08-03 18:14:00 +08] Posting igs-wheel-alignment-new-tyres-singapore-a-d1 (story) — notes: IGS A for blog: wheel-alignment-new-tyres-singapore
+[2026-08-03 18:14:08 +08] OK  igs-wheel-alignment-new-tyres-singapore-a-d1 -> 17939655432332476
