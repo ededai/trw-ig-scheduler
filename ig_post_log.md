@@ -242,3 +242,9 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-08-03 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18071592440463542 | IGS A for blog: car-pulls-to-one-side-singapore |
 | 2026-08-03 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18113771930294193 | IGS A for blog: pothole-kerb-alignment-check-singapore |
 | 2026-08-03 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17939655432332476 | IGS A for blog: wheel-alignment-new-tyres-singapore |
+| 2026-08-04 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18130103206639298 | IGS B for blog: coe-renewal-loan-singapore |
+| 2026-08-04 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18098953688614429 | IGS B for blog: coe-quota-for-august-to-october-2026-19085-certificates-available |
+| 2026-08-04 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17981236938027431 | IGS B for blog: wheel-alignment-vs-balancing-singapore |
+| 2026-08-04 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18043446086805234 | IGS B for blog: car-pulls-to-one-side-singapore |
+| 2026-08-04 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18097472681618298 | IGS B for blog: pothole-kerb-alignment-check-singapore |
+| 2026-08-04 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18079517777682375 | IGS B for blog: wheel-alignment-new-tyres-singapore |

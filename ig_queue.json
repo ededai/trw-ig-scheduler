@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-coe-renewal-loan-singapore-b-d2",
-      "slot_time_sgt": "2026-08-04T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-coe-renewal-loan-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-renewal-loan-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: coe-renewal-loan-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-coe-renewal-loan-singapore-c-d3",
       "slot_time_sgt": "2026-08-05T20:00",
       "type": "story",
@@ -21,18 +9,6 @@
         "assets/igs-coe-renewal-loan-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: coe-renewal-loan-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-coe-quota-for-august-to-october-2026-19085-certificates-available-b-d2",
-      "slot_time_sgt": "2026-08-04T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-coe-quota-for-august-to-october-2026-19085-certificates-available/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-quota-for-august-to-october-2026-19085-certificates-available/igs_B.png"
-      ],
-      "notes": "IGS B for blog: coe-quota-for-august-to-october-2026-19085-certificates-available",
       "status": "pending",
       "attempts": 0
     },
@@ -49,18 +25,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-wheel-alignment-vs-balancing-singapore-b-d2",
-      "slot_time_sgt": "2026-08-04T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-wheel-alignment-vs-balancing-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-wheel-alignment-vs-balancing-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: wheel-alignment-vs-balancing-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-wheel-alignment-vs-balancing-singapore-c-d3",
       "slot_time_sgt": "2026-08-05T20:00",
       "type": "story",
@@ -69,18 +33,6 @@
         "assets/igs-wheel-alignment-vs-balancing-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: wheel-alignment-vs-balancing-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-car-pulls-to-one-side-singapore-b-d2",
-      "slot_time_sgt": "2026-08-04T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-car-pulls-to-one-side-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-car-pulls-to-one-side-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: car-pulls-to-one-side-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -97,18 +49,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-pothole-kerb-alignment-check-singapore-b-d2",
-      "slot_time_sgt": "2026-08-04T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-pothole-kerb-alignment-check-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-pothole-kerb-alignment-check-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: pothole-kerb-alignment-check-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-pothole-kerb-alignment-check-singapore-c-d3",
       "slot_time_sgt": "2026-08-05T20:00",
       "type": "story",
@@ -117,18 +57,6 @@
         "assets/igs-pothole-kerb-alignment-check-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: pothole-kerb-alignment-check-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-wheel-alignment-new-tyres-singapore-b-d2",
-      "slot_time_sgt": "2026-08-04T11:00",
-      "type": "story",
-      "caption_file": "assets/igs-wheel-alignment-new-tyres-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-wheel-alignment-new-tyres-singapore/igs_B.png"
-      ],
-      "notes": "IGS B for blog: wheel-alignment-new-tyres-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -3854,6 +3782,96 @@
       "posted_url": "17939655432332476",
       "posted_at": "2026-08-03 18:14 SGT",
       "post_id": "17939655432332476"
+    },
+    {
+      "id": "igs-coe-renewal-loan-singapore-b-d2",
+      "slot_time_sgt": "2026-08-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-renewal-loan-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-renewal-loan-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-renewal-loan-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18130103206639298",
+      "posted_at": "2026-08-04 13:34 SGT",
+      "post_id": "18130103206639298"
+    },
+    {
+      "id": "igs-coe-quota-for-august-to-october-2026-19085-certificates-available-b-d2",
+      "slot_time_sgt": "2026-08-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-quota-for-august-to-october-2026-19085-certificates-available/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-quota-for-august-to-october-2026-19085-certificates-available/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-quota-for-august-to-october-2026-19085-certificates-available",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18098953688614429",
+      "posted_at": "2026-08-04 13:34 SGT",
+      "post_id": "18098953688614429"
+    },
+    {
+      "id": "igs-wheel-alignment-vs-balancing-singapore-b-d2",
+      "slot_time_sgt": "2026-08-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-wheel-alignment-vs-balancing-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-wheel-alignment-vs-balancing-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: wheel-alignment-vs-balancing-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17981236938027431",
+      "posted_at": "2026-08-04 13:34 SGT",
+      "post_id": "17981236938027431"
+    },
+    {
+      "id": "igs-car-pulls-to-one-side-singapore-b-d2",
+      "slot_time_sgt": "2026-08-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-car-pulls-to-one-side-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-car-pulls-to-one-side-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: car-pulls-to-one-side-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18043446086805234",
+      "posted_at": "2026-08-04 13:34 SGT",
+      "post_id": "18043446086805234"
+    },
+    {
+      "id": "igs-pothole-kerb-alignment-check-singapore-b-d2",
+      "slot_time_sgt": "2026-08-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-pothole-kerb-alignment-check-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-pothole-kerb-alignment-check-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: pothole-kerb-alignment-check-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18097472681618298",
+      "posted_at": "2026-08-04 13:34 SGT",
+      "post_id": "18097472681618298"
+    },
+    {
+      "id": "igs-wheel-alignment-new-tyres-singapore-b-d2",
+      "slot_time_sgt": "2026-08-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-wheel-alignment-new-tyres-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-wheel-alignment-new-tyres-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: wheel-alignment-new-tyres-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18079517777682375",
+      "posted_at": "2026-08-04 13:34 SGT",
+      "post_id": "18079517777682375"
     }
   ],
   "failed": [
