@@ -4211,3 +4211,5 @@ ERROR publishing: Media ID is not available
 [2026-08-05 20:27:50 +08] OK  igs-pothole-kerb-alignment-check-singapore-c-d3 -> 18109659299092477
 [2026-08-05 20:27:50 +08] Posting igs-wheel-alignment-new-tyres-singapore-c-d3 (story) — notes: IGS C for blog: wheel-alignment-new-tyres-singapore
 [2026-08-05 20:28:03 +08] OK  igs-wheel-alignment-new-tyres-singapore-c-d3 -> 18164687224460529
+[2026-08-05 22:56:10 +08] HEARTBEAT lag 149 min (prev=2026-08-05T20:26:46.557868+08:00)
+[2026-08-05 22:56:10 +08] run: no due posts
