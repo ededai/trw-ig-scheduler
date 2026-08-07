@@ -1,12 +1,12 @@
 name: TRW Blog Daily Refresh
 
 on:
-  # FROZEN 2026-08-02 for the index auto-update build (Step 0b of
-  # trw-index-autoupdate-2026-08/BUILD-PLAN-V2.md). refresh_search_corpus.py
-  # pattern-edits pages 475/1597/1776 and scrapes static cards that the build
-  # removes — it must not run until rebuilt against the dynamic pages (Step 14).
-  # Restore the schedule + push triggers ONLY as part of Step 14.
-  #   was: schedule cron "30 16 * * *" (00:30 SGT) + push on blog/** changes
+  # Unfrozen 2026-08-03 (index build Step 14). The five page-rewriting steps
+  # (topic_tags_json, sync_topic_pages, search_corpus, related_reading,
+  # card_excerpts) are RETIRED — those surfaces render dynamically now. What
+  # remains only repairs images and reports.
+  schedule:
+    - cron: "30 16 * * *"   # 00:30 SGT
   workflow_dispatch: {}
 
 permissions:
