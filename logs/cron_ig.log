@@ -4831,3 +4831,5 @@ ERROR publishing: Media ID is not available
 [2026-08-16 01:35:35 +08] run: no due posts
 [2026-08-16 01:48:39 +08] run: no due posts
 [2026-08-16 01:57:40 +08] run: no due posts
+[2026-08-16 02:36:30 +08] HEARTBEAT lag 39 min (prev=2026-08-16T01:57:40.537898+08:00)
+[2026-08-16 02:36:30 +08] run: no due posts
