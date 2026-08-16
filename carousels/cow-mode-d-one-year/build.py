@@ -161,7 +161,7 @@ SLIDE7 = page("""
   <div style="height:1px; background:#1A1A1A; opacity:0.2; margin:30px 0 20px;"></div>
   <div style="display:grid; grid-template-columns: auto 1fr; gap:16px; align-items:center; margin-bottom:14px;">
     <div style="width:54px; height:54px; background:#1A1A1A; border-radius:999px; color:#EDE3CD; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:22px;">W</div>
-    <div><div style="font-weight:800; font-size:22px;">WhatsApp</div><div class="body-mono">+65 9855 8423</div></div>
+    <div><div style="font-weight:800; font-size:22px;">WhatsApp</div><div class="body-mono">+65 8952 1688</div></div>
   </div>
   <div style="display:grid; grid-template-columns: auto 1fr; gap:16px; align-items:center; margin-bottom:14px;">
     <div style="width:54px; height:54px; background:#1A1A1A; border-radius:999px; color:#EDE3CD; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px;">📍</div>
