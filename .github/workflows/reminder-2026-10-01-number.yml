@@ -1,0 +1,102 @@
+name: Reminder — TRW number decision (1 Oct 2026)
+
+# One-shot reminder for Ed (set 2026-08-18).
+#
+# WHY THIS EXISTS
+# On 16 Aug 2026 the TRW public number was swapped 9855 8423 -> 8952 1688
+# everywhere (101 WP pages, 4 Code Snippets, 3 WP options, 804 local files,
+# 4 git repos, namecard). On 18 Aug the new number's WhatsApp Business account
+# was under Meta review and unreachable. Ed chose NOT to revert then, and to
+# revisit the whole question on 1 October.
+#
+# WHY A WORKFLOW AND NOT A TIMER
+# Claude's CronCreate jobs are session-only and expire in 7 days, and local
+# cron needs Ed's Mac awake. This repo already runs daily cloud crons and has
+# TG_BOT_TOKEN / TG_CHAT_ID proven working, so the reminder survives closed
+# laptops, reboots and ended sessions.
+#
+# SCHEDULE
+# "7 1 1 10 *" = 1 October, 01:07 UTC = 09:07 SGT. Minute 7 rather than 0 on
+# purpose: GitHub's scheduled runs bunch up badly on the hour and get delayed.
+# GitHub Actions cron is best-effort and can slip by several minutes; for a
+# reminder that is fine.
+#
+# The cron expression recurs every year, so the job guards on the year and
+# stays silent from 2027 onward. Delete this file once the decision is made.
+
+on:
+  schedule:
+    - cron: "7 1 1 10 *"
+  workflow_dispatch: {}      # so Ed can fire it by hand to test
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Send the reminder
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID:   ${{ secrets.TG_CHAT_ID }}
+          MANUAL:       ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+        run: |
+          python - <<'PY'
+          import os, sys, json, datetime, urllib.request, urllib.parse
+
+          # The scheduled run recurs annually; only 2026 is wanted. A manual
+          # dispatch always sends, so the thing can be tested today.
+          year = datetime.datetime.utcnow().year
+          if year != 2026 and not os.environ.get("MANUAL"):
+              print(f"Year is {year}, not 2026. Nothing to do.")
+              sys.exit(0)
+
+          token = (os.environ.get("TG_BOT_TOKEN") or "").strip()
+          chat  = (os.environ.get("TG_CHAT_ID")  or "").strip()
+          if not token or not chat:
+              print("ERROR: TG_BOT_TOKEN or TG_CHAT_ID missing")
+              sys.exit(1)
+
+          text = (
+              "[CODI] REMINDER — TRW number decision\n"
+              "\n"
+              "You parked this on 18 Aug and asked to revisit today.\n"
+              "\n"
+              "Background: on 16 Aug the public number was swapped\n"
+              "9855 8423 -> 8952 1688 everywhere. On 18 Aug the new\n"
+              "number's WhatsApp Business account was under Meta review\n"
+              "and down, so you held off reverting.\n"
+              "\n"
+              "Decide one:\n"
+              "1. 8952 1688 is live again -> nothing to do, delete this job.\n"
+              "2. Still down -> run the revert to 9855 8423.\n"
+              "3. Gone for good -> get a new line, plan a fresh swap.\n"
+              "\n"
+              "Before any revert, turn OFF the auto-reply on 9855 8423 that\n"
+              "points customers at 8952 1688, or they get sent in a loop.\n"
+              "\n"
+              "Full inventory of what a revert must touch:\n"
+              ".planning/quick/20260816-trw-number-swap/SUMMARY.md\n"
+              "(in the Claude folder repo)\n"
+              "\n"
+              "Also parked that day: wiring followupContact_ into watcher.gs\n"
+              "in trw-appointments, so manual calendar bookings recover a\n"
+              "phone number from the car's past visits."
+          )
+
+          url  = f"https://api.telegram.org/bot{token}/sendMessage"
+          data = urllib.parse.urlencode({"chat_id": chat, "text": text}).encode()
+          try:
+              with urllib.request.urlopen(urllib.request.Request(url, data=data), timeout=15) as r:
+                  resp = json.load(r)
+          except Exception as e:
+              print(f"FAILED: {type(e).__name__}: {e}")
+              sys.exit(3)
+
+          print("response:", resp)
+          if not resp.get("ok"):
+              sys.exit(2)
+          print("Reminder sent.")
+          PY
