@@ -16,6 +16,7 @@ Always: send a heartbeat with today's schedule + yesterday's results.
 """
 import json
 import os
+import re
 import sys
 import urllib.parse
 import urllib.request
@@ -124,6 +125,51 @@ def check_assets_for_today(queue):
     return True, f"All {checked} asset URL(s) for today reachable as image/*"
 
 
+def scan_copy_for_today(queue):
+    """Report-only copy gate over today's captions (mandostack machine enforcement).
+
+    Uses tools/copy_scan.py plus Ed's stricter zero-dash house rule. This NEVER
+    fails the run: a false positive must not stop a scheduled post from firing.
+    Findings go into the morning brief so Ed can fix before the slot time.
+    """
+    today = now_sgt().date().isoformat()
+    try:
+        sys.path.insert(0, str(ROOT / "tools"))
+        import copy_scan
+        rules = copy_scan.compile_rules()
+    except Exception as exc:
+        return f"copy gate unavailable ({str(exc)[:80]})"
+
+    dash_re = re.compile(r"[—–]|&mdash;|&ndash;")
+    findings = []
+    scanned = 0
+
+    for e in queue.get("pending", []):
+        if not str(e.get("slot_time_sgt", "")).startswith(today):
+            continue
+        cf = e.get("caption_file", "")
+        if not cf:
+            continue
+        path = Path(cf)
+        if not path.is_absolute():
+            path = ROOT / cf
+        if not path.exists():
+            continue
+        scanned += 1
+        text = path.read_text(errors="replace")
+        for h in copy_scan.scan(text, rules, cf):
+            findings.append(f"  {e['id']} L{h['line']} [{h['id']}] {h['match']}")
+        for n, line in enumerate(text.splitlines(), 1):
+            if "copy-ignore" not in line and dash_re.search(line):
+                findings.append(f"  {e['id']} L{n} [house-zero-dash] {line.strip()[:60]}")
+
+    if not scanned:
+        return "No captions slotted today."
+    if findings:
+        return f"{scanned} caption(s) scanned, {len(findings)} tell(s):\n" + "\n".join(findings[:15])
+    return f"{scanned} caption(s) scanned, clean."
+
+
 def fmt_today(queue):
     today = now_sgt().date().isoformat()
     rows = sorted(
@@ -184,6 +230,7 @@ def main():
     msg = (
         f"☀️ TRW IG morning brief ({today_str})\n\n"
         f"--- Today's schedule ---\n{fmt_today(queue)}\n\n"
+        f"--- Copy gate ---\n{scan_copy_for_today(queue)}\n\n"
         f"--- Yesterday ---\n{fmt_yesterday(queue)}\n\n"
         f"All pre-flight checks ✅"
     )
