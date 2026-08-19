@@ -16,7 +16,6 @@ Always: send a heartbeat with today's schedule + yesterday's results.
 """
 import json
 import os
-import re
 import sys
 import urllib.parse
 import urllib.request
@@ -132,17 +131,25 @@ def scan_copy_for_today(queue):
     fails the run: a false positive must not stop a scheduled post from firing.
     Findings go into the morning brief so Ed can fix before the slot time.
     """
+    try:
+        return _scan_copy_impl(queue)
+    except Exception as exc:  # a report-only check must never take the brief down
+        return f"copy gate error, captions not checked ({str(exc)[:120]})"
+
+
+def _scan_copy_impl(queue):
     today = now_sgt().date().isoformat()
     try:
         sys.path.insert(0, str(ROOT / "tools"))
         import copy_scan
-        rules = copy_scan.compile_rules()
+        import house_rules
+        rules = house_rules.extend(copy_scan.compile_rules())
     except Exception as exc:
         return f"copy gate unavailable ({str(exc)[:80]})"
 
-    dash_re = re.compile(r"[—–]|&mdash;|&ndash;")
     findings = []
     scanned = 0
+    superseded = {"copy-em-dash", "copy-antithesis"}  # house rules cover these
 
     for e in queue.get("pending", []):
         if not str(e.get("slot_time_sgt", "")).startswith(today):
@@ -150,18 +157,22 @@ def scan_copy_for_today(queue):
         cf = e.get("caption_file", "")
         if not cf:
             continue
-        path = Path(cf)
-        if not path.is_absolute():
-            path = ROOT / cf
-        if not path.exists():
-            continue
-        scanned += 1
-        text = path.read_text(errors="replace")
-        for h in copy_scan.scan(text, rules, cf):
-            findings.append(f"  {e['id']} L{h['line']} [{h['id']}] {h['match']}")
-        for n, line in enumerate(text.splitlines(), 1):
-            if "copy-ignore" not in line and dash_re.search(line):
-                findings.append(f"  {e['id']} L{n} [house-zero-dash] {line.strip()[:60]}")
+        try:
+            path = Path(cf)
+            if not path.is_absolute():
+                path = ROOT / cf
+            if not path.exists():
+                continue
+            text = path.read_text(errors="replace")
+            scanned += 1
+            for h in copy_scan.scan(text, rules, cf):
+                if h["id"] in superseded:
+                    continue
+                findings.append(
+                    f"  {e.get('id', '?')} L{h['line']} [{h['id']}] {h['match']}"
+                )
+        except Exception as exc:  # one bad caption must not skip the rest
+            findings.append(f"  {e.get('id', '?')} unreadable ({str(exc)[:60]})")
 
     if not scanned:
         return "No captions slotted today."
