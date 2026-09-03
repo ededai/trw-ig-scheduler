@@ -1,18 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "igs-cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us-c-d3",
-      "slot_time_sgt": "2026-09-03T20:00",
-      "type": "story",
-      "caption_file": "assets/igs-cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us/caption.txt",
-      "image_paths": [
-        "assets/igs-cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us/igs_C.png"
-      ],
-      "notes": "IGS C for blog: cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us",
-      "status": "pending",
-      "attempts": 0
-    }
-  ],
+  "pending": [],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
@@ -3932,6 +3919,21 @@
       "posted_url": "18086393681221964",
       "posted_at": "2026-09-02 11:24 SGT",
       "post_id": "18086393681221964"
+    },
+    {
+      "id": "igs-cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us-c-d3",
+      "slot_time_sgt": "2026-09-03T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us/caption.txt",
+      "image_paths": [
+        "assets/igs-cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us/igs_C.png"
+      ],
+      "notes": "IGS C for blog: cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18036674549651419",
+      "posted_at": "2026-09-03 20:52 SGT",
+      "post_id": "18036674549651419"
     }
   ],
   "failed": [

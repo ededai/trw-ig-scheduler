@@ -256,3 +256,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-08-05 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18164687224460529 | IGS C for blog: wheel-alignment-new-tyres-singapore |
 | 2026-09-01 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18093798254183753 | IGS A for blog: cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us |
 | 2026-09-02 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18086393681221964 | IGS B for blog: cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us |
+| 2026-09-03 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18036674549651419 | IGS C for blog: cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us |
