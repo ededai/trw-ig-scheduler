@@ -5909,3 +5909,5 @@ ERROR publishing: Media ID is not available
 [2026-09-03 20:52:31 +08] CATCH-UP igs-cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us-c-d3 — 0.9h late, publishing
 [2026-09-03 20:52:32 +08] Posting igs-cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us-c-d3 (story) — notes: IGS C for blog: cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us
 [2026-09-03 20:52:48 +08] OK  igs-cat-a-coe-august-2026-hits-128501-what-the-surge-tells-us-c-d3 -> 18036674549651419
+[2026-09-04 00:42:52 +08] HEARTBEAT lag 230 min (prev=2026-09-03T20:52:31.980065+08:00)
+[2026-09-04 00:42:52 +08] run: no due posts
