@@ -1,5 +1,42 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "igs-f1-singapore-gp-2026-road-closures-and-transport-guide-a-d1",
+      "slot_time_sgt": "2026-09-06T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-f1-singapore-gp-2026-road-closures-and-transport-guide/caption.txt",
+      "image_paths": [
+        "assets/igs-f1-singapore-gp-2026-road-closures-and-transport-guide/igs_A.png"
+      ],
+      "notes": "IGS A for blog: f1-singapore-gp-2026-road-closures-and-transport-guide",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-f1-singapore-gp-2026-road-closures-and-transport-guide-b-d2",
+      "slot_time_sgt": "2026-09-07T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-f1-singapore-gp-2026-road-closures-and-transport-guide/caption.txt",
+      "image_paths": [
+        "assets/igs-f1-singapore-gp-2026-road-closures-and-transport-guide/igs_B.png"
+      ],
+      "notes": "IGS B for blog: f1-singapore-gp-2026-road-closures-and-transport-guide",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-f1-singapore-gp-2026-road-closures-and-transport-guide-c-d3",
+      "slot_time_sgt": "2026-09-08T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-f1-singapore-gp-2026-road-closures-and-transport-guide/caption.txt",
+      "image_paths": [
+        "assets/igs-f1-singapore-gp-2026-road-closures-and-transport-guide/igs_C.png"
+      ],
+      "notes": "IGS C for blog: f1-singapore-gp-2026-road-closures-and-transport-guide",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
