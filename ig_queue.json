@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars-a-d1",
-      "slot_time_sgt": "2026-10-03T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars/caption.txt",
-      "image_paths": [
-        "assets/igs-man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars/igs_A.png"
-      ],
-      "notes": "IGS A for blog: man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars-b-d2",
       "slot_time_sgt": "2026-10-04T11:00",
       "type": "story",
@@ -4016,6 +4004,21 @@
       "posted_url": "17909454522532680",
       "posted_at": "2026-09-08 20:56 SGT",
       "post_id": "17909454522532680"
+    },
+    {
+      "id": "igs-man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars-a-d1",
+      "slot_time_sgt": "2026-10-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars/caption.txt",
+      "image_paths": [
+        "assets/igs-man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars/igs_A.png"
+      ],
+      "notes": "IGS A for blog: man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18136912105649527",
+      "posted_at": "2026-10-03 17:55 SGT",
+      "post_id": "18136912105649527"
     }
   ],
   "failed": [

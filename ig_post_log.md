@@ -260,3 +260,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-09-06 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18102957320525610 | IGS A for blog: f1-singapore-gp-2026-road-closures-and-transport-guide |
 | 2026-09-07 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18455960197184832 | IGS B for blog: f1-singapore-gp-2026-road-closures-and-transport-guide |
 | 2026-09-08 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17909454522532680 | IGS C for blog: f1-singapore-gp-2026-road-closures-and-transport-guide |
+| 2026-10-03 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18136912105649527 | IGS A for blog: man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars |
