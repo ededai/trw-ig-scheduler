@@ -27,7 +27,14 @@ add_shortcode('trw_related_reads', function ($atts) {
     $pooln = max($show, intval($a['pool']));
     $variant = in_array($a['variant'], array('reads', 'svc'), true) ? $a['variant'] : 'rel';
     $force_nohero = ($a['force'] === 'nohero');
-    $emblem = 'https://therightworkshop.com/wp-content/uploads/2026/06/trw-emblem-orange-seal.png';
+    // D84/W16/C9/C10/C15: this file is a stale duplicate of the actively-maintained
+    // [trw_related_reads] shortcode (now snippet 52 in trw-rebrand-2026-10's phase 3
+    // pipeline) and is not meant to be re-pushed, but the hardcoded old-brand URL is
+    // fixed here anyway so an accidental re-push cannot restore the orange seal
+    // (C15). Value follows the same upload-folder convention as the other five kit
+    // media files (chrome-v6/media.json, all 2026/10); confirm against media.json's
+    // "fallback_tile" key once phase 1's R1 upload actually runs.
+    $emblem = 'https://therightworkshop.com/wp-content/uploads/2026/10/trw-fallback-car-cream300-1200x675.png';
 
     // ===== REGISTRY — cron-maintained, do not hand-edit between the markers =====
     // RR_REGISTRY_START
@@ -154,7 +161,9 @@ add_shortcode('trw_related_reads', function ($atts) {
           . ".rr-nohero .rr-bloom::after{content:'';position:absolute;inset:26px;border-radius:50%;background:#fff;opacity:.5}"
           . '.rr-nohero .rr-lockup{position:absolute;top:20px;left:20px;display:flex;align-items:center;gap:11px;z-index:3}'
           . '.rr-nohero .rr-seal{width:60px;height:60px;border-radius:50%;background:#fff;border:2px solid #EF5927;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 13px rgba(239,89,39,.16);flex:0 0 60px}'
-          . '.rr-nohero .rr-seal img{width:40px;height:auto;aspect-ratio:auto;margin:0;display:block;max-width:40px}'
+          // D84/W16/C9: object-fit:cover + matching border-radius, since the
+          // fallback tile is 16:9, not square like the old emblem.
+          . '.rr-nohero .rr-seal img{width:40px;height:40px;object-fit:cover;border-radius:50%;margin:0;display:block}'
           . '.rr-nohero .rr-brand{font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;text-transform:uppercase;font-size:14px;line-height:1.04;letter-spacing:-.005em}'
           . '.rr-nohero .rr-brand .l1,.rr-nohero .rr-brand .l3{font-weight:700;color:#0D0D0D}'
           . '.rr-nohero .rr-brand .l2{font-weight:900;color:#EF5927}'
