@@ -20,8 +20,8 @@ Usage:
     --output /tmp/igs_a.png
 
 Variants:
-  A — Editorial Teaser (title + sub, orange eyebrow tag "NEW ON THE BLOG")
-  B — Question Hook (orange wash bg, conversational question)
+  A — Editorial Teaser (title + sub, brass eyebrow tag "NEW ON THE BLOG")
+  B — Question Hook (brown wash bg, conversational question)
   C — Quote Pull (heavy dark scrim, italic quote)
 
 Requires: playwright (pip install playwright && playwright install chromium)
@@ -38,25 +38,25 @@ from pathlib import Path
 VARIANT_CONFIG = {
     "A": {
         "eyebrow_text": "NEW ON THE BLOG",
-        "eyebrow_bg": "#FF6B00",
-        "eyebrow_color": "#fff",
-        "scrim": "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 30%, rgba(0,0,0,0.65) 70%, rgba(0,0,0,0.85) 100%)",
+        "eyebrow_bg": "#D9AE55",
+        "eyebrow_color": "#3B1409",
+        "scrim": "linear-gradient(180deg, rgba(59,20,9,0.55) 0%, rgba(59,20,9,0.35) 30%, rgba(59,20,9,0.65) 70%, rgba(59,20,9,0.85) 100%)",
         "title_size": "78px",
         "title_style": "normal",
     },
     "B": {
         "eyebrow_text": "QUICK QUESTION",
-        "eyebrow_bg": "#fff",
-        "eyebrow_color": "#FF6B00",
-        "scrim": "linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(255,107,0,0.55) 100%)",
+        "eyebrow_bg": "#F5F4F0",
+        "eyebrow_color": "#5A1807",
+        "scrim": "linear-gradient(180deg, rgba(59,20,9,0.7) 0%, rgba(90,24,7,0.55) 100%)",
         "title_size": "96px",
         "title_style": "normal",
     },
     "C": {
         "eyebrow_text": "FROM THE BLOG",
-        "eyebrow_bg": "#FF6B00",
-        "eyebrow_color": "#fff",
-        "scrim": "rgba(0,0,0,0.78)",
+        "eyebrow_bg": "#D9AE55",
+        "eyebrow_color": "#3B1409",
+        "scrim": "rgba(59,20,9,0.78)",
         "title_size": "108px",
         "title_style": "italic",
     },
@@ -69,7 +69,7 @@ TEMPLATE_HTML = """<!DOCTYPE html>
   html, body {
     width: 1080px;
     height: 1920px;
-    background: #000;
+    background: #3B1409;
     font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     overflow: hidden;
   }
@@ -122,25 +122,25 @@ TEMPLATE_HTML = """<!DOCTYPE html>
     padding: 60px 0;
   }
   .title {
-    color: #fff;
+    color: #F5F4F0;
     font-size: {TITLE_SIZE};
     font-style: {TITLE_STYLE};
     font-weight: 900;
     line-height: 1.08;
-    text-shadow: 0 6px 36px rgba(0,0,0,0.55);
+    text-shadow: 0 6px 36px rgba(59,20,9,0.55);
   }
   .sub {
-    color: rgba(255,255,255,0.95);
+    color: rgba(245,244,240,0.95);
     font-size: 42px;
     line-height: 1.4;
     font-weight: 500;
-    text-shadow: 0 3px 18px rgba(0,0,0,0.6);
+    text-shadow: 0 3px 18px rgba(59,20,9,0.6);
     padding: 0 24px;
   }
   .cta {
     align-self: center;
-    color: #fff;
-    background: rgba(0,0,0,0.55);
+    color: #F5F4F0;
+    background: rgba(59,20,9,0.55);
     padding: 39px 51px;
     border-radius: 36px;
     font-size: 36px;
@@ -148,9 +148,9 @@ TEMPLATE_HTML = """<!DOCTYPE html>
     letter-spacing: 1.2px;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    border: 3px solid rgba(255,255,255,0.18);
+    border: 3px solid rgba(245,244,240,0.18);
   }
-  .cta strong { color: #FF8A33; }
+  .cta strong { color: #D9AE55; }
 </style>
 </head><body>
   <div class="frame">
