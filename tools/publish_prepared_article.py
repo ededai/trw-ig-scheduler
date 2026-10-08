@@ -93,7 +93,17 @@ def main() -> int:
 
     names = sorted(set(re.findall(r"\{\{IMG:([^}]+)\}\}", html)))
     urls, featured_id = {}, None
+    # Re-runs reuse the media from the previous publish instead of uploading duplicates.
+    prev_path = root / "publish" / "result.json"
+    if prev_path.exists():
+        prev = json.loads(prev_path.read_text())
+        urls = {k: v for k, v in (prev.get("media") or {}).items() if k in names}
+        featured_id = prev.get("featured_media") if "featured.png" in urls else None
+        if urls:
+            print(f"reusing {len(urls)} previously uploaded image(s)")
     for name in names:
+        if name in urls:
+            continue
         p = root / name if name == "featured.png" else root / "infographics" / name
         alt = alts.get(name) or alts.get(name.replace("-mobile.png", "").replace(".png", ""), title)
         media = upload(p, alt)
