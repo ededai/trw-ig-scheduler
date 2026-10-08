@@ -36,5 +36,6 @@
     "infographics/coe-merger-infographic-3.png",
     "infographics/coe-merger-infographic-4.png"
   ],
-  "publish_notes": "Upload the 4 infographics to WP media and swap the relative src paths in body.html for the media URLs. body.html uses a .trw-short-version box; style it like the existing 'The short version' box on /coe-explained/."
+  "publish_notes": "Render via cole.news_post_renderer.render_news_post(title, body_html, tags=['coe','regulation'], hero_img_url=<featured.png media URL>). Upload featured.png + the 3 infographics to WP media and swap the relative src paths. Body uses live site components: trw-figures, trw-table, trw-callout, t-lead, t-key, t-aside.",
+  "featured_image": "featured.png"
 }
