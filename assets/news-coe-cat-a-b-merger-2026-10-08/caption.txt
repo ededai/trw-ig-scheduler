@@ -1,17 +1,18 @@
-LTA wants to merge Cat A and Cat B COE into one category for all cars.
+LTA wants one COE for all cars. Here is what that means, in plain words.
 
-On top of that single premium, a "feebate" would kick in based on the car's value. Cheaper models get a rebate. Pricier models pay a surcharge. Mid-range pays the premium as is.
+Today, small cars bid in Cat A and bigger cars bid in Cat B. Under LTA's proposal, everyone bids in one queue and pays the same COE price.
 
-The reason: at the 7 October bidding exercise, Cat A closed at $130,001 and Cat B at $130,100. A $99 gap. The split between small and big cars has stopped sorting buyers by budget.
+Then the price gets adjusted by how expensive your car model is:
+Cheaper models get up to $15,000 off.
+Mid-range models pay the COE price as is.
+Pricier models pay up to $15,000 more.
 
-Two options on the table:
-3 bands: $15,000 rebate, neutral, $15,000 surcharge
-5 bands: $15,000 or $7,500 rebate, neutral, $7,500 or $15,000 surcharge
+The reason: on 7 October, a Cat A COE cost $130,001 and a Cat B COE cost $130,100. A $99 gap. In June 2025 that gap was $16,001.
 
-Still undecided: three or five bands, what happens to Cat E, and whether renewals get the feebate too.
+Still undecided: three bands or five, what happens to Cat E, and whether COE renewals get the rebate or surcharge too.
 
-This is still a proposal. Feedback closes 2 November 2026, 11.59pm at go.gov.sg/coe-pcd-feedback. LTA shares its findings in the first half of 2027.
+Nothing changes yet. Feedback closes 2 November 2026, 11.59pm at go.gov.sg/coe-pcd-feedback. LTA shares its decision in the first half of 2027.
 
-Swipe for the full breakdown. Full article at the link in bio.
+Swipe for the breakdown. Full explainer at the link in bio.
 
 #COESingapore #TheRightWorkshop

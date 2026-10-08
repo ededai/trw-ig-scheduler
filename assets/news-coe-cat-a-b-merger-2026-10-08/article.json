@@ -1,8 +1,8 @@
 {
-  "slug": "coe-cat-a-and-cat-b-merger-what-ltas-proposal-means-for-you",
-  "title": "COE Cat A and Cat B merger: what LTA's proposal means for you",
-  "thumbnail_title": "LTA Wants One COE for All Cars",
-  "meta_description": "LTA wants to merge Singapore's Cat A and Cat B COE into one car category with value-based rebates and surcharges. The Right Workshop explains what changes.",
+  "slug": "coe-cat-a-and-cat-b-merger-explained",
+  "title": "COE Cat A and Cat B merger explained: what LTA's plan means for you",
+  "thumbnail_title": "One COE for All Cars, Explained",
+  "meta_description": "LTA plans to merge Singapore's Cat A and Cat B COE into one car category with rebates or surcharges up to $15,000. The Right Workshop explains it simply.",
   "tags": [
     "coe",
     "regulation"
@@ -11,9 +11,10 @@
   "hub_category": "News",
   "status": "DRAFT, awaiting Ed approval. Not published to WordPress or Instagram.",
   "fact_basis": {
-    "coe_premiums_and_quotas": "Verified against trw-cole data/coe_history.json (LTA DataMall): 2026/02/2 and 2026/10/1",
+    "coe_premiums_and_quotas": "Verified against trw-cole data/coe_history.json (LTA DataMall): every round Jun 2025 to 2026/10/1",
     "feebate_bands_dates_feedback_link": "LTA public consultation 8 Oct 2026 as reported by Mothership, AsiaOne, Red Hot Singapore, pressnewsagency.org. Primary LTA consultation paper not fetched (network policy blocked); confirm before publish.",
-    "example_car_models": "Mothership's report of LTA's illustration. Confirm against the LTA paper before publish."
+    "example_car_models": "Mothership's report of LTA's illustration. Confirm against the LTA paper before publish.",
+    "background_and_quotes": "Jeffrey Siow (March Budget debate, spec-tuning), Edward Chia (July 2026 focus group), expert views and ideas left out: Straits Times coverage via syndicated excerpts; ST/CNA pages themselves were not reachable from this environment."
   },
   "sources": [
     "https://mothership.sg/2026/10/lta-consultation-merge-coe/",
@@ -22,6 +23,19 @@
     "https://pressnewsagency.org/lta-proposes-merging-coe-car-categories-with-fees-and-rebates-for-different-models/",
     "https://theonlinecitizen.com/2026/03/04/singapore-to-review-coe-categorisation-system-amid-price-convergence-concerns",
     "https://www.motorist.sg/article/5526/february-2026-coe-results-2nd-bidding-the-coe-pony-started-its-year-of-the-horse-with-an-anomaly-cat-a-costing-more-than-cat-b",
-    "https://go.gov.sg/coe-pcd-feedback"
-  ]
+    "https://go.gov.sg/coe-pcd-feedback",
+    "https://www.straitstimes.com/singapore/transport/merging-cat-a-and-b-rebates-based-on-car-value-among-proposed-changes-to-coe-system",
+    "https://cna.asia/4y28Ekt",
+    "https://goodyfeed.com/lta-proposes-merging-coe-categories-a-b-with-rebates-or-surcharges-of-up-to-s15000/",
+    "https://www.redhot.sg/coe-review-impact-of-proposed-changes-on-premiums-uncertain-say-experts-725734.html",
+    "https://sg.headtopics.com/news/coe-review-what-the-proposed-changes-will-likely-achieve-88583105",
+    "https://www.motorist.sg/article/6297/merging-cat-a-and-cat-b-will-still-keep-coe-prices-high"
+  ],
+  "infographics": [
+    "infographics/coe-merger-infographic-1.png",
+    "infographics/coe-merger-infographic-2.png",
+    "infographics/coe-merger-infographic-3.png",
+    "infographics/coe-merger-infographic-4.png"
+  ],
+  "publish_notes": "Upload the 4 infographics to WP media and swap the relative src paths in body.html for the media URLs. body.html uses a .trw-short-version box; style it like the existing 'The short version' box on /coe-explained/."
 }
