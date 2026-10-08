@@ -1,0 +1,27 @@
+{
+  "slug": "coe-cat-a-and-cat-b-merger-what-ltas-proposal-means-for-you",
+  "title": "COE Cat A and Cat B merger: what LTA's proposal means for you",
+  "thumbnail_title": "LTA Wants One COE for All Cars",
+  "meta_description": "LTA wants to merge Singapore's Cat A and Cat B COE into one car category with value-based rebates and surcharges. The Right Workshop explains what changes.",
+  "tags": [
+    "coe",
+    "regulation"
+  ],
+  "body_html_file": "body.html",
+  "hub_category": "News",
+  "status": "DRAFT, awaiting Ed approval. Not published to WordPress or Instagram.",
+  "fact_basis": {
+    "coe_premiums_and_quotas": "Verified against trw-cole data/coe_history.json (LTA DataMall): 2026/02/2 and 2026/10/1",
+    "feebate_bands_dates_feedback_link": "LTA public consultation 8 Oct 2026 as reported by Mothership, AsiaOne, Red Hot Singapore, pressnewsagency.org. Primary LTA consultation paper not fetched (network policy blocked); confirm before publish.",
+    "example_car_models": "Mothership's report of LTA's illustration. Confirm against the LTA paper before publish."
+  },
+  "sources": [
+    "https://mothership.sg/2026/10/lta-consultation-merge-coe/",
+    "https://www.asiaone.com/singapore/lta-public-consultation-merge-cat-a-cat-b-coes-single-car-category",
+    "https://www.redhot.sg/merging-cat-a-and-b-rebates-based-on-car-value-among-proposed-changes-to-coe-system-725726.html",
+    "https://pressnewsagency.org/lta-proposes-merging-coe-car-categories-with-fees-and-rebates-for-different-models/",
+    "https://theonlinecitizen.com/2026/03/04/singapore-to-review-coe-categorisation-system-amid-price-convergence-concerns",
+    "https://www.motorist.sg/article/5526/february-2026-coe-results-2nd-bidding-the-coe-pony-started-its-year-of-the-horse-with-an-anomaly-cat-a-costing-more-than-cat-b",
+    "https://go.gov.sg/coe-pcd-feedback"
+  ]
+}

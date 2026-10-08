@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+:root{
+  --bg:#f4f3ef; --bg-2:#e9e7e0; --ink:#0c0c0e; --ink-soft:#5a5a5e; --muted:#8a877c;
+  --orange:#EF5927; --grid:rgba(12,12,14,0.06);
+  --reb-2:#00695F; --reb-1:#22A898; --neutral:#B6B3A5; --sur-1:#F59A62; --sur-2:#D23F0B;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#777;font-family:'Inter',system-ui,sans-serif;color:var(--ink)}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;margin:0 0 20px;
+  background:linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:60px 60px}
+.top{position:absolute;top:48px;left:64px;right:64px;display:flex;justify-content:space-between;align-items:center}
+.top img{height:50px;filter:invert(0.92) brightness(0.12) saturate(0)}
+.tag{font-family:'JetBrains Mono','DejaVu Sans Mono',monospace;font-weight:600;font-size:15px;letter-spacing:.22em;text-transform:uppercase;border:1.5px solid var(--ink);padding:7px 13px}
+.body{position:absolute;top:130px;left:64px;right:64px;bottom:110px;display:flex;flex-direction:column;justify-content:center}
+.kicker{font-family:'JetBrains Mono','DejaVu Sans Mono',monospace;font-weight:700;font-size:17px;letter-spacing:.28em;color:var(--orange);text-transform:uppercase;margin-bottom:22px}
+h1{font-weight:900;font-size:96px;line-height:.98;letter-spacing:-.035em}
+h2{font-weight:900;font-size:66px;line-height:1.02;letter-spacing:-.03em;margin-bottom:26px}
+.lede{font-size:31px;line-height:1.38;color:var(--ink-soft);font-weight:500}
+.lede b{color:var(--ink)}
+.foot{position:absolute;left:64px;right:64px;bottom:48px;display:flex;justify-content:space-between;align-items:center;border-top:1.5px solid var(--ink);padding-top:16px;font-family:'JetBrains Mono','DejaVu Sans Mono',monospace;font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.foot b{color:var(--ink)}
+.orange{color:var(--orange)}
+.stamp{display:inline-block;background:var(--ink);color:var(--bg);font-family:'JetBrains Mono','DejaVu Sans Mono',monospace;font-weight:700;font-size:20px;letter-spacing:.2em;padding:12px 18px;text-transform:uppercase}
+
+/* slide 1 merge diagram */
+.merge{display:flex;align-items:center;gap:28px;margin:58px 0 54px}
+.pool{border:2px solid var(--ink);padding:22px 24px;width:270px;background:var(--bg)}
+.pool .n{font-weight:900;font-size:44px;letter-spacing:-.02em}
+.pool .d{font-size:20px;color:var(--ink-soft);margin-top:6px;line-height:1.35}
+.plus{font-weight:900;font-size:54px}
+.arrow{font-weight:900;font-size:54px;color:var(--orange)}
+.pool.one{background:var(--ink);color:var(--bg);width:300px;border-color:var(--ink)}
+.pool.one .d{color:#cfccc2}
+
+/* slide 2 chart */
+.chart{margin-top:40px}
+.round{margin-bottom:40px}
+.round .lbl{font-family:'JetBrains Mono','DejaVu Sans Mono',monospace;font-size:17px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px}
+.row{display:flex;align-items:center;gap:18px;margin-bottom:8px}
+.row .cat{width:92px;font-weight:800;font-size:26px}
+.bar{height:58px;border-radius:0 4px 4px 0}
+.row .val{font-weight:800;font-size:28px;font-variant-numeric:tabular-nums}
+.bA{background:var(--ink)} .bB{background:var(--orange)}
+.callout{margin-top:10px;font-size:22px;font-weight:600}
+.big{font-weight:900;font-size:150px;letter-spacing:-.05em;line-height:.9}
+.legend{display:flex;gap:28px;font-size:20px;font-weight:600;margin-top:4px}
+.sw{display:inline-block;width:18px;height:18px;border-radius:3px;vertical-align:-2px;margin-right:8px}
+
+/* slide 3 how it works */
+.steps{margin-top:34px;display:flex;flex-direction:column;gap:22px}
+.step{display:flex;gap:26px;align-items:flex-start;border:2px solid var(--ink);background:var(--bg);padding:26px 28px}
+.step .k{font-family:'JetBrains Mono','DejaVu Sans Mono',monospace;font-weight:700;font-size:34px;color:var(--orange);min-width:56px}
+.step .t{font-weight:800;font-size:34px;letter-spacing:-.01em;margin-bottom:8px}
+.step .s{font-size:24px;line-height:1.4;color:var(--ink-soft)}
+
+/* slide 4 bands */
+.bands{margin-top:30px}
+.opt{margin-bottom:46px}
+.opt .name{font-weight:800;font-size:30px;margin-bottom:6px}
+.opt .note{font-size:21px;color:var(--ink-soft);margin-bottom:16px}
+.strip{display:flex;gap:2px;height:118px}
+.seg{display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;font-weight:900;font-size:30px;letter-spacing:-.01em}
+.seg small{font-weight:600;font-size:16px;letter-spacing:.06em;text-transform:uppercase;margin-top:4px;opacity:.95}
+.seg.n{color:var(--ink)}
+.axis{display:flex;justify-content:space-between;font-family:'JetBrains Mono','DejaVu Sans Mono',monospace;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:12px}
+
+/* slide 5 timeline */
+.tl{margin-top:30px;position:relative;padding-left:48px}
+.tl:before{content:"";position:absolute;left:13px;top:12px;bottom:12px;width:3px;background:var(--ink)}
+.ev{position:relative;margin-bottom:30px}
+.ev:before{content:"";position:absolute;left:-46px;top:8px;width:26px;height:26px;border-radius:50%;background:var(--bg);border:3px solid var(--ink)}
+.ev.now:before{background:var(--orange);border-color:var(--orange)}
+.ev .d{font-family:'JetBrains Mono','DejaVu Sans Mono',monospace;font-weight:700;font-size:19px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange)}
+.ev .w{font-weight:800;font-size:31px;margin-top:4px}
+.open{margin-top:12px;border:2px solid var(--ink);background:var(--bg);padding:24px 28px}
+.open .h{font-family:'JetBrains Mono','DejaVu Sans Mono',monospace;font-weight:700;font-size:17px;letter-spacing:.24em;text-transform:uppercase;margin-bottom:12px}
+.open li{font-size:25px;line-height:1.5;margin-left:28px;font-weight:500}
+.cta{margin-top:26px;background:var(--orange);color:#fff;padding:22px 28px;font-weight:800;font-size:28px}
+.cta span{font-family:'JetBrains Mono','DejaVu Sans Mono',monospace;font-weight:700}
+</style></head><body>
+
+<!-- 1 COVER -->
+<section class="slide" id="s1"><div class="grid"></div>
+<div class="top"><img src="../canonical/trw-logo-white.png" alt="The Right Workshop"><div class="tag">COE News · 01/05</div></div>
+<div class="body">
+  <div class="kicker">LTA proposal · 8 Oct 2026</div>
+  <h1>One COE for <span class="orange">all cars.</span></h1>
+  <div class="merge">
+    <div class="pool" style="flex:1"><div class="n">Cat A</div><div class="d">Up to 1,600cc &amp; 130bhp<br>EVs up to 110kW</div></div>
+    <div class="plus">+</div>
+    <div class="pool" style="flex:1"><div class="n">Cat B</div><div class="d">Above 1,600cc or 130bhp<br>EVs above 110kW</div></div>
+  </div>
+  <div style="text-align:center;margin:-30px 0 18px" class="arrow">↓</div>
+  <div class="pool one" style="width:auto;margin-bottom:50px"><div class="n">One car COE</div><div class="d" style="font-size:24px">Everyone pays the same premium, then gets a rebate or pays a surcharge based on the car's value.</div></div>
+  <div><div class="stamp">Proposal only · feedback until 2 Nov</div></div>
+</div>
+<div class="foot"><span><b>therightworkshop.com</b></span><span>Swipe →</span></div>
+</section>
+
+<!-- 2 WHY -->
+<section class="slide" id="s2"><div class="grid"></div>
+<div class="top"><img src="../canonical/trw-logo-white.png" alt=""><div class="tag">Why now · 02/05</div></div>
+<div class="body">
+  <div class="kicker">The split stopped working</div>
+  <h2>Small cars and big cars now pay almost the same COE.</h2>
+  <div class="legend"><span><i class="sw bA"></i>Cat A (smaller cars)</span><span><i class="sw bB"></i>Cat B (bigger cars)</span></div>
+  <div class="chart">
+    <div class="round"><div class="lbl">Feb 2026 · 2nd bidding</div>
+      <div class="row"><div class="cat">Cat A</div><div class="bar bA" style="width:520px"></div><div class="val">$106,501</div></div>
+      <div class="row"><div class="cat">Cat B</div><div class="bar bB" style="width:513px"></div><div class="val">$105,001</div></div>
+      <div class="callout">Cat A cost <b>$1,500 more</b> than Cat B. LTA started a review in March.</div>
+    </div>
+    <div class="round"><div class="lbl">Oct 2026 · 1st bidding (7 Oct)</div>
+      <div class="row"><div class="cat">Cat A</div><div class="bar bA" style="width:635px"></div><div class="val">$130,001</div></div>
+      <div class="row"><div class="cat">Cat B</div><div class="bar bB" style="width:636px"></div><div class="val">$130,100</div></div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:flex-end;gap:26px;margin-top:-6px">
+    <div class="big">$99</div>
+    <div class="lede" style="padding-bottom:16px">gap between the two<br>categories on 7 Oct.</div>
+  </div>
+</div>
+<div class="foot"><span>Source: <b>LTA DataMall</b> · bars start at $0</span><span>Swipe →</span></div>
+</section>
+
+<!-- 3 HOW -->
+<section class="slide" id="s3"><div class="grid"></div>
+<div class="top"><img src="../canonical/trw-logo-white.png" alt=""><div class="tag">How it works · 03/05</div></div>
+<div class="body">
+  <div class="kicker">The "feebate"</div>
+  <h2>Your car's value decides the final bill.</h2>
+  <div class="steps">
+    <div class="step"><div class="k">01</div><div><div class="t">Everyone bids in one pool</div><div class="s">Cat A and Cat B buyers share one quota and pay one COE premium.</div></div></div>
+    <div class="step"><div class="k">02</div><div><div class="t">LTA ranks car models by value</div><div class="s">Each model's median open market value (OMV) is ranked and split into bands by percentile.</div></div></div>
+    <div class="step"><div class="k">03</div><div><div class="t">Your band adjusts the price</div><div class="s"><b style="color:var(--reb-2)">Lower-value model:</b> rebate<br><b>Mid-range model:</b> no change<br><b style="color:var(--sur-2)">Higher-value model:</b> surcharge</div></div></div>
+    <div class="step"><div class="k">04</div><div><div class="t">Bands reviewed every year</div><div class="s">A model can move to a different band as car prices shift.</div></div></div>
+  </div>
+</div>
+<div class="foot"><span>LTA public consultation · 8 Oct 2026</span><span>Swipe →</span></div>
+</section>
+
+<!-- 4 BANDS -->
+<section class="slide" id="s4"><div class="grid"></div>
+<div class="top"><img src="../canonical/trw-logo-white.png" alt=""><div class="tag">The numbers · 04/05</div></div>
+<div class="body">
+  <div class="kicker">Two options on the table</div>
+  <h2>Up to $15,000 off, or $15,000 more.</h2>
+  <div class="bands">
+    <div class="opt"><div class="name">Option 1 · Three bands</div><div class="note">Simpler to run. Bigger jump between bands.</div>
+      <div class="strip">
+        <div class="seg" style="flex:1;background:var(--reb-2)">−$15,000<small>Rebate</small></div>
+        <div class="seg n" style="flex:1;background:var(--neutral)">$0<small>No change</small></div>
+        <div class="seg" style="flex:1;background:var(--sur-2)">+$15,000<small>Surcharge</small></div>
+      </div>
+    </div>
+    <div class="opt"><div class="name">Option 2 · Five bands</div><div class="note">More gradual steps between car values.</div>
+      <div class="strip">
+        <div class="seg" style="flex:1;background:var(--reb-2);font-size:25px">−$15,000<small>Rebate</small></div>
+        <div class="seg" style="flex:1;background:var(--reb-1);font-size:25px">−$7,500<small>Rebate</small></div>
+        <div class="seg n" style="flex:1;background:var(--neutral);font-size:25px">$0<small>No change</small></div>
+        <div class="seg n" style="flex:1;background:var(--sur-1);font-size:25px">+$7,500<small>Surcharge</small></div>
+        <div class="seg" style="flex:1;background:var(--sur-2);font-size:25px">+$15,000<small>Surcharge</small></div>
+      </div>
+      <div class="axis"><span>← Lower car value</span><span>Higher car value →</span></div>
+    </div>
+  </div>
+  <div class="lede" style="font-size:27px">Example: if the merged COE settled near <b>$130,001</b>, a $15,000 rebate cuts it by about <b>11.5%</b>. A $15,000 surcharge takes it past <b>$145,000</b>.</div>
+</div>
+<div class="foot"><span>Amounts as proposed · may change</span><span>Swipe →</span></div>
+</section>
+
+<!-- 5 WHAT NEXT -->
+<section class="slide" id="s5"><div class="grid"></div>
+<div class="top"><img src="../canonical/trw-logo-white.png" alt=""><div class="tag">What's next · 05/05</div></div>
+<div class="body">
+  <div class="kicker">Nothing changes yet</div>
+  <h2>Your next bid runs on today's rules.</h2>
+  <div class="tl">
+    <div class="ev now"><div class="d">8 Oct 2026</div><div class="w">Public consultation opens</div></div>
+    <div class="ev"><div class="d">2 Nov 2026 · 11.59pm</div><div class="w">Feedback closes</div></div>
+    <div class="ev"><div class="d">First half of 2027</div><div class="w">LTA shares findings and recommendations</div></div>
+  </div>
+  <div class="open"><div class="h">Still undecided</div>
+    <ul><li>Three bands or five</li><li>What happens to Cat E (Open)</li><li>Whether COE renewals get the feebate too</li></ul>
+  </div>
+  <div class="cta">Have your say: <span>go.gov.sg/coe-pcd-feedback</span></div>
+</div>
+<div class="foot"><span>Full article · <b>link in bio</b></span><span><b>therightworkshop.com</b></span></div>
+</section>
+
+</body></html>
