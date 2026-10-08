@@ -1,0 +1,341 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* Sticky TOC fix: site-wide Snippet 25 sets html/body { overflow-x: hidden }
+   which silently kills position:sticky on all descendants. Override with
+   overflow-x:clip , same horizontal-scroll suppression, no sticky kill.
+   Documented in feedback memory and observation #5072. */
+html, body { overflow-x: clip !important; }
+.trw-news-article * { box-sizing: border-box; }
+.trw-news-article { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: #5A1807; line-height: 1.65; }
+.trw-news-article a { color: inherit; text-decoration: none; }
+.trw-news-article img { display: block; max-width: 100%; height: auto; }
+.trw-news-article .wrapper { max-width: 1100px; margin: 0 auto; padding: 0 40px; } /* Aligned to Snippet 25 .bc breadcrumb */
+
+/* Article head */
+.trw-news-article .article-head { padding: 32px 0 40px; background: #F5F4F0; }
+.trw-news-article .article-head .eyebrow-row { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #5A1807; }
+/* Middle-dot separator. Site-wide Snippet 25 also defines a global .divider
+   (40x3 orange bar for section dividers). Reset width/height/background/margin
+   with !important so the global rule can't bleed through and render an orange
+   bar behind our middot character. */
+.trw-news-article .article-head .eyebrow-row .divider { display: inline-block !important; width: auto !important; height: auto !important; background: transparent !important; border-radius: 0 !important; margin: 0 !important; font-size: 16px; line-height: 1; color: #C3B4A6; letter-spacing: 0; font-weight: 700; transform: translateY(-1px); }
+.trw-news-article .article-head .eyebrow-row .read-time { color: #815243; font-weight: 600; letter-spacing: 0.06em; text-transform: none; font-size: 12px; }
+.trw-news-article .article-head h1 { font-size: clamp(32px, 4vw, 54px); font-weight: 900; line-height: 1.12; letter-spacing: -0.5px; margin: 0 0 18px; color: #5A1807; }
+.trw-news-article .meta-strip { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #815243; margin-bottom: 18px; }
+.trw-news-article .meta-strip .verified-tick { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: #5A1807; flex-shrink: 0; }
+.trw-news-article .meta-strip .verified-tick svg { width: 10px; height: 10px; display: block; }
+.trw-news-article .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: #C3B4A6; display: inline-block; }
+.trw-news-article .tags-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.trw-news-article .tag-chip { display: inline-block; padding: 5px 14px; background: #F5F4F0; border-radius: 20px; font-size: 12px; font-weight: 600; color: #B6A092; letter-spacing: 0.04em; transition: background 0.2s, color 0.2s; }
+.trw-news-article .tag-chip:hover { background: #5A1807; color: #f5f4f0; }
+@media (max-width: 720px) { .trw-news-article .article-head { padding-top: 20px; } .trw-news-article .article-head h1 { font-size: clamp(28px, 7vw, 38px); } }
+
+/* Hero featured image , constrained to body-text column (720px), not full wrapper */
+.trw-news-article .article-hero { padding: 0 0 32px; }
+.trw-news-article .article-hero .wrapper { padding: 0 40px; }
+.trw-news-article .article-hero .hero-wrap { max-width: 720px; border-radius: 12px; overflow: hidden; }
+.trw-news-article .article-hero img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
+@media (max-width: 640px) { .trw-news-article .article-hero { padding: 0 0 20px; } }
+
+/* Article layout (body + sticky TOC sidebar) */
+.trw-news-article .article-layout { padding-bottom: 56px; }
+.trw-news-article .article-wrap { max-width: 1100px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: minmax(0, 720px) 240px; gap: 60px; align-items: start; } /* Aligned to Snippet 25 .bc */
+
+/* TOC sidebar , exact port of Bryan's canonical pattern */
+.trw-news-article .toc { position: sticky; top: 96px; padding: 4px 0 22px 56px; border-left: 1px solid #D5CFC2; font-size: 14px; }
+.trw-news-article .toc-title { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #815243; margin-bottom: 16px; }
+.trw-news-article .toc ol { list-style: none; padding: 0; margin: 0; counter-reset: toc; }
+.trw-news-article .toc ol li { counter-increment: toc; margin-bottom: 11px; position: relative; }
+.trw-news-article .toc ol li a { display: flex; align-items: baseline; gap: 12px; color: #815243; font-weight: 500; line-height: 1.4; transition: color 0.15s; }
+.trw-news-article .toc ol li a::before { content: counter(toc, decimal-leading-zero); font-size: 12px; font-weight: 700; color: #C3B4A6; flex-shrink: 0; min-width: 22px; letter-spacing: 0.05em; transition: color 0.15s; font-variant-numeric: tabular-nums; }
+.trw-news-article .toc ol li a:hover { color: #5A1807; }
+.trw-news-article .toc ol li a:hover::before { color: #5A1807; }
+.trw-news-article .toc ol li a.active { color: #5A1807; font-weight: 700; }
+.trw-news-article .toc ol li a.active::before { color: #5A1807; }
+/* Strong visual cue for active section , orange bar replacing the toc's grey
+   left border at the active item's row. Mobile flips to an underline. */
+.trw-news-article .toc ol li a.active::after { content: ""; position: absolute; left: -57px; top: 2px; bottom: 2px; width: 3px; background: #5A1807; border-radius: 2px; }
+@media (max-width: 1100px) {
+  .trw-news-article .article-wrap { grid-template-columns: 1fr; }
+  .trw-news-article .toc { order: -1; position: static; padding: 18px 0; border-left: 0; border-top: 1px solid #D5CFC2; border-bottom: 1px solid #D5CFC2; }
+  .trw-news-article .toc ol { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; }
+  .trw-news-article .toc ol li { margin-bottom: 0; }
+  .trw-news-article .toc ol li a.active::after { left: 0; right: auto; top: auto; bottom: -4px; width: 32px; height: 2px; border-radius: 0; }
+}
+@media (max-width: 640px) { .trw-news-article .toc ol { grid-template-columns: 1fr; } }
+
+/* Article body */
+.trw-news-article .article-body { min-width: 0; }
+.trw-news-article .article-body .col { font-size: 17px; line-height: 1.75; color: #5A1807; }
+.trw-news-article .article-body p { margin: 0 0 20px; }
+.trw-news-article .article-body p.lede { font-size: 19px; line-height: 1.6; color: #5a1807; margin-bottom: 28px; }
+.trw-news-article .article-body h2 { font-size: clamp(24px, 2.6vw, 32px); font-weight: 800; letter-spacing: -0.3px; margin: 48px 0 16px; color: #5A1807; line-height: 1.25; scroll-margin-top: 96px; }
+.trw-news-article .article-body h3 { font-size: 20px; font-weight: 700; margin: 32px 0 12px; color: #5a1807; }
+.trw-news-article .article-body ul, .trw-news-article .article-body ol { margin: 0 0 20px; padding-left: 24px; }
+.trw-news-article .article-body li { margin-bottom: 8px; }
+.trw-news-article .article-body a { color: #5A1807; text-decoration: underline; text-underline-offset: 3px; }
+.trw-news-article .article-body a:hover { opacity: 0.75; }
+.trw-news-article .article-body strong { color: #5A1807; font-weight: 700; }
+
+/* Source footer */
+.trw-news-article .article-source { padding: 24px 32px; margin-top: 32px; background: #F5F4F0; border-radius: 12px; font-size: 14px; color: #7B4939; line-height: 1.55; }
+.trw-news-article .article-source strong { color: #5A1807; }
+
+/* Services + Related reads , cloned from canonical 1221 */
+.trw-news-article .svc-section { background: #F5F4F0; padding: 64px 0; }
+.trw-news-article .svc-section .sec-title, .trw-news-article .related .sec-title { font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #5A1807; margin-bottom: 8px; }
+.trw-news-article .svc-section .sec-heading, .trw-news-article .related .sec-heading { font-size: clamp(26px, 3vw, 36px); font-weight: 800; letter-spacing: -0.3px; margin: 0 0 32px; color: #5A1807; line-height: 1.2; }
+.trw-news-article .svc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.trw-news-article .svc-card { display: block; background: #F5F4F0; padding: 22px 22px 20px; border-radius: 12px; border: 1px solid #D5CFC2; transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s; }
+.trw-news-article .svc-card:hover { transform: translateY(-2px); border-color: #5A1807; box-shadow: 0 6px 18px rgba(90,24,7,0.06); }
+.trw-news-article .svc-name { font-size: 17px; font-weight: 800; color: #5A1807; margin-bottom: 8px; }
+.trw-news-article .svc-blurb { font-size: 14px; line-height: 1.5; color: #7B4939; margin-bottom: 14px; }
+.trw-news-article .svc-link { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: #5A1807; }
+.trw-news-article .svc-see-all { text-align: center; margin-top: 16px; font-size: 14px; font-weight: 600; }
+.trw-news-article .svc-see-all a { color: #5A1807; }
+.trw-news-article .related { padding: 64px 0; background: #F5F4F0; }
+.trw-news-article .rel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-bottom: 24px; }
+.trw-news-article .rel-card { display: block; background: #F5F4F0; border-radius: 12px; overflow: hidden; border: 1px solid #D5CFC2; transition: transform 0.15s, box-shadow 0.15s; }
+.trw-news-article .rel-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(90,24,7,0.06); }
+.trw-news-article .rel-card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
+.trw-news-article .rel-body { padding: 18px 20px 20px; }
+.trw-news-article .rel-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #5A1807; margin-bottom: 8px; }
+.trw-news-article .rel-body h4 { font-size: 18px; font-weight: 800; line-height: 1.3; margin: 0 0 8px; color: #5A1807; }
+.trw-news-article .rel-body .meta { font-size: 12px; color: #815243; margin-top: 10px; }
+.trw-news-article .see-all { text-align: center; margin-top: 16px; font-size: 14px; font-weight: 600; }
+.trw-news-article .see-all a { color: #5A1807; }
+</style>
+<div class="trw-news-article">
+  <section class="article-head">
+    <div class="wrapper">
+      <div class="eyebrow-row">
+        <span>LTA News · REGULATION</span>
+        <span class="divider" aria-hidden="true">&middot;</span>
+        <span class="read-time">5 min read</span>
+      </div>
+      <h1>New COE proposal: Cat A and B merged, rebate or surcharge by car value</h1>
+      <div class="meta-strip">
+        <span class="verified-tick" aria-hidden="true"><svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 6.2 L5 8.5 L9.5 3.8" fill="none" stroke="#f5f4f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="reviewer">Reviewed by The Right Workshop team</span>
+        <span class="meta-dot"></span>
+        <span>Updated 8 Oct 2026</span>
+      </div>
+      <div class="tags-row"><a href="/topics/coe/" class="tag-chip">Coe</a><a href="/topics/regulation/" class="tag-chip">Regulation</a></div>
+    </div>
+  </section>
+
+  <section class="article-hero"><div class="wrapper"><div class="hero-wrap"><img loading="eager" decoding="async" src="{{IMG:featured.png}}" alt="New COE proposal: Cat A and B merged, rebate or surcharge by car value"></div></div></section>
+
+  <section class="article-layout">
+    <div class="article-wrap">
+      <article class="article-body">
+        <div class="col">
+<div class="trw-figures">
+<div class="fig"><div class="n">$15,000</div><div class="l">the biggest rebate or surcharge LTA has proposed</div></div>
+<div class="fig"><div class="n">OMV</div><div class="l">the car's value, not its engine size, would decide your band</div></div>
+<div class="fig"><div class="n">2 Nov 2026</div><div class="l">the last day to send your views to LTA</div></div>
+</div>
+
+<p>LTA's new COE proposal, released today, would merge Cat A and Cat B into one category for all cars. Buyers would then get money off or pay extra depending on how expensive their car model is. It is only a proposal for now, and LTA is asking the public for feedback and suggestions until 2 November 2026.</p>
+
+<div class="t-aside"><div class="lab">Explain it like I'm 12</div><p style="font-size:16px;line-height:1.7;color:#5A1807">To own a car in Singapore, you first need a permit called a COE. Right now, small cars and big cars queue for that permit in two separate lines. LTA wants just one line, where everyone pays the same price for the permit. After that, if your car is a cheaper model, you get some money back. If it is an expensive model, you pay a bit more. It is only an idea for now, and nothing changes until LTA decides, which should be in the first half of 2027.</p></div>
+
+<h2 id="what-lta-proposed">What LTA proposed today</h2>
+<p class="t-lead">Small cars and big cars would bid together and pay the same COE price. After that, the price is adjusted by the value of the car.</p>
+<div class="trw-table"><table>
+<thead><tr><th>Your car</th><th>What happens to your COE price</th></tr></thead>
+<tbody>
+<tr><td data-label="Your car">Cheaper model</td><td data-label="What happens to your COE price">Rebate of up to $15,000</td></tr>
+<tr><td data-label="Your car">Mid-range model</td><td data-label="What happens to your COE price">No change</td></tr>
+<tr><td data-label="Your car">Pricier model</td><td data-label="What happens to your COE price">Surcharge of up to $15,000</td></tr>
+</tbody></table></div>
+<figure style="margin:32px 0"><picture><source media="(max-width: 640px)" srcset="{{IMG:coe-merger-infographic-1-mobile.png}}"><img src="{{IMG:coe-merger-infographic-1.png}}" alt="Infographic: today Cat A and Cat B bid in separate queues; under LTA's proposal all cars bid in one queue, then get a rebate or surcharge based on the car's value" width="1200" height="992" loading="lazy"></picture></figure>
+
+<h2 id="how-bands-are-decided">How LTA would decide your car's band</h2>
+<p>Under the proposal, engine size and power would stop deciding what you pay. Today, the line between Cat A and Cat B is 1,600cc and 130bhp, or 110kW for electric cars. In the merged category, those limits would no longer sort cars. LTA is exploring using the car's value instead, measured by its open market value (OMV).</p>
+<p>OMV is roughly what a car costs by the time it lands in Singapore: the purchase price plus freight, insurance and delivery, before Singapore's taxes and the COE. A cheaper model has a lower OMV, and a luxury model has a higher one.</p>
+<p>Here is the method LTA has described:</p>
+<ul>
+<li><strong>Step 1:</strong> work out the median OMV for each car model, using past registrations of that model. The band follows the model, so two buyers of the same model would land in the same band.</li>
+<li><strong>Step 2:</strong> rank every model from the cheapest to the most expensive.</li>
+<li><strong>Step 3:</strong> split that ranking into three or five bands by percentile. The bands would be reviewed and published every year.</li>
+</ul>
+<p>LTA has not published fixed dollar amounts or engine sizes for each band. It has shared an illustration, reported by Mothership, of where some models might land:</p>
+<div class="trw-table"><table>
+<thead><tr><th>Where the model ranks</th><th>What it could mean</th><th>Examples in LTA's illustration</th></tr></thead>
+<tbody>
+<tr><td data-label="Where the model ranks">Cheapest 35% of models</td><td data-label="What it could mean">Rebate</td><td data-label="Examples in LTA's illustration">Toyota Sienta, Honda Freed, Volvo EX30</td></tr>
+<tr><td data-label="Where the model ranks">Above the middle (50th percentile)</td><td data-label="What it could mean">May pay a surcharge</td><td data-label="Examples in LTA's illustration">Tesla Model 3, BYD Sealion 7 Performance, Mercedes-Benz A180</td></tr>
+</tbody></table></div>
+<div class="trw-callout"><strong>This is not live yet.</strong> The OMV method, the percentile cut-offs and the example placements are what LTA is exploring in its consultation. LTA describes the examples as indicative, and the final bands could look different.</div>
+<figure style="margin:32px 0"><picture><source media="(max-width: 640px)" srcset="{{IMG:coe-merger-infographic-5-mobile.png}}"><img src="{{IMG:coe-merger-infographic-5.png}}" alt="Infographic: LTA would find each model's median OMV, rank all models, and split them into bands; engine size and power would no longer sort cars; the cheapest 35% of models get a rebate and models above the middle may pay a surcharge" width="1200" height="996" loading="lazy"></picture></figure>
+
+<h2 id="rebate-and-surcharge">How much the rebate and surcharge would be</h2>
+<p>LTA is choosing between two options:</p>
+<div class="trw-table"><table>
+<thead><tr><th>Option</th><th>Bands</th></tr></thead>
+<tbody>
+<tr><td data-label="Option">Three bands</td><td data-label="Bands">$15,000 off · no change · $15,000 extra</td></tr>
+<tr><td data-label="Option">Five bands</td><td data-label="Bands">$15,000 off · $7,500 off · no change · $7,500 extra · $15,000 extra</td></tr>
+</tbody></table></div>
+<div class="trw-callout"><strong>LTA's own example: the Toyota Sienta.</strong> It would get $15,000 off under three bands, or $7,500 off under five.</div>
+<figure style="margin:32px 0"><picture><source media="(max-width: 640px)" srcset="{{IMG:coe-merger-infographic-3-mobile.png}}"><img src="{{IMG:coe-merger-infographic-3.png}}" alt="Example: if the COE closed at $130,000, cheaper models would pay as little as $115,000 and pricier models up to $145,000, under three-band and five-band options" width="1200" height="962" loading="lazy"></picture></figure>
+
+<h2 id="why">Why LTA wants to change the COE</h2>
+<p>Cat A was meant to keep COEs cheaper for smaller, mass-market cars. That has stopped working. At yesterday's bidding on 7 October, Cat A closed at $130,001 and Cat B at $130,100.</p>
+<div class="t-key">Only $99 separated a small-car COE from a big-car COE.</div>
+<p>Linking the COE to the car's value is LTA's way of making pricier cars pay more again.</p>
+
+<h2 id="not-decided">What is not decided yet</h2>
+<ul>
+<li>Three bands or five.</li>
+<li>Where exactly the band cut-offs would sit.</li>
+<li>Whether Cat E (Open) is removed or kept for cars only.</li>
+<li>Whether the rebate and surcharge also apply when you renew your COE.</li>
+<li>When any of this starts. LTA will share its decision in the first half of 2027.</li>
+</ul>
+<figure style="margin:32px 0"><picture><source media="(max-width: 640px)" srcset="{{IMG:coe-merger-infographic-4-mobile.png}}"><img src="{{IMG:coe-merger-infographic-4.png}}" alt="Timeline: consultation opens 8 October 2026, feedback closes 2 November 2026, LTA decision in the first half of 2027, start date not set" width="1200" height="842" loading="lazy"></picture></figure>
+
+<h2 id="send-suggestions">Suggest changes to LTA</h2>
+<p>Anyone can respond to the consultation. LTA is asking for views on the merged category, the rebate and surcharge bands, what to do with Cat E, and whether renewals should be included. You can also share your own suggestions for the COE system.</p>
+<div class="t-aside"><div class="lab">How to submit</div><p>Go to <a href="https://go.gov.sg/coe-pcd-feedback" rel="nofollow noopener" target="_blank">go.gov.sg/coe-pcd-feedback</a>. Feedback is open from 8 October 2026, 5pm, to 2 November 2026, 11.59pm.</p></div>
+
+<h2 id="what-it-means">What the new COE proposal means for you</h2>
+<p><strong>Buying a car soon:</strong> nothing changes yet. COE bidding runs on today's Cat A and Cat B rules until LTA says otherwise. See the latest prices on our <a href="/coe-results/">COE results page</a>.</p>
+<p><strong>Renewing your COE soon:</strong> today's rules apply. LTA has said it could consider transitional arrangements for current owners. Our <a href="/coe-renewal-vs-scrap-singapore-guide/">COE renewal vs scrap guide</a> helps you decide.</p>
+<p>If the car's value starts to decide your COE bill, it pays to know exactly what you are buying. Our <a href="/services/pre-purchase-inspection/">pre-purchase inspection</a> checks any new or used car before you commit.</p>
+<p>We'll track every update on our <a href="/news/">news feed</a>, and you can also check the <a href="https://onemotoring.lta.gov.sg" rel="nofollow noopener" target="_blank">OneMotoring portal</a> for official notices.</p>
+
+<div class="article-source"><strong>Source:</strong> This piece summarises and contextualises the official LTA release. Read the original at <a href="https://go.gov.sg/coe-pcd-feedback" rel="nofollow noopener" target="_blank">LTA's public consultation page</a>.</div>
+        </div>
+      </article>
+      <aside class="toc" aria-label="On this page">
+        <div class="toc-title">On This Page</div>
+        <ol id="toc-list"></ol>
+      </aside>
+    </div>
+  </section>
+
+  <section class="svc-section">
+    <div class="wrapper">
+      <div class="sec-title">Services at The Right Workshop</div>
+      <h2 class="sec-heading">Full workshop. Every job, done right.</h2>
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/car-servicing/"><div class="svc-name">Car Servicing</div><div class="svc-blurb">Scheduled maintenance, oil changes, fluid top-ups and full inspections.</div><div class="svc-link">View service</div></a>
+        <a class="svc-card" href="/services/car-aircon-repair/"><div class="svc-name">Aircon</div><div class="svc-blurb">Regas, leak repair, compressor work and evaporator cleaning.</div><div class="svc-link">View service</div></a>
+        <a class="svc-card" href="/services/tyres-and-battery/"><div class="svc-name">Tyres &amp; Battery</div><div class="svc-blurb">Tread depth check, alignment, balancing, battery load test and replacement.</div><div class="svc-link">View service</div></a>
+        <a class="svc-card" href="/services/brakes-and-suspension/"><div class="svc-name">Brakes &amp; Suspension</div><div class="svc-blurb">Pads, rotors, shocks and bushings. Quiet, confident stops.</div><div class="svc-link">View service</div></a>
+        <a class="svc-card" href="/services/engine-and-gearbox/"><div class="svc-name">Engine &amp; Gearbox</div><div class="svc-blurb">Diagnostics, repair and full overhauls for petrol and hybrid drivetrains.</div><div class="svc-link">View service</div></a>
+        <a class="svc-card" href="/services/pre-purchase-inspection/"><div class="svc-name">Pre-Purchase Inspection</div><div class="svc-blurb">Independent check before you buy a used car. Photos, findings, real talk.</div><div class="svc-link">View service</div></a>
+        <a class="svc-card" href="/services/accident-claims/"><div class="svc-name">Accident Claims</div><div class="svc-blurb">Reporting, repairs and insurance handling so you are not chasing forms.</div><div class="svc-link">View service</div></a>
+        <a class="svc-card" href="/services/export-scrap-cars/"><div class="svc-name">COE Renewal / Export / Scrap</div><div class="svc-blurb">End-of-COE options handled end-to-end, with the numbers laid out plainly.</div><div class="svc-link">View service</div></a>
+      </div>
+      <div class="svc-see-all"><a href="/services/">Click here to view all services &rarr;</a></div>
+    </div>
+  </section>
+
+
+  <section class="related">
+    <div class="wrapper">
+      <div class="sec-title">Keep Reading</div>
+      <h2 class="sec-heading">More guides from the workshop floor</h2>
+      <div class="rel-grid">
+        <a href="/how-often-service-car-singapore/" class="rel-card">
+          <img loading="lazy" src="https://therightworkshop.com/wp-content/uploads/2026/04/nb_servicing_oilpour_v2.jpg" alt="Engine oil being poured into a Japanese sedan during a service">
+          <div class="rel-body">
+            <div class="rel-eyebrow">Guides</div>
+            <h4>How Often Should You Service Your Car in Singapore? (2026 Owner&rsquo;s Guide)</h4>
+            <div class="meta">By TRW Team &middot; 8 min read</div>
+          </div>
+        </a>
+        <a href="/tyres-battery-singapore-checks-guide/" class="rel-card">
+          <img loading="lazy" src="https://therightworkshop.com/wp-content/uploads/2026/04/nb_tyre_treadgauge_battery_v1.jpg" alt="Mechanic pressing a tread depth gauge into the rear tyre of a sedan">
+          <div class="rel-body">
+            <div class="rel-eyebrow">Car Tips</div>
+            <h4>Tyres &amp; Battery: A Singapore Driver&rsquo;s Guide to Checking Yours</h4>
+            <div class="meta">By TRW Team &middot; 6 min read</div>
+          </div>
+        </a>
+        <a href="/dashboard-warning-lights-singapore/" class="rel-card">
+          <img loading="lazy" src="https://therightworkshop.com/wp-content/uploads/2026/04/dashboard-warning-lights-16341407-1.jpg" alt="Car dashboard with multiple illuminated warning lights">
+          <div class="rel-body">
+            <div class="rel-eyebrow">Guides</div>
+            <h4>Dashboard Warning Lights: What Each One Actually Means in Singapore</h4>
+            <div class="meta">By TRW Team &middot; 7 min read</div>
+          </div>
+        </a>
+      </div>
+      <div class="see-all"><a href="/blog/">Click here to read more posts &rarr;</a></div>
+    </div>
+  </section>
+
+</div>
+<script>(function buildTOC(){var list=document.getElementById(`toc-list`);if(!list)return;var col=document.querySelector(`.trw-news-article .article-body .col`);if(!col)return;var headings=col.querySelectorAll(`h2`);var n=0;headings.forEach(function(h){n++;var sid=`section-`+n;h.id=sid;var li=document.createElement(`li`);var a=document.createElement(`a`);a.href=`#`+sid;a.textContent=h.textContent;li.appendChild(a);list.appendChild(li);});})();document.addEventListener(`click`,function(e){var a=e.target.closest(`.trw-news-article .toc a[href^="#"]`);if(!a)return;var t=document.getElementById(a.getAttribute(`href`).slice(1));if(t){e.preventDefault();t.scrollIntoView({behavior:`smooth`,block:`start`});}});(function trackTOC(){var tocLinks=document.querySelectorAll(`.trw-news-article .toc a`);if(!tocLinks.length)return;var sections=Array.prototype.map.call(tocLinks,function(a){return document.querySelector(a.getAttribute(`href`));}).filter(Boolean);if(!sections.length)return;function setActive(id){tocLinks.forEach(function(a){a.classList.toggle(`active`,a.getAttribute(`href`)===`#`+id);});}function update(){var anchor=window.innerHeight*0.25;var current=sections[0];for(var i=0;i<sections.length;i++){var rect=sections[i].getBoundingClientRect();if(rect.top<=anchor){current=sections[i];}else{break;}}setActive(current.id);}var raf=null;window.addEventListener(`scroll`,function(){if(raf)return;raf=requestAnimationFrame(function(){raf=null;update();});},{passive:true});update();})();</script>
+
+<!-- trw-send-row v3 -->
+<script>
+(function(){
+  if(document.getElementById('trw-send-css'))return;
+  var css='.send-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}'
+  +'.toc .send-row,.v6-toc .send-row{margin:0 0 18px;padding:0 0 18px;border-bottom:1px solid #D5CFC2}'
+  +'.send-row .send-btn{display:inline-flex;align-items:center;gap:7px;justify-content:center;min-width:0;padding:8px 12px;border:1px solid transparent;border-radius:999px;background:#f5f4f0!important;box-shadow:inset 0 0 0 1px #D5CFC2!important;color:#5A1807;font:600 12.5px/1 Inter,-apple-system,sans-serif;cursor:pointer;transition:box-shadow .15s,color .15s}'
+  +'.toc .send-row .send-btn,.v6-toc .send-row .send-btn{flex:1 1 auto}'
+  +'.send-row .send-btn:hover,.send-row .send-btn.is-copied{box-shadow:inset 0 0 0 1px #5A1807!important}'
+  +'.send-row .send-btn:hover .send-label,.send-row .send-btn:hover svg,.send-row .send-btn.is-copied .send-label,.send-row .send-btn.is-copied svg{color:#5A1807!important}'
+  +'.send-row .send-btn svg{width:15px;height:15px;flex:0 0 auto}'
+  +'.send-row .send-native{display:none}'
+  +'.sec-toc .send-row{margin:14px 0 0}'
+  +'.on-this-page .send-row{flex-basis:100%;margin:12px 0 0}'
+  +'.article-body>.wrapper{max-width:none;padding-left:0;padding-right:0}'
+  +'@media(max-width:1100px){.toc .send-row{margin-bottom:16px}.toc .send-row .send-btn,.v6-toc .send-row .send-btn{flex:1 1 0}}'
+  +'@media(max-width:640px){.send-row .send-btn .send-label{font-size:11px}.send-row .send-btn{padding:8px 8px}}';
+  var st=document.createElement('style');st.id='trw-send-css';st.textContent=css;document.head.appendChild(st);
+  var ic={
+    copy:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>',
+    wa:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11 11 0 0 0 4.3 3.8c1.6.6 1.6.4 1.9.4a2.5 2.5 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c0-.1-.2-.2-.5-.3z"/></svg>',
+    fb:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>',
+    nat:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>'
+  };
+  function build(){
+    var row=document.createElement('div');row.className='send-row';row.setAttribute('aria-label','Share this page');
+    row.innerHTML='<button type="button" class="send-btn send-copy" aria-label="Copy link">'+ic.copy+'<span class="send-label">Copy</span></button>'
+    +'<button type="button" class="send-btn send-wa" aria-label="Share on WhatsApp">'+ic.wa+'<span class="send-label">WhatsApp</span></button>'
+    +'<button type="button" class="send-btn send-fb" aria-label="Share on Facebook">'+ic.fb+'<span class="send-label">Facebook</span></button>'
+    +'<button type="button" class="send-btn send-native" aria-label="Share">'+ic.nat+'<span class="send-label">Share</span></button>';
+    var url=location.href,ttl=document.title.replace(/\s*\|.*$/,'');
+    row.querySelector('.send-wa').addEventListener('click',function(e){e.preventDefault();window.open('https://wa.me/?text='+encodeURIComponent(ttl+' '+url),'_blank','noopener');});
+    row.querySelector('.send-fb').addEventListener('click',function(e){e.preventDefault();window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url),'_blank','noopener');});
+    var cp=row.querySelector('.send-copy');
+    cp.addEventListener('click',function(e){e.preventDefault();navigator.clipboard.writeText(url).then(function(){var l=cp.querySelector('.send-label'),o=l.textContent;l.textContent='Copied';cp.classList.add('is-copied');setTimeout(function(){l.textContent=o;cp.classList.remove('is-copied');},1600);});});
+    var nb=row.querySelector('.send-native');
+    if(navigator.share){nb.style.display='inline-flex';nb.addEventListener('click',function(e){e.preventDefault();navigator.share({title:ttl,url:url}).catch(function(){});});}
+    return row;
+  }
+  var toc=document.querySelector('.toc');
+  var v6=document.querySelector('.v6-toc');
+  var sec=document.querySelector('.sec-toc .wrap');
+  var otp=document.querySelector('.on-this-page .otp-inner');
+  if(v6&&!document.getElementById('trw-coe-slim')){
+    var slim='.v6-section{margin-top:26px!important;margin-bottom:26px!important}'
+    +'.v6-body-section{padding-top:24px!important;padding-bottom:36px!important}'
+    +'.v6-headline-card{margin-bottom:22px!important}'
+    +'.v6-stats{margin-bottom:26px!important}'
+    +'.v6-chart{margin-bottom:26px!important}'
+    +'.v6-bubbles-section{padding-top:24px!important;padding-bottom:24px!important}'
+    +'.coe-explainers-sec{padding-top:32px!important;padding-bottom:32px!important;margin-bottom:28px!important}'
+    +'.post-faq-wrap{padding-top:30px!important;padding-bottom:34px!important}'
+    +'.related{padding-top:26px!important;padding-bottom:36px!important}'
+    +'.v6-grid{row-gap:40px!important}';
+    var ssl=document.createElement('style');ssl.id='trw-coe-slim';ssl.textContent=slim;document.head.appendChild(ssl);
+  }
+  if(toc&&toc.querySelector('.toc-title')&&!toc.querySelector('.send-row')){
+    toc.insertBefore(build(),toc.querySelector('.toc-title'));
+  }else if(v6&&!v6.querySelector('.send-row')){
+    v6.insertBefore(build(),v6.firstChild);
+  }else if(sec&&!sec.querySelector('.send-row')){
+    sec.appendChild(build());
+  }else if(otp&&!otp.querySelector('.send-row')){
+    otp.appendChild(build());
+  }
+})();
+</script>
