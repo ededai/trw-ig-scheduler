@@ -33,6 +33,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -51,7 +53,7 @@ jobs:
             f=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'assets/*/publish/PUBLISH' | head -1)
             if [ -z "$f" ]; then echo "::error::No PUBLISH trigger in this push"; exit 1; fi
             echo "dir=$(dirname "$(dirname "$f")")" >> "$GITHUB_OUTPUT"
-            echo "status=$(tr -d '[:space:]' < "$f")" >> "$GITHUB_OUTPUT"
+            echo "status=$(awk 'NR==1{print $1}' "$f")" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Publish to WordPress
