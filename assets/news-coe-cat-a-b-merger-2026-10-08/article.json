@@ -14,7 +14,8 @@
     "coe_premiums_and_quotas": "Verified against trw-cole data/coe_history.json (LTA DataMall): every round Jun 2025 to 2026/10/1",
     "feebate_bands_dates_feedback_link": "LTA public consultation 8 Oct 2026 as reported by Mothership, AsiaOne, Red Hot Singapore, pressnewsagency.org. Primary LTA consultation paper not fetched (network policy blocked); confirm before publish.",
     "example_car_models": "Mothership's report of LTA's illustration. Confirm against the LTA paper before publish.",
-    "background_and_quotes": "Jeffrey Siow (March Budget debate, spec-tuning), Edward Chia (July 2026 focus group), expert views and ideas left out: Straits Times coverage via syndicated excerpts; ST/CNA pages themselves were not reachable from this environment."
+    "background_and_quotes": "Jeffrey Siow (March Budget debate, spec-tuning), Edward Chia (July 2026 focus group), expert views and ideas left out: Straits Times coverage via syndicated excerpts; ST/CNA pages themselves were not reachable from this environment.",
+    "band_method": "Bands by each model's median OMV from past registrations, ranked and split by percentile, reviewed annually (LTA consultation via Goody Feed, Red Hot, Mothership). Illustration: cheapest 35% rebate, above 50th percentile may face surcharge, with example models (Mothership). No fixed dollar or engine-size cut-offs published in the coverage reviewed."
   },
   "sources": [
     "https://mothership.sg/2026/10/lta-consultation-merge-coe/",
@@ -33,9 +34,14 @@
   ],
   "infographics": [
     "infographics/coe-merger-infographic-1.png",
+    "infographics/coe-merger-infographic-1-mobile.png",
+    "infographics/coe-merger-infographic-5.png",
+    "infographics/coe-merger-infographic-5-mobile.png",
     "infographics/coe-merger-infographic-3.png",
-    "infographics/coe-merger-infographic-4.png"
+    "infographics/coe-merger-infographic-3-mobile.png",
+    "infographics/coe-merger-infographic-4.png",
+    "infographics/coe-merger-infographic-4-mobile.png"
   ],
-  "publish_notes": "Render via cole.news_post_renderer.render_news_post(title, body_html, tags=['coe','regulation'], hero_img_url=<featured.png media URL>). Upload featured.png + the 3 infographics to WP media and swap the relative src paths. Body uses live site components: trw-figures, trw-table, trw-callout, t-lead, t-key, t-aside.",
+  "publish_notes": "Render via cole.news_post_renderer.render_news_post(title, body_html, tags=['coe','regulation'], hero_img_url=<featured.png media URL>). Upload featured.png and all 8 infographics (desktop + -mobile) to WP media and swap the relative src/srcset paths. Each infographic is a <picture>: the -mobile file is served at max-width 640px. Body uses live site components: trw-figures, trw-table, trw-callout, t-lead, t-key, t-aside.",
   "featured_image": "featured.png"
 }

@@ -68,6 +68,120 @@ svg text{font-family:'Inter',sans-serif}
 .who h4{font-weight:800;font-size:20px;margin-bottom:8px}
 .who p{font-size:16.5px;color:var(--ink-soft);line-height:1.45}
 .who .tag{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-bottom:8px;font-weight:700}
+
+/* G5 how bands are decided */
+.steps5{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+.s5{background:var(--card);border:2px solid var(--ink);padding:22px 22px 24px}
+.s5 .k{font-weight:900;font-size:15px;letter-spacing:.2em;color:var(--orange);margin-bottom:10px}
+.s5 h4{font-weight:800;font-size:22px;line-height:1.2;margin-bottom:8px}
+.s5 p{font-size:16.5px;color:var(--ink-soft);line-height:1.45}
+.notused{margin-top:18px;display:flex;align-items:center;gap:14px;background:var(--rule);padding:14px 20px;font-size:17px;font-weight:600}
+.notused s{color:var(--ink-soft)}
+.rank{margin-top:26px}
+.rank .bar{display:flex;height:64px;gap:2px}
+.rank .bar div{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:17px;text-align:center;line-height:1.2;padding:0 8px}
+.rank .ends{display:flex;justify-content:space-between;font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px}
+.rank .cars{display:grid;grid-template-columns:35fr 15fr 50fr;gap:2px;margin-top:12px;font-size:15.5px;line-height:1.4;color:var(--ink-soft)}
+.rank .cars b{color:var(--ink)}
+
+/* DESKTOP: laid out at 960px, shown in the 720px article column */
+body:not(.m) .g{width:960px;padding:44px 44px 32px}
+body:not(.m) .kicker{font-size:14px}
+body:not(.m) h2{font-size:40px}
+body:not(.m) .sub{font-size:20px}
+body:not(.m) .foot{font-size:12px;margin-top:28px}
+body:not(.m) .foot img{height:26px}
+body:not(.m) .cmp,body:not(.m) .ladder{gap:22px;margin-top:26px}
+body:not(.m) .col{padding:22px}
+body:not(.m) .col h3{font-size:14px;margin-bottom:16px}
+body:not(.m) .q .n{font-size:24px}
+body:not(.m) .q .d{font-size:17.5px}
+body:not(.m) .price{font-size:18px}
+body:not(.m) .price b{font-size:21px}
+body:not(.m) .adj div{font-size:18px;padding:12px 4px}
+body:not(.m) .adj small{font-size:13px;white-space:nowrap}
+body:not(.m) .arrowdown{font-size:18px}
+body:not(.m) .lad{padding:20px 22px}
+body:not(.m) .lad h3{font-size:22px}
+body:not(.m) .lad .note{font-size:16px;margin-bottom:14px}
+body:not(.m) .rowb{grid-template-columns:134px 1fr 108px;gap:10px}
+body:not(.m) .rowb .lbl{font-size:14.5px;white-space:nowrap}
+body:not(.m) .rowb .bar{height:42px;font-size:16px}
+body:not(.m) .rowb .tot{font-size:19px}
+body:not(.m) .assume{font-size:17px}
+body:not(.m) .tl{margin-top:30px}
+body:not(.m) .st .d{font-size:13px}
+body:not(.m) .st .w{font-size:20px}
+body:not(.m) .st .s{font-size:16px}
+body:not(.m) .who{gap:14px;margin-top:28px}
+body:not(.m) .who>div{padding:18px}
+body:not(.m) .who h4{font-size:18px}
+body:not(.m) .who p{font-size:16px}
+body:not(.m) .who .tag{font-size:12px}
+body:not(.m) .steps5{gap:14px;margin-top:26px}
+body:not(.m) .s5{padding:18px}
+body:not(.m) .s5 h4{font-size:19px}
+body:not(.m) .s5 p{font-size:16px}
+body:not(.m) .notused{font-size:16px}
+body:not(.m) .rank .bar div{font-size:16px}
+body:not(.m) .rank .cars{font-size:15px}
+
+h2,.sub,.foot span,.q .d,.s5 p,.st .s,.who p,.assume,.rank .cars>div{text-wrap:balance}
+/* MOBILE: laid out at 400px, shown in a ~310-360px phone column */
+body.m .g{width:400px;padding:30px 22px 22px}
+body.m .g:before{background-size:40px 40px}
+body.m .kicker{font-size:11px;letter-spacing:.2em;margin-bottom:8px}
+body.m h2{font-size:28px;line-height:1.08;margin-bottom:8px}
+body.m .sub{font-size:15.5px;line-height:1.45}
+body.m .foot{flex-direction:column;align-items:flex-start;gap:8px;font-size:9.5px;letter-spacing:.1em;margin-top:22px;padding-top:12px}
+body.m .foot img{height:22px}
+body.m .cmp{grid-template-columns:1fr;gap:14px;margin-top:20px}
+body.m .col{padding:16px}
+body.m .col h3{font-size:11px;margin-bottom:12px}
+body.m .q{padding:10px 12px;margin-bottom:8px}
+body.m .q .n{font-size:18px}
+body.m .q .d{font-size:13.5px}
+body.m .price{font-size:14px;padding-top:10px}
+body.m .price b{font-size:16px}
+body.m .adj{gap:6px}
+body.m .adj div{font-size:14px;padding:10px 4px}
+body.m .adj small{font-size:10.5px}
+body.m .arrowdown{font-size:14px}
+body.m .ladder{grid-template-columns:1fr;gap:14px;margin-top:20px}
+body.m .lad{padding:16px}
+body.m .lad h3{font-size:17px}
+body.m .lad .note{font-size:13px;margin-bottom:12px}
+body.m .rowb{grid-template-columns:86px 1fr 76px;gap:8px;margin-bottom:6px}
+body.m .rowb .lbl{font-size:12px}
+body.m .rowb .bar{height:34px;font-size:13px;padding-left:8px}
+body.m .rowb .tot{font-size:15px}
+body.m .assume{font-size:13.5px;padding:12px 14px;margin-top:14px}
+body.m .tl{grid-template-columns:1fr;row-gap:18px;margin-top:22px}
+body.m .tl:before{left:10px;right:auto;top:10px;bottom:18px;width:2px;height:auto}
+body.m .st{display:grid;grid-template-columns:22px 1fr;column-gap:14px;padding-right:0}
+body.m .st .dot{grid-row:1 / span 3;margin:0;width:22px;height:22px;border-width:2px}
+body.m .st .d,body.m .st .w,body.m .st .s{grid-column:2}
+body.m .st .d{font-size:11px}
+body.m .st .w{font-size:16px;margin-top:3px}
+body.m .st .s{font-size:13.5px;margin-top:3px}
+body.m .who{grid-template-columns:1fr;gap:10px;margin-top:22px}
+body.m .who>div{padding:14px 16px}
+body.m .who h4{font-size:16px;margin-bottom:5px}
+body.m .who p{font-size:13.5px}
+body.m .who .tag{font-size:10px;margin-bottom:6px}
+body.m .steps5{grid-template-columns:1fr;gap:10px;margin-top:20px}
+body.m .s5{padding:14px 16px}
+body.m .s5 .k{font-size:11px;margin-bottom:6px}
+body.m .s5 h4{font-size:16px;margin-bottom:5px}
+body.m .s5 p{font-size:13.5px}
+body.m .notused{flex-wrap:wrap;gap:4px 12px;font-size:13px;padding:10px 14px;margin-top:12px}
+body.m .notused span{flex-basis:100%}
+body.m .rank{margin-top:18px}
+body.m .rank .bar{height:46px}
+body.m .rank .bar div{font-size:12px;padding:0 4px}
+body.m .rank .ends{font-size:10px;letter-spacing:.08em}
+body.m .rank .cars{grid-template-columns:1fr 1fr;gap:12px;font-size:12px}
+body.m .rank .cars>div:nth-child(2){display:none}
 </style></head><body>
 
 <!-- G1 -->
@@ -78,8 +192,8 @@ svg text{font-family:'Inter',sans-serif}
   <div class="cmp">
     <div class="col">
       <h3>Today</h3>
-      <div class="q"><div class="n">Cat A queue</div><div class="d">Cars up to 1,600cc and 130bhp, EVs up to 110kW</div></div>
-      <div class="q"><div class="n">Cat B queue</div><div class="d">Cars above 1,600cc or 130bhp, EVs above 110kW</div></div>
+      <div class="q"><div class="n">Cat A queue</div><div class="d">Cars up to 1,600cc and 130bhp, EVs up&nbsp;to&nbsp;110kW</div></div>
+      <div class="q"><div class="n">Cat B queue</div><div class="d">Cars above 1,600cc or 130bhp, EVs above&nbsp;110kW</div></div>
       <div class="price"><span>Cat A COE on 7 Oct</span><b>$130,001</b></div>
       <div class="price" style="border:0;padding-top:6px"><span>Cat B COE on 7 Oct</span><b>$130,100</b></div>
       <div class="price" style="border:0;padding-top:6px"><span>Difference</span><b style="color:var(--orange)">$99</b></div>
@@ -140,7 +254,7 @@ svg text{font-family:'Inter',sans-serif}
   <h2>Nothing changes yet. Here is the road ahead.</h2>
   <div class="tl">
     <div class="st now"><div class="dot"></div><div class="d">8 Oct 2026</div><div class="w">Consultation opens</div><div class="s">LTA publishes the proposal and asks for views.</div></div>
-    <div class="st"><div class="dot"></div><div class="d">2 Nov 2026</div><div class="w">Feedback closes</div><div class="s">11.59pm at go.gov.sg/coe-pcd-feedback</div></div>
+    <div class="st"><div class="dot"></div><div class="d">2 Nov 2026</div><div class="w">Feedback closes</div><div class="s">Last day to send your views to LTA, by 11.59pm.</div></div>
     <div class="st"><div class="dot"></div><div class="d">First half 2027</div><div class="w">LTA shares its decision</div><div class="s">Findings and recommendations published.</div></div>
     <div class="st"><div class="dot"></div><div class="d">Not set</div><div class="w">Start date</div><div class="s">No date announced. Bidding runs on today's rules until then.</div></div>
   </div>
@@ -150,6 +264,33 @@ svg text{font-family:'Inter',sans-serif}
     <div><div class="tag">Still undecided</div><h4>Three open questions</h4><p>Three bands or five. Remove Cat E or keep it for cars only. Whether renewals are included.</p></div>
   </div>
   <div class="foot"><img src="trw-logo-horizontal-dark.png" alt=""><span>therightworkshop.com</span></div>
+</section>
+
+<!-- G5 -->
+<section class="g" id="g5">
+  <div class="kicker">Still a proposal</div>
+  <h2>Your car's price decides the band. Not its engine size.</h2>
+  <div class="sub">LTA is exploring this method. It is not in use yet, and the final cut-offs are not set.</div>
+  <div class="steps5">
+    <div class="s5"><div class="k">STEP 1</div><h4>Find each model's typical price</h4><p>LTA takes the median OMV of every car model, worked out from past registrations of that model.</p></div>
+    <div class="s5"><div class="k">STEP 2</div><h4>Rank all models</h4><p>Every model is lined up from the cheapest to the most expensive.</p></div>
+    <div class="s5"><div class="k">STEP 3</div><h4>Split into bands</h4><p>The line is cut into 3 or 5 bands by percentile. Bands are reviewed and published every year.</p></div>
+  </div>
+  <div class="notused"><span>No longer used to sort cars:</span><s>1,600cc</s><s>130bhp</s><s>110kW for EVs</s></div>
+  <div class="rank">
+    <div class="bar">
+      <div style="flex:35;background:var(--reb-2)">Rebate</div>
+      <div style="flex:15;background:var(--neutral);color:var(--ink)">Middle bands</div>
+      <div style="flex:50;background:var(--sur-2)">May pay a surcharge</div>
+    </div>
+    <div class="ends"><span>← Cheapest models</span><span>Priciest models →</span></div>
+    <div class="cars">
+      <div><b>Cheapest 35% of models</b><br>e.g. Toyota Sienta, Honda Freed, Volvo&nbsp;EX30</div>
+      <div></div>
+      <div style="text-align:right"><b>Above the middle (50%)</b><br>e.g. Tesla Model 3, BYD Sealion&nbsp;7&nbsp;Performance, Mercedes‑Benz&nbsp;A180</div>
+    </div>
+  </div>
+  <div class="foot"><img src="trw-logo-horizontal-dark.png" alt=""><span>LTA illustration as reported by Mothership · indicative only</span></div>
 </section>
 
 <script>
