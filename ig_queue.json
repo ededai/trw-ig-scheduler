@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value-a-d1",
-      "slot_time_sgt": "2026-10-09T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value/caption.txt",
-      "image_paths": [
-        "assets/igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value/igs_A.png"
-      ],
-      "notes": "IGS A for blog: new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value-b-d2",
       "slot_time_sgt": "2026-10-10T11:00",
       "type": "story",
@@ -4061,6 +4049,21 @@
       "posted_url": "18117365251770687",
       "posted_at": "2026-10-05 20:09 SGT",
       "post_id": "18117365251770687"
+    },
+    {
+      "id": "igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value-a-d1",
+      "slot_time_sgt": "2026-10-09T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value/caption.txt",
+      "image_paths": [
+        "assets/igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value/igs_A.png"
+      ],
+      "notes": "IGS A for blog: new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18144987484582526",
+      "posted_at": "2026-10-09 19:51 SGT",
+      "post_id": "18144987484582526"
     }
   ],
   "failed": [
