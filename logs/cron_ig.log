@@ -6648,3 +6648,7 @@ ERROR publishing: Media ID is not available
 [2026-10-10 08:38:48 +08] HEARTBEAT lag 223 min (prev=2026-10-10T04:55:41.101294+08:00)
 [2026-10-10 08:38:49 +08] run: no due posts
 [2026-10-10 08:53:23 +08] run: no due posts
+[2026-10-10 12:49:18 +08] HEARTBEAT lag 236 min (prev=2026-10-10T08:53:23.207881+08:00)
+[2026-10-10 12:49:18 +08] CATCH-UP igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value-b-d2 — 1.8h late, publishing
+[2026-10-10 12:49:18 +08] Posting igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value-b-d2 (story) — notes: IGS B for blog: new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value
+[2026-10-10 12:49:28 +08] OK  igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value-b-d2 -> 17913437325280191
