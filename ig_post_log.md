@@ -265,3 +265,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-10-05 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18117365251770687 | IGS C for blog: man-jailed-over-5-years-for-evading-duty-gst-and-arf-on-imported-cars |
 | 2026-10-09 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18144987484582526 | IGS A for blog: new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value |
 | 2026-10-10 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17913437325280191 | IGS B for blog: new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value |
+| 2026-10-11 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18071060540499788 | IGS C for blog: new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value |
