@@ -6,6 +6,8 @@ Cron-friendly. Lives in trw-ig-scheduler/blog/ so it runs on cloud cron
 with no trw-cole/wp-import dependency. Idempotent.
 """
 from __future__ import annotations
+
+raise SystemExit('RETIRED 2026-10-11: refresh_card_excerpts.py is retired; it rewrote static cards on the hubs and on every topic page, with no dry run. Nothing was read or sent. Topic pages and the hub are dynamic (WP snippets 63 and 67); an existing page is changed with tools/page_patch_2026_10.py, a new topic page is made with trw-cole/scripts/build_canonical_topic_pages.py.')
 import base64, html as html_mod, json, os, re
 from pathlib import Path
 from urllib import request, error

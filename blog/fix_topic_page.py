@@ -22,6 +22,8 @@ Usage:
   python3 fix_topic_page.py --dry-run workshop
 """
 from __future__ import annotations
+
+raise SystemExit("RETIRED 2026-10-11: fix_topic_page.py is retired; it rebuilt a topic page's grid from static cards and wrote fixed counts and a fixed search corpus. Nothing was read or sent. Topic pages and the hub are dynamic (WP snippets 63 and 67); an existing page is changed with tools/page_patch_2026_10.py, a new topic page is made with trw-cole/scripts/build_canonical_topic_pages.py.")
 import argparse, base64, json, os, re, sys
 from pathlib import Path
 from urllib import request, error

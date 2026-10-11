@@ -10,6 +10,8 @@ Usage:
   python3 remap_article_topic_chips.py
 """
 from __future__ import annotations
+
+raise SystemExit('RETIRED 2026-10-11: remap_article_topic_chips.py is retired; it rewrote the topic chips of the 39 articles in topic_tags.json to the 22 topics of May 2026: the retired Coolant in place of Cooling, and none of the eight topics added since. Nothing was read or sent. Topic pages and the hub are dynamic (WP snippets 63 and 67); an existing page is changed with tools/page_patch_2026_10.py, a new topic page is made with trw-cole/scripts/build_canonical_topic_pages.py.')
 import argparse, base64, json, os, re, sys
 from pathlib import Path
 from urllib import request, error

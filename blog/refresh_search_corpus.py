@@ -29,6 +29,8 @@ Usage:
   python3 refresh_search_corpus.py --apply    # push changes to WP
 """
 from __future__ import annotations
+
+raise SystemExit('RETIRED 2026-10-11: refresh_search_corpus.py is retired; it wrote a fixed search corpus into /blog/, the /topics/ hub and every topic page, in place of the live shortcodes. Nothing was read or sent. Topic pages and the hub are dynamic (WP snippets 63 and 67); an existing page is changed with tools/page_patch_2026_10.py, a new topic page is made with trw-cole/scripts/build_canonical_topic_pages.py.')
 import argparse, base64, json, os, re, sys, html
 from pathlib import Path
 from urllib import request, error
