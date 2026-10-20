@@ -170,7 +170,7 @@ SLIDE5 = page(
   </div>
   <div style="display:grid; grid-template-columns: auto 1fr; gap:18px; align-items:center; margin-bottom:20px;">
     <div style="width:54px; height:54px; background:#1A1A1A; border-radius:999px; color:#EFE6D4; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:22px;">📍</div>
-    <div><div style="font-weight:700; font-size:22px;">Workshop</div><div class="body-copy">Autobay @ Kaki Bukit, #02-61</div></div>
+    <div><div style="font-weight:700; font-size:22px;">Workshop</div><div class="body-copy">Synergy @ KB, #03-38</div></div>
   </div>
   <div style="display:grid; grid-template-columns: auto 1fr; gap:18px; align-items:center;">
     <div style="width:54px; height:54px; background:#1A1A1A; border-radius:999px; color:#EFE6D4; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:18px;">↗</div>

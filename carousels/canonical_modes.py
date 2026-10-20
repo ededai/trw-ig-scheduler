@@ -211,7 +211,7 @@ h1 em {{ font-style:normal; color:var(--orange); }}
   <p class="lead">{body}</p>
   <div class="contacts">
     <div class="row"><span class="label">WhatsApp</span><span class="val">+65 8952 1688</span></div>
-    <div class="row"><span class="label">Workshop</span><span class="val">Autobay @ Kaki Bukit, #02-61</span></div>
+    <div class="row"><span class="label">Workshop</span><span class="val">Synergy @ KB, #03-38</span></div>
     <div class="row"><span class="label">Web</span><span class="val">therightworkshop.com · link in bio</span></div>
   </div>
 </div>
@@ -351,7 +351,7 @@ h1 em {{ color:var(--orange); font-style:normal; font-weight:800; }}
   <p class="lead">{body_html}</p>
   <div class="contacts">
     <div class="row"><span class="label">WhatsApp</span><span class="val">+65 8952 1688</span></div>
-    <div class="row"><span class="label">Workshop</span><span class="val">Autobay @ Kaki Bukit, #02-61</span></div>
+    <div class="row"><span class="label">Workshop</span><span class="val">Synergy @ KB, #03-38</span></div>
     <div class="row"><span class="label">Web</span><span class="val">therightworkshop.com · link in bio</span></div>
   </div>
 </div>
@@ -493,7 +493,7 @@ h1 .accent {{ color:var(--orange); }}
   <p class="body">{body_html}</p>
   <div class="contacts">
     <div class="row"><span class="label">WhatsApp</span><span class="val">+65 8952 1688</span></div>
-    <div class="row"><span class="label">Workshop</span><span class="val">Autobay @ Kaki Bukit, #02-61</span></div>
+    <div class="row"><span class="label">Workshop</span><span class="val">Synergy @ KB, #03-38</span></div>
     <div class="row"><span class="label">Web</span><span class="val">therightworkshop.com · link in bio</span></div>
   </div>
 </div>
@@ -630,7 +630,7 @@ h1 .underline::after {{ content:''; position:absolute; left:-4px; right:-4px; bo
   <p class="lead">{body_html}</p>
   <div class="contacts">
     <div class="row"><span class="label">WhatsApp</span><span>+65 8952 1688</span></div>
-    <div class="row"><span class="label">Workshop</span><span>Autobay @ Kaki Bukit, #02-61</span></div>
+    <div class="row"><span class="label">Workshop</span><span>Synergy @ KB, #03-38</span></div>
     <div class="row"><span class="label">Web</span><span>therightworkshop.com · link in bio</span></div>
   </div>
 </div>
@@ -790,7 +790,7 @@ h1 .accent {{ color:var(--orange); }}
   <p class="body">{body_html}</p>
   <div class="contacts">
     <div class="row"><span class="label">WhatsApp</span><span class="val">+65 8952 1688</span></div>
-    <div class="row"><span class="label">Workshop</span><span class="val">Autobay @ Kaki Bukit, #02-61</span></div>
+    <div class="row"><span class="label">Workshop</span><span class="val">Synergy @ KB, #03-38</span></div>
     <div class="row"><span class="label">Web</span><span class="val">therightworkshop.com · link in bio</span></div>
   </div>
 </div>

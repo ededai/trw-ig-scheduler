@@ -134,7 +134,7 @@ SLIDE6 = page("""
   </div>
   <div style="display:grid; grid-template-columns: auto 1fr; gap:16px; align-items:center; margin-bottom:18px;">
     <div style="width:54px; height:54px; background:#F4A93A; border-radius:999px; color:#1A1410; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:18px;">📍</div>
-    <div><div style="font-weight:800; font-size:22px;">Workshop</div><div class="body-copy">Autobay @ Kaki Bukit, #02-61</div></div>
+    <div><div style="font-weight:800; font-size:22px;">Workshop</div><div class="body-copy">Synergy @ KB, #03-38</div></div>
   </div>
   <div style="display:grid; grid-template-columns: auto 1fr; gap:16px; align-items:center;">
     <div style="width:54px; height:54px; background:#F4A93A; border-radius:999px; color:#1A1410; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:18px;">↗</div>
