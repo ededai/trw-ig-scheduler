@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-coe-quota-nov-2026-to-jan-2027-19298-coes-a-d1",
-      "slot_time_sgt": "2026-10-30T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-coe-quota-nov-2026-to-jan-2027-19298-coes/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-quota-nov-2026-to-jan-2027-19298-coes/igs_A.png"
-      ],
-      "notes": "IGS A for blog: coe-quota-nov-2026-to-jan-2027-19298-coes",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-coe-quota-nov-2026-to-jan-2027-19298-coes-b-d2",
       "slot_time_sgt": "2026-10-31T11:00",
       "type": "story",
@@ -37,18 +25,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-coe-merger-which-band-is-my-car-a-d1",
-      "slot_time_sgt": "2026-10-30T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-coe-merger-which-band-is-my-car/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-merger-which-band-is-my-car/igs_A.png"
-      ],
-      "notes": "IGS A for blog: coe-merger-which-band-is-my-car",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-coe-merger-which-band-is-my-car-b-d2",
       "slot_time_sgt": "2026-10-31T11:00",
       "type": "story",
@@ -69,18 +45,6 @@
         "assets/igs-coe-merger-which-band-is-my-car/igs_C.png"
       ],
       "notes": "IGS C for blog: coe-merger-which-band-is-my-car",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-buy-car-now-or-wait-2027-singapore-a-d1",
-      "slot_time_sgt": "2026-10-30T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-buy-car-now-or-wait-2027-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-buy-car-now-or-wait-2027-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: buy-car-now-or-wait-2027-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -4178,6 +4142,51 @@
       "posted_url": "18071060540499788",
       "posted_at": "2026-10-12 00:37 SGT",
       "post_id": "18071060540499788"
+    },
+    {
+      "id": "igs-coe-quota-nov-2026-to-jan-2027-19298-coes-a-d1",
+      "slot_time_sgt": "2026-10-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-quota-nov-2026-to-jan-2027-19298-coes/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-quota-nov-2026-to-jan-2027-19298-coes/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-quota-nov-2026-to-jan-2027-19298-coes",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18083542868339398",
+      "posted_at": "2026-10-30 19:03 SGT",
+      "post_id": "18083542868339398"
+    },
+    {
+      "id": "igs-coe-merger-which-band-is-my-car-a-d1",
+      "slot_time_sgt": "2026-10-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-merger-which-band-is-my-car/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-merger-which-band-is-my-car/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-merger-which-band-is-my-car",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17881802199546202",
+      "posted_at": "2026-10-30 19:03 SGT",
+      "post_id": "17881802199546202"
+    },
+    {
+      "id": "igs-buy-car-now-or-wait-2027-singapore-a-d1",
+      "slot_time_sgt": "2026-10-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-buy-car-now-or-wait-2027-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-buy-car-now-or-wait-2027-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: buy-car-now-or-wait-2027-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18200203876381562",
+      "posted_at": "2026-10-30 19:03 SGT",
+      "post_id": "18200203876381562"
     }
   ],
   "failed": [

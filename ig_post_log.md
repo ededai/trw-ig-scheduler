@@ -266,3 +266,6 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-10-09 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18144987484582526 | IGS A for blog: new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value |
 | 2026-10-10 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17913437325280191 | IGS B for blog: new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value |
 | 2026-10-11 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18071060540499788 | IGS C for blog: new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value |
+| 2026-10-30 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18083542868339398 | IGS A for blog: coe-quota-nov-2026-to-jan-2027-19298-coes |
+| 2026-10-30 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 17881802199546202 | IGS A for blog: coe-merger-which-band-is-my-car |
+| 2026-10-30 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18200203876381562 | IGS A for blog: buy-car-now-or-wait-2027-singapore |
