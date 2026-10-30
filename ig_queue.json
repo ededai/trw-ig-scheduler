@@ -1,5 +1,114 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "igs-coe-quota-nov-2026-to-jan-2027-19298-coes-a-d1",
+      "slot_time_sgt": "2026-10-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-quota-nov-2026-to-jan-2027-19298-coes/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-quota-nov-2026-to-jan-2027-19298-coes/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-quota-nov-2026-to-jan-2027-19298-coes",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-quota-nov-2026-to-jan-2027-19298-coes-b-d2",
+      "slot_time_sgt": "2026-10-31T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-quota-nov-2026-to-jan-2027-19298-coes/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-quota-nov-2026-to-jan-2027-19298-coes/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-quota-nov-2026-to-jan-2027-19298-coes",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-quota-nov-2026-to-jan-2027-19298-coes-c-d3",
+      "slot_time_sgt": "2026-11-01T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-quota-nov-2026-to-jan-2027-19298-coes/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-quota-nov-2026-to-jan-2027-19298-coes/igs_C.png"
+      ],
+      "notes": "IGS C for blog: coe-quota-nov-2026-to-jan-2027-19298-coes",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-merger-which-band-is-my-car-a-d1",
+      "slot_time_sgt": "2026-10-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-merger-which-band-is-my-car/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-merger-which-band-is-my-car/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-merger-which-band-is-my-car",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-merger-which-band-is-my-car-b-d2",
+      "slot_time_sgt": "2026-10-31T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-merger-which-band-is-my-car/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-merger-which-band-is-my-car/igs_B.png"
+      ],
+      "notes": "IGS B for blog: coe-merger-which-band-is-my-car",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-coe-merger-which-band-is-my-car-c-d3",
+      "slot_time_sgt": "2026-11-01T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-coe-merger-which-band-is-my-car/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-merger-which-band-is-my-car/igs_C.png"
+      ],
+      "notes": "IGS C for blog: coe-merger-which-band-is-my-car",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-buy-car-now-or-wait-2027-singapore-a-d1",
+      "slot_time_sgt": "2026-10-30T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-buy-car-now-or-wait-2027-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-buy-car-now-or-wait-2027-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: buy-car-now-or-wait-2027-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-buy-car-now-or-wait-2027-singapore-b-d2",
+      "slot_time_sgt": "2026-10-31T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-buy-car-now-or-wait-2027-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-buy-car-now-or-wait-2027-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: buy-car-now-or-wait-2027-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-buy-car-now-or-wait-2027-singapore-c-d3",
+      "slot_time_sgt": "2026-11-01T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-buy-car-now-or-wait-2027-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-buy-car-now-or-wait-2027-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: buy-car-now-or-wait-2027-singapore",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",

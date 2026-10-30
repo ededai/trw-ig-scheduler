@@ -626,6 +626,33 @@
         "igs-new-coe-proposal-cat-a-and-b-merged-rebate-or-surcharge-by-car-value-c-d3"
       ],
       "title": "New COE proposal: Cat A and B merged, rebate or surcharge by car value"
+    },
+    "coe-quota-nov-2026-to-jan-2027-19298-coes": {
+      "queued_at": "2026-10-30 08:53 SGT",
+      "queued_ids": [
+        "igs-coe-quota-nov-2026-to-jan-2027-19298-coes-a-d1",
+        "igs-coe-quota-nov-2026-to-jan-2027-19298-coes-b-d2",
+        "igs-coe-quota-nov-2026-to-jan-2027-19298-coes-c-d3"
+      ],
+      "title": "COE quota Nov 2026 to Jan 2027: 19,298 COEs, none extra for Cat A"
+    },
+    "coe-merger-which-band-is-my-car": {
+      "queued_at": "2026-10-30 08:54 SGT",
+      "queued_ids": [
+        "igs-coe-merger-which-band-is-my-car-a-d1",
+        "igs-coe-merger-which-band-is-my-car-b-d2",
+        "igs-coe-merger-which-band-is-my-car-c-d3"
+      ],
+      "title": "COE merger: which band would your car fall into?"
+    },
+    "buy-car-now-or-wait-2027-singapore": {
+      "queued_at": "2026-10-30 08:54 SGT",
+      "queued_ids": [
+        "igs-buy-car-now-or-wait-2027-singapore-a-d1",
+        "igs-buy-car-now-or-wait-2027-singapore-b-d2",
+        "igs-buy-car-now-or-wait-2027-singapore-c-d3"
+      ],
+      "title": "Should you buy a car now or wait until 2027?"
     }
   }
 }
