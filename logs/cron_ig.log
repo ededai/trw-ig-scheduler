@@ -7052,3 +7052,13 @@ ERROR publishing: Media ID is not available
 [2026-10-31 08:35:15 +08] HEARTBEAT lag 226 min (prev=2026-10-31T04:48:59.577223+08:00)
 [2026-10-31 08:35:15 +08] run: no due posts
 [2026-10-31 08:48:22 +08] run: no due posts
+[2026-10-31 12:32:35 +08] HEARTBEAT lag 224 min (prev=2026-10-31T08:48:21.980938+08:00)
+[2026-10-31 12:32:35 +08] CATCH-UP igs-coe-quota-nov-2026-to-jan-2027-19298-coes-b-d2 — 1.5h late, publishing
+[2026-10-31 12:32:35 +08] CATCH-UP igs-coe-merger-which-band-is-my-car-b-d2 — 1.5h late, publishing
+[2026-10-31 12:32:35 +08] CATCH-UP igs-buy-car-now-or-wait-2027-singapore-b-d2 — 1.5h late, publishing
+[2026-10-31 12:32:35 +08] Posting igs-coe-quota-nov-2026-to-jan-2027-19298-coes-b-d2 (story) — notes: IGS B for blog: coe-quota-nov-2026-to-jan-2027-19298-coes
+[2026-10-31 12:32:51 +08] OK  igs-coe-quota-nov-2026-to-jan-2027-19298-coes-b-d2 -> 18119699482779417
+[2026-10-31 12:32:52 +08] Posting igs-coe-merger-which-band-is-my-car-b-d2 (story) — notes: IGS B for blog: coe-merger-which-band-is-my-car
+[2026-10-31 12:33:06 +08] OK  igs-coe-merger-which-band-is-my-car-b-d2 -> 18198625681386568
+[2026-10-31 12:33:07 +08] Posting igs-buy-car-now-or-wait-2027-singapore-b-d2 (story) — notes: IGS B for blog: buy-car-now-or-wait-2027-singapore
+[2026-10-31 12:33:20 +08] OK  igs-buy-car-now-or-wait-2027-singapore-b-d2 -> 17989507419089483
