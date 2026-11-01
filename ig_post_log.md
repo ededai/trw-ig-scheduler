@@ -272,3 +272,6 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-10-31 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18119699482779417 | IGS B for blog: coe-quota-nov-2026-to-jan-2027-19298-coes |
 | 2026-10-31 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18198625681386568 | IGS B for blog: coe-merger-which-band-is-my-car |
 | 2026-10-31 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17989507419089483 | IGS B for blog: buy-car-now-or-wait-2027-singapore |
+| 2026-11-01 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17874737277601423 | IGS C for blog: coe-quota-nov-2026-to-jan-2027-19298-coes |
+| 2026-11-01 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17980473170915875 | IGS C for blog: coe-merger-which-band-is-my-car |
+| 2026-11-01 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18109064371952373 | IGS C for blog: buy-car-now-or-wait-2027-singapore |
