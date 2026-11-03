@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-petrol-engine-burning-oil-singapore-a-d1",
-      "slot_time_sgt": "2026-11-03T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-petrol-engine-burning-oil-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-petrol-engine-burning-oil-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: petrol-engine-burning-oil-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-petrol-engine-burning-oil-singapore-b-d2",
       "slot_time_sgt": "2026-11-04T11:00",
       "type": "story",
@@ -33,18 +21,6 @@
         "assets/igs-petrol-engine-burning-oil-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: petrol-engine-burning-oil-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-diesel-engine-burning-oil-singapore-a-d1",
-      "slot_time_sgt": "2026-11-03T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-diesel-engine-burning-oil-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-diesel-engine-burning-oil-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: diesel-engine-burning-oil-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -73,18 +49,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-hybrid-engine-burning-oil-singapore-a-d1",
-      "slot_time_sgt": "2026-11-03T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-hybrid-engine-burning-oil-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-hybrid-engine-burning-oil-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: hybrid-engine-burning-oil-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-hybrid-engine-burning-oil-singapore-b-d2",
       "slot_time_sgt": "2026-11-04T11:00",
       "type": "story",
@@ -109,18 +73,6 @@
       "attempts": 0
     },
     {
-      "id": "igs-wet-timing-belt-singapore-a-d1",
-      "slot_time_sgt": "2026-11-03T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-wet-timing-belt-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-wet-timing-belt-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: wet-timing-belt-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-wet-timing-belt-singapore-b-d2",
       "slot_time_sgt": "2026-11-04T11:00",
       "type": "story",
@@ -141,18 +93,6 @@
         "assets/igs-wet-timing-belt-singapore/igs_C.png"
       ],
       "notes": "IGS C for blog: wet-timing-belt-singapore",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
-      "id": "igs-wet-timing-belt-replacement-cost-singapore-a-d1",
-      "slot_time_sgt": "2026-11-03T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-wet-timing-belt-replacement-cost-singapore/caption.txt",
-      "image_paths": [
-        "assets/igs-wet-timing-belt-replacement-cost-singapore/igs_A.png"
-      ],
-      "notes": "IGS A for blog: wet-timing-belt-replacement-cost-singapore",
       "status": "pending",
       "attempts": 0
     },
@@ -4385,6 +4325,81 @@
       "posted_url": "18109064371952373",
       "posted_at": "2026-11-02 01:16 SGT",
       "post_id": "18109064371952373"
+    },
+    {
+      "id": "igs-petrol-engine-burning-oil-singapore-a-d1",
+      "slot_time_sgt": "2026-11-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-petrol-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-petrol-engine-burning-oil-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: petrol-engine-burning-oil-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17960752992254817",
+      "posted_at": "2026-11-03 21:01 SGT",
+      "post_id": "17960752992254817"
+    },
+    {
+      "id": "igs-diesel-engine-burning-oil-singapore-a-d1",
+      "slot_time_sgt": "2026-11-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-diesel-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-diesel-engine-burning-oil-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: diesel-engine-burning-oil-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17995869201046784",
+      "posted_at": "2026-11-03 21:02 SGT",
+      "post_id": "17995869201046784"
+    },
+    {
+      "id": "igs-hybrid-engine-burning-oil-singapore-a-d1",
+      "slot_time_sgt": "2026-11-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-hybrid-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-hybrid-engine-burning-oil-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: hybrid-engine-burning-oil-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18119778505969904",
+      "posted_at": "2026-11-03 21:02 SGT",
+      "post_id": "18119778505969904"
+    },
+    {
+      "id": "igs-wet-timing-belt-singapore-a-d1",
+      "slot_time_sgt": "2026-11-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-wet-timing-belt-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-wet-timing-belt-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: wet-timing-belt-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18201835228381681",
+      "posted_at": "2026-11-03 21:02 SGT",
+      "post_id": "18201835228381681"
+    },
+    {
+      "id": "igs-wet-timing-belt-replacement-cost-singapore-a-d1",
+      "slot_time_sgt": "2026-11-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-wet-timing-belt-replacement-cost-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-wet-timing-belt-replacement-cost-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: wet-timing-belt-replacement-cost-singapore",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "17972917608183695",
+      "posted_at": "2026-11-03 21:02 SGT",
+      "post_id": "17972917608183695"
     }
   ],
   "failed": [

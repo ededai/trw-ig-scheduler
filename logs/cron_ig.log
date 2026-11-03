@@ -7119,3 +7119,19 @@ ERROR publishing: Media ID is not available
 [2026-11-03 13:43:25 +08] HEARTBEAT lag 100 min (prev=2026-11-03T12:03:01.794027+08:00)
 [2026-11-03 13:43:25 +08] run: no due posts
 [2026-11-03 14:00:02 +08] run: no due posts
+[2026-11-03 21:01:30 +08] HEARTBEAT lag 421 min (prev=2026-11-03T14:00:02.714494+08:00)
+[2026-11-03 21:01:30 +08] CATCH-UP igs-petrol-engine-burning-oil-singapore-a-d1 — 5.5h late, publishing
+[2026-11-03 21:01:30 +08] CATCH-UP igs-diesel-engine-burning-oil-singapore-a-d1 — 5.5h late, publishing
+[2026-11-03 21:01:30 +08] CATCH-UP igs-hybrid-engine-burning-oil-singapore-a-d1 — 5.5h late, publishing
+[2026-11-03 21:01:30 +08] CATCH-UP igs-wet-timing-belt-singapore-a-d1 — 5.5h late, publishing
+[2026-11-03 21:01:30 +08] CATCH-UP igs-wet-timing-belt-replacement-cost-singapore-a-d1 — 5.5h late, publishing
+[2026-11-03 21:01:30 +08] Posting igs-petrol-engine-burning-oil-singapore-a-d1 (story) — notes: IGS A for blog: petrol-engine-burning-oil-singapore
+[2026-11-03 21:01:45 +08] OK  igs-petrol-engine-burning-oil-singapore-a-d1 -> 17960752992254817
+[2026-11-03 21:01:46 +08] Posting igs-diesel-engine-burning-oil-singapore-a-d1 (story) — notes: IGS A for blog: diesel-engine-burning-oil-singapore
+[2026-11-03 21:02:01 +08] OK  igs-diesel-engine-burning-oil-singapore-a-d1 -> 17995869201046784
+[2026-11-03 21:02:01 +08] Posting igs-hybrid-engine-burning-oil-singapore-a-d1 (story) — notes: IGS A for blog: hybrid-engine-burning-oil-singapore
+[2026-11-03 21:02:16 +08] OK  igs-hybrid-engine-burning-oil-singapore-a-d1 -> 18119778505969904
+[2026-11-03 21:02:17 +08] Posting igs-wet-timing-belt-singapore-a-d1 (story) — notes: IGS A for blog: wet-timing-belt-singapore
+[2026-11-03 21:02:31 +08] OK  igs-wet-timing-belt-singapore-a-d1 -> 18201835228381681
+[2026-11-03 21:02:31 +08] Posting igs-wet-timing-belt-replacement-cost-singapore-a-d1 (story) — notes: IGS A for blog: wet-timing-belt-replacement-cost-singapore
+[2026-11-03 21:02:41 +08] OK  igs-wet-timing-belt-replacement-cost-singapore-a-d1 -> 17972917608183695
