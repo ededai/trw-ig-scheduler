@@ -1,5 +1,186 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "igs-petrol-engine-burning-oil-singapore-a-d1",
+      "slot_time_sgt": "2026-11-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-petrol-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-petrol-engine-burning-oil-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: petrol-engine-burning-oil-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-petrol-engine-burning-oil-singapore-b-d2",
+      "slot_time_sgt": "2026-11-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-petrol-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-petrol-engine-burning-oil-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: petrol-engine-burning-oil-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-petrol-engine-burning-oil-singapore-c-d3",
+      "slot_time_sgt": "2026-11-05T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-petrol-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-petrol-engine-burning-oil-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: petrol-engine-burning-oil-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-diesel-engine-burning-oil-singapore-a-d1",
+      "slot_time_sgt": "2026-11-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-diesel-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-diesel-engine-burning-oil-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: diesel-engine-burning-oil-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-diesel-engine-burning-oil-singapore-b-d2",
+      "slot_time_sgt": "2026-11-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-diesel-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-diesel-engine-burning-oil-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: diesel-engine-burning-oil-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-diesel-engine-burning-oil-singapore-c-d3",
+      "slot_time_sgt": "2026-11-05T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-diesel-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-diesel-engine-burning-oil-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: diesel-engine-burning-oil-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-hybrid-engine-burning-oil-singapore-a-d1",
+      "slot_time_sgt": "2026-11-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-hybrid-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-hybrid-engine-burning-oil-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: hybrid-engine-burning-oil-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-hybrid-engine-burning-oil-singapore-b-d2",
+      "slot_time_sgt": "2026-11-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-hybrid-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-hybrid-engine-burning-oil-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: hybrid-engine-burning-oil-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-hybrid-engine-burning-oil-singapore-c-d3",
+      "slot_time_sgt": "2026-11-05T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-hybrid-engine-burning-oil-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-hybrid-engine-burning-oil-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: hybrid-engine-burning-oil-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-wet-timing-belt-singapore-a-d1",
+      "slot_time_sgt": "2026-11-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-wet-timing-belt-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-wet-timing-belt-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: wet-timing-belt-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-wet-timing-belt-singapore-b-d2",
+      "slot_time_sgt": "2026-11-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-wet-timing-belt-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-wet-timing-belt-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: wet-timing-belt-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-wet-timing-belt-singapore-c-d3",
+      "slot_time_sgt": "2026-11-05T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-wet-timing-belt-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-wet-timing-belt-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: wet-timing-belt-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-wet-timing-belt-replacement-cost-singapore-a-d1",
+      "slot_time_sgt": "2026-11-03T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-wet-timing-belt-replacement-cost-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-wet-timing-belt-replacement-cost-singapore/igs_A.png"
+      ],
+      "notes": "IGS A for blog: wet-timing-belt-replacement-cost-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-wet-timing-belt-replacement-cost-singapore-b-d2",
+      "slot_time_sgt": "2026-11-04T11:00",
+      "type": "story",
+      "caption_file": "assets/igs-wet-timing-belt-replacement-cost-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-wet-timing-belt-replacement-cost-singapore/igs_B.png"
+      ],
+      "notes": "IGS B for blog: wet-timing-belt-replacement-cost-singapore",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "id": "igs-wet-timing-belt-replacement-cost-singapore-c-d3",
+      "slot_time_sgt": "2026-11-05T20:00",
+      "type": "story",
+      "caption_file": "assets/igs-wet-timing-belt-replacement-cost-singapore/caption.txt",
+      "image_paths": [
+        "assets/igs-wet-timing-belt-replacement-cost-singapore/igs_C.png"
+      ],
+      "notes": "IGS C for blog: wet-timing-belt-replacement-cost-singapore",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",

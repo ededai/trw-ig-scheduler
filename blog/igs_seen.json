@@ -653,6 +653,51 @@
         "igs-buy-car-now-or-wait-2027-singapore-c-d3"
       ],
       "title": "Should you buy a car now or wait until 2027?"
+    },
+    "petrol-engine-burning-oil-singapore": {
+      "queued_at": "2026-11-03 14:40 SGT",
+      "queued_ids": [
+        "igs-petrol-engine-burning-oil-singapore-a-d1",
+        "igs-petrol-engine-burning-oil-singapore-b-d2",
+        "igs-petrol-engine-burning-oil-singapore-c-d3"
+      ],
+      "title": "Petrol Engine Burning Oil in Singapore: Where It Goes and How to Tell"
+    },
+    "diesel-engine-burning-oil-singapore": {
+      "queued_at": "2026-11-03 14:40 SGT",
+      "queued_ids": [
+        "igs-diesel-engine-burning-oil-singapore-a-d1",
+        "igs-diesel-engine-burning-oil-singapore-b-d2",
+        "igs-diesel-engine-burning-oil-singapore-c-d3"
+      ],
+      "title": "Diesel Engine Burning Oil in Singapore: Turbo, Rings, or Fuel in the Sump"
+    },
+    "hybrid-engine-burning-oil-singapore": {
+      "queued_at": "2026-11-03 14:40 SGT",
+      "queued_ids": [
+        "igs-hybrid-engine-burning-oil-singapore-a-d1",
+        "igs-hybrid-engine-burning-oil-singapore-b-d2",
+        "igs-hybrid-engine-burning-oil-singapore-c-d3"
+      ],
+      "title": "Hybrid Engine Burning Oil in Singapore: Why the Petrol Half Still Needs Watching"
+    },
+    "wet-timing-belt-singapore": {
+      "queued_at": "2026-11-03 14:40 SGT",
+      "queued_ids": [
+        "igs-wet-timing-belt-singapore-a-d1",
+        "igs-wet-timing-belt-singapore-b-d2",
+        "igs-wet-timing-belt-singapore-c-d3"
+      ],
+      "title": "Wet Timing Belt in Singapore: What It Is, Which Cars Have One, and When to Change It"
+    },
+    "wet-timing-belt-replacement-cost-singapore": {
+      "queued_at": "2026-11-03 14:41 SGT",
+      "queued_ids": [
+        "igs-wet-timing-belt-replacement-cost-singapore-a-d1",
+        "igs-wet-timing-belt-replacement-cost-singapore-b-d2",
+        "igs-wet-timing-belt-replacement-cost-singapore-c-d3"
+      ],
+      "title": "Wet Timing Belt Replacement Cost in Singapore: Roughly $1,200, and What a Cheaper Quote Leaves Out"
     }
   }
 }
