@@ -285,3 +285,8 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-11-04 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17899831179655164 | IGS B for blog: hybrid-engine-burning-oil-singapore |
 | 2026-11-04 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17892837336455393 | IGS B for blog: wet-timing-belt-singapore |
 | 2026-11-04 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 17967568205980551 | IGS B for blog: wet-timing-belt-replacement-cost-singapore |
+| 2026-11-05 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18066745829619527 | IGS C for blog: petrol-engine-burning-oil-singapore |
+| 2026-11-05 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18170762188463924 | IGS C for blog: diesel-engine-burning-oil-singapore |
+| 2026-11-05 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18101211689376251 | IGS C for blog: hybrid-engine-burning-oil-singapore |
+| 2026-11-05 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17910093516332450 | IGS C for blog: wet-timing-belt-singapore |
+| 2026-11-05 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18030956789880766 | IGS C for blog: wet-timing-belt-replacement-cost-singapore |
