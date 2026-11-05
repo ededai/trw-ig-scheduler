@@ -1,48 +1,190 @@
 {
-  "_schema_version": "1.1",
+  "10-signs-trustworthy-mechanic-singapore": [
+    "workshop"
+  ],
   "_description": "Article slug -> list of v3 pillar slugs. Built from UNION of (live article body topic chips mapped via slug_remap) + (intent-based curated additions). Cole/Bryan/Codi append at publish time. Counts auto-flow to /blog/ tag cloud + /topics/<pillar>/ sync.",
-  "_pillars_v3": ["aircon","servicing","tyres","battery","brakes","coolant","suspension","engine","gearbox","electrical","accident-repair","car-insurance","coe","scrap-or-export","used-car","selling-your-car","ownership","erp","regulation","ev","driving-tips","workshop"],
   "_last_updated": "2026-05-16",
-
-  "first-car-service-singapore-what-happens":                ["servicing", "ownership"],
-  "dealer-vs-independent-workshop-singapore":                 ["workshop"],
-  "car-insurance-broker-singapore":                           ["car-insurance", "ownership"],
-  "pre-purchase-car-inspection-singapore":                    ["used-car", "workshop"],
-  "cheapest-car-workshop-singapore":                          ["workshop", "ownership", "servicing"],
-  "car-insurance-premium-factors-singapore":                  ["car-insurance", "ownership"],
-  "coe-explained":                                            ["coe", "ownership"],
-  "cat-a-vs-cat-b-singapore":                                 ["coe", "ownership"],
-  "coe-results-explained":                                    ["coe"],
-  "coe-renewal-singapore":                                    ["coe", "scrap-or-export", "ownership"],
-  "coe-export-car-singapore":                                 ["coe", "scrap-or-export", "ownership", "selling-your-car"],
-  "scrap-car-singapore":                                      ["scrap-or-export", "coe", "ownership", "selling-your-car"],
-  "coe-renewal-vs-scrap-singapore-guide":                     ["coe", "scrap-or-export", "ownership"],
-  "what-is-the-right-workshop-singapore":                     ["workshop", "servicing"],
-  "dashboard-warning-lights-explained":                       ["electrical", "servicing"],
-  "how-often-service-car-singapore":                          ["servicing", "ownership"],
-  "independent-workshop-vs-authorised-service-centre-singapore": ["workshop"],
-  "used-car-inspection-singapore":                            ["used-car"],
-  "what-to-look-for-car-workshop-singapore":                  ["workshop"],
-  "how-to-read-workshop-quote-singapore":                     ["workshop"],
-  "block-exemption-order-singapore-car-servicing":            ["workshop", "servicing", "regulation"],
-  "tyres-battery-singapore-checks-guide":                     ["tyres", "battery", "servicing"],
-  "car-aircon-not-cold-singapore-fix":                        ["aircon", "servicing"],
-  "coolant-radiator-care-singapore":                          ["coolant", "servicing"],
-  "driving-singapore-rain-wet-weather":                       ["driving-tips"],
-  "brake-pads-rotors-singapore-when-to-change":               ["brakes", "driving-tips"],
-  "10-signs-trustworthy-mechanic-singapore":                  ["workshop"],
-  "questions-to-ask-before-new-car-workshop-singapore":       ["workshop"],
-
-  "erp-2-0-singapore-2026":                                   ["erp", "regulation", "ownership"],
-  "erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers": ["erp", "regulation"],
-  "vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles": ["regulation", "ownership"],
-  "singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation": ["ev", "regulation"],
-  "singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026": ["coe", "regulation", "ownership"],
-
-  "engine-mounting-singapore":                                ["engine", "servicing"],
-  "timing-belt-vs-timing-chain-singapore":                    ["engine", "servicing"],
-  "car-insurance-broker-vs-direct-singapore":                 ["car-insurance", "ownership"],
-  "revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises": ["erp", "regulation"],
-  "cat-a-coe-may-2026-hits-124790-whats-driving-the-climb":   ["coe"],
-  "cat-a-coe-june-2026-hits-126009-whats-driving-the-climb":  ["coe"]
+  "_pillars_v3": [
+    "aircon",
+    "servicing",
+    "tyres",
+    "battery",
+    "brakes",
+    "coolant",
+    "suspension",
+    "engine",
+    "gearbox",
+    "electrical",
+    "accident-repair",
+    "car-insurance",
+    "coe",
+    "scrap-or-export",
+    "used-car",
+    "selling-your-car",
+    "ownership",
+    "erp",
+    "regulation",
+    "ev",
+    "driving-tips",
+    "workshop"
+  ],
+  "_schema_version": "1.1",
+  "block-exemption-order-singapore-car-servicing": [
+    "workshop",
+    "servicing",
+    "regulation"
+  ],
+  "brake-pads-rotors-singapore-when-to-change": [
+    "brakes",
+    "driving-tips"
+  ],
+  "car-aircon-not-cold-singapore-fix": [
+    "aircon",
+    "servicing"
+  ],
+  "car-insurance-broker-singapore": [
+    "car-insurance",
+    "ownership"
+  ],
+  "car-insurance-broker-vs-direct-singapore": [
+    "car-insurance",
+    "ownership"
+  ],
+  "car-insurance-premium-factors-singapore": [
+    "car-insurance",
+    "ownership"
+  ],
+  "cat-a-coe-june-2026-hits-126009-whats-driving-the-climb": [
+    "coe"
+  ],
+  "cat-a-coe-may-2026-hits-124790-whats-driving-the-climb": [
+    "coe"
+  ],
+  "cat-a-vs-cat-b-singapore": [
+    "coe",
+    "ownership"
+  ],
+  "cheapest-car-workshop-singapore": [
+    "workshop",
+    "ownership",
+    "servicing"
+  ],
+  "coe-explained": [
+    "coe",
+    "ownership"
+  ],
+  "coe-export-car-singapore": [
+    "coe",
+    "scrap-or-export",
+    "ownership",
+    "selling-your-car"
+  ],
+  "coe-renewal-singapore": [
+    "coe",
+    "scrap-or-export",
+    "ownership"
+  ],
+  "coe-renewal-vs-scrap-singapore-guide": [
+    "coe",
+    "scrap-or-export",
+    "ownership"
+  ],
+  "coe-results-explained": [
+    "coe"
+  ],
+  "coe-review-most-back-feebate-five-bands": [
+    "coe",
+    "ev",
+    "regulation"
+  ],
+  "coolant-radiator-care-singapore": [
+    "coolant",
+    "servicing"
+  ],
+  "dashboard-warning-lights-explained": [
+    "electrical",
+    "servicing"
+  ],
+  "dealer-vs-independent-workshop-singapore": [
+    "workshop"
+  ],
+  "driving-singapore-rain-wet-weather": [
+    "driving-tips"
+  ],
+  "engine-mounting-singapore": [
+    "engine",
+    "servicing"
+  ],
+  "erp-2-0-singapore-2026": [
+    "erp",
+    "regulation",
+    "ownership"
+  ],
+  "erp-2-obu-now-mandatory-key-dates-and-penalties-for-singapore-drivers": [
+    "erp",
+    "regulation"
+  ],
+  "first-car-service-singapore-what-happens": [
+    "servicing",
+    "ownership"
+  ],
+  "how-often-service-car-singapore": [
+    "servicing",
+    "ownership"
+  ],
+  "how-to-read-workshop-quote-singapore": [
+    "workshop"
+  ],
+  "independent-workshop-vs-authorised-service-centre-singapore": [
+    "workshop"
+  ],
+  "pre-purchase-car-inspection-singapore": [
+    "used-car",
+    "workshop"
+  ],
+  "questions-to-ask-before-new-car-workshop-singapore": [
+    "workshop"
+  ],
+  "revised-erp-rates-from-2-june-2026-school-holiday-cuts-and-post-holiday-rises": [
+    "erp",
+    "regulation"
+  ],
+  "scrap-car-singapore": [
+    "scrap-or-export",
+    "coe",
+    "ownership",
+    "selling-your-car"
+  ],
+  "singapore-ev-licence-plates-lta-and-scdf-begin-design-consultation": [
+    "ev",
+    "regulation"
+  ],
+  "singapore-parf-rebate-schedule-and-cap-revised-from-feb-2026": [
+    "coe",
+    "regulation",
+    "ownership"
+  ],
+  "timing-belt-vs-timing-chain-singapore": [
+    "engine",
+    "servicing"
+  ],
+  "tyres-battery-singapore-checks-guide": [
+    "tyres",
+    "battery",
+    "servicing"
+  ],
+  "used-car-inspection-singapore": [
+    "used-car"
+  ],
+  "vep-and-gvp-fees-rise-from-january-2027-for-foreign-vehicles": [
+    "regulation",
+    "ownership"
+  ],
+  "what-is-the-right-workshop-singapore": [
+    "workshop",
+    "servicing"
+  ],
+  "what-to-look-for-car-workshop-singapore": [
+    "workshop"
+  ]
 }
