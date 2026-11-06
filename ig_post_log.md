@@ -290,3 +290,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-11-05 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18101211689376251 | IGS C for blog: hybrid-engine-burning-oil-singapore |
 | 2026-11-05 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 17910093516332450 | IGS C for blog: wet-timing-belt-singapore |
 | 2026-11-05 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18030956789880766 | IGS C for blog: wet-timing-belt-replacement-cost-singapore |
+| 2026-11-06 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18469651504138882 | IGS A for blog: coe-review-most-back-feebate-five-bands |

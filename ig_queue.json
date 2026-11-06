@@ -1,18 +1,6 @@
 {
   "pending": [
     {
-      "id": "igs-coe-review-most-back-feebate-five-bands-a-d1",
-      "slot_time_sgt": "2026-11-06T15:30",
-      "type": "story",
-      "caption_file": "assets/igs-coe-review-most-back-feebate-five-bands/caption.txt",
-      "image_paths": [
-        "assets/igs-coe-review-most-back-feebate-five-bands/igs_A.png"
-      ],
-      "notes": "IGS A for blog: coe-review-most-back-feebate-five-bands",
-      "status": "pending",
-      "attempts": 0
-    },
-    {
       "id": "igs-coe-review-most-back-feebate-five-bands-b-d2",
       "slot_time_sgt": "2026-11-07T11:00",
       "type": "story",
@@ -4466,6 +4454,21 @@
       "posted_url": "18030956789880766",
       "posted_at": "2026-11-05 21:30 SGT",
       "post_id": "18030956789880766"
+    },
+    {
+      "id": "igs-coe-review-most-back-feebate-five-bands-a-d1",
+      "slot_time_sgt": "2026-11-06T15:30",
+      "type": "story",
+      "caption_file": "assets/igs-coe-review-most-back-feebate-five-bands/caption.txt",
+      "image_paths": [
+        "assets/igs-coe-review-most-back-feebate-five-bands/igs_A.png"
+      ],
+      "notes": "IGS A for blog: coe-review-most-back-feebate-five-bands",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "18469651504138882",
+      "posted_at": "2026-11-06 21:12 SGT",
+      "post_id": "18469651504138882"
     }
   ],
   "failed": [
