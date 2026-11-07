@@ -7221,3 +7221,7 @@ ERROR publishing: Media ID is not available
 [2026-11-07 09:05:14 +08] HEARTBEAT lag 214 min (prev=2026-11-07T05:30:50.437270+08:00)
 [2026-11-07 09:05:14 +08] run: no due posts
 [2026-11-07 09:15:04 +08] run: no due posts
+[2026-11-07 13:01:35 +08] HEARTBEAT lag 227 min (prev=2026-11-07T09:15:04.921148+08:00)
+[2026-11-07 13:01:35 +08] CATCH-UP igs-coe-review-most-back-feebate-five-bands-b-d2 — 2.0h late, publishing
+[2026-11-07 13:01:35 +08] Posting igs-coe-review-most-back-feebate-five-bands-b-d2 (story) — notes: IGS B for blog: coe-review-most-back-feebate-five-bands
+[2026-11-07 13:01:49 +08] OK  igs-coe-review-most-back-feebate-five-bands-b-d2 -> 18147332833578133
