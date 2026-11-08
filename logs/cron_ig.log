@@ -7256,3 +7256,5 @@ ERROR publishing: Media ID is not available
 [2026-11-08 21:42:58 +08] OK  inside-the-bay-jimny-carousel-2026-11-08 -> https://www.instagram.com/p/Dfe49BNICVz/
 [2026-11-09 01:15:33 +08] HEARTBEAT lag 213 min (prev=2026-11-08T21:42:30.238870+08:00)
 [2026-11-09 01:15:33 +08] run: no due posts
+[2026-11-09 01:52:26 +08] HEARTBEAT lag 37 min (prev=2026-11-09T01:15:33.922465+08:00)
+[2026-11-09 01:52:26 +08] run: no due posts
