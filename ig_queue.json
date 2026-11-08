@@ -1,21 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "inside-the-bay-jimny-carousel-2026-11-08",
-      "slot_time_sgt": "2026-11-08T21:40",
-      "type": "carousel",
-      "caption_file": "assets/inside-the-bay-jimny-carousel-2026-11-08/caption.txt",
-      "image_paths": [
-        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide1.png",
-        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide2.png",
-        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide3.png",
-        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide4.png"
-      ],
-      "notes": "Inside the Bay, Jimny carousel sequence C (cover, mirror, essay, CTA), replaces deleted single, Ed 8 Nov",
-      "status": "pending",
-      "attempts": 0
-    }
-  ],
+  "pending": [],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
@@ -4505,6 +4489,24 @@
       "posted_url": "https://www.instagram.com/p/DfeyQmBjcVy/",
       "posted_at": "2026-11-08 20:44 SGT",
       "post_id": "17895520488438117"
+    },
+    {
+      "id": "inside-the-bay-jimny-carousel-2026-11-08",
+      "slot_time_sgt": "2026-11-08T21:40",
+      "type": "carousel",
+      "caption_file": "assets/inside-the-bay-jimny-carousel-2026-11-08/caption.txt",
+      "image_paths": [
+        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide1.png",
+        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide2.png",
+        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide3.png",
+        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide4.png"
+      ],
+      "notes": "Inside the Bay, Jimny carousel sequence C (cover, mirror, essay, CTA), replaces deleted single, Ed 8 Nov",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/Dfe49BNICVz/",
+      "posted_at": "2026-11-08 21:42 SGT",
+      "post_id": "18121609811605105"
     }
   ],
   "failed": [
