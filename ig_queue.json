@@ -1,18 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "inside-the-bay-jimny-2026-11-08",
-      "slot_time_sgt": "2026-11-08T20:44",
-      "type": "single",
-      "caption_file": "assets/inside-the-bay-jimny-2026-11-08/caption.txt",
-      "image_paths": [
-        "assets/inside-the-bay-jimny-2026-11-08/slide1.png"
-      ],
-      "notes": "Inside the Bay hook, Jimny on the new lift, Ed approved 8 Nov, post now",
-      "status": "pending",
-      "attempts": 0
-    }
-  ],
+  "pending": [],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
@@ -4487,6 +4474,21 @@
       "posted_url": "18286410724292324",
       "posted_at": "2026-11-08 20:02 SGT",
       "post_id": "18286410724292324"
+    },
+    {
+      "id": "inside-the-bay-jimny-2026-11-08",
+      "slot_time_sgt": "2026-11-08T20:44",
+      "type": "single",
+      "caption_file": "assets/inside-the-bay-jimny-2026-11-08/caption.txt",
+      "image_paths": [
+        "assets/inside-the-bay-jimny-2026-11-08/slide1.png"
+      ],
+      "notes": "Inside the Bay hook, Jimny on the new lift, Ed approved 8 Nov, post now",
+      "status": "posted",
+      "attempts": 0,
+      "posted_url": "https://www.instagram.com/p/DfeyQmBjcVy/",
+      "posted_at": "2026-11-08 20:44 SGT",
+      "post_id": "17895520488438117"
     }
   ],
   "failed": [
