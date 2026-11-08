@@ -293,4 +293,4 @@ Append a row the instant any post goes live (per `feedback_verify_before_claimin
 | 2026-11-06 15:30 | Single | (IGS — caption ignored by Meta API for stories) | 18469651504138882 | IGS A for blog: coe-review-most-back-feebate-five-bands |
 | 2026-11-07 11:00 | Single | (IGS — caption ignored by Meta API for stories) | 18147332833578133 | IGS B for blog: coe-review-most-back-feebate-five-bands |
 | 2026-11-08 20:00 | Single | (IGS — caption ignored by Meta API for stories) | 18286410724292324 | IGS C for blog: coe-review-most-back-feebate-five-bands |
-| 2026-11-08 20:44 | Single | Up on the new floor. | https://www.instagram.com/p/DfeyQmBjcVy/ | Inside the Bay hook, Jimny on the new lift, Ed approved 8 Nov, post now |
+| 2026-11-08 20:44 | Single | Up on the new floor. | https://www.instagram.com/p/DfeyQmBjcVy/ | Inside the Bay hook, Jimny on the new lift, Ed approved 8 Nov, post now. DELETED by Ed in the app 8 Nov about 21:30 SGT, replaced by the 4-slide carousel inside-the-bay-jimny-carousel-2026-11-08 |

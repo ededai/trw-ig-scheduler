@@ -1,5 +1,21 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "inside-the-bay-jimny-carousel-2026-11-08",
+      "slot_time_sgt": "2026-11-08T21:40",
+      "type": "carousel",
+      "caption_file": "assets/inside-the-bay-jimny-carousel-2026-11-08/caption.txt",
+      "image_paths": [
+        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide1.png",
+        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide2.png",
+        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide3.png",
+        "assets/inside-the-bay-jimny-carousel-2026-11-08/slide4.png"
+      ],
+      "notes": "Inside the Bay, Jimny carousel sequence C (cover, mirror, essay, CTA), replaces deleted single, Ed 8 Nov",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
   "posted": [
     {
       "id": "timing-belt-2026-04-25",
